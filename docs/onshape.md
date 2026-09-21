@@ -2,7 +2,7 @@
 
 [Open the native assembly](https://cad.onshape.com/documents/88edbeda4232642329938c14/w/19f5435855c2974f02fa7c68/e/ea6ef29b6f90442d8a9d563b)
 
-The Onshape document contains a positioned Part Studio with 155 solids, a separate Part Studio with the 17 unique printable parts, and a native assembly of all 155 instances. The Onshape Free account stores this document publicly; the Git repository is private by default.
+The Onshape document contains a positioned Part Studio with 155 solids, a separate Part Studio with the 17 unique printable parts, and a native assembly of all 155 instances. The Onshape Free account stores this document publicly; the Git repository is also public.
 
 ## Installed mating structure
 

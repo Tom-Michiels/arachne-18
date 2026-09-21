@@ -1,10 +1,9 @@
 # Start on another computer
 
-The repository is private. Sign in to GitHub as an account with access, then clone it:
+The repository is public. Clone it without signing in:
 
 ```sh
-gh auth login
-gh repo clone Tom-Michiels/arachne-18
+git clone https://github.com/Tom-Michiels/arachne-18.git
 cd arachne-18
 python3.12 -m venv .venv
 source .venv/bin/activate
