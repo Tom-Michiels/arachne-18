@@ -1,0 +1,8 @@
+{
+  "status": "NATIVE_MATES_INSTALLED_AND_NEUTRAL_VERIFIED",
+  "native_fastened_verified": 136,
+  "native_revolute_verified": 18,
+  "chassis_fixed": true,
+  "solver_errors": 0,
+  "motion_command_verification": "in progress"
+}

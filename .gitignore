@@ -1,0 +1,12 @@
+.DS_Store
+.venv*/
+__pycache__/
+*.py[cod]
+build/
+.cad_cache/
+*.log
+.env*
+*secret*
+*credential*
+.onshape*key*
+simulation/*_run.json

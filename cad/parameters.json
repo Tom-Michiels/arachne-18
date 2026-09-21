@@ -1,0 +1,22 @@
+{
+  "body_rx": 94,
+  "body_ry": 92,
+  "anchor_rx": 86,
+  "anchor_ry": 86,
+  "coxa": 50,
+  "femur": 78,
+  "tibia": 110,
+  "horn_pcd": 14,
+  "horn_d": 19.95,
+  "cheek_gap": 45,
+  "cheek_t": 4.5,
+  "servo_L": 45.23,
+  "servo_W": 24.73,
+  "servo_H": 35,
+  "servo_axis_offset": 12.5,
+  "battery_L": 115,
+  "battery_W": 40,
+  "battery_H": 35,
+  "femur_up_deg": 15,
+  "tibia_down_deg": 65
+}

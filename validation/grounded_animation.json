@@ -1,0 +1,20 @@
+{
+  "frames": 100,
+  "duration_s": 4,
+  "min_contacts": 6,
+  "max_contacts": 6,
+  "body_height_range_m": [
+    0.08568277964004226,
+    0.10075020233182715
+  ],
+  "base_fixed": false,
+  "solver_warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}

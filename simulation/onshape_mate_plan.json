@@ -1,0 +1,1808 @@
+{
+  "documentId": "88edbeda4232642329938c14",
+  "workspaceId": "19f5435855c2974f02fa7c68",
+  "elementId": "ea6ef29b6f90442d8a9d563b",
+  "fix": "01_CHASSIS",
+  "instances": {
+    "01_CHASSIS": {
+      "id": "Mt4JlnnUfgMfnowOF",
+      "partId": "JFD"
+    },
+    "02_DORSAL_DECK": {
+      "id": "MECc353ump6DT7fJ2",
+      "partId": "JFH"
+    },
+    "03_BATTERY_TRAY": {
+      "id": "Mek4cTkrv/omG1wZY",
+      "partId": "JFL"
+    },
+    "04_CONTROLLER_PLATE": {
+      "id": "MNymH3pd+kTy9Du5X",
+      "partId": "JFP"
+    },
+    "05_SHELL": {
+      "id": "M6fHHBqN0vpTwpvQn",
+      "partId": "JFT"
+    },
+    "L1_coxa": {
+      "id": "Mb/Z4sXam3OqOQaxO",
+      "partId": "JF3"
+    },
+    "L1_coxa_bottom": {
+      "id": "Mu4OqLbbOuComECot",
+      "partId": "JF7"
+    },
+    "L1_femur": {
+      "id": "MQoOqeVKFibc0zOSc",
+      "partId": "KFHB"
+    },
+    "L1_femur_side_plate": {
+      "id": "MfDOkRYyCvzs0DTZ9",
+      "partId": "KFLB"
+    },
+    "L1_hip_clamp": {
+      "id": "MGxVWyNcLU9mbA8i6",
+      "partId": "KFDB"
+    },
+    "L1_hip_shim_min": {
+      "id": "MBgJWyJv+vYbawJvR",
+      "partId": "KF7B"
+    },
+    "L1_hip_shim_plus": {
+      "id": "Mki79ZX+Qepm3Z33m",
+      "partId": "KF3B"
+    },
+    "L1_hip_disc_min": {
+      "id": "Mo7a//jb5vOMwDP2g",
+      "partId": "KFzB"
+    },
+    "L1_hip_disc_plus": {
+      "id": "ML29K4lG7oYih2R7W",
+      "partId": "KFvB"
+    },
+    "L1_knee_clamp": {
+      "id": "MBUiQzhsYKCFXOv3y",
+      "partId": "KFTB"
+    },
+    "L1_knee_shim_min": {
+      "id": "MPMeBAljhNUu7EWpx",
+      "partId": "KFLC"
+    },
+    "L1_knee_shim_plus": {
+      "id": "MEByfJQGjBe1MHEv0",
+      "partId": "KFHC"
+    },
+    "L1_knee_disc_min": {
+      "id": "MJT6FcCVrCt7u1Dsl",
+      "partId": "KFDC"
+    },
+    "L1_knee_disc_plus": {
+      "id": "MPoyR6zAXohvMritH",
+      "partId": "KF/B"
+    },
+    "L1_S01_YAW_STS3215": {
+      "id": "M5XJBX/E6sJH/Qiy+",
+      "partId": "JFv"
+    },
+    "L1_S02_HIP_STS3215": {
+      "id": "M6EuT3YiAUBgiq1rD",
+      "partId": "JF/"
+    },
+    "L1_S03_KNEE_STS3215": {
+      "id": "M816TFwaBCmLROeaS",
+      "partId": "KFPB"
+    },
+    "L1_tibia": {
+      "id": "MGjzba43duOSIP2rs",
+      "partId": "KFXB"
+    },
+    "L1_foot": {
+      "id": "MYTZ1XteXz9q35W9N",
+      "partId": "KFbB"
+    },
+    "L1_yaw_clamp": {
+      "id": "MJW2HyowYI1pfAC+t",
+      "partId": "JFz"
+    },
+    "L1_yaw_shim_min": {
+      "id": "M2CCnMgDEIDQEI7sq",
+      "partId": "KFrB"
+    },
+    "L1_yaw_shim_plus": {
+      "id": "MStCl3pNdHPO7Tt/S",
+      "partId": "KFnB"
+    },
+    "L1_yaw_disc_min": {
+      "id": "M5vUb6u2SJjCTfJOt",
+      "partId": "KFjB"
+    },
+    "L1_yaw_disc_plus": {
+      "id": "MdvGCwh7Cif0Cj8Vy",
+      "partId": "KFfB"
+    },
+    "L2_coxa": {
+      "id": "Mqr/bRnHJJ1eq5B4g",
+      "partId": "KFXC"
+    },
+    "L2_coxa_bottom": {
+      "id": "MUVMEzcaHbprCO90i",
+      "partId": "KFbC"
+    },
+    "L2_femur": {
+      "id": "MuYxCoGIgFkmuvgSz",
+      "partId": "KFnC"
+    },
+    "L2_femur_side_plate": {
+      "id": "MUGr6fcXYDymn0NG0",
+      "partId": "KFrC"
+    },
+    "L2_hip_clamp": {
+      "id": "M9WOLHiIL43ccuBpN",
+      "partId": "KFjC"
+    },
+    "L2_hip_shim_min": {
+      "id": "MZoPt5I/mPbBPVLFQ",
+      "partId": "KFbD"
+    },
+    "L2_hip_shim_plus": {
+      "id": "MXTRr/mEmWZHDWJqU",
+      "partId": "KFXD"
+    },
+    "L2_hip_disc_min": {
+      "id": "Mfu9t0wXMWvnBvidF",
+      "partId": "KFTD"
+    },
+    "L2_hip_disc_plus": {
+      "id": "Msb4PnPN52u8k/rWw",
+      "partId": "KFPD"
+    },
+    "L2_knee_clamp": {
+      "id": "M5crg7NO3b09jCOwy",
+      "partId": "KFzC"
+    },
+    "L2_knee_shim_min": {
+      "id": "M0oMysFMQfKSbgjOT",
+      "partId": "KFrD"
+    },
+    "L2_knee_shim_plus": {
+      "id": "M8a7fcGhfhpYTn77u",
+      "partId": "KFnD"
+    },
+    "L2_knee_disc_min": {
+      "id": "MKE2jxF+08gOeL/HI",
+      "partId": "KFjD"
+    },
+    "L2_knee_disc_plus": {
+      "id": "MxV1ZYN9pqIcoYEDA",
+      "partId": "KFfD"
+    },
+    "L2_S04_YAW_STS3215": {
+      "id": "MXA9cng9jjwU5KcOv",
+      "partId": "KFPC"
+    },
+    "L2_S05_HIP_STS3215": {
+      "id": "MYugAL186IacW7cMT",
+      "partId": "KFfC"
+    },
+    "L2_S06_KNEE_STS3215": {
+      "id": "MLSYIf3c0Cmc3Yijm",
+      "partId": "KFvC"
+    },
+    "L2_tibia": {
+      "id": "MtEmMJadJWPuZIQ4S",
+      "partId": "KF3C"
+    },
+    "L2_foot": {
+      "id": "MHqmxhIYeVoNE6OUU",
+      "partId": "KF7C"
+    },
+    "L2_yaw_clamp": {
+      "id": "M7ySF3EH/Wz//be0O",
+      "partId": "KFTC"
+    },
+    "L2_yaw_shim_min": {
+      "id": "M2rlQl3OaF1KgrS7b",
+      "partId": "KFLD"
+    },
+    "L2_yaw_shim_plus": {
+      "id": "MucmRSfeBcgQrjuG8",
+      "partId": "KFHD"
+    },
+    "L2_yaw_disc_min": {
+      "id": "M4ZTYEYGwlSlQAjuW",
+      "partId": "KFDD"
+    },
+    "L2_yaw_disc_plus": {
+      "id": "MyXLH/z49mn7MmiYC",
+      "partId": "KF/C"
+    },
+    "L3_coxa": {
+      "id": "MOZhXg/mVM5WCf4E3",
+      "partId": "KF3D"
+    },
+    "L3_coxa_bottom": {
+      "id": "MIQBGFkbatA41U3tL",
+      "partId": "KF7D"
+    },
+    "L3_femur": {
+      "id": "Meo2uBmYnUzC/dzmh",
+      "partId": "KFHE"
+    },
+    "L3_femur_side_plate": {
+      "id": "MH59ye0tvRuRWOnq4",
+      "partId": "KFLE"
+    },
+    "L3_hip_clamp": {
+      "id": "MghPkwQQ+x+fJlTLA",
+      "partId": "KFDE"
+    },
+    "L3_hip_shim_min": {
+      "id": "MWnwLtTFfpZgnALhT",
+      "partId": "KF7E"
+    },
+    "L3_hip_shim_plus": {
+      "id": "MhBs7IUg/BUitmrhn",
+      "partId": "KF3E"
+    },
+    "L3_hip_disc_min": {
+      "id": "M7WDXQM3xYNyRF/Dh",
+      "partId": "KFzE"
+    },
+    "L3_hip_disc_plus": {
+      "id": "MKRl11b2VEutyBylS",
+      "partId": "KFvE"
+    },
+    "L3_knee_clamp": {
+      "id": "MzJGFVbxro+aCbzf3",
+      "partId": "KFTE"
+    },
+    "L3_knee_shim_min": {
+      "id": "Mnw0Ip79YgXWGPpW/",
+      "partId": "KFLF"
+    },
+    "L3_knee_shim_plus": {
+      "id": "M8ETjZA4A+wd8dNKG",
+      "partId": "KFHF"
+    },
+    "L3_knee_disc_min": {
+      "id": "M2Nr2836GJ/P6h1r0",
+      "partId": "KFDF"
+    },
+    "L3_knee_disc_plus": {
+      "id": "M8eMJDJlsX/WrblKP",
+      "partId": "KF/E"
+    },
+    "L3_S07_YAW_STS3215": {
+      "id": "M4Q+1vyhzXGinAWjX",
+      "partId": "KFvD"
+    },
+    "L3_S08_HIP_STS3215": {
+      "id": "MjF05XGd2THVQDUU8",
+      "partId": "KF/D"
+    },
+    "L3_S09_KNEE_STS3215": {
+      "id": "MYsTzfeMdcYBXukA7",
+      "partId": "KFPE"
+    },
+    "L3_tibia": {
+      "id": "MIu2pKbXS5Mt08ilU",
+      "partId": "KFXE"
+    },
+    "L3_foot": {
+      "id": "MVA1VHHL8OwZhzbZl",
+      "partId": "KFbE"
+    },
+    "L3_yaw_clamp": {
+      "id": "Mn/EH5pDtiXDSIExY",
+      "partId": "KFzD"
+    },
+    "L3_yaw_shim_min": {
+      "id": "Mwhj2V6kmDrUIix2G",
+      "partId": "KFrE"
+    },
+    "L3_yaw_shim_plus": {
+      "id": "MKzYWZ6m7a+c5ekDK",
+      "partId": "KFnE"
+    },
+    "L3_yaw_disc_min": {
+      "id": "MoXpeKCVHrUbMK37o",
+      "partId": "KFjE"
+    },
+    "L3_yaw_disc_plus": {
+      "id": "MOZo1fBD4b36I+oxL",
+      "partId": "KFfE"
+    },
+    "L4_coxa": {
+      "id": "MitnodB6Kwb0Y85Lp",
+      "partId": "KFXF"
+    },
+    "L4_coxa_bottom": {
+      "id": "MF6q1Qi6TnxApgHQV",
+      "partId": "KFbF"
+    },
+    "L4_femur": {
+      "id": "M2KCqbex9qIGW1ZFV",
+      "partId": "KFnF"
+    },
+    "L4_femur_side_plate": {
+      "id": "MSMfEMUD/qHuf6p7F",
+      "partId": "KFrF"
+    },
+    "L4_hip_clamp": {
+      "id": "Mpy5UuIt7F/PFudvl",
+      "partId": "KFjF"
+    },
+    "L4_hip_shim_min": {
+      "id": "MSfcqFyRlgvyJheq5",
+      "partId": "KFbG"
+    },
+    "L4_hip_shim_plus": {
+      "id": "Mqm7ga3Ynopq1M3rP",
+      "partId": "KFXG"
+    },
+    "L4_hip_disc_min": {
+      "id": "MlkJjfL4v9y18jz18",
+      "partId": "KFTG"
+    },
+    "L4_hip_disc_plus": {
+      "id": "MBF/Fqd8szbfWh81g",
+      "partId": "KFPG"
+    },
+    "L4_knee_clamp": {
+      "id": "MydNvDYrFxKR7rWxB",
+      "partId": "KFzF"
+    },
+    "L4_knee_shim_min": {
+      "id": "MYXcIBsRw+w1yQwpv",
+      "partId": "KFrG"
+    },
+    "L4_knee_shim_plus": {
+      "id": "MAE7Dzdr+gnoUAV8E",
+      "partId": "KFnG"
+    },
+    "L4_knee_disc_min": {
+      "id": "MQvBOlekMVwmECllw",
+      "partId": "KFjG"
+    },
+    "L4_knee_disc_plus": {
+      "id": "MJYryjJzXJcC4FKmj",
+      "partId": "KFfG"
+    },
+    "L4_S10_YAW_STS3215": {
+      "id": "M6YxP4sCSRERPdedx",
+      "partId": "KFPF"
+    },
+    "L4_S11_HIP_STS3215": {
+      "id": "MVeHFKMZe/YjkjfHy",
+      "partId": "KFfF"
+    },
+    "L4_S12_KNEE_STS3215": {
+      "id": "MELQ6HRvb7ma+kt0T",
+      "partId": "KFvF"
+    },
+    "L4_tibia": {
+      "id": "MaNBaXeSPCvOuugNs",
+      "partId": "KF3F"
+    },
+    "L4_foot": {
+      "id": "M+pNmObOTRrDI1yLK",
+      "partId": "KF7F"
+    },
+    "L4_yaw_clamp": {
+      "id": "MPvaSIQXd8NVCBaXu",
+      "partId": "KFTF"
+    },
+    "L4_yaw_shim_min": {
+      "id": "Mv80ioNy0qLkL6Lth",
+      "partId": "KFLG"
+    },
+    "L4_yaw_shim_plus": {
+      "id": "Mhe5YE1jOfMGeBXIz",
+      "partId": "KFHG"
+    },
+    "L4_yaw_disc_min": {
+      "id": "Mya8or9ciKSJXhGC2",
+      "partId": "KFDG"
+    },
+    "L4_yaw_disc_plus": {
+      "id": "MzA7DFgEZ0bjd5IPu",
+      "partId": "KF/F"
+    },
+    "L5_coxa": {
+      "id": "MVG3/D2irNVw2xMms",
+      "partId": "KF3G"
+    },
+    "L5_coxa_bottom": {
+      "id": "MV/txkxBCiTta+vtu",
+      "partId": "KF7G"
+    },
+    "L5_femur": {
+      "id": "MNTKDb3xTzUCrqbdW",
+      "partId": "KFHH"
+    },
+    "L5_femur_side_plate": {
+      "id": "MPyGAGnhUuK7agJ39",
+      "partId": "KFLH"
+    },
+    "L5_hip_clamp": {
+      "id": "MhhxJd9B9oLc8v8pN",
+      "partId": "KFDH"
+    },
+    "L5_hip_shim_min": {
+      "id": "MSjeJoA29BS5sOugt",
+      "partId": "KF7H"
+    },
+    "L5_hip_shim_plus": {
+      "id": "Me5/KEHU/HZDM02ZP",
+      "partId": "KF3H"
+    },
+    "L5_hip_disc_min": {
+      "id": "Md/lfU9je1uoih4tH",
+      "partId": "KFzH"
+    },
+    "L5_hip_disc_plus": {
+      "id": "MmwjusicTA8TY4kw8",
+      "partId": "KFvH"
+    },
+    "L5_knee_clamp": {
+      "id": "MKiinQcyJ14M07R4P",
+      "partId": "KFTH"
+    },
+    "L5_knee_shim_min": {
+      "id": "MeKmh7pK/jvr6/On6",
+      "partId": "KFLI"
+    },
+    "L5_knee_shim_plus": {
+      "id": "MiAJbt7oObSLpcd0I",
+      "partId": "KFHI"
+    },
+    "L5_knee_disc_min": {
+      "id": "MbIVRtbls3Squ3UoR",
+      "partId": "KFDI"
+    },
+    "L5_knee_disc_plus": {
+      "id": "MMj7FLw+M2zP9KQlg",
+      "partId": "KF/H"
+    },
+    "L5_S13_YAW_STS3215": {
+      "id": "M27475hrV51pK/m4P",
+      "partId": "KFvG"
+    },
+    "L5_S14_HIP_STS3215": {
+      "id": "M4xvwIUWvdlyfJil8",
+      "partId": "KF/G"
+    },
+    "L5_S15_KNEE_STS3215": {
+      "id": "ME7glskZ15DTUUFW3",
+      "partId": "KFPH"
+    },
+    "L5_tibia": {
+      "id": "M72ucmpUWOiuhuRs6",
+      "partId": "KFXH"
+    },
+    "L5_foot": {
+      "id": "M5gVNgSCJc2ocXdFx",
+      "partId": "KFbH"
+    },
+    "L5_yaw_clamp": {
+      "id": "Mt6qauacvOQCCvPgQ",
+      "partId": "KFzG"
+    },
+    "L5_yaw_shim_min": {
+      "id": "MjdvSGFTAqasz/j5L",
+      "partId": "KFrH"
+    },
+    "L5_yaw_shim_plus": {
+      "id": "MAtr9c7y05aUB5Cne",
+      "partId": "KFnH"
+    },
+    "L5_yaw_disc_min": {
+      "id": "MZs4uFwpdRvetK7o4",
+      "partId": "KFjH"
+    },
+    "L5_yaw_disc_plus": {
+      "id": "MllgXxuUOilHuAqr8",
+      "partId": "KFfH"
+    },
+    "L6_coxa": {
+      "id": "MYduqzDiUKFYpQ5Cg",
+      "partId": "KFXI"
+    },
+    "L6_coxa_bottom": {
+      "id": "MY/k1b1MyaRiUHUp8",
+      "partId": "KFbI"
+    },
+    "L6_femur": {
+      "id": "MS+ER5ibK7elazKSR",
+      "partId": "KFnI"
+    },
+    "L6_femur_side_plate": {
+      "id": "Mrq3uYML0w9qe+7Xa",
+      "partId": "KFrI"
+    },
+    "L6_hip_clamp": {
+      "id": "MQ+eOTP5RKAIqD8aF",
+      "partId": "KFjI"
+    },
+    "L6_hip_shim_min": {
+      "id": "Mtf8UF0cn1p1wKIC1",
+      "partId": "KFbJ"
+    },
+    "L6_hip_shim_plus": {
+      "id": "MLaR+b9iZt3C0JDcN",
+      "partId": "KFXJ"
+    },
+    "L6_hip_disc_min": {
+      "id": "McoURA50xeWu7GMoO",
+      "partId": "KFTJ"
+    },
+    "L6_hip_disc_plus": {
+      "id": "MdD8P5lxhMmwtaQQK",
+      "partId": "KFPJ"
+    },
+    "L6_knee_clamp": {
+      "id": "MQI4g7Iq7PhMZ5cuy",
+      "partId": "KFzI"
+    },
+    "L6_knee_shim_min": {
+      "id": "M1DWawFUC+ubkw6bl",
+      "partId": "KFrJ"
+    },
+    "L6_knee_shim_plus": {
+      "id": "MCh/a3if/st0C/bwi",
+      "partId": "KFnJ"
+    },
+    "L6_knee_disc_min": {
+      "id": "M57VHeuVr7J564TJn",
+      "partId": "KFjJ"
+    },
+    "L6_knee_disc_plus": {
+      "id": "MhWguOxDat5nSqHj7",
+      "partId": "KFfJ"
+    },
+    "L6_S16_YAW_STS3215": {
+      "id": "MZRINPsrhdAvt67RA",
+      "partId": "KFPI"
+    },
+    "L6_S17_HIP_STS3215": {
+      "id": "MJ3+fURHQpnwi7WES",
+      "partId": "KFfI"
+    },
+    "L6_S18_KNEE_STS3215": {
+      "id": "MxKPd3PK85pFUk5Op",
+      "partId": "KFvI"
+    },
+    "L6_tibia": {
+      "id": "MH8eWmxxxHUCgcQfS",
+      "partId": "KF3I"
+    },
+    "L6_foot": {
+      "id": "M0rP40g1hsihvgDEL",
+      "partId": "KF7I"
+    },
+    "L6_yaw_clamp": {
+      "id": "Myc0NPlc1vUFVzNgd",
+      "partId": "KFTI"
+    },
+    "L6_yaw_shim_min": {
+      "id": "MgvijE9DbRa15KgH9",
+      "partId": "KFLJ"
+    },
+    "L6_yaw_shim_plus": {
+      "id": "MLOl+TpQymDO3QQIy",
+      "partId": "KFHJ"
+    },
+    "L6_yaw_disc_min": {
+      "id": "MBtdk+BQmbuMpe10w",
+      "partId": "KFDJ"
+    },
+    "L6_yaw_disc_plus": {
+      "id": "Mf7hry2NafXBJmHsS",
+      "partId": "KF/I"
+    },
+    "PCB_spacer_-32_-24": {
+      "id": "MgFU1L9TANwzz3kgV",
+      "partId": "JFf"
+    },
+    "PCB_spacer_-32_24": {
+      "id": "Mv5VFIMCpBRJqrEpb",
+      "partId": "JFj"
+    },
+    "PCB_spacer_32_-24": {
+      "id": "MaPVw3kmCO0zXya4y",
+      "partId": "JFn"
+    },
+    "PCB_spacer_32_24": {
+      "id": "MCycCygFLb+OG9gUd",
+      "partId": "JFr"
+    },
+    "REF_3S_BATTERY_115x40x35": {
+      "id": "MCLfCgvDHjPXwDkvV",
+      "partId": "JFX"
+    },
+    "REF_CONTROLLER_90x60x18": {
+      "id": "MrIjiZ11AVMIRRaho",
+      "partId": "JFb"
+    }
+  },
+  "fastened": [
+    {
+      "name": "F_02_DORSAL_DECK",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "02_DORSAL_DECK"
+    },
+    {
+      "name": "F_03_BATTERY_TRAY",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "03_BATTERY_TRAY"
+    },
+    {
+      "name": "F_04_CONTROLLER_PLATE",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "04_CONTROLLER_PLATE"
+    },
+    {
+      "name": "F_05_SHELL",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "05_SHELL"
+    },
+    {
+      "name": "F_REF_3S_BATTERY_115x40x35",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "REF_3S_BATTERY_115x40x35"
+    },
+    {
+      "name": "F_REF_CONTROLLER_90x60x18",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "REF_CONTROLLER_90x60x18"
+    },
+    {
+      "name": "F_PCB_spacer_-32_-24",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "PCB_spacer_-32_-24"
+    },
+    {
+      "name": "F_PCB_spacer_-32_24",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "PCB_spacer_-32_24"
+    },
+    {
+      "name": "F_PCB_spacer_32_-24",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "PCB_spacer_32_-24"
+    },
+    {
+      "name": "F_PCB_spacer_32_24",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "PCB_spacer_32_24"
+    },
+    {
+      "name": "F_L1_S01_YAW_STS3215",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "L1_S01_YAW_STS3215"
+    },
+    {
+      "name": "F_L1_yaw_clamp",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "L1_yaw_clamp"
+    },
+    {
+      "name": "F_L1_coxa_bottom",
+      "type": "FASTENED",
+      "parent": "L1_coxa",
+      "child": "L1_coxa_bottom"
+    },
+    {
+      "name": "F_L1_S02_HIP_STS3215",
+      "type": "FASTENED",
+      "parent": "L1_coxa",
+      "child": "L1_S02_HIP_STS3215"
+    },
+    {
+      "name": "F_L1_hip_clamp",
+      "type": "FASTENED",
+      "parent": "L1_coxa",
+      "child": "L1_hip_clamp"
+    },
+    {
+      "name": "F_L1_femur_side_plate",
+      "type": "FASTENED",
+      "parent": "L1_femur",
+      "child": "L1_femur_side_plate"
+    },
+    {
+      "name": "F_L1_S03_KNEE_STS3215",
+      "type": "FASTENED",
+      "parent": "L1_femur",
+      "child": "L1_S03_KNEE_STS3215"
+    },
+    {
+      "name": "F_L1_knee_clamp",
+      "type": "FASTENED",
+      "parent": "L1_femur",
+      "child": "L1_knee_clamp"
+    },
+    {
+      "name": "F_L1_foot",
+      "type": "FASTENED",
+      "parent": "L1_tibia",
+      "child": "L1_foot"
+    },
+    {
+      "name": "F_L1_yaw_disc_plus",
+      "type": "FASTENED",
+      "parent": "L1_coxa",
+      "child": "L1_yaw_disc_plus"
+    },
+    {
+      "name": "F_L1_yaw_disc_min",
+      "type": "FASTENED",
+      "parent": "L1_coxa",
+      "child": "L1_yaw_disc_min"
+    },
+    {
+      "name": "F_L1_yaw_shim_plus",
+      "type": "FASTENED",
+      "parent": "L1_coxa",
+      "child": "L1_yaw_shim_plus"
+    },
+    {
+      "name": "F_L1_yaw_shim_min",
+      "type": "FASTENED",
+      "parent": "L1_coxa",
+      "child": "L1_yaw_shim_min"
+    },
+    {
+      "name": "F_L1_hip_disc_plus",
+      "type": "FASTENED",
+      "parent": "L1_femur",
+      "child": "L1_hip_disc_plus"
+    },
+    {
+      "name": "F_L1_hip_disc_min",
+      "type": "FASTENED",
+      "parent": "L1_femur",
+      "child": "L1_hip_disc_min"
+    },
+    {
+      "name": "F_L1_hip_shim_plus",
+      "type": "FASTENED",
+      "parent": "L1_femur",
+      "child": "L1_hip_shim_plus"
+    },
+    {
+      "name": "F_L1_hip_shim_min",
+      "type": "FASTENED",
+      "parent": "L1_femur",
+      "child": "L1_hip_shim_min"
+    },
+    {
+      "name": "F_L1_knee_disc_plus",
+      "type": "FASTENED",
+      "parent": "L1_tibia",
+      "child": "L1_knee_disc_plus"
+    },
+    {
+      "name": "F_L1_knee_disc_min",
+      "type": "FASTENED",
+      "parent": "L1_tibia",
+      "child": "L1_knee_disc_min"
+    },
+    {
+      "name": "F_L1_knee_shim_plus",
+      "type": "FASTENED",
+      "parent": "L1_tibia",
+      "child": "L1_knee_shim_plus"
+    },
+    {
+      "name": "F_L1_knee_shim_min",
+      "type": "FASTENED",
+      "parent": "L1_tibia",
+      "child": "L1_knee_shim_min"
+    },
+    {
+      "name": "F_L2_S04_YAW_STS3215",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "L2_S04_YAW_STS3215"
+    },
+    {
+      "name": "F_L2_yaw_clamp",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "L2_yaw_clamp"
+    },
+    {
+      "name": "F_L2_coxa_bottom",
+      "type": "FASTENED",
+      "parent": "L2_coxa",
+      "child": "L2_coxa_bottom"
+    },
+    {
+      "name": "F_L2_S05_HIP_STS3215",
+      "type": "FASTENED",
+      "parent": "L2_coxa",
+      "child": "L2_S05_HIP_STS3215"
+    },
+    {
+      "name": "F_L2_hip_clamp",
+      "type": "FASTENED",
+      "parent": "L2_coxa",
+      "child": "L2_hip_clamp"
+    },
+    {
+      "name": "F_L2_femur_side_plate",
+      "type": "FASTENED",
+      "parent": "L2_femur",
+      "child": "L2_femur_side_plate"
+    },
+    {
+      "name": "F_L2_S06_KNEE_STS3215",
+      "type": "FASTENED",
+      "parent": "L2_femur",
+      "child": "L2_S06_KNEE_STS3215"
+    },
+    {
+      "name": "F_L2_knee_clamp",
+      "type": "FASTENED",
+      "parent": "L2_femur",
+      "child": "L2_knee_clamp"
+    },
+    {
+      "name": "F_L2_foot",
+      "type": "FASTENED",
+      "parent": "L2_tibia",
+      "child": "L2_foot"
+    },
+    {
+      "name": "F_L2_yaw_disc_plus",
+      "type": "FASTENED",
+      "parent": "L2_coxa",
+      "child": "L2_yaw_disc_plus"
+    },
+    {
+      "name": "F_L2_yaw_disc_min",
+      "type": "FASTENED",
+      "parent": "L2_coxa",
+      "child": "L2_yaw_disc_min"
+    },
+    {
+      "name": "F_L2_yaw_shim_plus",
+      "type": "FASTENED",
+      "parent": "L2_coxa",
+      "child": "L2_yaw_shim_plus"
+    },
+    {
+      "name": "F_L2_yaw_shim_min",
+      "type": "FASTENED",
+      "parent": "L2_coxa",
+      "child": "L2_yaw_shim_min"
+    },
+    {
+      "name": "F_L2_hip_disc_plus",
+      "type": "FASTENED",
+      "parent": "L2_femur",
+      "child": "L2_hip_disc_plus"
+    },
+    {
+      "name": "F_L2_hip_disc_min",
+      "type": "FASTENED",
+      "parent": "L2_femur",
+      "child": "L2_hip_disc_min"
+    },
+    {
+      "name": "F_L2_hip_shim_plus",
+      "type": "FASTENED",
+      "parent": "L2_femur",
+      "child": "L2_hip_shim_plus"
+    },
+    {
+      "name": "F_L2_hip_shim_min",
+      "type": "FASTENED",
+      "parent": "L2_femur",
+      "child": "L2_hip_shim_min"
+    },
+    {
+      "name": "F_L2_knee_disc_plus",
+      "type": "FASTENED",
+      "parent": "L2_tibia",
+      "child": "L2_knee_disc_plus"
+    },
+    {
+      "name": "F_L2_knee_disc_min",
+      "type": "FASTENED",
+      "parent": "L2_tibia",
+      "child": "L2_knee_disc_min"
+    },
+    {
+      "name": "F_L2_knee_shim_plus",
+      "type": "FASTENED",
+      "parent": "L2_tibia",
+      "child": "L2_knee_shim_plus"
+    },
+    {
+      "name": "F_L2_knee_shim_min",
+      "type": "FASTENED",
+      "parent": "L2_tibia",
+      "child": "L2_knee_shim_min"
+    },
+    {
+      "name": "F_L3_S07_YAW_STS3215",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "L3_S07_YAW_STS3215"
+    },
+    {
+      "name": "F_L3_yaw_clamp",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "L3_yaw_clamp"
+    },
+    {
+      "name": "F_L3_coxa_bottom",
+      "type": "FASTENED",
+      "parent": "L3_coxa",
+      "child": "L3_coxa_bottom"
+    },
+    {
+      "name": "F_L3_S08_HIP_STS3215",
+      "type": "FASTENED",
+      "parent": "L3_coxa",
+      "child": "L3_S08_HIP_STS3215"
+    },
+    {
+      "name": "F_L3_hip_clamp",
+      "type": "FASTENED",
+      "parent": "L3_coxa",
+      "child": "L3_hip_clamp"
+    },
+    {
+      "name": "F_L3_femur_side_plate",
+      "type": "FASTENED",
+      "parent": "L3_femur",
+      "child": "L3_femur_side_plate"
+    },
+    {
+      "name": "F_L3_S09_KNEE_STS3215",
+      "type": "FASTENED",
+      "parent": "L3_femur",
+      "child": "L3_S09_KNEE_STS3215"
+    },
+    {
+      "name": "F_L3_knee_clamp",
+      "type": "FASTENED",
+      "parent": "L3_femur",
+      "child": "L3_knee_clamp"
+    },
+    {
+      "name": "F_L3_foot",
+      "type": "FASTENED",
+      "parent": "L3_tibia",
+      "child": "L3_foot"
+    },
+    {
+      "name": "F_L3_yaw_disc_plus",
+      "type": "FASTENED",
+      "parent": "L3_coxa",
+      "child": "L3_yaw_disc_plus"
+    },
+    {
+      "name": "F_L3_yaw_disc_min",
+      "type": "FASTENED",
+      "parent": "L3_coxa",
+      "child": "L3_yaw_disc_min"
+    },
+    {
+      "name": "F_L3_yaw_shim_plus",
+      "type": "FASTENED",
+      "parent": "L3_coxa",
+      "child": "L3_yaw_shim_plus"
+    },
+    {
+      "name": "F_L3_yaw_shim_min",
+      "type": "FASTENED",
+      "parent": "L3_coxa",
+      "child": "L3_yaw_shim_min"
+    },
+    {
+      "name": "F_L3_hip_disc_plus",
+      "type": "FASTENED",
+      "parent": "L3_femur",
+      "child": "L3_hip_disc_plus"
+    },
+    {
+      "name": "F_L3_hip_disc_min",
+      "type": "FASTENED",
+      "parent": "L3_femur",
+      "child": "L3_hip_disc_min"
+    },
+    {
+      "name": "F_L3_hip_shim_plus",
+      "type": "FASTENED",
+      "parent": "L3_femur",
+      "child": "L3_hip_shim_plus"
+    },
+    {
+      "name": "F_L3_hip_shim_min",
+      "type": "FASTENED",
+      "parent": "L3_femur",
+      "child": "L3_hip_shim_min"
+    },
+    {
+      "name": "F_L3_knee_disc_plus",
+      "type": "FASTENED",
+      "parent": "L3_tibia",
+      "child": "L3_knee_disc_plus"
+    },
+    {
+      "name": "F_L3_knee_disc_min",
+      "type": "FASTENED",
+      "parent": "L3_tibia",
+      "child": "L3_knee_disc_min"
+    },
+    {
+      "name": "F_L3_knee_shim_plus",
+      "type": "FASTENED",
+      "parent": "L3_tibia",
+      "child": "L3_knee_shim_plus"
+    },
+    {
+      "name": "F_L3_knee_shim_min",
+      "type": "FASTENED",
+      "parent": "L3_tibia",
+      "child": "L3_knee_shim_min"
+    },
+    {
+      "name": "F_L4_S10_YAW_STS3215",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "L4_S10_YAW_STS3215"
+    },
+    {
+      "name": "F_L4_yaw_clamp",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "L4_yaw_clamp"
+    },
+    {
+      "name": "F_L4_coxa_bottom",
+      "type": "FASTENED",
+      "parent": "L4_coxa",
+      "child": "L4_coxa_bottom"
+    },
+    {
+      "name": "F_L4_S11_HIP_STS3215",
+      "type": "FASTENED",
+      "parent": "L4_coxa",
+      "child": "L4_S11_HIP_STS3215"
+    },
+    {
+      "name": "F_L4_hip_clamp",
+      "type": "FASTENED",
+      "parent": "L4_coxa",
+      "child": "L4_hip_clamp"
+    },
+    {
+      "name": "F_L4_femur_side_plate",
+      "type": "FASTENED",
+      "parent": "L4_femur",
+      "child": "L4_femur_side_plate"
+    },
+    {
+      "name": "F_L4_S12_KNEE_STS3215",
+      "type": "FASTENED",
+      "parent": "L4_femur",
+      "child": "L4_S12_KNEE_STS3215"
+    },
+    {
+      "name": "F_L4_knee_clamp",
+      "type": "FASTENED",
+      "parent": "L4_femur",
+      "child": "L4_knee_clamp"
+    },
+    {
+      "name": "F_L4_foot",
+      "type": "FASTENED",
+      "parent": "L4_tibia",
+      "child": "L4_foot"
+    },
+    {
+      "name": "F_L4_yaw_disc_plus",
+      "type": "FASTENED",
+      "parent": "L4_coxa",
+      "child": "L4_yaw_disc_plus"
+    },
+    {
+      "name": "F_L4_yaw_disc_min",
+      "type": "FASTENED",
+      "parent": "L4_coxa",
+      "child": "L4_yaw_disc_min"
+    },
+    {
+      "name": "F_L4_yaw_shim_plus",
+      "type": "FASTENED",
+      "parent": "L4_coxa",
+      "child": "L4_yaw_shim_plus"
+    },
+    {
+      "name": "F_L4_yaw_shim_min",
+      "type": "FASTENED",
+      "parent": "L4_coxa",
+      "child": "L4_yaw_shim_min"
+    },
+    {
+      "name": "F_L4_hip_disc_plus",
+      "type": "FASTENED",
+      "parent": "L4_femur",
+      "child": "L4_hip_disc_plus"
+    },
+    {
+      "name": "F_L4_hip_disc_min",
+      "type": "FASTENED",
+      "parent": "L4_femur",
+      "child": "L4_hip_disc_min"
+    },
+    {
+      "name": "F_L4_hip_shim_plus",
+      "type": "FASTENED",
+      "parent": "L4_femur",
+      "child": "L4_hip_shim_plus"
+    },
+    {
+      "name": "F_L4_hip_shim_min",
+      "type": "FASTENED",
+      "parent": "L4_femur",
+      "child": "L4_hip_shim_min"
+    },
+    {
+      "name": "F_L4_knee_disc_plus",
+      "type": "FASTENED",
+      "parent": "L4_tibia",
+      "child": "L4_knee_disc_plus"
+    },
+    {
+      "name": "F_L4_knee_disc_min",
+      "type": "FASTENED",
+      "parent": "L4_tibia",
+      "child": "L4_knee_disc_min"
+    },
+    {
+      "name": "F_L4_knee_shim_plus",
+      "type": "FASTENED",
+      "parent": "L4_tibia",
+      "child": "L4_knee_shim_plus"
+    },
+    {
+      "name": "F_L4_knee_shim_min",
+      "type": "FASTENED",
+      "parent": "L4_tibia",
+      "child": "L4_knee_shim_min"
+    },
+    {
+      "name": "F_L5_S13_YAW_STS3215",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "L5_S13_YAW_STS3215"
+    },
+    {
+      "name": "F_L5_yaw_clamp",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "L5_yaw_clamp"
+    },
+    {
+      "name": "F_L5_coxa_bottom",
+      "type": "FASTENED",
+      "parent": "L5_coxa",
+      "child": "L5_coxa_bottom"
+    },
+    {
+      "name": "F_L5_S14_HIP_STS3215",
+      "type": "FASTENED",
+      "parent": "L5_coxa",
+      "child": "L5_S14_HIP_STS3215"
+    },
+    {
+      "name": "F_L5_hip_clamp",
+      "type": "FASTENED",
+      "parent": "L5_coxa",
+      "child": "L5_hip_clamp"
+    },
+    {
+      "name": "F_L5_femur_side_plate",
+      "type": "FASTENED",
+      "parent": "L5_femur",
+      "child": "L5_femur_side_plate"
+    },
+    {
+      "name": "F_L5_S15_KNEE_STS3215",
+      "type": "FASTENED",
+      "parent": "L5_femur",
+      "child": "L5_S15_KNEE_STS3215"
+    },
+    {
+      "name": "F_L5_knee_clamp",
+      "type": "FASTENED",
+      "parent": "L5_femur",
+      "child": "L5_knee_clamp"
+    },
+    {
+      "name": "F_L5_foot",
+      "type": "FASTENED",
+      "parent": "L5_tibia",
+      "child": "L5_foot"
+    },
+    {
+      "name": "F_L5_yaw_disc_plus",
+      "type": "FASTENED",
+      "parent": "L5_coxa",
+      "child": "L5_yaw_disc_plus"
+    },
+    {
+      "name": "F_L5_yaw_disc_min",
+      "type": "FASTENED",
+      "parent": "L5_coxa",
+      "child": "L5_yaw_disc_min"
+    },
+    {
+      "name": "F_L5_yaw_shim_plus",
+      "type": "FASTENED",
+      "parent": "L5_coxa",
+      "child": "L5_yaw_shim_plus"
+    },
+    {
+      "name": "F_L5_yaw_shim_min",
+      "type": "FASTENED",
+      "parent": "L5_coxa",
+      "child": "L5_yaw_shim_min"
+    },
+    {
+      "name": "F_L5_hip_disc_plus",
+      "type": "FASTENED",
+      "parent": "L5_femur",
+      "child": "L5_hip_disc_plus"
+    },
+    {
+      "name": "F_L5_hip_disc_min",
+      "type": "FASTENED",
+      "parent": "L5_femur",
+      "child": "L5_hip_disc_min"
+    },
+    {
+      "name": "F_L5_hip_shim_plus",
+      "type": "FASTENED",
+      "parent": "L5_femur",
+      "child": "L5_hip_shim_plus"
+    },
+    {
+      "name": "F_L5_hip_shim_min",
+      "type": "FASTENED",
+      "parent": "L5_femur",
+      "child": "L5_hip_shim_min"
+    },
+    {
+      "name": "F_L5_knee_disc_plus",
+      "type": "FASTENED",
+      "parent": "L5_tibia",
+      "child": "L5_knee_disc_plus"
+    },
+    {
+      "name": "F_L5_knee_disc_min",
+      "type": "FASTENED",
+      "parent": "L5_tibia",
+      "child": "L5_knee_disc_min"
+    },
+    {
+      "name": "F_L5_knee_shim_plus",
+      "type": "FASTENED",
+      "parent": "L5_tibia",
+      "child": "L5_knee_shim_plus"
+    },
+    {
+      "name": "F_L5_knee_shim_min",
+      "type": "FASTENED",
+      "parent": "L5_tibia",
+      "child": "L5_knee_shim_min"
+    },
+    {
+      "name": "F_L6_S16_YAW_STS3215",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "L6_S16_YAW_STS3215"
+    },
+    {
+      "name": "F_L6_yaw_clamp",
+      "type": "FASTENED",
+      "parent": "01_CHASSIS",
+      "child": "L6_yaw_clamp"
+    },
+    {
+      "name": "F_L6_coxa_bottom",
+      "type": "FASTENED",
+      "parent": "L6_coxa",
+      "child": "L6_coxa_bottom"
+    },
+    {
+      "name": "F_L6_S17_HIP_STS3215",
+      "type": "FASTENED",
+      "parent": "L6_coxa",
+      "child": "L6_S17_HIP_STS3215"
+    },
+    {
+      "name": "F_L6_hip_clamp",
+      "type": "FASTENED",
+      "parent": "L6_coxa",
+      "child": "L6_hip_clamp"
+    },
+    {
+      "name": "F_L6_femur_side_plate",
+      "type": "FASTENED",
+      "parent": "L6_femur",
+      "child": "L6_femur_side_plate"
+    },
+    {
+      "name": "F_L6_S18_KNEE_STS3215",
+      "type": "FASTENED",
+      "parent": "L6_femur",
+      "child": "L6_S18_KNEE_STS3215"
+    },
+    {
+      "name": "F_L6_knee_clamp",
+      "type": "FASTENED",
+      "parent": "L6_femur",
+      "child": "L6_knee_clamp"
+    },
+    {
+      "name": "F_L6_foot",
+      "type": "FASTENED",
+      "parent": "L6_tibia",
+      "child": "L6_foot"
+    },
+    {
+      "name": "F_L6_yaw_disc_plus",
+      "type": "FASTENED",
+      "parent": "L6_coxa",
+      "child": "L6_yaw_disc_plus"
+    },
+    {
+      "name": "F_L6_yaw_disc_min",
+      "type": "FASTENED",
+      "parent": "L6_coxa",
+      "child": "L6_yaw_disc_min"
+    },
+    {
+      "name": "F_L6_yaw_shim_plus",
+      "type": "FASTENED",
+      "parent": "L6_coxa",
+      "child": "L6_yaw_shim_plus"
+    },
+    {
+      "name": "F_L6_yaw_shim_min",
+      "type": "FASTENED",
+      "parent": "L6_coxa",
+      "child": "L6_yaw_shim_min"
+    },
+    {
+      "name": "F_L6_hip_disc_plus",
+      "type": "FASTENED",
+      "parent": "L6_femur",
+      "child": "L6_hip_disc_plus"
+    },
+    {
+      "name": "F_L6_hip_disc_min",
+      "type": "FASTENED",
+      "parent": "L6_femur",
+      "child": "L6_hip_disc_min"
+    },
+    {
+      "name": "F_L6_hip_shim_plus",
+      "type": "FASTENED",
+      "parent": "L6_femur",
+      "child": "L6_hip_shim_plus"
+    },
+    {
+      "name": "F_L6_hip_shim_min",
+      "type": "FASTENED",
+      "parent": "L6_femur",
+      "child": "L6_hip_shim_min"
+    },
+    {
+      "name": "F_L6_knee_disc_plus",
+      "type": "FASTENED",
+      "parent": "L6_tibia",
+      "child": "L6_knee_disc_plus"
+    },
+    {
+      "name": "F_L6_knee_disc_min",
+      "type": "FASTENED",
+      "parent": "L6_tibia",
+      "child": "L6_knee_disc_min"
+    },
+    {
+      "name": "F_L6_knee_shim_plus",
+      "type": "FASTENED",
+      "parent": "L6_tibia",
+      "child": "L6_knee_shim_plus"
+    },
+    {
+      "name": "F_L6_knee_shim_min",
+      "type": "FASTENED",
+      "parent": "L6_tibia",
+      "child": "L6_knee_shim_min"
+    }
+  ],
+  "revolute": [
+    {
+      "name": "R_L1_yaw",
+      "type": "REVOLUTE",
+      "parent": "01_CHASSIS",
+      "child": "L1_coxa",
+      "origin_m": [
+        0.06081118318204309,
+        0.06081118318204308,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range_delta_deg": [
+        -20,
+        20
+      ]
+    },
+    {
+      "name": "R_L1_hip",
+      "type": "REVOLUTE",
+      "parent": "L1_coxa",
+      "child": "L1_femur",
+      "origin_m": [
+        0.09616652224137047,
+        0.09616652224137046,
+        0.0
+      ],
+      "axis": [
+        0.7071067811865475,
+        -0.7071067811865476,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ]
+    },
+    {
+      "name": "R_L1_knee",
+      "type": "REVOLUTE",
+      "parent": "L1_femur",
+      "child": "L1_tibia",
+      "origin_m": [
+        0.14944151298896358,
+        0.14944151298896355,
+        0.020187885517996617
+      ],
+      "axis": [
+        0.7071067811865475,
+        -0.7071067811865476,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ]
+    },
+    {
+      "name": "R_L2_yaw",
+      "type": "REVOLUTE",
+      "parent": "01_CHASSIS",
+      "child": "L2_coxa",
+      "origin_m": [
+        5.265981236333619e-18,
+        0.086,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range_delta_deg": [
+        -20,
+        20
+      ]
+    },
+    {
+      "name": "R_L2_hip",
+      "type": "REVOLUTE",
+      "parent": "L2_coxa",
+      "child": "L2_femur",
+      "origin_m": [
+        8.327598234202002e-18,
+        0.136,
+        0.0
+      ],
+      "axis": [
+        1.0,
+        -6.123233995736766e-17,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ]
+    },
+    {
+      "name": "R_L2_knee",
+      "type": "REVOLUTE",
+      "parent": "L2_femur",
+      "child": "L2_tibia",
+      "origin_m": [
+        1.2940978322578814e-17,
+        0.21134221445054735,
+        0.020187885517996617
+      ],
+      "axis": [
+        1.0,
+        -6.123233995736766e-17,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ]
+    },
+    {
+      "name": "R_L3_yaw",
+      "type": "REVOLUTE",
+      "parent": "01_CHASSIS",
+      "child": "L3_coxa",
+      "origin_m": [
+        -0.06081118318204308,
+        0.06081118318204309,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range_delta_deg": [
+        -20,
+        20
+      ]
+    },
+    {
+      "name": "R_L3_hip",
+      "type": "REVOLUTE",
+      "parent": "L3_coxa",
+      "child": "L3_femur",
+      "origin_m": [
+        -0.09616652224137046,
+        0.09616652224137047,
+        0.0
+      ],
+      "axis": [
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ]
+    },
+    {
+      "name": "R_L3_knee",
+      "type": "REVOLUTE",
+      "parent": "L3_femur",
+      "child": "L3_tibia",
+      "origin_m": [
+        -0.14944151298896355,
+        0.14944151298896358,
+        0.020187885517996617
+      ],
+      "axis": [
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ]
+    },
+    {
+      "name": "R_L4_yaw",
+      "type": "REVOLUTE",
+      "parent": "01_CHASSIS",
+      "child": "L4_coxa",
+      "origin_m": [
+        -0.060811183182043094,
+        -0.06081118318204308,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range_delta_deg": [
+        -20,
+        20
+      ]
+    },
+    {
+      "name": "R_L4_hip",
+      "type": "REVOLUTE",
+      "parent": "L4_coxa",
+      "child": "L4_femur",
+      "origin_m": [
+        -0.09616652224137048,
+        -0.09616652224137046,
+        0.0
+      ],
+      "axis": [
+        -0.7071067811865475,
+        0.7071067811865477,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ]
+    },
+    {
+      "name": "R_L4_knee",
+      "type": "REVOLUTE",
+      "parent": "L4_femur",
+      "child": "L4_tibia",
+      "origin_m": [
+        -0.1494415129889636,
+        -0.14944151298896355,
+        0.020187885517996617
+      ],
+      "axis": [
+        -0.7071067811865475,
+        0.7071067811865477,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ]
+    },
+    {
+      "name": "R_L5_yaw",
+      "type": "REVOLUTE",
+      "parent": "01_CHASSIS",
+      "child": "L5_coxa",
+      "origin_m": [
+        -1.5797943709000855e-17,
+        -0.086,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range_delta_deg": [
+        -20,
+        20
+      ]
+    },
+    {
+      "name": "R_L5_hip",
+      "type": "REVOLUTE",
+      "parent": "L5_coxa",
+      "child": "L5_femur",
+      "origin_m": [
+        -2.4982794702606006e-17,
+        -0.136,
+        0.0
+      ],
+      "axis": [
+        -1.0,
+        1.8369701987210297e-16,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ]
+    },
+    {
+      "name": "R_L5_knee",
+      "type": "REVOLUTE",
+      "parent": "L5_femur",
+      "child": "L5_tibia",
+      "origin_m": [
+        -3.882293496773644e-17,
+        -0.21134221445054735,
+        0.020187885517996617
+      ],
+      "axis": [
+        -1.0,
+        1.8369701987210297e-16,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ]
+    },
+    {
+      "name": "R_L6_yaw",
+      "type": "REVOLUTE",
+      "parent": "01_CHASSIS",
+      "child": "L6_coxa",
+      "origin_m": [
+        0.060811183182043066,
+        -0.060811183182043094,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range_delta_deg": [
+        -20,
+        20
+      ]
+    },
+    {
+      "name": "R_L6_hip",
+      "type": "REVOLUTE",
+      "parent": "L6_coxa",
+      "child": "L6_femur",
+      "origin_m": [
+        0.09616652224137043,
+        -0.09616652224137048,
+        0.0
+      ],
+      "axis": [
+        -0.7071067811865477,
+        -0.7071067811865474,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ]
+    },
+    {
+      "name": "R_L6_knee",
+      "type": "REVOLUTE",
+      "parent": "L6_femur",
+      "child": "L6_tibia",
+      "origin_m": [
+        0.14944151298896352,
+        -0.1494415129889636,
+        0.020187885517996617
+      ],
+      "axis": [
+        -0.7071067811865477,
+        -0.7071067811865474,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ]
+    }
+  ]
+}

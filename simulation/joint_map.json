@@ -1,0 +1,384 @@
+{
+  "convention": "q=0 is the neutral CAD pose; radians; right-hand axis",
+  "base_height_m": 0.09715873971846212,
+  "joints": [
+    {
+      "name": "L1_yaw",
+      "servo_id": 1,
+      "parent": "BODY",
+      "child": "L1_COXA",
+      "origin_m": [
+        0.06081118318204309,
+        0.06081118318204308,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range_delta_deg": [
+        -20,
+        20
+      ],
+      "neutral_absolute_deg": 0
+    },
+    {
+      "name": "L1_hip",
+      "servo_id": 2,
+      "parent": "L1_COXA",
+      "child": "L1_FEMUR",
+      "origin_m": [
+        0.09616652224137047,
+        0.09616652224137046,
+        0.0
+      ],
+      "axis": [
+        0.7071067811865475,
+        -0.7071067811865476,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ],
+      "neutral_absolute_deg": 15
+    },
+    {
+      "name": "L1_knee",
+      "servo_id": 3,
+      "parent": "L1_FEMUR",
+      "child": "L1_TIBIA",
+      "origin_m": [
+        0.14944151298896358,
+        0.14944151298896355,
+        0.020187885517996617
+      ],
+      "axis": [
+        0.7071067811865475,
+        -0.7071067811865476,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ],
+      "neutral_absolute_deg": -80
+    },
+    {
+      "name": "L2_yaw",
+      "servo_id": 4,
+      "parent": "BODY",
+      "child": "L2_COXA",
+      "origin_m": [
+        5.265981236333619e-18,
+        0.086,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range_delta_deg": [
+        -20,
+        20
+      ],
+      "neutral_absolute_deg": 0
+    },
+    {
+      "name": "L2_hip",
+      "servo_id": 5,
+      "parent": "L2_COXA",
+      "child": "L2_FEMUR",
+      "origin_m": [
+        8.327598234202002e-18,
+        0.136,
+        0.0
+      ],
+      "axis": [
+        1.0,
+        -6.123233995736766e-17,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ],
+      "neutral_absolute_deg": 15
+    },
+    {
+      "name": "L2_knee",
+      "servo_id": 6,
+      "parent": "L2_FEMUR",
+      "child": "L2_TIBIA",
+      "origin_m": [
+        1.2940978322578814e-17,
+        0.21134221445054735,
+        0.020187885517996617
+      ],
+      "axis": [
+        1.0,
+        -6.123233995736766e-17,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ],
+      "neutral_absolute_deg": -80
+    },
+    {
+      "name": "L3_yaw",
+      "servo_id": 7,
+      "parent": "BODY",
+      "child": "L3_COXA",
+      "origin_m": [
+        -0.06081118318204308,
+        0.06081118318204309,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range_delta_deg": [
+        -20,
+        20
+      ],
+      "neutral_absolute_deg": 0
+    },
+    {
+      "name": "L3_hip",
+      "servo_id": 8,
+      "parent": "L3_COXA",
+      "child": "L3_FEMUR",
+      "origin_m": [
+        -0.09616652224137046,
+        0.09616652224137047,
+        0.0
+      ],
+      "axis": [
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ],
+      "neutral_absolute_deg": 15
+    },
+    {
+      "name": "L3_knee",
+      "servo_id": 9,
+      "parent": "L3_FEMUR",
+      "child": "L3_TIBIA",
+      "origin_m": [
+        -0.14944151298896355,
+        0.14944151298896358,
+        0.020187885517996617
+      ],
+      "axis": [
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ],
+      "neutral_absolute_deg": -80
+    },
+    {
+      "name": "L4_yaw",
+      "servo_id": 10,
+      "parent": "BODY",
+      "child": "L4_COXA",
+      "origin_m": [
+        -0.060811183182043094,
+        -0.06081118318204308,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range_delta_deg": [
+        -20,
+        20
+      ],
+      "neutral_absolute_deg": 0
+    },
+    {
+      "name": "L4_hip",
+      "servo_id": 11,
+      "parent": "L4_COXA",
+      "child": "L4_FEMUR",
+      "origin_m": [
+        -0.09616652224137048,
+        -0.09616652224137046,
+        0.0
+      ],
+      "axis": [
+        -0.7071067811865475,
+        0.7071067811865477,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ],
+      "neutral_absolute_deg": 15
+    },
+    {
+      "name": "L4_knee",
+      "servo_id": 12,
+      "parent": "L4_FEMUR",
+      "child": "L4_TIBIA",
+      "origin_m": [
+        -0.1494415129889636,
+        -0.14944151298896355,
+        0.020187885517996617
+      ],
+      "axis": [
+        -0.7071067811865475,
+        0.7071067811865477,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ],
+      "neutral_absolute_deg": -80
+    },
+    {
+      "name": "L5_yaw",
+      "servo_id": 13,
+      "parent": "BODY",
+      "child": "L5_COXA",
+      "origin_m": [
+        -1.5797943709000855e-17,
+        -0.086,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range_delta_deg": [
+        -20,
+        20
+      ],
+      "neutral_absolute_deg": 0
+    },
+    {
+      "name": "L5_hip",
+      "servo_id": 14,
+      "parent": "L5_COXA",
+      "child": "L5_FEMUR",
+      "origin_m": [
+        -2.4982794702606006e-17,
+        -0.136,
+        0.0
+      ],
+      "axis": [
+        -1.0,
+        1.8369701987210297e-16,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ],
+      "neutral_absolute_deg": 15
+    },
+    {
+      "name": "L5_knee",
+      "servo_id": 15,
+      "parent": "L5_FEMUR",
+      "child": "L5_TIBIA",
+      "origin_m": [
+        -3.882293496773644e-17,
+        -0.21134221445054735,
+        0.020187885517996617
+      ],
+      "axis": [
+        -1.0,
+        1.8369701987210297e-16,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ],
+      "neutral_absolute_deg": -80
+    },
+    {
+      "name": "L6_yaw",
+      "servo_id": 16,
+      "parent": "BODY",
+      "child": "L6_COXA",
+      "origin_m": [
+        0.060811183182043066,
+        -0.060811183182043094,
+        0.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "range_delta_deg": [
+        -20,
+        20
+      ],
+      "neutral_absolute_deg": 0
+    },
+    {
+      "name": "L6_hip",
+      "servo_id": 17,
+      "parent": "L6_COXA",
+      "child": "L6_FEMUR",
+      "origin_m": [
+        0.09616652224137043,
+        -0.09616652224137048,
+        0.0
+      ],
+      "axis": [
+        -0.7071067811865477,
+        -0.7071067811865474,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ],
+      "neutral_absolute_deg": 15
+    },
+    {
+      "name": "L6_knee",
+      "servo_id": 18,
+      "parent": "L6_FEMUR",
+      "child": "L6_TIBIA",
+      "origin_m": [
+        0.14944151298896352,
+        -0.1494415129889636,
+        0.020187885517996617
+      ],
+      "axis": [
+        -0.7071067811865477,
+        -0.7071067811865474,
+        0.0
+      ],
+      "range_delta_deg": [
+        -15,
+        15
+      ],
+      "neutral_absolute_deg": -80
+    }
+  ]
+}

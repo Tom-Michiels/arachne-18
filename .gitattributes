@@ -1,0 +1,6 @@
+* text=auto
+*.stl binary
+*.step binary
+*.png binary
+*.gif binary
+*.mp4 binary

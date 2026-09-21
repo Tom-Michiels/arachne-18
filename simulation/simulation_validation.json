@@ -1,0 +1,127 @@
+{
+  "topology": {
+    "rigid_links": 19,
+    "hinges": 18,
+    "floating_base_dofs": 6,
+    "mesh_assets": 155,
+    "initial_contacts": 0,
+    "mass_kg": 2.449557064911428
+  },
+  "kinematics": {
+    "passed": 18,
+    "body_origins_moved": {
+      "L1_yaw": [
+        "L1_FEMUR",
+        "L1_TIBIA"
+      ],
+      "L1_hip": [
+        "L1_TIBIA"
+      ],
+      "L1_knee": [],
+      "L2_yaw": [
+        "L2_FEMUR",
+        "L2_TIBIA"
+      ],
+      "L2_hip": [
+        "L2_TIBIA"
+      ],
+      "L2_knee": [],
+      "L3_yaw": [
+        "L3_FEMUR",
+        "L3_TIBIA"
+      ],
+      "L3_hip": [
+        "L3_TIBIA"
+      ],
+      "L3_knee": [],
+      "L4_yaw": [
+        "L4_FEMUR",
+        "L4_TIBIA"
+      ],
+      "L4_hip": [
+        "L4_TIBIA"
+      ],
+      "L4_knee": [],
+      "L5_yaw": [
+        "L5_FEMUR",
+        "L5_TIBIA"
+      ],
+      "L5_hip": [
+        "L5_TIBIA"
+      ],
+      "L5_knee": [],
+      "L6_yaw": [
+        "L6_FEMUR",
+        "L6_TIBIA"
+      ],
+      "L6_hip": [
+        "L6_TIBIA"
+      ],
+      "L6_knee": []
+    }
+  },
+  "dynamic_trials": [
+    {
+      "fixed": false,
+      "mode": "stand",
+      "voltage": 12.0,
+      "duration_s": 10,
+      "max_tracking_error_after_2s_deg": 0.6974693907636982,
+      "peak_motor_torque_before_friction_Nm": 0.3374722148009406,
+      "max_joint_speed_rad_s": 0.0988178675629062,
+      "final_base_xyz_m": [
+        -6.75684810972691e-08,
+        -5.472410571222618e-09,
+        0.09366135290060042
+      ],
+      "final_contacts": 6
+    },
+    {
+      "fixed": false,
+      "mode": "stand",
+      "voltage": 11.1,
+      "duration_s": 10,
+      "max_tracking_error_after_2s_deg": 0.7478452238984469,
+      "peak_motor_torque_before_friction_Nm": 0.33473624656463374,
+      "max_joint_speed_rad_s": 0.09893760430968082,
+      "final_base_xyz_m": [
+        -7.778697529489524e-08,
+        -4.364113419837797e-09,
+        0.09355701980665015
+      ],
+      "final_contacts": 6
+    },
+    {
+      "fixed": false,
+      "mode": "stand",
+      "voltage": 12.6,
+      "duration_s": 10,
+      "max_tracking_error_after_2s_deg": 0.6672852396958956,
+      "peak_motor_torque_before_friction_Nm": 0.3389951958753921,
+      "max_joint_speed_rad_s": 0.09873807740739188,
+      "final_base_xyz_m": [
+        -6.213381835842622e-08,
+        -5.7108846658487444e-09,
+        0.0937242300553184
+      ],
+      "final_contacts": 6
+    },
+    {
+      "fixed": true,
+      "mode": "sweep",
+      "voltage": 12.0,
+      "duration_s": 12,
+      "max_tracking_error_after_2s_deg": 0.7448543599429112,
+      "peak_motor_torque_before_friction_Nm": 0.21504483024037543,
+      "max_joint_speed_rad_s": 0.16547923325556374,
+      "final_base_xyz_m": [
+        0.0,
+        0.0,
+        0.27715873972
+      ],
+      "final_contacts": 0
+    }
+  ],
+  "reset_reproducible": true,
+  "status": "PASS; numerical/model checks only, not hardware validation"
+}

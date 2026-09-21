@@ -1,0 +1,1707 @@
+[
+  {
+    "name": "01_CHASSIS",
+    "kind": "printed",
+    "group": "BODY",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "0.brep"
+  },
+  {
+    "name": "02_DORSAL_DECK",
+    "kind": "printed",
+    "group": "BODY",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "1.brep"
+  },
+  {
+    "name": "03_BATTERY_TRAY",
+    "kind": "printed",
+    "group": "BODY",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "2.brep"
+  },
+  {
+    "name": "04_CONTROLLER_PLATE",
+    "kind": "printed",
+    "group": "BODY",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "3.brep"
+  },
+  {
+    "name": "05_SHELL",
+    "kind": "printed",
+    "group": "BODY",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "4.brep"
+  },
+  {
+    "name": "REF_3S_BATTERY_115x40x35",
+    "kind": "reference",
+    "group": "BODY",
+    "color": [
+      0.73,
+      0.49,
+      0.12
+    ],
+    "file": "5.brep"
+  },
+  {
+    "name": "REF_CONTROLLER_90x60x18",
+    "kind": "reference",
+    "group": "BODY",
+    "color": [
+      0.23,
+      0.43,
+      0.68
+    ],
+    "file": "6.brep"
+  },
+  {
+    "name": "PCB_spacer_-32_-24",
+    "kind": "printed",
+    "group": "BODY",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "7.brep"
+  },
+  {
+    "name": "PCB_spacer_-32_24",
+    "kind": "printed",
+    "group": "BODY",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "8.brep"
+  },
+  {
+    "name": "PCB_spacer_32_-24",
+    "kind": "printed",
+    "group": "BODY",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "9.brep"
+  },
+  {
+    "name": "PCB_spacer_32_24",
+    "kind": "printed",
+    "group": "BODY",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "10.brep"
+  },
+  {
+    "name": "L1_S01_YAW_STS3215",
+    "kind": "servo",
+    "group": "BODY",
+    "color": [
+      0.19,
+      0.2,
+      0.22
+    ],
+    "file": "11.brep"
+  },
+  {
+    "name": "L1_yaw_clamp",
+    "kind": "printed",
+    "group": "BODY",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "12.brep"
+  },
+  {
+    "name": "L1_coxa",
+    "kind": "printed",
+    "group": "L1_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "13.brep"
+  },
+  {
+    "name": "L1_coxa_bottom",
+    "kind": "printed",
+    "group": "L1_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "14.brep"
+  },
+  {
+    "name": "L1_S02_HIP_STS3215",
+    "kind": "servo",
+    "group": "L1_COXA",
+    "color": [
+      0.19,
+      0.2,
+      0.22
+    ],
+    "file": "15.brep"
+  },
+  {
+    "name": "L1_hip_clamp",
+    "kind": "printed",
+    "group": "L1_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "16.brep"
+  },
+  {
+    "name": "L1_femur",
+    "kind": "printed",
+    "group": "L1_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "17.brep"
+  },
+  {
+    "name": "L1_femur_side_plate",
+    "kind": "printed",
+    "group": "L1_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "18.brep"
+  },
+  {
+    "name": "L1_S03_KNEE_STS3215",
+    "kind": "servo",
+    "group": "L1_FEMUR",
+    "color": [
+      0.19,
+      0.2,
+      0.22
+    ],
+    "file": "19.brep"
+  },
+  {
+    "name": "L1_knee_clamp",
+    "kind": "printed",
+    "group": "L1_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "20.brep"
+  },
+  {
+    "name": "L1_tibia",
+    "kind": "printed",
+    "group": "L1_TIBIA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "21.brep"
+  },
+  {
+    "name": "L1_foot",
+    "kind": "printed",
+    "group": "L1_TIBIA",
+    "color": [
+      0.1,
+      0.12,
+      0.13
+    ],
+    "file": "22.brep"
+  },
+  {
+    "name": "L1_yaw_disc_plus",
+    "kind": "hardware",
+    "group": "L1_COXA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "23.brep"
+  },
+  {
+    "name": "L1_yaw_disc_min",
+    "kind": "hardware",
+    "group": "L1_COXA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "24.brep"
+  },
+  {
+    "name": "L1_yaw_shim_plus",
+    "kind": "printed",
+    "group": "L1_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "25.brep"
+  },
+  {
+    "name": "L1_yaw_shim_min",
+    "kind": "printed",
+    "group": "L1_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "26.brep"
+  },
+  {
+    "name": "L1_hip_disc_plus",
+    "kind": "hardware",
+    "group": "L1_FEMUR",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "27.brep"
+  },
+  {
+    "name": "L1_hip_disc_min",
+    "kind": "hardware",
+    "group": "L1_FEMUR",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "28.brep"
+  },
+  {
+    "name": "L1_hip_shim_plus",
+    "kind": "printed",
+    "group": "L1_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "29.brep"
+  },
+  {
+    "name": "L1_hip_shim_min",
+    "kind": "printed",
+    "group": "L1_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "30.brep"
+  },
+  {
+    "name": "L1_knee_disc_plus",
+    "kind": "hardware",
+    "group": "L1_TIBIA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "31.brep"
+  },
+  {
+    "name": "L1_knee_disc_min",
+    "kind": "hardware",
+    "group": "L1_TIBIA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "32.brep"
+  },
+  {
+    "name": "L1_knee_shim_plus",
+    "kind": "printed",
+    "group": "L1_TIBIA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "33.brep"
+  },
+  {
+    "name": "L1_knee_shim_min",
+    "kind": "printed",
+    "group": "L1_TIBIA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "34.brep"
+  },
+  {
+    "name": "L2_S04_YAW_STS3215",
+    "kind": "servo",
+    "group": "BODY",
+    "color": [
+      0.19,
+      0.2,
+      0.22
+    ],
+    "file": "35.brep"
+  },
+  {
+    "name": "L2_yaw_clamp",
+    "kind": "printed",
+    "group": "BODY",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "36.brep"
+  },
+  {
+    "name": "L2_coxa",
+    "kind": "printed",
+    "group": "L2_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "37.brep"
+  },
+  {
+    "name": "L2_coxa_bottom",
+    "kind": "printed",
+    "group": "L2_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "38.brep"
+  },
+  {
+    "name": "L2_S05_HIP_STS3215",
+    "kind": "servo",
+    "group": "L2_COXA",
+    "color": [
+      0.19,
+      0.2,
+      0.22
+    ],
+    "file": "39.brep"
+  },
+  {
+    "name": "L2_hip_clamp",
+    "kind": "printed",
+    "group": "L2_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "40.brep"
+  },
+  {
+    "name": "L2_femur",
+    "kind": "printed",
+    "group": "L2_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "41.brep"
+  },
+  {
+    "name": "L2_femur_side_plate",
+    "kind": "printed",
+    "group": "L2_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "42.brep"
+  },
+  {
+    "name": "L2_S06_KNEE_STS3215",
+    "kind": "servo",
+    "group": "L2_FEMUR",
+    "color": [
+      0.19,
+      0.2,
+      0.22
+    ],
+    "file": "43.brep"
+  },
+  {
+    "name": "L2_knee_clamp",
+    "kind": "printed",
+    "group": "L2_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "44.brep"
+  },
+  {
+    "name": "L2_tibia",
+    "kind": "printed",
+    "group": "L2_TIBIA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "45.brep"
+  },
+  {
+    "name": "L2_foot",
+    "kind": "printed",
+    "group": "L2_TIBIA",
+    "color": [
+      0.1,
+      0.12,
+      0.13
+    ],
+    "file": "46.brep"
+  },
+  {
+    "name": "L2_yaw_disc_plus",
+    "kind": "hardware",
+    "group": "L2_COXA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "47.brep"
+  },
+  {
+    "name": "L2_yaw_disc_min",
+    "kind": "hardware",
+    "group": "L2_COXA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "48.brep"
+  },
+  {
+    "name": "L2_yaw_shim_plus",
+    "kind": "printed",
+    "group": "L2_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "49.brep"
+  },
+  {
+    "name": "L2_yaw_shim_min",
+    "kind": "printed",
+    "group": "L2_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "50.brep"
+  },
+  {
+    "name": "L2_hip_disc_plus",
+    "kind": "hardware",
+    "group": "L2_FEMUR",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "51.brep"
+  },
+  {
+    "name": "L2_hip_disc_min",
+    "kind": "hardware",
+    "group": "L2_FEMUR",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "52.brep"
+  },
+  {
+    "name": "L2_hip_shim_plus",
+    "kind": "printed",
+    "group": "L2_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "53.brep"
+  },
+  {
+    "name": "L2_hip_shim_min",
+    "kind": "printed",
+    "group": "L2_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "54.brep"
+  },
+  {
+    "name": "L2_knee_disc_plus",
+    "kind": "hardware",
+    "group": "L2_TIBIA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "55.brep"
+  },
+  {
+    "name": "L2_knee_disc_min",
+    "kind": "hardware",
+    "group": "L2_TIBIA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "56.brep"
+  },
+  {
+    "name": "L2_knee_shim_plus",
+    "kind": "printed",
+    "group": "L2_TIBIA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "57.brep"
+  },
+  {
+    "name": "L2_knee_shim_min",
+    "kind": "printed",
+    "group": "L2_TIBIA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "58.brep"
+  },
+  {
+    "name": "L3_S07_YAW_STS3215",
+    "kind": "servo",
+    "group": "BODY",
+    "color": [
+      0.19,
+      0.2,
+      0.22
+    ],
+    "file": "59.brep"
+  },
+  {
+    "name": "L3_yaw_clamp",
+    "kind": "printed",
+    "group": "BODY",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "60.brep"
+  },
+  {
+    "name": "L3_coxa",
+    "kind": "printed",
+    "group": "L3_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "61.brep"
+  },
+  {
+    "name": "L3_coxa_bottom",
+    "kind": "printed",
+    "group": "L3_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "62.brep"
+  },
+  {
+    "name": "L3_S08_HIP_STS3215",
+    "kind": "servo",
+    "group": "L3_COXA",
+    "color": [
+      0.19,
+      0.2,
+      0.22
+    ],
+    "file": "63.brep"
+  },
+  {
+    "name": "L3_hip_clamp",
+    "kind": "printed",
+    "group": "L3_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "64.brep"
+  },
+  {
+    "name": "L3_femur",
+    "kind": "printed",
+    "group": "L3_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "65.brep"
+  },
+  {
+    "name": "L3_femur_side_plate",
+    "kind": "printed",
+    "group": "L3_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "66.brep"
+  },
+  {
+    "name": "L3_S09_KNEE_STS3215",
+    "kind": "servo",
+    "group": "L3_FEMUR",
+    "color": [
+      0.19,
+      0.2,
+      0.22
+    ],
+    "file": "67.brep"
+  },
+  {
+    "name": "L3_knee_clamp",
+    "kind": "printed",
+    "group": "L3_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "68.brep"
+  },
+  {
+    "name": "L3_tibia",
+    "kind": "printed",
+    "group": "L3_TIBIA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "69.brep"
+  },
+  {
+    "name": "L3_foot",
+    "kind": "printed",
+    "group": "L3_TIBIA",
+    "color": [
+      0.1,
+      0.12,
+      0.13
+    ],
+    "file": "70.brep"
+  },
+  {
+    "name": "L3_yaw_disc_plus",
+    "kind": "hardware",
+    "group": "L3_COXA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "71.brep"
+  },
+  {
+    "name": "L3_yaw_disc_min",
+    "kind": "hardware",
+    "group": "L3_COXA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "72.brep"
+  },
+  {
+    "name": "L3_yaw_shim_plus",
+    "kind": "printed",
+    "group": "L3_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "73.brep"
+  },
+  {
+    "name": "L3_yaw_shim_min",
+    "kind": "printed",
+    "group": "L3_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "74.brep"
+  },
+  {
+    "name": "L3_hip_disc_plus",
+    "kind": "hardware",
+    "group": "L3_FEMUR",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "75.brep"
+  },
+  {
+    "name": "L3_hip_disc_min",
+    "kind": "hardware",
+    "group": "L3_FEMUR",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "76.brep"
+  },
+  {
+    "name": "L3_hip_shim_plus",
+    "kind": "printed",
+    "group": "L3_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "77.brep"
+  },
+  {
+    "name": "L3_hip_shim_min",
+    "kind": "printed",
+    "group": "L3_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "78.brep"
+  },
+  {
+    "name": "L3_knee_disc_plus",
+    "kind": "hardware",
+    "group": "L3_TIBIA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "79.brep"
+  },
+  {
+    "name": "L3_knee_disc_min",
+    "kind": "hardware",
+    "group": "L3_TIBIA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "80.brep"
+  },
+  {
+    "name": "L3_knee_shim_plus",
+    "kind": "printed",
+    "group": "L3_TIBIA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "81.brep"
+  },
+  {
+    "name": "L3_knee_shim_min",
+    "kind": "printed",
+    "group": "L3_TIBIA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "82.brep"
+  },
+  {
+    "name": "L4_S10_YAW_STS3215",
+    "kind": "servo",
+    "group": "BODY",
+    "color": [
+      0.19,
+      0.2,
+      0.22
+    ],
+    "file": "83.brep"
+  },
+  {
+    "name": "L4_yaw_clamp",
+    "kind": "printed",
+    "group": "BODY",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "84.brep"
+  },
+  {
+    "name": "L4_coxa",
+    "kind": "printed",
+    "group": "L4_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "85.brep"
+  },
+  {
+    "name": "L4_coxa_bottom",
+    "kind": "printed",
+    "group": "L4_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "86.brep"
+  },
+  {
+    "name": "L4_S11_HIP_STS3215",
+    "kind": "servo",
+    "group": "L4_COXA",
+    "color": [
+      0.19,
+      0.2,
+      0.22
+    ],
+    "file": "87.brep"
+  },
+  {
+    "name": "L4_hip_clamp",
+    "kind": "printed",
+    "group": "L4_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "88.brep"
+  },
+  {
+    "name": "L4_femur",
+    "kind": "printed",
+    "group": "L4_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "89.brep"
+  },
+  {
+    "name": "L4_femur_side_plate",
+    "kind": "printed",
+    "group": "L4_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "90.brep"
+  },
+  {
+    "name": "L4_S12_KNEE_STS3215",
+    "kind": "servo",
+    "group": "L4_FEMUR",
+    "color": [
+      0.19,
+      0.2,
+      0.22
+    ],
+    "file": "91.brep"
+  },
+  {
+    "name": "L4_knee_clamp",
+    "kind": "printed",
+    "group": "L4_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "92.brep"
+  },
+  {
+    "name": "L4_tibia",
+    "kind": "printed",
+    "group": "L4_TIBIA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "93.brep"
+  },
+  {
+    "name": "L4_foot",
+    "kind": "printed",
+    "group": "L4_TIBIA",
+    "color": [
+      0.1,
+      0.12,
+      0.13
+    ],
+    "file": "94.brep"
+  },
+  {
+    "name": "L4_yaw_disc_plus",
+    "kind": "hardware",
+    "group": "L4_COXA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "95.brep"
+  },
+  {
+    "name": "L4_yaw_disc_min",
+    "kind": "hardware",
+    "group": "L4_COXA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "96.brep"
+  },
+  {
+    "name": "L4_yaw_shim_plus",
+    "kind": "printed",
+    "group": "L4_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "97.brep"
+  },
+  {
+    "name": "L4_yaw_shim_min",
+    "kind": "printed",
+    "group": "L4_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "98.brep"
+  },
+  {
+    "name": "L4_hip_disc_plus",
+    "kind": "hardware",
+    "group": "L4_FEMUR",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "99.brep"
+  },
+  {
+    "name": "L4_hip_disc_min",
+    "kind": "hardware",
+    "group": "L4_FEMUR",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "100.brep"
+  },
+  {
+    "name": "L4_hip_shim_plus",
+    "kind": "printed",
+    "group": "L4_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "101.brep"
+  },
+  {
+    "name": "L4_hip_shim_min",
+    "kind": "printed",
+    "group": "L4_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "102.brep"
+  },
+  {
+    "name": "L4_knee_disc_plus",
+    "kind": "hardware",
+    "group": "L4_TIBIA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "103.brep"
+  },
+  {
+    "name": "L4_knee_disc_min",
+    "kind": "hardware",
+    "group": "L4_TIBIA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "104.brep"
+  },
+  {
+    "name": "L4_knee_shim_plus",
+    "kind": "printed",
+    "group": "L4_TIBIA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "105.brep"
+  },
+  {
+    "name": "L4_knee_shim_min",
+    "kind": "printed",
+    "group": "L4_TIBIA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "106.brep"
+  },
+  {
+    "name": "L5_S13_YAW_STS3215",
+    "kind": "servo",
+    "group": "BODY",
+    "color": [
+      0.19,
+      0.2,
+      0.22
+    ],
+    "file": "107.brep"
+  },
+  {
+    "name": "L5_yaw_clamp",
+    "kind": "printed",
+    "group": "BODY",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "108.brep"
+  },
+  {
+    "name": "L5_coxa",
+    "kind": "printed",
+    "group": "L5_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "109.brep"
+  },
+  {
+    "name": "L5_coxa_bottom",
+    "kind": "printed",
+    "group": "L5_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "110.brep"
+  },
+  {
+    "name": "L5_S14_HIP_STS3215",
+    "kind": "servo",
+    "group": "L5_COXA",
+    "color": [
+      0.19,
+      0.2,
+      0.22
+    ],
+    "file": "111.brep"
+  },
+  {
+    "name": "L5_hip_clamp",
+    "kind": "printed",
+    "group": "L5_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "112.brep"
+  },
+  {
+    "name": "L5_femur",
+    "kind": "printed",
+    "group": "L5_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "113.brep"
+  },
+  {
+    "name": "L5_femur_side_plate",
+    "kind": "printed",
+    "group": "L5_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "114.brep"
+  },
+  {
+    "name": "L5_S15_KNEE_STS3215",
+    "kind": "servo",
+    "group": "L5_FEMUR",
+    "color": [
+      0.19,
+      0.2,
+      0.22
+    ],
+    "file": "115.brep"
+  },
+  {
+    "name": "L5_knee_clamp",
+    "kind": "printed",
+    "group": "L5_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "116.brep"
+  },
+  {
+    "name": "L5_tibia",
+    "kind": "printed",
+    "group": "L5_TIBIA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "117.brep"
+  },
+  {
+    "name": "L5_foot",
+    "kind": "printed",
+    "group": "L5_TIBIA",
+    "color": [
+      0.1,
+      0.12,
+      0.13
+    ],
+    "file": "118.brep"
+  },
+  {
+    "name": "L5_yaw_disc_plus",
+    "kind": "hardware",
+    "group": "L5_COXA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "119.brep"
+  },
+  {
+    "name": "L5_yaw_disc_min",
+    "kind": "hardware",
+    "group": "L5_COXA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "120.brep"
+  },
+  {
+    "name": "L5_yaw_shim_plus",
+    "kind": "printed",
+    "group": "L5_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "121.brep"
+  },
+  {
+    "name": "L5_yaw_shim_min",
+    "kind": "printed",
+    "group": "L5_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "122.brep"
+  },
+  {
+    "name": "L5_hip_disc_plus",
+    "kind": "hardware",
+    "group": "L5_FEMUR",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "123.brep"
+  },
+  {
+    "name": "L5_hip_disc_min",
+    "kind": "hardware",
+    "group": "L5_FEMUR",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "124.brep"
+  },
+  {
+    "name": "L5_hip_shim_plus",
+    "kind": "printed",
+    "group": "L5_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "125.brep"
+  },
+  {
+    "name": "L5_hip_shim_min",
+    "kind": "printed",
+    "group": "L5_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "126.brep"
+  },
+  {
+    "name": "L5_knee_disc_plus",
+    "kind": "hardware",
+    "group": "L5_TIBIA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "127.brep"
+  },
+  {
+    "name": "L5_knee_disc_min",
+    "kind": "hardware",
+    "group": "L5_TIBIA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "128.brep"
+  },
+  {
+    "name": "L5_knee_shim_plus",
+    "kind": "printed",
+    "group": "L5_TIBIA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "129.brep"
+  },
+  {
+    "name": "L5_knee_shim_min",
+    "kind": "printed",
+    "group": "L5_TIBIA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "130.brep"
+  },
+  {
+    "name": "L6_S16_YAW_STS3215",
+    "kind": "servo",
+    "group": "BODY",
+    "color": [
+      0.19,
+      0.2,
+      0.22
+    ],
+    "file": "131.brep"
+  },
+  {
+    "name": "L6_yaw_clamp",
+    "kind": "printed",
+    "group": "BODY",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "132.brep"
+  },
+  {
+    "name": "L6_coxa",
+    "kind": "printed",
+    "group": "L6_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "133.brep"
+  },
+  {
+    "name": "L6_coxa_bottom",
+    "kind": "printed",
+    "group": "L6_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "134.brep"
+  },
+  {
+    "name": "L6_S17_HIP_STS3215",
+    "kind": "servo",
+    "group": "L6_COXA",
+    "color": [
+      0.19,
+      0.2,
+      0.22
+    ],
+    "file": "135.brep"
+  },
+  {
+    "name": "L6_hip_clamp",
+    "kind": "printed",
+    "group": "L6_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "136.brep"
+  },
+  {
+    "name": "L6_femur",
+    "kind": "printed",
+    "group": "L6_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "137.brep"
+  },
+  {
+    "name": "L6_femur_side_plate",
+    "kind": "printed",
+    "group": "L6_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "138.brep"
+  },
+  {
+    "name": "L6_S18_KNEE_STS3215",
+    "kind": "servo",
+    "group": "L6_FEMUR",
+    "color": [
+      0.19,
+      0.2,
+      0.22
+    ],
+    "file": "139.brep"
+  },
+  {
+    "name": "L6_knee_clamp",
+    "kind": "printed",
+    "group": "L6_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "140.brep"
+  },
+  {
+    "name": "L6_tibia",
+    "kind": "printed",
+    "group": "L6_TIBIA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "141.brep"
+  },
+  {
+    "name": "L6_foot",
+    "kind": "printed",
+    "group": "L6_TIBIA",
+    "color": [
+      0.1,
+      0.12,
+      0.13
+    ],
+    "file": "142.brep"
+  },
+  {
+    "name": "L6_yaw_disc_plus",
+    "kind": "hardware",
+    "group": "L6_COXA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "143.brep"
+  },
+  {
+    "name": "L6_yaw_disc_min",
+    "kind": "hardware",
+    "group": "L6_COXA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "144.brep"
+  },
+  {
+    "name": "L6_yaw_shim_plus",
+    "kind": "printed",
+    "group": "L6_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "145.brep"
+  },
+  {
+    "name": "L6_yaw_shim_min",
+    "kind": "printed",
+    "group": "L6_COXA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "146.brep"
+  },
+  {
+    "name": "L6_hip_disc_plus",
+    "kind": "hardware",
+    "group": "L6_FEMUR",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "147.brep"
+  },
+  {
+    "name": "L6_hip_disc_min",
+    "kind": "hardware",
+    "group": "L6_FEMUR",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "148.brep"
+  },
+  {
+    "name": "L6_hip_shim_plus",
+    "kind": "printed",
+    "group": "L6_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "149.brep"
+  },
+  {
+    "name": "L6_hip_shim_min",
+    "kind": "printed",
+    "group": "L6_FEMUR",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "150.brep"
+  },
+  {
+    "name": "L6_knee_disc_plus",
+    "kind": "hardware",
+    "group": "L6_TIBIA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "151.brep"
+  },
+  {
+    "name": "L6_knee_disc_min",
+    "kind": "hardware",
+    "group": "L6_TIBIA",
+    "color": [
+      0.68,
+      0.7,
+      0.73
+    ],
+    "file": "152.brep"
+  },
+  {
+    "name": "L6_knee_shim_plus",
+    "kind": "printed",
+    "group": "L6_TIBIA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "153.brep"
+  },
+  {
+    "name": "L6_knee_shim_min",
+    "kind": "printed",
+    "group": "L6_TIBIA",
+    "color": [
+      0.23,
+      0.43,
+      0.42
+    ],
+    "file": "154.brep"
+  }
+]

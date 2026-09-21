@@ -1,0 +1,507 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="ARACHNE_18_STS3215_12V_approx">
+  <compiler angle="radian" autolimits="true" inertiafromgeom="false" meshdir="meshes" />
+  <option timestep=".001" integrator="implicitfast" solver="Newton" iterations="60" cone="elliptic" />
+  <visual>
+    <global offwidth="1400" offheight="1000" azimuth="135" elevation="-25" />
+  </visual>
+  <asset>
+    <texture name="floor_texture" type="2d" builtin="checker" rgb1="0.24 0.28 0.27" rgb2="0.32 0.36 0.34" width="512" height="512" />
+    <material name="floor_mat" texture="floor_texture" texrepeat="8 8" reflectance="0.15" />
+    <mesh name="01_CHASSIS" file="01_CHASSIS.stl" />
+    <mesh name="02_DORSAL_DECK" file="02_DORSAL_DECK.stl" />
+    <mesh name="03_BATTERY_TRAY" file="03_BATTERY_TRAY.stl" />
+    <mesh name="04_CONTROLLER_PLATE" file="04_CONTROLLER_PLATE.stl" />
+    <mesh name="05_SHELL" file="05_SHELL.stl" />
+    <mesh name="REF_3S_BATTERY_115x40x35" file="REF_3S_BATTERY_115x40x35.stl" />
+    <mesh name="REF_CONTROLLER_90x60x18" file="REF_CONTROLLER_90x60x18.stl" />
+    <mesh name="PCB_spacer_-32_-24" file="PCB_spacer_-32_-24.stl" />
+    <mesh name="PCB_spacer_-32_24" file="PCB_spacer_-32_24.stl" />
+    <mesh name="PCB_spacer_32_-24" file="PCB_spacer_32_-24.stl" />
+    <mesh name="PCB_spacer_32_24" file="PCB_spacer_32_24.stl" />
+    <mesh name="L1_S01_YAW_STS3215" file="L1_S01_YAW_STS3215.stl" />
+    <mesh name="L1_yaw_clamp" file="L1_yaw_clamp.stl" />
+    <mesh name="L1_coxa" file="L1_coxa.stl" />
+    <mesh name="L1_coxa_bottom" file="L1_coxa_bottom.stl" />
+    <mesh name="L1_S02_HIP_STS3215" file="L1_S02_HIP_STS3215.stl" />
+    <mesh name="L1_hip_clamp" file="L1_hip_clamp.stl" />
+    <mesh name="L1_femur" file="L1_femur.stl" />
+    <mesh name="L1_femur_side_plate" file="L1_femur_side_plate.stl" />
+    <mesh name="L1_S03_KNEE_STS3215" file="L1_S03_KNEE_STS3215.stl" />
+    <mesh name="L1_knee_clamp" file="L1_knee_clamp.stl" />
+    <mesh name="L1_tibia" file="L1_tibia.stl" />
+    <mesh name="L1_foot" file="L1_foot.stl" />
+    <mesh name="L1_yaw_disc_plus" file="L1_yaw_disc_plus.stl" />
+    <mesh name="L1_yaw_disc_min" file="L1_yaw_disc_min.stl" />
+    <mesh name="L1_yaw_shim_plus" file="L1_yaw_shim_plus.stl" />
+    <mesh name="L1_yaw_shim_min" file="L1_yaw_shim_min.stl" />
+    <mesh name="L1_hip_disc_plus" file="L1_hip_disc_plus.stl" />
+    <mesh name="L1_hip_disc_min" file="L1_hip_disc_min.stl" />
+    <mesh name="L1_hip_shim_plus" file="L1_hip_shim_plus.stl" />
+    <mesh name="L1_hip_shim_min" file="L1_hip_shim_min.stl" />
+    <mesh name="L1_knee_disc_plus" file="L1_knee_disc_plus.stl" />
+    <mesh name="L1_knee_disc_min" file="L1_knee_disc_min.stl" />
+    <mesh name="L1_knee_shim_plus" file="L1_knee_shim_plus.stl" />
+    <mesh name="L1_knee_shim_min" file="L1_knee_shim_min.stl" />
+    <mesh name="L2_S04_YAW_STS3215" file="L2_S04_YAW_STS3215.stl" />
+    <mesh name="L2_yaw_clamp" file="L2_yaw_clamp.stl" />
+    <mesh name="L2_coxa" file="L2_coxa.stl" />
+    <mesh name="L2_coxa_bottom" file="L2_coxa_bottom.stl" />
+    <mesh name="L2_S05_HIP_STS3215" file="L2_S05_HIP_STS3215.stl" />
+    <mesh name="L2_hip_clamp" file="L2_hip_clamp.stl" />
+    <mesh name="L2_femur" file="L2_femur.stl" />
+    <mesh name="L2_femur_side_plate" file="L2_femur_side_plate.stl" />
+    <mesh name="L2_S06_KNEE_STS3215" file="L2_S06_KNEE_STS3215.stl" />
+    <mesh name="L2_knee_clamp" file="L2_knee_clamp.stl" />
+    <mesh name="L2_tibia" file="L2_tibia.stl" />
+    <mesh name="L2_foot" file="L2_foot.stl" />
+    <mesh name="L2_yaw_disc_plus" file="L2_yaw_disc_plus.stl" />
+    <mesh name="L2_yaw_disc_min" file="L2_yaw_disc_min.stl" />
+    <mesh name="L2_yaw_shim_plus" file="L2_yaw_shim_plus.stl" />
+    <mesh name="L2_yaw_shim_min" file="L2_yaw_shim_min.stl" />
+    <mesh name="L2_hip_disc_plus" file="L2_hip_disc_plus.stl" />
+    <mesh name="L2_hip_disc_min" file="L2_hip_disc_min.stl" />
+    <mesh name="L2_hip_shim_plus" file="L2_hip_shim_plus.stl" />
+    <mesh name="L2_hip_shim_min" file="L2_hip_shim_min.stl" />
+    <mesh name="L2_knee_disc_plus" file="L2_knee_disc_plus.stl" />
+    <mesh name="L2_knee_disc_min" file="L2_knee_disc_min.stl" />
+    <mesh name="L2_knee_shim_plus" file="L2_knee_shim_plus.stl" />
+    <mesh name="L2_knee_shim_min" file="L2_knee_shim_min.stl" />
+    <mesh name="L3_S07_YAW_STS3215" file="L3_S07_YAW_STS3215.stl" />
+    <mesh name="L3_yaw_clamp" file="L3_yaw_clamp.stl" />
+    <mesh name="L3_coxa" file="L3_coxa.stl" />
+    <mesh name="L3_coxa_bottom" file="L3_coxa_bottom.stl" />
+    <mesh name="L3_S08_HIP_STS3215" file="L3_S08_HIP_STS3215.stl" />
+    <mesh name="L3_hip_clamp" file="L3_hip_clamp.stl" />
+    <mesh name="L3_femur" file="L3_femur.stl" />
+    <mesh name="L3_femur_side_plate" file="L3_femur_side_plate.stl" />
+    <mesh name="L3_S09_KNEE_STS3215" file="L3_S09_KNEE_STS3215.stl" />
+    <mesh name="L3_knee_clamp" file="L3_knee_clamp.stl" />
+    <mesh name="L3_tibia" file="L3_tibia.stl" />
+    <mesh name="L3_foot" file="L3_foot.stl" />
+    <mesh name="L3_yaw_disc_plus" file="L3_yaw_disc_plus.stl" />
+    <mesh name="L3_yaw_disc_min" file="L3_yaw_disc_min.stl" />
+    <mesh name="L3_yaw_shim_plus" file="L3_yaw_shim_plus.stl" />
+    <mesh name="L3_yaw_shim_min" file="L3_yaw_shim_min.stl" />
+    <mesh name="L3_hip_disc_plus" file="L3_hip_disc_plus.stl" />
+    <mesh name="L3_hip_disc_min" file="L3_hip_disc_min.stl" />
+    <mesh name="L3_hip_shim_plus" file="L3_hip_shim_plus.stl" />
+    <mesh name="L3_hip_shim_min" file="L3_hip_shim_min.stl" />
+    <mesh name="L3_knee_disc_plus" file="L3_knee_disc_plus.stl" />
+    <mesh name="L3_knee_disc_min" file="L3_knee_disc_min.stl" />
+    <mesh name="L3_knee_shim_plus" file="L3_knee_shim_plus.stl" />
+    <mesh name="L3_knee_shim_min" file="L3_knee_shim_min.stl" />
+    <mesh name="L4_S10_YAW_STS3215" file="L4_S10_YAW_STS3215.stl" />
+    <mesh name="L4_yaw_clamp" file="L4_yaw_clamp.stl" />
+    <mesh name="L4_coxa" file="L4_coxa.stl" />
+    <mesh name="L4_coxa_bottom" file="L4_coxa_bottom.stl" />
+    <mesh name="L4_S11_HIP_STS3215" file="L4_S11_HIP_STS3215.stl" />
+    <mesh name="L4_hip_clamp" file="L4_hip_clamp.stl" />
+    <mesh name="L4_femur" file="L4_femur.stl" />
+    <mesh name="L4_femur_side_plate" file="L4_femur_side_plate.stl" />
+    <mesh name="L4_S12_KNEE_STS3215" file="L4_S12_KNEE_STS3215.stl" />
+    <mesh name="L4_knee_clamp" file="L4_knee_clamp.stl" />
+    <mesh name="L4_tibia" file="L4_tibia.stl" />
+    <mesh name="L4_foot" file="L4_foot.stl" />
+    <mesh name="L4_yaw_disc_plus" file="L4_yaw_disc_plus.stl" />
+    <mesh name="L4_yaw_disc_min" file="L4_yaw_disc_min.stl" />
+    <mesh name="L4_yaw_shim_plus" file="L4_yaw_shim_plus.stl" />
+    <mesh name="L4_yaw_shim_min" file="L4_yaw_shim_min.stl" />
+    <mesh name="L4_hip_disc_plus" file="L4_hip_disc_plus.stl" />
+    <mesh name="L4_hip_disc_min" file="L4_hip_disc_min.stl" />
+    <mesh name="L4_hip_shim_plus" file="L4_hip_shim_plus.stl" />
+    <mesh name="L4_hip_shim_min" file="L4_hip_shim_min.stl" />
+    <mesh name="L4_knee_disc_plus" file="L4_knee_disc_plus.stl" />
+    <mesh name="L4_knee_disc_min" file="L4_knee_disc_min.stl" />
+    <mesh name="L4_knee_shim_plus" file="L4_knee_shim_plus.stl" />
+    <mesh name="L4_knee_shim_min" file="L4_knee_shim_min.stl" />
+    <mesh name="L5_S13_YAW_STS3215" file="L5_S13_YAW_STS3215.stl" />
+    <mesh name="L5_yaw_clamp" file="L5_yaw_clamp.stl" />
+    <mesh name="L5_coxa" file="L5_coxa.stl" />
+    <mesh name="L5_coxa_bottom" file="L5_coxa_bottom.stl" />
+    <mesh name="L5_S14_HIP_STS3215" file="L5_S14_HIP_STS3215.stl" />
+    <mesh name="L5_hip_clamp" file="L5_hip_clamp.stl" />
+    <mesh name="L5_femur" file="L5_femur.stl" />
+    <mesh name="L5_femur_side_plate" file="L5_femur_side_plate.stl" />
+    <mesh name="L5_S15_KNEE_STS3215" file="L5_S15_KNEE_STS3215.stl" />
+    <mesh name="L5_knee_clamp" file="L5_knee_clamp.stl" />
+    <mesh name="L5_tibia" file="L5_tibia.stl" />
+    <mesh name="L5_foot" file="L5_foot.stl" />
+    <mesh name="L5_yaw_disc_plus" file="L5_yaw_disc_plus.stl" />
+    <mesh name="L5_yaw_disc_min" file="L5_yaw_disc_min.stl" />
+    <mesh name="L5_yaw_shim_plus" file="L5_yaw_shim_plus.stl" />
+    <mesh name="L5_yaw_shim_min" file="L5_yaw_shim_min.stl" />
+    <mesh name="L5_hip_disc_plus" file="L5_hip_disc_plus.stl" />
+    <mesh name="L5_hip_disc_min" file="L5_hip_disc_min.stl" />
+    <mesh name="L5_hip_shim_plus" file="L5_hip_shim_plus.stl" />
+    <mesh name="L5_hip_shim_min" file="L5_hip_shim_min.stl" />
+    <mesh name="L5_knee_disc_plus" file="L5_knee_disc_plus.stl" />
+    <mesh name="L5_knee_disc_min" file="L5_knee_disc_min.stl" />
+    <mesh name="L5_knee_shim_plus" file="L5_knee_shim_plus.stl" />
+    <mesh name="L5_knee_shim_min" file="L5_knee_shim_min.stl" />
+    <mesh name="L6_S16_YAW_STS3215" file="L6_S16_YAW_STS3215.stl" />
+    <mesh name="L6_yaw_clamp" file="L6_yaw_clamp.stl" />
+    <mesh name="L6_coxa" file="L6_coxa.stl" />
+    <mesh name="L6_coxa_bottom" file="L6_coxa_bottom.stl" />
+    <mesh name="L6_S17_HIP_STS3215" file="L6_S17_HIP_STS3215.stl" />
+    <mesh name="L6_hip_clamp" file="L6_hip_clamp.stl" />
+    <mesh name="L6_femur" file="L6_femur.stl" />
+    <mesh name="L6_femur_side_plate" file="L6_femur_side_plate.stl" />
+    <mesh name="L6_S18_KNEE_STS3215" file="L6_S18_KNEE_STS3215.stl" />
+    <mesh name="L6_knee_clamp" file="L6_knee_clamp.stl" />
+    <mesh name="L6_tibia" file="L6_tibia.stl" />
+    <mesh name="L6_foot" file="L6_foot.stl" />
+    <mesh name="L6_yaw_disc_plus" file="L6_yaw_disc_plus.stl" />
+    <mesh name="L6_yaw_disc_min" file="L6_yaw_disc_min.stl" />
+    <mesh name="L6_yaw_shim_plus" file="L6_yaw_shim_plus.stl" />
+    <mesh name="L6_yaw_shim_min" file="L6_yaw_shim_min.stl" />
+    <mesh name="L6_hip_disc_plus" file="L6_hip_disc_plus.stl" />
+    <mesh name="L6_hip_disc_min" file="L6_hip_disc_min.stl" />
+    <mesh name="L6_hip_shim_plus" file="L6_hip_shim_plus.stl" />
+    <mesh name="L6_hip_shim_min" file="L6_hip_shim_min.stl" />
+    <mesh name="L6_knee_disc_plus" file="L6_knee_disc_plus.stl" />
+    <mesh name="L6_knee_disc_min" file="L6_knee_disc_min.stl" />
+    <mesh name="L6_knee_shim_plus" file="L6_knee_shim_plus.stl" />
+    <mesh name="L6_knee_shim_min" file="L6_knee_shim_min.stl" />
+  </asset>
+  <default>
+    <joint limited="true" damping=".02" armature=".0001" frictionloss=".001" />
+    <geom friction="0.8 0.005 0.0002" solref="0.006 1" solimp="0.95 0.99 0.001" condim="4" />
+  </default>
+  <worldbody>
+    <light pos="0.2 -0.4 1.5" dir="-0.2 0.4 -1" diffuse="0.9 0.9 0.9" castshadow="true" />
+    <geom name="ground" type="plane" size="2 2 0.1" material="floor_mat" />
+    <body name="BODY" pos="0.0 0.0 0.27715873972">
+      <site name="imu" size="0.004" pos="0 0 0.078" />
+      <camera name="follow" mode="trackcom" pos="0.65 -0.85 0.5" xyaxes="0.794 0.607 0 -0.24 0.32 0.916" />
+      <inertial pos="5.880321486e-05 9.320330567e-11 0.02292342569" mass="0.930571464634609" fullinertia="0.002719821496 0.002460368825 0.003144360719 -8.308283684e-13 -9.137707922e-07 -8.371164719e-13" />
+      <geom name="01_CHASSIS_visual" type="mesh" mesh="01_CHASSIS" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+      <geom name="02_DORSAL_DECK_visual" type="mesh" mesh="02_DORSAL_DECK" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+      <geom name="03_BATTERY_TRAY_visual" type="mesh" mesh="03_BATTERY_TRAY" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+      <geom name="04_CONTROLLER_PLATE_visual" type="mesh" mesh="04_CONTROLLER_PLATE" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+      <geom name="05_SHELL_visual" type="mesh" mesh="05_SHELL" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+      <geom name="REF_3S_BATTERY_115x40x35_visual" type="mesh" mesh="REF_3S_BATTERY_115x40x35" rgba="0.73 0.49 0.12 1" contype="0" conaffinity="0" group="2" />
+      <geom name="REF_CONTROLLER_90x60x18_visual" type="mesh" mesh="REF_CONTROLLER_90x60x18" rgba="0.23 0.43 0.68 1" contype="0" conaffinity="0" group="2" />
+      <geom name="PCB_spacer_-32_-24_visual" type="mesh" mesh="PCB_spacer_-32_-24" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+      <geom name="PCB_spacer_-32_24_visual" type="mesh" mesh="PCB_spacer_-32_24" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+      <geom name="PCB_spacer_32_-24_visual" type="mesh" mesh="PCB_spacer_32_-24" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+      <geom name="PCB_spacer_32_24_visual" type="mesh" mesh="PCB_spacer_32_24" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+      <geom name="L1_S01_YAW_STS3215_visual" type="mesh" mesh="L1_S01_YAW_STS3215" rgba="0.19 0.2 0.22 1" contype="0" conaffinity="0" group="2" />
+      <geom name="L1_yaw_clamp_visual" type="mesh" mesh="L1_yaw_clamp" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+      <geom name="L2_S04_YAW_STS3215_visual" type="mesh" mesh="L2_S04_YAW_STS3215" rgba="0.19 0.2 0.22 1" contype="0" conaffinity="0" group="2" />
+      <geom name="L2_yaw_clamp_visual" type="mesh" mesh="L2_yaw_clamp" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+      <geom name="L3_S07_YAW_STS3215_visual" type="mesh" mesh="L3_S07_YAW_STS3215" rgba="0.19 0.2 0.22 1" contype="0" conaffinity="0" group="2" />
+      <geom name="L3_yaw_clamp_visual" type="mesh" mesh="L3_yaw_clamp" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+      <geom name="L4_S10_YAW_STS3215_visual" type="mesh" mesh="L4_S10_YAW_STS3215" rgba="0.19 0.2 0.22 1" contype="0" conaffinity="0" group="2" />
+      <geom name="L4_yaw_clamp_visual" type="mesh" mesh="L4_yaw_clamp" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+      <geom name="L5_S13_YAW_STS3215_visual" type="mesh" mesh="L5_S13_YAW_STS3215" rgba="0.19 0.2 0.22 1" contype="0" conaffinity="0" group="2" />
+      <geom name="L5_yaw_clamp_visual" type="mesh" mesh="L5_yaw_clamp" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+      <geom name="L6_S16_YAW_STS3215_visual" type="mesh" mesh="L6_S16_YAW_STS3215" rgba="0.19 0.2 0.22 1" contype="0" conaffinity="0" group="2" />
+      <geom name="L6_yaw_clamp_visual" type="mesh" mesh="L6_yaw_clamp" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+      <geom name="L1_S01_YAW_STS3215_collision" type="box" size="0.022615 0.012365 0.016" pos="0.05197234842 0.05197234842 0" quat="0.9238795325 0 0 0.3826834324" rgba="0.8 0.4 0.1 0.35" group="3" />
+      <geom name="L2_S04_YAW_STS3215_collision" type="box" size="0.022615 0.012365 0.016" pos="2.490423675e-18 0.0735 0" quat="0.7071067812 0 0 0.7071067812" rgba="0.8 0.4 0.1 0.35" group="3" />
+      <geom name="L3_S07_YAW_STS3215_collision" type="box" size="0.022615 0.012365 0.016" pos="-0.05197234842 0.05197234842 0" quat="0.3826834324 0 0 0.9238795325" rgba="0.8 0.4 0.1 0.35" group="3" />
+      <geom name="L4_S10_YAW_STS3215_collision" type="box" size="0.022615 0.012365 0.016" pos="-0.05197234842 -0.05197234842 0" quat="-0.3826834324 0 0 0.9238795325" rgba="0.8 0.4 0.1 0.35" group="3" />
+      <geom name="L5_S13_YAW_STS3215_collision" type="box" size="0.022615 0.012365 0.016" pos="-1.302238615e-17 -0.0735 0" quat="-0.7071067812 0 0 0.7071067812" rgba="0.8 0.4 0.1 0.35" group="3" />
+      <geom name="L6_S16_YAW_STS3215_collision" type="box" size="0.022615 0.012365 0.016" pos="0.05197234842 -0.05197234842 0" quat="-0.9238795325 0 0 0.3826834324" rgba="0.8 0.4 0.1 0.35" group="3" />
+      <geom name="body_collision" type="ellipsoid" pos="0 0 0.036" size="0.078 0.049 0.067" rgba="0.8 0.4 0.1 0.3" group="3" />
+      <body name="L1_COXA" pos="0.06081118318 0.06081118318 0">
+        <joint name="L1_yaw" type="hinge" axis="0 0 1" range="-0.3490658504 0.3490658504" />
+        <inertial pos="0.03022795092 0.03005701527 -0.0115998342" mass="0.10334802255798715" fullinertia="4.280456813e-05 4.29608301e-05 3.606163057e-05 -9.67244736e-06 6.056988419e-06 5.668050118e-06" />
+        <geom name="L1_coxa_visual" type="mesh" mesh="L1_coxa" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L1_coxa_bottom_visual" type="mesh" mesh="L1_coxa_bottom" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L1_S02_HIP_STS3215_visual" type="mesh" mesh="L1_S02_HIP_STS3215" rgba="0.19 0.2 0.22 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L1_hip_clamp_visual" type="mesh" mesh="L1_hip_clamp" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L1_yaw_disc_plus_visual" type="mesh" mesh="L1_yaw_disc_plus" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L1_yaw_disc_min_visual" type="mesh" mesh="L1_yaw_disc_min" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L1_yaw_shim_plus_visual" type="mesh" mesh="L1_yaw_shim_plus" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L1_yaw_shim_min_visual" type="mesh" mesh="L1_yaw_shim_min" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L1_S02_HIP_STS3215_collision" type="box" size="0.022615 0.012365 0.016" pos="0.03535533906 0.03535533906 -0.0125" quat="0.6532814824 -0.2705980501 -0.6532814824 -0.2705980501" rgba="0.8 0.4 0.1 0.35" group="3" />
+        <body name="L1_FEMUR" pos="0.03535533906 0.03535533906 0">
+          <joint name="L1_hip" type="hinge" axis="0.7071067812 -0.7071067812 0" range="-0.2617993878 0.2617993878" />
+          <inertial pos="0.0365740358 0.03597026422 0.01378791209" mass="0.10874649752944587" fullinertia="4.077460764e-05 4.003294204e-05 6.12791472e-05 -1.375500979e-05 -6.727279137e-06 -6.852290899e-06" />
+          <geom name="L1_femur_visual" type="mesh" mesh="L1_femur" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L1_femur_side_plate_visual" type="mesh" mesh="L1_femur_side_plate" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L1_S03_KNEE_STS3215_visual" type="mesh" mesh="L1_S03_KNEE_STS3215" rgba="0.19 0.2 0.22 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L1_knee_clamp_visual" type="mesh" mesh="L1_knee_clamp" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L1_hip_disc_plus_visual" type="mesh" mesh="L1_hip_disc_plus" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L1_hip_disc_min_visual" type="mesh" mesh="L1_hip_disc_min" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L1_hip_shim_plus_visual" type="mesh" mesh="L1_hip_shim_plus" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L1_hip_shim_min_visual" type="mesh" mesh="L1_hip_shim_min" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L1_S03_KNEE_STS3215_collision" type="box" size="0.022615 0.012365 0.016" pos="0.04473733197 0.04473733197 0.01695264745" quat="0.6830127019 -0.6123724357 -0.3535533906 0.1830127019" rgba="0.8 0.4 0.1 0.35" group="3" />
+          <body name="L1_TIBIA" pos="0.05327499075 0.05327499075 0.02018788552">
+            <joint name="L1_knee" type="hinge" axis="0.7071067812 -0.7071067812 0" range="-0.2617993878 0.2617993878" />
+            <inertial pos="0.01258375384 0.01258674841 -0.0434179088" mass="0.04106974662537008" fullinertia="4.899454962e-05 4.899316298e-05 1.333472293e-05 7.829381064e-07 9.68078351e-06 9.683477982e-06" />
+            <geom name="L1_tibia_visual" type="mesh" mesh="L1_tibia" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L1_foot_visual" type="mesh" mesh="L1_foot" rgba="0.1 0.12 0.13 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L1_knee_disc_plus_visual" type="mesh" mesh="L1_knee_disc_plus" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L1_knee_disc_min_visual" type="mesh" mesh="L1_knee_disc_min" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L1_knee_shim_plus_visual" type="mesh" mesh="L1_knee_shim_plus" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L1_knee_shim_min_visual" type="mesh" mesh="L1_knee_shim_min" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L1_foot_contact" type="sphere" size="0.0075" pos="0.02394328259 0.02394310446 -0.1078466252" rgba="0.8 0.4 0.1 0.35" group="3" />
+            <geom name="L1_TIBIA_shin_collision" type="capsule" fromto="0.008965087162 0.008965087162 -0.02718923361 0.02257855134 0.02257855134 -0.09213803796" size="0.006" group="3" rgba="0.8 0.4 0.1 0.3" />
+            <site name="L1_foot" pos="0.02394328259 0.02394310446 -0.1078466252" size="0.008" rgba="0 1 0 0.3" />
+          </body>
+        </body>
+      </body>
+      <body name="L2_COXA" pos="5.265981236e-18 0.086 0">
+        <joint name="L2_yaw" type="hinge" axis="0 0 1" range="-0.3490658504 0.3490658504" />
+        <inertial pos="0.0001208697598 0.0426279084 -0.0115998342" mass="0.10334802255798717" fullinertia="5.255514648e-05 3.321025176e-05 3.606163057e-05 -7.813098545e-08 2.750209103e-07 8.290854259e-06" />
+        <geom name="L2_coxa_visual" type="mesh" mesh="L2_coxa" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L2_coxa_bottom_visual" type="mesh" mesh="L2_coxa_bottom" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L2_S05_HIP_STS3215_visual" type="mesh" mesh="L2_S05_HIP_STS3215" rgba="0.19 0.2 0.22 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L2_hip_clamp_visual" type="mesh" mesh="L2_hip_clamp" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L2_yaw_disc_plus_visual" type="mesh" mesh="L2_yaw_disc_plus" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L2_yaw_disc_min_visual" type="mesh" mesh="L2_yaw_disc_min" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L2_yaw_shim_plus_visual" type="mesh" mesh="L2_yaw_shim_plus" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L2_yaw_shim_min_visual" type="mesh" mesh="L2_yaw_shim_min" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L2_S05_HIP_STS3215_collision" type="box" size="0.022615 0.012365 0.016" pos="3.061616998e-18 0.05 -0.0125" quat="0.7071067812 -5.551115123e-17 -0.7071067812 -1.110223025e-16" rgba="0.8 0.4 0.1 0.35" group="3" />
+        <body name="L2_FEMUR" pos="3.061616998e-18 0.05 0">
+          <joint name="L2_hip" type="hinge" axis="1 -6.123233996e-17 0" range="-0.2617993878 0.2617993878" />
+          <inertial pos="0.0004269309738 0.05129656648 0.01378791209" mass="0.1087464975294459" fullinertia="5.415878463e-05 2.664876505e-05 6.12791472e-05 3.70832804e-07 8.839666463e-08 -9.602206058e-06" />
+          <geom name="L2_femur_visual" type="mesh" mesh="L2_femur" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L2_femur_side_plate_visual" type="mesh" mesh="L2_femur_side_plate" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L2_S06_KNEE_STS3215_visual" type="mesh" mesh="L2_S06_KNEE_STS3215" rgba="0.19 0.2 0.22 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L2_knee_clamp_visual" type="mesh" mesh="L2_knee_clamp" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L2_hip_disc_plus_visual" type="mesh" mesh="L2_hip_disc_plus" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L2_hip_disc_min_visual" type="mesh" mesh="L2_hip_disc_min" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L2_hip_shim_plus_visual" type="mesh" mesh="L2_hip_shim_plus" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L2_hip_shim_min_visual" type="mesh" mesh="L2_hip_shim_min" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L2_S06_KNEE_STS3215_collision" type="box" size="0.022615 0.012365 0.016" pos="3.225601308e-18 0.06326814162 0.01695264745" quat="0.5609855268 -0.4304593346 -0.5609855268 0.4304593346" rgba="0.8 0.4 0.1 0.35" group="3" />
+          <body name="L2_TIBIA" pos="4.613380088e-18 0.07534221445 0.02018788552">
+            <joint name="L2_knee" type="hinge" axis="1 -6.123233996e-17 0" range="-0.2617993878 0.2617993878" />
+            <inertial pos="-2.117482195e-06 0.01779823283 -0.0434179088" mass="0.041069746625370065" fullinertia="4.821091819e-05 4.977679441e-05 1.333472293e-05 6.933233222e-10 -1.905279683e-09 1.369260061e-05" />
+            <geom name="L2_tibia_visual" type="mesh" mesh="L2_tibia" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L2_foot_visual" type="mesh" mesh="L2_foot" rgba="0.1 0.12 0.13 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L2_knee_disc_plus_visual" type="mesh" mesh="L2_knee_disc_plus" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L2_knee_disc_min_visual" type="mesh" mesh="L2_knee_disc_min" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L2_knee_shim_plus_visual" type="mesh" mesh="L2_knee_shim_plus" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L2_knee_shim_min_visual" type="mesh" mesh="L2_knee_shim_min" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L2_foot_contact" type="sphere" size="0.0075" pos="7.63562135e-08 0.03386069468 -0.1078466252" rgba="0.8 0.4 0.1 0.35" group="3" />
+            <geom name="L2_TIBIA_shin_collision" type="capsule" fromto="7.763371523e-19 0.01267854785 -0.02718923361 1.955203327e-18 0.03193089352 -0.09213803796" size="0.006" group="3" rgba="0.8 0.4 0.1 0.3" />
+            <site name="L2_foot" pos="7.63562135e-08 0.03386069468 -0.1078466252" size="0.008" rgba="0 1 0 0.3" />
+          </body>
+        </body>
+      </body>
+      <body name="L3_COXA" pos="-0.06081118318 0.06081118318 0">
+        <joint name="L3_yaw" type="hinge" axis="0 0 1" range="-0.3490658504 0.3490658504" />
+        <inertial pos="-0.03005701527 0.03022795092 -0.0115998342" mass="0.10334802255798717" fullinertia="4.29608301e-05 4.280456813e-05 3.606163057e-05 9.67244736e-06 -5.668050118e-06 6.056988419e-06" />
+        <geom name="L3_coxa_visual" type="mesh" mesh="L3_coxa" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L3_coxa_bottom_visual" type="mesh" mesh="L3_coxa_bottom" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L3_S08_HIP_STS3215_visual" type="mesh" mesh="L3_S08_HIP_STS3215" rgba="0.19 0.2 0.22 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L3_hip_clamp_visual" type="mesh" mesh="L3_hip_clamp" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L3_yaw_disc_plus_visual" type="mesh" mesh="L3_yaw_disc_plus" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L3_yaw_disc_min_visual" type="mesh" mesh="L3_yaw_disc_min" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L3_yaw_shim_plus_visual" type="mesh" mesh="L3_yaw_shim_plus" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L3_yaw_shim_min_visual" type="mesh" mesh="L3_yaw_shim_min" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L3_S08_HIP_STS3215_collision" type="box" size="0.022615 0.012365 0.016" pos="-0.03535533906 0.03535533906 -0.0125" quat="0.6532814824 0.2705980501 -0.6532814824 0.2705980501" rgba="0.8 0.4 0.1 0.35" group="3" />
+        <body name="L3_FEMUR" pos="-0.03535533906 0.03535533906 0">
+          <joint name="L3_hip" type="hinge" axis="0.7071067812 0.7071067812 0" range="-0.2617993878 0.2617993878" />
+          <inertial pos="-0.03597026422 0.0365740358 0.01378791209" mass="0.10874649752944589" fullinertia="4.003294204e-05 4.077460764e-05 6.12791472e-05 1.375500979e-05 6.852290899e-06 -6.727279137e-06" />
+          <geom name="L3_femur_visual" type="mesh" mesh="L3_femur" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L3_femur_side_plate_visual" type="mesh" mesh="L3_femur_side_plate" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L3_S09_KNEE_STS3215_visual" type="mesh" mesh="L3_S09_KNEE_STS3215" rgba="0.19 0.2 0.22 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L3_knee_clamp_visual" type="mesh" mesh="L3_knee_clamp" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L3_hip_disc_plus_visual" type="mesh" mesh="L3_hip_disc_plus" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L3_hip_disc_min_visual" type="mesh" mesh="L3_hip_disc_min" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L3_hip_shim_plus_visual" type="mesh" mesh="L3_hip_shim_plus" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L3_hip_shim_min_visual" type="mesh" mesh="L3_hip_shim_min" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L3_S09_KNEE_STS3215_collision" type="box" size="0.022615 0.012365 0.016" pos="-0.04473733197 0.04473733197 0.01695264745" quat="0.3535533906 -0.1830127019 -0.6830127019 0.6123724357" rgba="0.8 0.4 0.1 0.35" group="3" />
+          <body name="L3_TIBIA" pos="-0.05327499075 0.05327499075 0.02018788552">
+            <joint name="L3_knee" type="hinge" axis="0.7071067812 0.7071067812 0" range="-0.2617993878 0.2617993878" />
+            <inertial pos="-0.01258674841 0.01258375384 -0.0434179088" mass="0.04106974662537008" fullinertia="4.899316298e-05 4.899454962e-05 1.333472293e-05 -7.829381064e-07 -9.683477982e-06 9.68078351e-06" />
+            <geom name="L3_tibia_visual" type="mesh" mesh="L3_tibia" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L3_foot_visual" type="mesh" mesh="L3_foot" rgba="0.1 0.12 0.13 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L3_knee_disc_plus_visual" type="mesh" mesh="L3_knee_disc_plus" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L3_knee_disc_min_visual" type="mesh" mesh="L3_knee_disc_min" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L3_knee_shim_plus_visual" type="mesh" mesh="L3_knee_shim_plus" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L3_knee_shim_min_visual" type="mesh" mesh="L3_knee_shim_min" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L3_foot_contact" type="sphere" size="0.0075" pos="-0.02394310446 0.02394328259 -0.1078466252" rgba="0.8 0.4 0.1 0.35" group="3" />
+            <geom name="L3_TIBIA_shin_collision" type="capsule" fromto="-0.008965087162 0.008965087162 -0.02718923361 -0.02257855134 0.02257855134 -0.09213803796" size="0.006" group="3" rgba="0.8 0.4 0.1 0.3" />
+            <site name="L3_foot" pos="-0.02394310446 0.02394328259 -0.1078466252" size="0.008" rgba="0 1 0 0.3" />
+          </body>
+        </body>
+      </body>
+      <body name="L4_COXA" pos="-0.06081118318 -0.06081118318 0">
+        <joint name="L4_yaw" type="hinge" axis="0 0 1" range="-0.3490658504 0.3490658504" />
+        <inertial pos="-0.03022795092 -0.03005701527 -0.0115998342" mass="0.10334802255798715" fullinertia="4.280456813e-05 4.29608301e-05 3.606163057e-05 -9.67244736e-06 -6.056988419e-06 -5.668050118e-06" />
+        <geom name="L4_coxa_visual" type="mesh" mesh="L4_coxa" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L4_coxa_bottom_visual" type="mesh" mesh="L4_coxa_bottom" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L4_S11_HIP_STS3215_visual" type="mesh" mesh="L4_S11_HIP_STS3215" rgba="0.19 0.2 0.22 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L4_hip_clamp_visual" type="mesh" mesh="L4_hip_clamp" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L4_yaw_disc_plus_visual" type="mesh" mesh="L4_yaw_disc_plus" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L4_yaw_disc_min_visual" type="mesh" mesh="L4_yaw_disc_min" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L4_yaw_shim_plus_visual" type="mesh" mesh="L4_yaw_shim_plus" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L4_yaw_shim_min_visual" type="mesh" mesh="L4_yaw_shim_min" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L4_S11_HIP_STS3215_collision" type="box" size="0.022615 0.012365 0.016" pos="-0.03535533906 -0.03535533906 -0.0125" quat="0.2705980501 0.6532814824 -0.2705980501 0.6532814824" rgba="0.8 0.4 0.1 0.35" group="3" />
+        <body name="L4_FEMUR" pos="-0.03535533906 -0.03535533906 0">
+          <joint name="L4_hip" type="hinge" axis="-0.7071067812 0.7071067812 0" range="-0.2617993878 0.2617993878" />
+          <inertial pos="-0.0365740358 -0.03597026422 0.01378791209" mass="0.10874649752944589" fullinertia="4.077460764e-05 4.003294204e-05 6.12791472e-05 -1.375500979e-05 6.727279137e-06 6.852290899e-06" />
+          <geom name="L4_femur_visual" type="mesh" mesh="L4_femur" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L4_femur_side_plate_visual" type="mesh" mesh="L4_femur_side_plate" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L4_S12_KNEE_STS3215_visual" type="mesh" mesh="L4_S12_KNEE_STS3215" rgba="0.19 0.2 0.22 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L4_knee_clamp_visual" type="mesh" mesh="L4_knee_clamp" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L4_hip_disc_plus_visual" type="mesh" mesh="L4_hip_disc_plus" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L4_hip_disc_min_visual" type="mesh" mesh="L4_hip_disc_min" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L4_hip_shim_plus_visual" type="mesh" mesh="L4_hip_shim_plus" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L4_hip_shim_min_visual" type="mesh" mesh="L4_hip_shim_min" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L4_S12_KNEE_STS3215_collision" type="box" size="0.022615 0.012365 0.016" pos="-0.04473733197 -0.04473733197 0.01695264745" quat="-0.1830127019 0.3535533906 -0.6123724357 0.6830127019" rgba="0.8 0.4 0.1 0.35" group="3" />
+          <body name="L4_TIBIA" pos="-0.05327499075 -0.05327499075 0.02018788552">
+            <joint name="L4_knee" type="hinge" axis="-0.7071067812 0.7071067812 0" range="-0.2617993878 0.2617993878" />
+            <inertial pos="-0.01258375384 -0.01258674841 -0.0434179088" mass="0.04106974662537008" fullinertia="4.899454962e-05 4.899316298e-05 1.333472293e-05 7.829381064e-07 -9.68078351e-06 -9.683477982e-06" />
+            <geom name="L4_tibia_visual" type="mesh" mesh="L4_tibia" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L4_foot_visual" type="mesh" mesh="L4_foot" rgba="0.1 0.12 0.13 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L4_knee_disc_plus_visual" type="mesh" mesh="L4_knee_disc_plus" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L4_knee_disc_min_visual" type="mesh" mesh="L4_knee_disc_min" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L4_knee_shim_plus_visual" type="mesh" mesh="L4_knee_shim_plus" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L4_knee_shim_min_visual" type="mesh" mesh="L4_knee_shim_min" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L4_foot_contact" type="sphere" size="0.0075" pos="-0.02394328259 -0.02394310446 -0.1078466252" rgba="0.8 0.4 0.1 0.35" group="3" />
+            <geom name="L4_TIBIA_shin_collision" type="capsule" fromto="-0.008965087162 -0.008965087162 -0.02718923361 -0.02257855134 -0.02257855134 -0.09213803796" size="0.006" group="3" rgba="0.8 0.4 0.1 0.3" />
+            <site name="L4_foot" pos="-0.02394328259 -0.02394310446 -0.1078466252" size="0.008" rgba="0 1 0 0.3" />
+          </body>
+        </body>
+      </body>
+      <body name="L5_COXA" pos="-1.579794371e-17 -0.086 0">
+        <joint name="L5_yaw" type="hinge" axis="0 0 1" range="-0.3490658504 0.3490658504" />
+        <inertial pos="-0.0001208697598 -0.0426279084 -0.0115998342" mass="0.10334802255798715" fullinertia="5.255514648e-05 3.321025176e-05 3.606163057e-05 -7.813098545e-08 -2.750209103e-07 -8.290854259e-06" />
+        <geom name="L5_coxa_visual" type="mesh" mesh="L5_coxa" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L5_coxa_bottom_visual" type="mesh" mesh="L5_coxa_bottom" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L5_S14_HIP_STS3215_visual" type="mesh" mesh="L5_S14_HIP_STS3215" rgba="0.19 0.2 0.22 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L5_hip_clamp_visual" type="mesh" mesh="L5_hip_clamp" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L5_yaw_disc_plus_visual" type="mesh" mesh="L5_yaw_disc_plus" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L5_yaw_disc_min_visual" type="mesh" mesh="L5_yaw_disc_min" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L5_yaw_shim_plus_visual" type="mesh" mesh="L5_yaw_shim_plus" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L5_yaw_shim_min_visual" type="mesh" mesh="L5_yaw_shim_min" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L5_S14_HIP_STS3215_collision" type="box" size="0.022615 0.012365 0.016" pos="-9.184850994e-18 -0.05 -0.0125" quat="1.110223025e-16 0.7071067812 -5.551115123e-17 0.7071067812" rgba="0.8 0.4 0.1 0.35" group="3" />
+        <body name="L5_FEMUR" pos="-9.184850994e-18 -0.05 0">
+          <joint name="L5_hip" type="hinge" axis="-1 1.836970199e-16 0" range="-0.2617993878 0.2617993878" />
+          <inertial pos="-0.0004269309738 -0.05129656648 0.01378791209" mass="0.10874649752944589" fullinertia="5.415878463e-05 2.664876505e-05 6.12791472e-05 3.70832804e-07 -8.839666463e-08 9.602206058e-06" />
+          <geom name="L5_femur_visual" type="mesh" mesh="L5_femur" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L5_femur_side_plate_visual" type="mesh" mesh="L5_femur_side_plate" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L5_S15_KNEE_STS3215_visual" type="mesh" mesh="L5_S15_KNEE_STS3215" rgba="0.19 0.2 0.22 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L5_knee_clamp_visual" type="mesh" mesh="L5_knee_clamp" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L5_hip_disc_plus_visual" type="mesh" mesh="L5_hip_disc_plus" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L5_hip_disc_min_visual" type="mesh" mesh="L5_hip_disc_min" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L5_hip_shim_plus_visual" type="mesh" mesh="L5_hip_shim_plus" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L5_hip_shim_min_visual" type="mesh" mesh="L5_hip_shim_min" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L5_S15_KNEE_STS3215_collision" type="box" size="0.022615 0.012365 0.016" pos="-1.245236148e-17 -0.06326814162 0.01695264745" quat="-0.4304593346 0.5609855268 -0.4304593346 0.5609855268" rgba="0.8 0.4 0.1 0.35" group="3" />
+          <body name="L5_TIBIA" pos="-1.384014027e-17 -0.07534221445 0.02018788552">
+            <joint name="L5_knee" type="hinge" axis="-1 1.836970199e-16 0" range="-0.2617993878 0.2617993878" />
+            <inertial pos="2.117482195e-06 -0.01779823283 -0.0434179088" mass="0.041069746625370065" fullinertia="4.821091819e-05 4.977679441e-05 1.333472293e-05 6.933233222e-10 1.905279683e-09 -1.369260061e-05" />
+            <geom name="L5_tibia_visual" type="mesh" mesh="L5_tibia" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L5_foot_visual" type="mesh" mesh="L5_foot" rgba="0.1 0.12 0.13 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L5_knee_disc_plus_visual" type="mesh" mesh="L5_knee_disc_plus" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L5_knee_disc_min_visual" type="mesh" mesh="L5_knee_disc_min" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L5_knee_shim_plus_visual" type="mesh" mesh="L5_knee_shim_plus" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L5_knee_shim_min_visual" type="mesh" mesh="L5_knee_shim_min" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L5_foot_contact" type="sphere" size="0.0075" pos="-7.63562135e-08 -0.03386069468 -0.1078466252" rgba="0.8 0.4 0.1 0.35" group="3" />
+            <geom name="L5_TIBIA_shin_collision" type="capsule" fromto="-2.329011457e-18 -0.01267854785 -0.02718923361 -5.865609981e-18 -0.03193089352 -0.09213803796" size="0.006" group="3" rgba="0.8 0.4 0.1 0.3" />
+            <site name="L5_foot" pos="-7.63562135e-08 -0.03386069468 -0.1078466252" size="0.008" rgba="0 1 0 0.3" />
+          </body>
+        </body>
+      </body>
+      <body name="L6_COXA" pos="0.06081118318 -0.06081118318 0">
+        <joint name="L6_yaw" type="hinge" axis="0 0 1" range="-0.3490658504 0.3490658504" />
+        <inertial pos="0.03005701527 -0.03022795092 -0.0115998342" mass="0.10334802255798714" fullinertia="4.29608301e-05 4.280456813e-05 3.606163057e-05 9.67244736e-06 5.668050118e-06 -6.056988419e-06" />
+        <geom name="L6_coxa_visual" type="mesh" mesh="L6_coxa" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L6_coxa_bottom_visual" type="mesh" mesh="L6_coxa_bottom" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L6_S17_HIP_STS3215_visual" type="mesh" mesh="L6_S17_HIP_STS3215" rgba="0.19 0.2 0.22 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L6_hip_clamp_visual" type="mesh" mesh="L6_hip_clamp" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L6_yaw_disc_plus_visual" type="mesh" mesh="L6_yaw_disc_plus" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L6_yaw_disc_min_visual" type="mesh" mesh="L6_yaw_disc_min" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L6_yaw_shim_plus_visual" type="mesh" mesh="L6_yaw_shim_plus" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L6_yaw_shim_min_visual" type="mesh" mesh="L6_yaw_shim_min" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+        <geom name="L6_S17_HIP_STS3215_collision" type="box" size="0.022615 0.012365 0.016" pos="0.03535533906 -0.03535533906 -0.0125" quat="-0.2705980501 0.6532814824 0.2705980501 0.6532814824" rgba="0.8 0.4 0.1 0.35" group="3" />
+        <body name="L6_FEMUR" pos="0.03535533906 -0.03535533906 0">
+          <joint name="L6_hip" type="hinge" axis="-0.7071067812 -0.7071067812 0" range="-0.2617993878 0.2617993878" />
+          <inertial pos="0.03597026422 -0.0365740358 0.01378791209" mass="0.10874649752944589" fullinertia="4.003294204e-05 4.077460764e-05 6.12791472e-05 1.375500979e-05 -6.852290899e-06 6.727279137e-06" />
+          <geom name="L6_femur_visual" type="mesh" mesh="L6_femur" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L6_femur_side_plate_visual" type="mesh" mesh="L6_femur_side_plate" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L6_S18_KNEE_STS3215_visual" type="mesh" mesh="L6_S18_KNEE_STS3215" rgba="0.19 0.2 0.22 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L6_knee_clamp_visual" type="mesh" mesh="L6_knee_clamp" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L6_hip_disc_plus_visual" type="mesh" mesh="L6_hip_disc_plus" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L6_hip_disc_min_visual" type="mesh" mesh="L6_hip_disc_min" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L6_hip_shim_plus_visual" type="mesh" mesh="L6_hip_shim_plus" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L6_hip_shim_min_visual" type="mesh" mesh="L6_hip_shim_min" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+          <geom name="L6_S18_KNEE_STS3215_collision" type="box" size="0.022615 0.012365 0.016" pos="0.04473733197 -0.04473733197 0.01695264745" quat="-0.6123724357 0.6830127019 -0.1830127019 0.3535533906" rgba="0.8 0.4 0.1 0.35" group="3" />
+          <body name="L6_TIBIA" pos="0.05327499075 -0.05327499075 0.02018788552">
+            <joint name="L6_knee" type="hinge" axis="-0.7071067812 -0.7071067812 0" range="-0.2617993878 0.2617993878" />
+            <inertial pos="0.01258674841 -0.01258375384 -0.0434179088" mass="0.041069746625370065" fullinertia="4.899316298e-05 4.899454962e-05 1.333472293e-05 -7.829381064e-07 9.683477982e-06 -9.68078351e-06" />
+            <geom name="L6_tibia_visual" type="mesh" mesh="L6_tibia" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L6_foot_visual" type="mesh" mesh="L6_foot" rgba="0.1 0.12 0.13 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L6_knee_disc_plus_visual" type="mesh" mesh="L6_knee_disc_plus" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L6_knee_disc_min_visual" type="mesh" mesh="L6_knee_disc_min" rgba="0.68 0.7 0.73 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L6_knee_shim_plus_visual" type="mesh" mesh="L6_knee_shim_plus" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L6_knee_shim_min_visual" type="mesh" mesh="L6_knee_shim_min" rgba="0.23 0.43 0.42 1" contype="0" conaffinity="0" group="2" />
+            <geom name="L6_foot_contact" type="sphere" size="0.0075" pos="0.02394310446 -0.02394328259 -0.1078466252" rgba="0.8 0.4 0.1 0.35" group="3" />
+            <geom name="L6_TIBIA_shin_collision" type="capsule" fromto="0.008965087162 -0.008965087162 -0.02718923361 0.02257855134 -0.02257855134 -0.09213803796" size="0.006" group="3" rgba="0.8 0.4 0.1 0.3" />
+            <site name="L6_foot" pos="0.02394310446 -0.02394328259 -0.1078466252" size="0.008" rgba="0 1 0 0.3" />
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <motor name="L1_yaw" joint="L1_yaw" gear="1" />
+    <motor name="L1_hip" joint="L1_hip" gear="1" />
+    <motor name="L1_knee" joint="L1_knee" gear="1" />
+    <motor name="L2_yaw" joint="L2_yaw" gear="1" />
+    <motor name="L2_hip" joint="L2_hip" gear="1" />
+    <motor name="L2_knee" joint="L2_knee" gear="1" />
+    <motor name="L3_yaw" joint="L3_yaw" gear="1" />
+    <motor name="L3_hip" joint="L3_hip" gear="1" />
+    <motor name="L3_knee" joint="L3_knee" gear="1" />
+    <motor name="L4_yaw" joint="L4_yaw" gear="1" />
+    <motor name="L4_hip" joint="L4_hip" gear="1" />
+    <motor name="L4_knee" joint="L4_knee" gear="1" />
+    <motor name="L5_yaw" joint="L5_yaw" gear="1" />
+    <motor name="L5_hip" joint="L5_hip" gear="1" />
+    <motor name="L5_knee" joint="L5_knee" gear="1" />
+    <motor name="L6_yaw" joint="L6_yaw" gear="1" />
+    <motor name="L6_hip" joint="L6_hip" gear="1" />
+    <motor name="L6_knee" joint="L6_knee" gear="1" />
+  </actuator>
+  <sensor>
+    <gyro name="body_gyro" site="imu" />
+    <accelerometer name="body_accel" site="imu" />
+    <jointpos name="L1_yaw_q" joint="L1_yaw" />
+    <jointvel name="L1_yaw_dq" joint="L1_yaw" />
+    <jointpos name="L1_hip_q" joint="L1_hip" />
+    <jointvel name="L1_hip_dq" joint="L1_hip" />
+    <jointpos name="L1_knee_q" joint="L1_knee" />
+    <jointvel name="L1_knee_dq" joint="L1_knee" />
+    <jointpos name="L2_yaw_q" joint="L2_yaw" />
+    <jointvel name="L2_yaw_dq" joint="L2_yaw" />
+    <jointpos name="L2_hip_q" joint="L2_hip" />
+    <jointvel name="L2_hip_dq" joint="L2_hip" />
+    <jointpos name="L2_knee_q" joint="L2_knee" />
+    <jointvel name="L2_knee_dq" joint="L2_knee" />
+    <jointpos name="L3_yaw_q" joint="L3_yaw" />
+    <jointvel name="L3_yaw_dq" joint="L3_yaw" />
+    <jointpos name="L3_hip_q" joint="L3_hip" />
+    <jointvel name="L3_hip_dq" joint="L3_hip" />
+    <jointpos name="L3_knee_q" joint="L3_knee" />
+    <jointvel name="L3_knee_dq" joint="L3_knee" />
+    <jointpos name="L4_yaw_q" joint="L4_yaw" />
+    <jointvel name="L4_yaw_dq" joint="L4_yaw" />
+    <jointpos name="L4_hip_q" joint="L4_hip" />
+    <jointvel name="L4_hip_dq" joint="L4_hip" />
+    <jointpos name="L4_knee_q" joint="L4_knee" />
+    <jointvel name="L4_knee_dq" joint="L4_knee" />
+    <jointpos name="L5_yaw_q" joint="L5_yaw" />
+    <jointvel name="L5_yaw_dq" joint="L5_yaw" />
+    <jointpos name="L5_hip_q" joint="L5_hip" />
+    <jointvel name="L5_hip_dq" joint="L5_hip" />
+    <jointpos name="L5_knee_q" joint="L5_knee" />
+    <jointvel name="L5_knee_dq" joint="L5_knee" />
+    <jointpos name="L6_yaw_q" joint="L6_yaw" />
+    <jointvel name="L6_yaw_dq" joint="L6_yaw" />
+    <jointpos name="L6_hip_q" joint="L6_hip" />
+    <jointvel name="L6_hip_dq" joint="L6_hip" />
+    <jointpos name="L6_knee_q" joint="L6_knee" />
+    <jointvel name="L6_knee_dq" joint="L6_knee" />
+  </sensor>
+  <keyframe>
+    <key name="neutral" qpos="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" />
+  </keyframe>
+</mujoco>

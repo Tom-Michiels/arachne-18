@@ -1,0 +1,18 @@
+item,quantity,notes
+STS3215 12 V servo,18,Use the 12 V version
+Original driven horn,18,19.95 mm diameter and 14 mm pitch circle reference
+Original passive disc,18,Check supplied hardware dimensions
+Original central servo screw,36,Use correct manufacturer screw on each side
+DIN 7380 / ISO 7380-1 M3 x 10 button-head screw,144,Verify horn engagement with actual shim thickness
+M3 flat washer approximately 0.5 mm,144,Outside printed cheeks
+DIN 7380 / ISO 7380-1 M3 x 8 button-head screw,112,Clamps brackets and dorsal components
+M3 heat-set insert for 4.2 mm bore,112,Deck inserts maximum 3 mm long
+DIN 7380 / ISO 7380-1 M3 x 16 button-head screw,4,Controller mounting
+M3 nut,4,Controller mounting
+DIN 7380 / ISO 7380-1 M3 x 25 button-head screw,6,Foot retention
+M3 locknut,6,Foot retention
+Battery strap maximum 15 mm wide,2,Battery restraint
+3S battery pack,1,Must fit 115 x 40 x 35 mm envelope excluding plugs
+TTL bus controller,1,Must fit 90 x 60 x 18 mm envelope
+Power distribution and protection,1,Size from measured system load
+Cables cable ties and anti-slip pads,as needed,Provide strain relief and free joint loops

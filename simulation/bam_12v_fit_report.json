@@ -1,0 +1,36 @@
+{
+  "status": "PROVISIONAL_DATASHEET_FIT_NOT_IDENTIFIED",
+  "source_motor": "feetech_sts3215_7_4V",
+  "source_sha256": "74d5068bd4453046fd5e33a11bfcc69a7f121740409f6818706a789b000df5e9",
+  "bam_version": "1.0.2",
+  "datasheet": "Feetech ST-3215-C018 A/0, 2023-07-20, pp. 3-4",
+  "voltage_V": 12.0,
+  "max_pwm_inherited": 0.97,
+  "target_no_load_rad_s": 4.71710608647116,
+  "target_output_stall_Nm": 2.941995,
+  "effective_kt": 2.3572085647538055,
+  "effective_R": 6.29865157157227,
+  "motor_torque_at_stall_before_friction_Nm": 4.356155818742208,
+  "motor_torque_at_no_load_before_friction_Nm": 0.1949032179948062,
+  "fitted_output_stall_Nm": 2.9419949999999995,
+  "no_load_equilibrium_residual_Nm": 0.0,
+  "inherited": [
+    "M6 friction coefficients",
+    "armature",
+    "position P gain scaling",
+    "command_delay"
+  ],
+  "overridden": [
+    "kt",
+    "R",
+    "max_velocity",
+    "q_offset=0; rig offset not a robot joint offset"
+  ],
+  "not_validated": [
+    "real 12V servo dynamics",
+    "electrical current",
+    "thermal/overload protection",
+    "backlash"
+  ],
+  "current_note": "Effective kt/R fit torque and speed; do not use their inferred current for battery or wiring sizing. Datasheet 2.7A stall is separate."
+}

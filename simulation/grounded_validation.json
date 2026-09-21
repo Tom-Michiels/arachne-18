@@ -1,0 +1,21 @@
+{
+  "mode": "grounded_body_height_exercise",
+  "duration_s": 10.000999999999896,
+  "amplitude_m": 0.008,
+  "frequency_hz": 0.25,
+  "min_contacts_after_2s": 6,
+  "max_contacts_after_2s": 6,
+  "body_height_range_m": [
+    0.08584484890810881,
+    0.10105856154927755
+  ],
+  "solver_warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}
