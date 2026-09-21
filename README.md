@@ -50,6 +50,8 @@ The battery is restrained with two straps. The controller has its own removable 
 
 ## Simulate it
 
+Moving to a training computer? Start with the [clone and setup guide](docs/another-computer.md).
+
 Use Python 3.12. From the repository root:
 
 ```sh

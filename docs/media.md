@@ -49,3 +49,7 @@ python src/render_simulation.py
 ```
 
 The technical render scripts use the repository geometry directly. Regenerating a studio image from a prompt is stochastic and will not reproduce identical pixels.
+
+### Task-lamp lighting revision
+
+The final workbench image increases illumination from the existing desk lamps by about one to one-and-a-half photographic stops. Preserve the camera, room, clutter and robot; use broad neutral-white task light over the mat, a naturally bright lamp interior, readable dark servo details and gentle contact shadows. Keep the rear wall slightly darker. Do not add studio lights, haze, dramatic grading, gloss, or change the geometry. This lighting revision also used the built-in image-generation tool.
