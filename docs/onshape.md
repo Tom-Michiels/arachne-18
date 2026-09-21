@@ -13,7 +13,7 @@ The Onshape document contains a positioned Part Studio with 155 solids, a separa
 - Yaw limits are ±20°; hip and knee limits are ±15° relative to the neutral CAD pose.
 - API readback reports no feature solver errors and neutral transforms within 5 × 10⁻¹³ of their intended values.
 
-The exact graph and instance IDs are in [`onshape_mate_plan.json`](../simulation/onshape_mate_plan.json). Installation checks are in [`onshape_validation.json`](../simulation/onshape_validation.json). Native motion-command verification is tracked separately; creation of valid mates and zero-pose consistency do not themselves validate a dynamic gait.
+The exact graph and instance IDs are in [`onshape_mate_plan.json`](../simulation/onshape_mate_plan.json). Installation checks are in [`onshape_validation.json`](../simulation/onshape_validation.json). The [frame and limit audit](../simulation/onshape_motion_validation.json) verifies all 18 joint axes, parsed angle limits and the 19 rigid components. The API motion test did not succeed: mate-value updates left the angles at zero and a nonzero occurrence transform returned HTTP 500. The assembly is restored to neutral; native interactive animation was not rechecked after authoring. MuJoCo motion validation is separate and passed.
 
 For one leg, the rigid structure is:
 

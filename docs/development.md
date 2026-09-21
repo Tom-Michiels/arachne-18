@@ -44,3 +44,10 @@ Review generated changes before copying `build/` STEP/STL outputs into `cad/` an
 Repository part names, filenames and documentation are English. The original native Onshape import used earlier internal part labels. `cad/onshape_name_map.json` maps English instance labels back to those native identifiers; Onshape instance IDs in the mate plan remain stable. These identifiers are retained for traceability, not as user-facing instructions.
 
 The Git repository deliberately excludes virtual environments, BREP caches, temporary downloads, session logs and credentials. No API key is needed to run the local simulation or rebuild the CAD.
+
+
+## Native assembly authoring
+
+`src/onshape_mates.py` is the API authoring source used for the native mates. It reads the checked-in mate plan and English-to-native name map. It resumes by feature name and refuses to reuse an errored feature. Its `--stage verify` mode checks the native mate counts, feature statuses, fixed chassis and neutral transforms. It does not verify animation.
+
+The checked-in plan targets the existing project document and its exact instance IDs. Do not use it against a different document without rebuilding the plan. For maintenance, supply your own read/write Onshape key in an external mode-0600 JSON file with `accessKey` and `secretKey` fields; never commit that file. Run `python src/onshape_mates.py --help` for options. API credentials are unnecessary for local CAD builds, simulation or training integration.
