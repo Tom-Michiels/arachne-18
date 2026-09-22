@@ -78,6 +78,12 @@ On Linux and Windows, use `python` for the viewer. On Windows, activate the envi
 
 ### Learned walking and a training army
 
+A separate [jump policy and video](https://tom-michiels.github.io/arachne-18/#jump)
+maximize clearance beneath every leg and the body, with no upright reward.
+The highest recorded jump clears all CAD parts by **2.40 cm**; a second policy
+prioritizes consistency across physics timesteps. [Policies and measurements](training/JUMP.md).
+
+
 The [obstacle videos](https://tom-michiels.github.io/arachne-18/#terrain-pebbles)
 now include individual collision stones and passive grass tufts that bend on
 contact. Small-stone and short-grass forward examples pass; larger rocks remain

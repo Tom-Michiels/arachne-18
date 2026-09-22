@@ -18,7 +18,7 @@
 <div class="wrap">
   <header>
     <a class="brand" href="#">ARACHNE <span>/ 18</span></a>
-    <nav aria-label="Main navigation"><a href="#fast">Faster gait</a><a href="#solo">All directions</a><a href="#army">Army</a><a href="#terrain">Uneven ground</a><a href="https://github.com/Tom-Michiels/arachne-18">GitHub ↗</a></nav>
+    <nav aria-label="Main navigation"><a href="#fast">Faster gait</a><a href="#jump">Jump</a><a href="#solo">All directions</a><a href="#army">Army</a><a href="#terrain">Uneven ground</a><a href="https://github.com/Tom-Michiels/arachne-18">GitHub ↗</a></nav>
   </header>
   <main>
     <div class="intro">
@@ -40,6 +40,18 @@
         <div class="caption"><p>Measured forward speed rises from 22.4 to 29.9 cm/s: 34% faster, with 32% more foot travel and slightly lower cadence. A wider, smooth foot arc supports longer steps while the body stays steady. Watch the robot accelerate, walk and stop in real time, with the original joint limits and full BAM servo dynamics.</p><a href="assets/arachne-faster-stride.mp4" download>Download video ↓</a></div>
       </div>
       <details><summary>How do we measure longer strides?</summary><p>Reference tests measure both body travel per gait cycle and the actual body-relative foot excursion, averaged over all six feet and complete cycles. Cadence, slipping, body tilt and motor-target smoothness are checked separately. All recordings play at simulation time. The 26 checks cover directions and perturbations at a 0.24 m/s command, plus forward walking at 0.34 m/s. The maximum-speed gait needs the tested flat surface: separate friction changes at that speed exceed the existing limits. <a href="https://github.com/Tom-Michiels/arachne-18/blob/main/training/SPRINT.md">Read the measured comparison and validation bounds</a>.</p></details>
+    </section>
+    <section id="jump" aria-labelledby="jump-title">
+      <div class="section-top"><h2 id="jump-title">Every leg off the ground.</h2><span class="tag">Real time + 4× slow replay</span></div>
+      <div class="player">
+        <video controls playsinline preload="metadata" poster="assets/arachne-jump.jpg" aria-label="A learned jump followed by a labelled slow-motion replay">
+          <source src="assets/arachne-jump.mp4" type="video/mp4">
+          <a href="assets/arachne-jump.mp4">Download the jump film</a>.
+        </video>
+        <div class="caption"><p>A separate policy maximizes clearance under the whole robot, with no reward for staying upright. At the recorded apex, every CAD part is at least 2.40 cm above the ground; collision-model clearance is 2.51 cm. The robot is fully airborne for about 0.13 seconds. Watch the jump at real speed, then the same motion four times slower.</p><a href="assets/arachne-jump.mp4" download>Download video ↓</a></div>
+      </div>
+      <details><summary>Maximum height and simulation sensitivity</summary><p>The highest standard-model jump reaches 2.51 cm collision clearance with a 1 ms physics step, versus 1.94 and 1.84 cm with finer steps. A separate robust policy reaches 2.08, 2.04 and 2.01 cm across those same settings. Both retain the original joint and servo limits. The objective rewards the lowest point of the entire collision model, so lifting the body while leaving a foot grounded earns no jump reward. These are the best policies found in this search; landing recovery and hardware jumping have not been validated.</p></details>
+      <p><a href="https://github.com/Tom-Michiels/arachne-18/blob/main/training/JUMP.md">Download the policies and read the objective and measurements ↗</a></p>
     </section>
     <section id="solo" aria-labelledby="solo-title">
       <div class="section-top"><h2 id="solo-title">One robot. Every direction.</h2><span class="tag">Original demo · 40 seconds</span></div>
