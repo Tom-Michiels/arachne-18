@@ -9,7 +9,7 @@ from gait import ROOT, INITIAL, target, rotate, feet, load, frequency
 
 
 def evaluate(params, command, seconds=10., backend='bam', video=None, width=960, height=640,
-             schedule=None, friction=None, payload=0., imu_noise=0., seed=23, terrain=None):
+             schedule=None, friction=None, payload=0., imu_noise=0., seed=23, terrain=None, video_label=None):
     terrain_info=None
     if terrain is not None and backend!='bam':
         raise ValueError('Terrain requires the original MuJoCo/BAM backend')
@@ -45,7 +45,7 @@ def evaluate(params, command, seconds=10., backend='bam', video=None, width=960,
     if video:
         import imageio.v2 as imageio
         from video_hud import HUD
-        hud=HUD(width,height)
+        hud=HUD(width,height,subtitle=video_label)
         Path(video).parent.mkdir(parents=True,exist_ok=True)
         m.vis.global_.offwidth=width; m.vis.global_.offheight=height
         m.mat_reflectance[:]=0

@@ -5,8 +5,9 @@ from PIL import Image,ImageDraw,ImageFont
 
 
 class HUD:
-    def __init__(self,width,height):
+    def __init__(self,width,height,subtitle=None):
         self.width,self.height=width,height
+        self.subtitle=subtitle or 'Learned CEM gait  /  IMU feedback  /  MuJoCo + BAM'
         self.speed=0.;self.tilt=0.;self.path=[]
         candidates=['/System/Library/Fonts/Supplemental/Arial.ttf',
                     '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf']
@@ -21,7 +22,7 @@ class HUD:
         w,h=image.size
         d.rectangle((0,0,w,87),fill=(12,23,29,235))
         d.text((26,15),'ARACHNE / 18',font=self.title,fill=(240,248,247))
-        d.text((27,52),'Learned CEM gait  /  IMU feedback  /  MuJoCo + BAM',font=self.small,fill=(151,183,185))
+        d.text((27,52),self.subtitle,font=self.small,fill=(151,183,185))
         vx,vy,wz=command
         if np.linalg.norm(command)<.005:label='STAND'
         elif abs(wz)>.08 and np.linalg.norm(command[:2])<.02:label='TURN LEFT' if wz>0 else 'TURN RIGHT'

@@ -1,5 +1,10 @@
 # Uneven-ground curriculum
 
+Watch the [terrain films](https://tom-michiels.github.io/arachne-18/#terrain):
+rolling ground up to 4 mm, slopes up to 2°, and 4 mm plateaus. Each is a
+continuous 12-second original MuJoCo/BAM run, at real-time playback and true
+terrain scale. Reproduce them with `python training/render_terrain.py`.
+
 The curriculum admits only an already smooth flat-ground controller. It then
 increases terrain difficulty while retaining velocity tracking, a steady body
 and smooth motor targets. It uses the original MuJoCo model and full BAM M6
