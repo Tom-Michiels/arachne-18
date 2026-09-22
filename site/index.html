@@ -79,13 +79,13 @@
           </div>
         </article>
         <article id="terrain-grass">
-          <h3>Bending grass · 18–30 mm</h3>
+          <h3>Dense bending grass · 18–30 mm</h3>
           <div class="player">
-            <video controls playsinline preload="metadata" poster="assets/arachne-terrain-grass.jpg" aria-label="ARACHNE walking through short passive grass tufts that bend on contact">
-              <source src="assets/arachne-terrain-grass.mp4" type="video/mp4">
-              <a href="assets/arachne-terrain-grass.mp4">Download the grass film</a>.
+            <video controls playsinline preload="metadata" poster="assets/arachne-terrain-dense-grass.jpg" aria-label="ARACHNE walking through a dense field of short grass that bends on contact">
+              <source src="assets/arachne-terrain-dense-grass.mp4" type="video/mp4">
+              <a href="assets/arachne-terrain-dense-grass.mp4">Download the grass film</a>.
             </video>
-            <div class="caption"><p>Spring-mounted grass tufts bend when touched. This forward run reaches 9.1 cm/s with 0.08° body-tilt RMS. The tufts are simplified mechanical proxies; dense natural grass remains future work.</p><a href="assets/arachne-terrain-grass.mp4" download>Download video ↓</a></div>
+            <div class="caption"><p>A dense patch with 987 bending tufts and 6,909 collision blades: about 66 times the previous blade density. Tufts are spaced about 3 cm apart. This forward run reaches 7.5 cm/s with 0.15° body-tilt RMS. The grass resists the legs through simulated contact; it remains a simplified mechanical model.</p><a href="assets/arachne-terrain-dense-grass.mp4" download>Download video ↓</a></div>
           </div>
         </article>
         <article id="terrain-rolling">
@@ -119,7 +119,7 @@
           </div>
         </article>
       </div>
-      <details><summary>What do these films demonstrate?</summary><p>Each film is a continuous 12-second reference MuJoCo/BAM simulation at real-time playback, using the general policy and seed 701. All five recorded runs pass their respective gates. Stone contacts affect support and collision checks; flexible grass contacts are measured separately. Three forward layouts each pass for small stones and short grass, but the full small-stone admission test reaches 29/30 and 28/30 passes, below the required threshold in its second batch. Larger stones and mixed obstacles still need training. These examples do not establish performance in every direction or in real grass. The previous heightfield admission result remains unchanged; its 8 mm plateau stage is still unmastered.</p></details>
+      <details><summary>What do these films demonstrate?</summary><p>Each film is a continuous 12-second reference MuJoCo/BAM simulation at real-time playback, using the general policy and seed 701. All five recorded runs pass their respective gates. Stone contacts affect support and collision checks; flexible grass contacts are measured separately. Three forward layouts each pass for small stones and the new dense short grass, but the full small-stone admission test reaches 29/30 and 28/30 passes, below the required threshold in its second batch. Larger stones and mixed obstacles still need training. These examples do not establish performance in every direction or in real grass. The previous heightfield admission result remains unchanged; its 8 mm plateau stage is still unmastered.</p></details>
       <p><a href="https://github.com/Tom-Michiels/arachne-18/blob/main/training/OBSTACLES.md">Explore the stone and grass curriculum ↗</a> · <a href="https://github.com/Tom-Michiels/arachne-18/blob/main/training/TERRAIN.md">Heightfield curriculum ↗</a></p>
     </section>
     <section class="about" aria-label="Training and verification">

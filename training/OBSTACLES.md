@@ -9,7 +9,7 @@ bending grass tufts. [Watch the obstacle films](https://tom-michiels.github.io/a
 - **Stones:** individually placed, partly buried ellipsoids with random size,
   height, orientation and position. They are fixed to the ground in this first
   model; rolling or displaced stones are a later extension.
-- **Grass:** three capsule-shaped blades per tuft, mounted on two passive
+- **Grass:** seven capsule-shaped collision blades per tuft, mounted on two passive
   spring-and-damper hinges. Contact bends the tuft and the spring restores it.
   Tufts interact with the robot and ground, but not with each other.
   This is an uncalibrated mechanical proxy, not a botanical or soft-soil model.
@@ -54,7 +54,31 @@ blade is not treated as striking the body against a rock. Grass joints are
 excluded from robot motor-speed metrics, and grass tips do not redefine the
 load-bearing ground-clearance reference.
 
-## Initial results and videos
+## Dense grass update
+
+The current grass film replaces the sparse initial example. Tuft spacing is
+**3 cm instead of 16 cm**, and each tuft carries **seven blades instead of three**.
+That increases nominal density from 117 to **7,778 collision blades per square
+metre**, about **66 times** the initial density. The rendered patch contains
+987 passive tufts and 6,909 physical blades. The grass stages now explicitly use
+this density; omitted parameters still reproduce the original sparse scenes.
+
+The forward film uses a bounded patch from x=0.30 to 1.30 m and y=−0.48 to 0.48 m,
+with the existing spawn exclusion and radial boundary. This bounds the physics
+cost without adding decorative, non-colliding filler. Curriculum scenes retain
+the full surrounding field for multiple headings. Each tuft shares two passive
+hinges across its seven blades.
+
+All three dense forward layouts (seeds 701–703) pass their gates. The film's
+seed 701 records 884 control steps with vegetation contact, versus 98 in the
+old sparse film. It reaches 7.48 cm/s with 0.155° body-tilt RMS. Grass resistance
+now measurably slows the robot. These tests are not full stage promotion.
+[Dense-grass validation](results/dense_grass_validation.json).
+
+## Initial sparse-scene results
+
+The following measurements predate the density increase; the saved report
+contains the original specifications.
 
 The existing general controller was evaluated on three layouts per obstacle
 class, using a 10 cm/s forward command for 12 seconds:
@@ -66,10 +90,10 @@ class, using a 10 cm/s forward command for 12 seconds:
 | Larger stones | 0/3 | Tracking and clearance-rate limits exceeded |
 | Stones and grass | 0/3 | Tracking and clearance-rate limits exceeded |
 
-The two published films show seed 701 at simulation-time playback. The pebble
-film records 486 control steps with foot–stone contact. The grass film records
-98 control steps with robot–vegetation contact and visible passive bending.
-Both recordings pass their gates. These forward examples are not equivalent to
+The pebble film and the earlier sparse grass film use seed 701 at simulation
+time. They record 486 foot–stone and 98 vegetation contact steps respectively.
+Both pass their gates. The current denser grass film is described above. These
+forward examples are not equivalent to
 full curriculum promotion. Larger obstacles remain unmastered; failed trials
 are retained in the [assessment report](results/obstacle_admission.json).
 
@@ -83,7 +107,8 @@ claimed, and later stages were not attempted by that admission run.
 
 ```sh
 python -m unittest discover -s training -p 'test_*.py'
-python training/assess_obstacles.py
+python training/assess_obstacles.py  # current, denser curriculum specifications
+python training/assess_dense_grass.py
 python training/render_obstacles.py
 python training/curriculum.py --config training/obstacle_curriculum.json \
   --assess-only --max-stage 6 --out training/runs/obstacle-admission

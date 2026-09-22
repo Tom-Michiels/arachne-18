@@ -31,6 +31,18 @@ class ObstacleTests(unittest.TestCase):
         grass=info['obstacles'][0]
         self.assertAlmostEqual(height_below(m,d,*grass['xy']),0.,places=7)
 
+    def test_dense_patch_has_physical_blades_and_passive_joints(self):
+        spec=dict(kind='grass',grass_spacing_m=.03,grass_blades_per_tuft=7,
+                  grass_spread_m=.014,grass_bounds_m=[.5,.62,-.06,.06])
+        m,info=make_model(spec,701);tufts=len(info['obstacles'])
+        self.assertGreaterEqual(tufts,16)
+        names=[mujoco.mj_id2name(m,mujoco.mjtObj.mjOBJ_GEOM,i) or '' for i in range(m.ngeom)]
+        blades=[i for i,n in enumerate(names) if n.startswith('obstacle_grass_')]
+        self.assertEqual(len(blades),7*tufts)
+        self.assertTrue(all(m.geom_contype[i]!=0 for i in blades))
+        self.assertEqual(info['passive_dofs'],2*tufts)
+        self.assertEqual(m.nu,18)
+
     def test_passing_requires_actual_obstacle_exposure(self):
         c=json.loads((ROOT/'training/obstacle_curriculum.json').read_text());s=c['stages'][1]
         r=evaluate(load(ROOT/'training/policies/omni.json'),[.1,0,0],2.)

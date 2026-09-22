@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "starting_policy": "training/policies/omni.json",
   "backend": "Reference MuJoCo/BAM; discrete obstacles are not supported by the Metal heightfield backend",
   "observation_contract": "IMU gravity and gyro, command and oscillator state; no terrain map",
@@ -58,7 +58,10 @@
         "grass_height_m": [
           0.018,
           0.03
-        ]
+        ],
+        "grass_spacing_m": 0.03,
+        "grass_blades_per_tuft": 7,
+        "grass_spread_m": 0.014
       },
       "speed_m_s": 0.1,
       "tilt_rms_max_deg": 3.0,
@@ -94,7 +97,10 @@
         "grass_height_m": [
           0.02,
           0.04
-        ]
+        ],
+        "grass_spacing_m": 0.03,
+        "grass_blades_per_tuft": 7,
+        "grass_spread_m": 0.014
       },
       "speed_m_s": 0.1,
       "tilt_rms_max_deg": 3.0,
@@ -111,7 +117,10 @@
         "grass_height_m": [
           0.03,
           0.06
-        ]
+        ],
+        "grass_spacing_m": 0.03,
+        "grass_blades_per_tuft": 7,
+        "grass_spread_m": 0.014
       },
       "speed_m_s": 0.1,
       "tilt_rms_max_deg": 3.0,

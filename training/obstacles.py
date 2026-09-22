@@ -20,8 +20,9 @@ def make_model(spec,seed):
     kinds=['rocks','grass'] if spec['kind']=='rocks_and_grass' else [spec['kind']]
     for kind in kinds:
         spacing=spec.get('rock_spacing_m',.12) if kind=='rocks' else spec.get('grass_spacing_m',.16)
-        for x in np.arange(-1.25,1.26,spacing):
-            for y in np.arange(-1.25,1.26,spacing):
+        bounds=spec.get('grass_bounds_m',[-1.25,1.26,-1.25,1.26]) if kind=='grass' else [-1.25,1.26,-1.25,1.26]
+        for x in np.arange(bounds[0],bounds[1],spacing):
+            for y in np.arange(bounds[2],bounds[3],spacing):
                 xy=np.array([x,y])+rng.uniform(-.22,.22,2)*spacing
                 if np.linalg.norm(xy)<.42 or np.linalg.norm(xy)>1.3:continue
                 index=len(objects);name=f'obstacle_{kind}_{index}'
@@ -43,9 +44,11 @@ def make_model(spec,seed):
                             range='-1.2 1.2',stiffness=str(spec.get('grass_stiffness_nm_rad',.0005)),
                             damping='.00001',armature='.00000002')
                         extra_dofs+=1
-                    for blade in range(3):
-                        a=blade*2*np.pi/3
-                        tip=[.005*np.cos(a),.005*np.sin(a),height]
+                    blades=spec.get('grass_blades_per_tuft',3)
+                    spread=spec.get('grass_spread_m',.005)
+                    for blade in range(blades):
+                        a=blade*2*np.pi/blades
+                        tip=[spread*np.cos(a),spread*np.sin(a),height]
                         ET.SubElement(body,'geom',name=f'{name}_blade_{blade}',type='capsule',
                             fromto=f'0 0 .002 {tip[0]} {tip[1]} {tip[2]}',size='.0015',
                             rgba='.22 .39 .10 1',group='1',contype='2',conaffinity='1',

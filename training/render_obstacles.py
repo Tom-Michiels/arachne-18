@@ -1,4 +1,6 @@
 """Render actual pebble and passive-grass encounters at native simulation time."""
+import argparse
+import copy
 import hashlib
 import json
 import imageio.v2 as imageio
@@ -8,10 +10,18 @@ from curriculum import gate
 
 
 def main():
+    ap=argparse.ArgumentParser(description=__doc__)
+    ap.add_argument('--only',choices=['pebbles','grass'])
+    args=ap.parse_args()
     config=json.loads((ROOT/'training/obstacle_curriculum.json').read_text())
     policy=ROOT/'training/policies/omni.json'
-    for index,name,label in [(1,'pebbles','Discrete stones / 4-8 mm'),(2,'grass','Bending grass proxies / 18-30 mm')]:
-        stage=config['stages'][index];out=ROOT/f'assets/arachne-terrain-{name}.mp4'
+    for index,name,label in [(1,'pebbles','Discrete stones / 4-8 mm'),(2,'grass','Dense bending grass / 18-30 mm')]:
+        if args.only and args.only!=name:continue
+        stage=copy.deepcopy(config['stages'][index])
+        if name=='grass':
+            stage['terrain']['grass_bounds_m']=[.30,1.3,-.48,.48]
+        asset='dense-grass' if name=='grass' else name
+        out=ROOT/f'assets/arachne-terrain-{asset}.mp4'
         r=evaluate(load(policy),[.1,0,0],12.,terrain=stage['terrain'],seed=701,
             video=out,width=1280,height=800,video_label=label+' / MuJoCo + BAM')
         r.update(policy='training/policies/omni.json',policy_sha256=hashlib.sha256(policy.read_bytes()).hexdigest(),
