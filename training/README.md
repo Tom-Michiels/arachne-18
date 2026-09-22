@@ -17,11 +17,14 @@ PPO. The tripod pattern and inverse kinematics are explicit priors; training
 learns cadence, stance fraction, foot clearance, stride/yaw/lateral gains,
 body height, stance radius, IMU feedback strength, and phase corrections.
 
-## Results in the original model
+## Recorded results before the symmetric-leg revision
 
-All final verification uses `simulation/arachne.xml`, its original collision
-proxies and the complete BAM M6 runtime, at a 1 ms physics step. Training uses
-a separate approximate model. Nothing in the original model was overwritten.
+These archived verification figures used the original collision proxies and
+the complete BAM M6 runtime at a 1 ms physics step. The symmetric-leg CAD
+revision subsequently updated `simulation/arachne.xml`. Gait, terrain and jump
+unit tests pass with the revised model, and the general walking policy passed
+a five-second BAM smoke run; the full performance table below has not yet been
+remeasured on that geometry. Training used a separate approximate model.
 
 | Case | Measured motion | Body tilt RMS | Height variation, standard deviation |
 |---|---:|---:|---:|

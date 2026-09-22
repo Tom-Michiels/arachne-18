@@ -50,6 +50,15 @@ The Git repository deliberately excludes virtual environments, BREP caches, temp
 
 ## Native assembly authoring
 
-`src/onshape_mates.py` is the API authoring source used for the native mates. It reads the checked-in mate plan and English-to-native name map. It resumes by feature name and refuses to reuse an errored feature. Its `--stage verify` mode checks the native mate counts, feature statuses, fixed chassis and neutral transforms. It does not verify animation.
+`src/onshape_mates.py` is the API authoring source used for the native mates. It reads the checked-in mate plan and English-to-native name map. It resumes by feature name and refuses to reuse an errored feature. `src/refresh_onshape_plan.py` rebuilds the 499-instance, 480-fastened, 18-revolute plan after a STEP revision; `src/update_onshape_limits.py --apply` aligns the native revolute limits with the joint map. The `onshape_mates.py --stage verify` mode checks native mate counts, feature statuses, fixed chassis and neutral transforms. It does not verify animation.
 
 The checked-in plan targets the existing project document and its exact instance IDs. Do not use it against a different document without rebuilding the plan. For maintenance, supply your own read/write Onshape key in an external mode-0600 JSON file with `accessKey` and `secretKey` fields; never commit that file. Run `python src/onshape_mates.py --help` for options. API credentials are unnecessary for local CAD builds, simulation or training integration.
+
+After updating both source STEP blobs in the existing Onshape document, refresh and verify the native assembly with:
+
+```sh
+python src/refresh_onshape_plan.py --key-file /path/to/onshape-key.json
+python src/onshape_mates.py --key-file /path/to/onshape-key.json --stage all
+python src/update_onshape_limits.py --key-file /path/to/onshape-key.json --apply
+python src/onshape_mates.py --key-file /path/to/onshape-key.json --stage verify
+```

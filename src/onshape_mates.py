@@ -16,7 +16,10 @@ def native_names(obj):
     if isinstance(obj,dict):return {native_names(k):native_names(v) for k,v in obj.items()}
     if isinstance(obj,list):return [native_names(v) for v in obj]
     if isinstance(obj,str):
-        for english,native in sorted(NAME_MAP.items(),key=lambda kv:-len(kv[0])):obj=obj.replace(english,native)
+        if obj in NAME_MAP:return NAME_MAP[obj]
+        for prefix in ('MC_','F_'):
+            if obj.startswith(prefix) and obj[len(prefix):] in NAME_MAP:
+                return prefix+NAME_MAP[obj[len(prefix):]]
     return obj
 PLAN=native_names(json.loads((OUT/'onshape_mate_plan.json').read_text()))
 META=native_names(json.loads((OUT/'cad_instances.json').read_text()))
@@ -126,7 +129,8 @@ class Installer:
             max_neutral_transform_deviation=float(drift),instances=len(a['rootAssembly']['instances']),
             document_url=f"https://cad.onshape.com/documents/{PLAN['documentId']}/w/{PLAN['workspaceId']}/e/{PLAN['elementId']}")
         (OUT/'onshape_validation.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))
-        assert types.count('FASTENED')==136 and types.count('REVOLUTE')==18
+        assert types.count('FASTENED')==len(META)-len(LINKS) and types.count('REVOLUTE')==18
+        assert len(a['rootAssembly']['instances'])==len(META)
         assert not errors and [base_id] in fixed and drift<1e-6
 
 if __name__=='__main__':

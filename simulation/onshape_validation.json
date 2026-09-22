@@ -1,5 +1,5 @@
 {
-  "fastened": 136,
+  "fastened": 480,
   "revolute": 18,
   "errors": {},
   "fixed": [
@@ -8,6 +8,6 @@
     ]
   ],
   "max_neutral_transform_deviation": 4.999889391399392e-13,
-  "instances": 155,
+  "instances": 499,
   "document_url": "https://cad.onshape.com/documents/88edbeda4232642329938c14/w/19f5435855c2974f02fa7c68/e/ea6ef29b6f90442d8a9d563b"
 }

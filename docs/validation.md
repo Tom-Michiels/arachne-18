@@ -13,6 +13,8 @@ These checks establish internal consistency of this prototype's digital model. T
 | Paired toe reach | 18 coordinated poses; TPU toes touch without hard-part interference | [Reach report](../validation/pair_contact_validation.json) |
 | Dummy-side plugs | 594 sampled nominal plug and straight-exit positions without print overlap | [Cable report](../validation/cable_validation.json) |
 | Screw accessibility | 262 positioned screws; no screw/print intersections or blocked local driver paths | [Fastener report](../validation/fastener_validation.json) |
+| Native Onshape assembly | 499 instances; 480 fastened and 18 revolute mates; no feature errors | [Onshape report](../simulation/onshape_validation.json) |
+| Native joint limits | 18 limits match the MuJoCo joint map | [Limit report](../simulation/onshape_motion_validation.json) |
 | MuJoCo topology | 19 links, 18 hinges, 18 motors; 25 qpos / 24 qvel for free base | [Simulation report](../simulation/simulation_validation.json) |
 | Inertia | Positive masses and inertias | [Simulation report](../simulation/simulation_validation.json) |
 | Joint axes | All 18 perturbations affect the intended subtree | [Simulation report](../simulation/simulation_validation.json) |

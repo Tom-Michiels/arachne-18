@@ -91,6 +91,8 @@ On Linux and Windows, use `python` for the viewer. On Windows, activate the envi
 
 ### Learned walking and a training army
 
+The videos and quoted performance below were recorded before the symmetric-leg CAD revision. The revised MuJoCo model retains the same 18-joint topology; gait, terrain and jump unit tests pass, and the general walking policy completed a five-second BAM smoke run without a fall. The archived performance figures have not yet been remeasured against this revision.
+
 A separate [jump policy and video](https://tom-michiels.github.io/arachne-18/#jump)
 maximize clearance beneath every leg and the body, with no upright reward.
 The highest recorded jump clears all CAD parts by **2.40 cm**; a second policy
