@@ -65,9 +65,29 @@
       <details><summary>How was this training video made?</summary><p>Actual robot states were recorded during parallel MuJoCo/Metal training, then rendered in MuJoCo with the CAD geometry. The grid displays independent environments; robots do not collide with one another. These are distinct training attempts, not copies of one walking animation. Playback follows simulation time. Source recordings and checks are in the repository.</p></details>
     </section>
     <section id="terrain" aria-labelledby="terrain-title">
-      <div class="section-top"><h2 id="terrain-title">Steady steps. Uneven ground.</h2><span class="tag">3 terrain films · Real time</span></div>
-      <p class="lead">Watch the gentle controller cross rolling ground, a shallow slope and low plateaus. Each film uses the original MuJoCo model with full BAM servo dynamics. Heights are true to scale; each run starts in the flat spawn area and walks onto the uneven surface.</p>
+      <div class="section-top"><h2 id="terrain-title">Steady steps. Uneven ground.</h2><span class="tag">5 terrain films · Real time</span></div>
+      <p class="lead">Watch the gentle controller cross rolling ground, a shallow slope, low plateaus, individual stones and bending grass tufts. Each film uses the original MuJoCo model with full BAM servo dynamics. Heights are true to scale; each run starts in the flat spawn area and walks onto the uneven surface.</p>
       <div class="terrain-clips">
+        <article id="terrain-pebbles">
+          <h3>Individual stones · 4–8 mm</h3>
+          <div class="player">
+            <video controls playsinline preload="metadata" poster="assets/arachne-terrain-pebbles.jpg" aria-label="ARACHNE walking across individual collision stones">
+              <source src="assets/arachne-terrain-pebbles.mp4" type="video/mp4">
+              <a href="assets/arachne-terrain-pebbles.mp4">Download the pebbles film</a>.
+            </video>
+            <div class="caption"><p>Partly buried stones are real collision objects. This forward run reaches 8.7 cm/s with 0.43° body-tilt RMS and repeated foot–stone contact.</p><a href="assets/arachne-terrain-pebbles.mp4" download>Download video ↓</a></div>
+          </div>
+        </article>
+        <article id="terrain-grass">
+          <h3>Bending grass · 18–30 mm</h3>
+          <div class="player">
+            <video controls playsinline preload="metadata" poster="assets/arachne-terrain-grass.jpg" aria-label="ARACHNE walking through short passive grass tufts that bend on contact">
+              <source src="assets/arachne-terrain-grass.mp4" type="video/mp4">
+              <a href="assets/arachne-terrain-grass.mp4">Download the grass film</a>.
+            </video>
+            <div class="caption"><p>Spring-mounted grass tufts bend when touched. This forward run reaches 9.1 cm/s with 0.08° body-tilt RMS. The tufts are simplified mechanical proxies; dense natural grass remains future work.</p><a href="assets/arachne-terrain-grass.mp4" download>Download video ↓</a></div>
+          </div>
+        </article>
         <article id="terrain-rolling">
           <h3>Rolling ground · up to 4 mm</h3>
           <div class="player">
@@ -99,8 +119,8 @@
           </div>
         </article>
       </div>
-      <details><summary>What do these films demonstrate?</summary><p>Each film is a continuous 12-second MuJoCo/BAM simulation at real-time playback, using the general policy and terrain seed 701. There are no falls, non-foot ground contacts or solver warnings. The three runs pass the same terrain gates used by the curriculum; these examples are not a new multi-seed admission campaign. They are reference simulations, not recordings from the experimental Metal heightfield backend. The previous 318-episode admission result remains unchanged. The 8 mm stage is still unmastered.</p></details>
-      <p><a href="https://github.com/Tom-Michiels/arachne-18/blob/main/training/TERRAIN.md">Explore the terrain curriculum and its current results ↗</a></p>
+      <details><summary>What do these films demonstrate?</summary><p>Each film is a continuous 12-second reference MuJoCo/BAM simulation at real-time playback, using the general policy and seed 701. All five recorded runs pass their respective gates. Stone contacts affect support and collision checks; flexible grass contacts are measured separately. Three forward layouts each pass for small stones and short grass, but the full small-stone admission test reaches 29/30 and 28/30 passes, below the required threshold in its second batch. Larger stones and mixed obstacles still need training. These examples do not establish performance in every direction or in real grass. The previous heightfield admission result remains unchanged; its 8 mm plateau stage is still unmastered.</p></details>
+      <p><a href="https://github.com/Tom-Michiels/arachne-18/blob/main/training/OBSTACLES.md">Explore the stone and grass curriculum ↗</a> · <a href="https://github.com/Tom-Michiels/arachne-18/blob/main/training/TERRAIN.md">Heightfield curriculum ↗</a></p>
     </section>
     <section class="about" aria-label="Training and verification">
       <div><h3>Smoothness is part of the reward.</h3><p>Training rewards tracking the requested velocity and turn rate. Tilt, bouncing, slipping and abrupt motor accelerations cost points. Learned gait parameters build on a rhythmic pattern with alternating support legs.</p><p>CEM searches directly for better controller parameters. The IMU supplies tilt and angular velocity; the controller does not use perfect position or linear velocity measurements from the simulator.</p></div>

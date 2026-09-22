@@ -40,6 +40,13 @@ def evaluate(params, command, seconds=10., backend='bam', video=None, width=960,
     ground_id=m.geom('ground').id
     foot_ids=[m.geom(f'L{j}_foot_contact').id for j in range(1,7)]
     foot_geoms=set(foot_ids)
+    rock_ids={i for i in range(m.ngeom) if (mujoco.mj_id2name(m,mujoco.mjtObj.mjOBJ_GEOM,i) or '').startswith('obstacle_rocks_')}
+    grass_ids={i for i in range(m.ngeom) if (mujoco.mj_id2name(m,mujoco.mjtObj.mjOBJ_GEOM,i) or '').startswith('obstacle_grass_')}
+    support_ids={ground_id}|rock_ids
+    robot_ids={i for i in range(m.ngeom) if m.geom_bodyid[i]>0 and i not in grass_ids}
+    motor_dofs=robot.controller.dof_indexes if robot else np.arange(6,24)
+    rock_steps=grass_steps=0;grass_deflection=0.
+    grass_qpos=[m.jnt_qposadr[j] for j in range(m.njnt) if (mujoco.mj_id2name(m,mujoco.mjtObj.mjOBJ_JOINT,j) or '').startswith('obstacle_grass_')]
     cmd_filtered=cmd.copy()
     render=None; writer=None
     if video:
@@ -101,12 +108,18 @@ def evaluate(params, command, seconds=10., backend='bam', video=None, width=960,
             ground_z=height_below(m,d,*d.qpos[:2]) if terrain is not None else 0.
             clearances.append(d.qpos[2]-ground_z)
             exposure.append(np.linalg.norm(d.qpos[:2])>.54)
-            contacts=set();nonfoot=0
+            contacts=set();nonfoot=0;rock_touch=False;grass_touch=False
             for c in d.contact:
-                if c.geom1==ground_id or c.geom2==ground_id:
-                    geom=c.geom2 if c.geom1==ground_id else c.geom1
-                    if geom in foot_geoms:contacts.add(geom)
+                pair={int(c.geom1),int(c.geom2)}
+                if pair & support_ids and pair & robot_ids:
+                    geom=next(iter(pair & robot_ids))
+                    if geom in foot_geoms:
+                        contacts.add(geom)
+                        rock_touch |= bool(pair & rock_ids)
                     else:nonfoot+=1
+                grass_touch |= bool(pair & grass_ids and pair & robot_ids)
+            rock_steps+=int(rock_touch);grass_steps+=int(grass_touch)
+            if grass_qpos:grass_deflection=max(grass_deflection,float(np.max(np.abs(d.qpos[grass_qpos]))))
             vel=np.zeros_like(foot) if last_feet is None else (foot-last_feet)/dt
             last_feet=foot
             mask=np.array([geom in contacts for geom in foot_ids])
@@ -115,7 +128,7 @@ def evaluate(params, command, seconds=10., backend='bam', video=None, width=960,
                             d.qpos[2],d.qvel[2],np.linalg.norm(d.qvel[3:5]),slip,
                             len(contacts),nonfoot,np.sqrt(np.mean(((sm-prev)/dt)**2)),
                             np.sqrt(np.mean(((sm-2*prev+prev2)/dt**2)**2)),
-                            np.max(np.abs(d.qvel[6:])),np.max(np.abs(d.actuator_force))])
+                            np.max(np.abs(d.qvel[motor_dofs])),np.max(np.abs(d.actuator_force))])
             all_q.append(d.qpos.copy());all_ctrl.append(sm[0].copy());all_t.append(d.time)
             all_commands.append(cmd[0].copy())
             if render and i%2==0:
@@ -162,6 +175,8 @@ def evaluate(params, command, seconds=10., backend='bam', video=None, width=960,
             passed=bool(np.all(clearance>.060) and np.max(data[:,3])<np.deg2rad(15)
                         and not data[:,9].any() and np.isfinite(data).all()),
             friction=friction,payload_kg=payload,imu_orientation_noise_deg=imu_noise,
+            rock_foot_contact_steps=rock_steps,vegetation_contact_steps=grass_steps,
+            grass_deflection_max_deg=float(np.rad2deg(grass_deflection)),
             schedule=schedule)
         if video:
             np.savez_compressed(str(Path(video).with_suffix('.npz')),time=all_t,qpos=all_q,

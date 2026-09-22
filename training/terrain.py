@@ -48,6 +48,8 @@ def height_map(spec, seed):
 
 
 def make_model(spec,seed):
+    from obstacles import KINDS,make_model as make_obstacles
+    if spec['kind'] in KINDS:return make_obstacles(spec,seed)
     tree=ET.parse(ROOT/'simulation/arachne.xml');root=tree.getroot()
     root.find('compiler').set('meshdir',str(ROOT/'simulation/meshes'))
     heights=height_map(spec,seed)

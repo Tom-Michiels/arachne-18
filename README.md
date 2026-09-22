@@ -78,6 +78,12 @@ On Linux and Windows, use `python` for the viewer. On Windows, activate the envi
 
 ### Learned walking and a training army
 
+The [obstacle videos](https://tom-michiels.github.io/arachne-18/#terrain-pebbles)
+now include individual collision stones and passive grass tufts that bend on
+contact. Small-stone and short-grass forward examples pass; larger rocks remain
+curriculum targets. [Models, curriculum and measured limits](training/OBSTACLES.md).
+
+
 **[Open the video page — faster walking, all directions and the training army](https://tom-michiels.github.io/arachne-18/)**
 
 The first [walking video](https://tom-michiels.github.io/arachne-18/#fast)

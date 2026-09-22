@@ -37,6 +37,8 @@ def gate(result, stage, config):
         if not g['speed_ratio_min']<=ratio<=g['speed_ratio_max']:fail.append('progress_ratio')
     if stage['terrain']['kind']!='flat' and r['terrain_exposure_fraction']<g['terrain_exposure_fraction_min']:
         fail.append('terrain_exposure_fraction')
+    for metric,minimum in stage.get('minimum_encounters',{}).items():
+        if r.get(metric,0)<minimum:fail.append(metric)
     return fail
 
 
@@ -110,7 +112,7 @@ def main():
     report=dict(status='running',config=config,seed=args.seed,stages=[],
                 starting_policy=str(args.policy or config['starting_policy']),
                 source_sha256={name:hashlib.sha256((ROOT/'training'/name).read_bytes()).hexdigest()
-                               for name in ['gait.py','evaluate.py','terrain.py','curriculum.py']})
+                               for name in ['gait.py','evaluate.py','terrain.py','obstacles.py','curriculum.py']})
     write(args.out/'report.json',report)
     with ProcessPoolExecutor(args.workers,mp_context=mp.get_context('spawn')) as pool:
         for index,stage in enumerate(config['stages'][:args.max_stage+1]):
