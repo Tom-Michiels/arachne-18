@@ -57,3 +57,35 @@ The technical render scripts use the repository geometry directly. Regenerating 
 ### Task-lamp lighting revision
 
 The final workbench image increases illumination from the existing desk lamps by about one to one-and-a-half photographic stops. Preserve the camera, room, clutter and robot; use broad neutral-white task light over the mat, a naturally bright lamp interior, readable dark servo details and gentle contact shadows. Keep the rear wall slightly darker. Do not add studio lights, haze, dramatic grading, gloss, or change the geometry. This lighting revision also used the built-in image-generation tool.
+## Learned locomotion media
+
+`assets/arachne-learned-omni.mp4` is a continuous 40-second original MuJoCo +
+BAM M6 simulation using `training/policies/omni.json`. `training/render_demo.py`
+reproduces it; the adjacent JSON contains metrics and the command schedule.
+
+`assets/arachne-training-army.mp4` renders actual recorded qpos from 128
+independent Metal training environments at three generations. Each candidate
+has its own policy parameters and physics trajectory. Grid offsets are only a
+display layout; this is not one world with inter-robot collisions. The original
+structural CAD meshes are retained, with small hardware omitted in the distant
+view. Gold shells identify each completed generation's selected elites. The
+adjacent JSON records provenance and SHA-256 hashes of the included raw NPZs.
+
+These two videos are simulator renders, not generated imagery. Training uses
+an explicitly approximate model; the solo verification uses full BAM. See the
+[training report](../training/README.md) for the exact distinction and limits.
+
+
+`assets/arachne-long-stride.mp4` is a new continuous 44-second original MuJoCo
++ full BAM capture with `training/policies/long_stride.json`. It starts at a
+14 cm/s command, increases to 26 cm/s forward, then demonstrates faster
+sideways, backward and diagonal motion, turns and a stop. Playback is at real
+simulation time. Directional lighting and a larger visual ground patch keep
+the robot visible along the longer path; they do not animate or retime it.
+The adjacent JSON contains the actual schedule, stability metrics and policy
+provenance. Reproduce it with:
+
+```sh
+python training/render_demo.py --policy training/policies/long_stride.json \
+  --fast --out assets/arachne-long-stride.mp4
+```

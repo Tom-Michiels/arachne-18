@@ -1,0 +1,9 @@
+{
+  "backend": "fused",
+  "qpos_max_abs_error": 9.032574566081308e-08,
+  "qvel_max_abs_error": 2.50397588896778e-06,
+  "controller_max_abs_error": 5.432734491161995e-07,
+  "environments": 32,
+  "physics_steps": 5,
+  "passed": true
+}

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101c20">
+  <meta name="description" content="ARACHNE / 18 learns smooth locomotion with IMU feedback. Watch one walking robot and 128 robots in real MuJoCo training.">
+  <title>ARACHNE / 18 — learning to move smoothly</title>
+  <style>
+    :root{color-scheme:dark;--bg:#101c20;--panel:#17262a;--ink:#edf4ed;--muted:#afc0bd;--accent:#a4ddc1;--line:#34464a}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:28px}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}a{color:inherit;text-underline-offset:5px}a:hover{color:var(--accent)}.wrap{width:min(1180px,calc(100% - 64px));margin:auto}header{display:flex;align-items:center;justify-content:space-between;padding:29px 0;border-bottom:1px solid var(--line);gap:24px}.brand{text-decoration:none;letter-spacing:.16em;font-weight:700;font-size:19px}.brand span{color:var(--accent)}nav{display:flex;gap:28px;font-size:14px;color:var(--muted)}nav a{text-decoration:none}.intro{padding:76px 0 40px;display:grid;grid-template-columns:1.3fr 1fr;align-items:end;gap:64px}.eyebrow{color:var(--accent);font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;margin:0 0 17px}h1{font-size:clamp(40px,5.1vw,68px);line-height:1.05;letter-spacing:-.045em;max-width:700px;margin:0;font-weight:500}h1 em{font-style:normal;color:var(--accent)}.lead{color:var(--muted);font-size:17px;margin:0;max-width:450px}.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:0 0 42px;padding:22px 0;gap:32px}.stat strong{font-size:29px;letter-spacing:-.04em;font-weight:500}.stat span{display:block;font-size:13px;color:var(--muted)}.stat small{font-size:14px;color:var(--accent)}section{margin-bottom:80px}.section-top{display:flex;justify-content:space-between;align-items:baseline;gap:24px;margin-bottom:18px}h2{font-size:29px;line-height:1.25;letter-spacing:-.025em;margin:0;font-weight:500}.tag{font-size:12px;letter-spacing:.09em;color:var(--accent);text-transform:uppercase;white-space:nowrap}.player{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#071015}video{display:block;width:100%;aspect-ratio:8/5;object-fit:contain;background:#071015}.caption{padding:21px 25px;display:flex;justify-content:space-between;gap:32px;background:var(--panel);font-size:14px;color:var(--muted)}.caption p{margin:0;max-width:810px}.caption a{white-space:nowrap}.steps{display:flex;flex-wrap:wrap;gap:10px;margin:19px 0 0;padding:0;list-style:none}.steps li{border:1px solid var(--line);border-radius:30px;padding:6px 14px;font-size:12px;color:var(--muted)}.army{padding-top:52px;border-top:1px solid var(--line)}.about{display:grid;grid-template-columns:1fr 1fr;gap:70px;border-top:1px solid var(--line);padding-top:42px}.about h3{font-size:19px;margin:0 0 12px;font-weight:500}.about p{margin:0 0 16px;font-size:15px;color:var(--muted)}footer{padding:25px 0 40px;border-top:1px solid var(--line);display:flex;gap:24px;justify-content:space-between;color:var(--muted);font-size:12px}:focus-visible{outline:3px solid var(--accent);outline-offset:6px}details{margin-top:14px;color:var(--muted);font-size:13px}summary{cursor:pointer}details p{max-width:870px}::selection{background:#a4ddc1;color:#101c20}
+    @media(max-width:760px){.wrap{width:calc(100% - 32px)}header{padding:21px 0;flex-wrap:wrap}nav{gap:15px;font-size:12px}.brand{font-size:15px}.intro{padding:43px 0 28px;grid-template-columns:1fr;gap:24px}.lead{font-size:16px;max-width:100%}.stats{gap:16px;margin-bottom:32px}.stat strong{font-size:25px}.stat span{font-size:11px}.section-top{display:block}h2{font-size:24px}.tag{display:block;margin-top:8px;font-size:10px}.caption{display:block;padding:16px;font-size:13px}.caption a{display:inline-block;margin-top:10px}.about{grid-template-columns:1fr;gap:24px}section{margin-bottom:48px}.army{padding-top:32px}footer{display:block}footer a{display:block;margin-top:12px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    .terrain-clips{display:grid;gap:30px;margin:30px 0}.terrain-clips h3{font-size:20px;font-weight:500;margin:0 0 12px}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="#">ARACHNE <span>/ 18</span></a>
+    <nav aria-label="Main navigation"><a href="#fast">Faster gait</a><a href="#jump">Jump</a><a href="#solo">All directions</a><a href="#army">Army</a><a href="#terrain">Uneven ground</a><a href="https://github.com/Tom-Michiels/arachne-18">GitHub ↗</a></nav>
+  </header>
+  <main>
+    <div class="intro">
+      <div><p class="eyebrow">Six legs · eighteen motors · one steady body</p><h1>Learning to walk.<br><em>Designed to flow.</em></h1></div>
+      <p class="lead">Forward, sideways, backward and around corners. A learned controller combines smooth foot trajectories with IMU feedback. These are real MuJoCo simulations.</p>
+    </div>
+    <div class="stats" aria-label="Measured simulation results">
+      <div class="stat"><strong>29.9 <small>cm/s</small></strong><span>Measured forward speed · up from 22.4 cm/s</span></div>
+      <div class="stat"><strong>+32<small>%</small></strong><span>Longer foot travel · 6.45 cm versus 4.90 cm</span></div>
+      <div class="stat"><strong>26 <small>/ 26</small></strong><span>Faster-gait checks passed in MuJoCo + BAM</span></div>
+    </div>
+    <section id="fast" aria-labelledby="fast-title">
+      <div class="section-top"><h2 id="fast-title">Longer strides. A faster walk.</h2><span class="tag">20 seconds · real-time playback</span></div>
+      <div class="player">
+        <video controls playsinline preload="metadata" poster="assets/arachne-faster-stride.jpg" aria-label="Faster forward walking with larger steps, smooth acceleration and a gentle stop">
+          <source src="assets/arachne-faster-stride.mp4" type="video/mp4">
+          Your browser does not support this video. <a href="assets/arachne-faster-stride.mp4">Download the faster walking demo</a>.
+        </video>
+        <div class="caption"><p>Measured forward speed rises from 22.4 to 29.9 cm/s: 34% faster, with 32% more foot travel and slightly lower cadence. A wider, smooth foot arc supports longer steps while the body stays steady. Watch the robot accelerate, walk and stop in real time, with the original joint limits and full BAM servo dynamics.</p><a href="assets/arachne-faster-stride.mp4" download>Download video ↓</a></div>
+      </div>
+      <details><summary>How do we measure longer strides?</summary><p>Reference tests measure both body travel per gait cycle and the actual body-relative foot excursion, averaged over all six feet and complete cycles. Cadence, slipping, body tilt and motor-target smoothness are checked separately. All recordings play at simulation time. The 26 checks cover directions and perturbations at a 0.24 m/s command, plus forward walking at 0.34 m/s. The maximum-speed gait needs the tested flat surface: separate friction changes at that speed exceed the existing limits. <a href="https://github.com/Tom-Michiels/arachne-18/blob/main/training/SPRINT.md">Read the measured comparison and validation bounds</a>.</p></details>
+    </section>
+    <section id="jump" aria-labelledby="jump-title">
+      <div class="section-top"><h2 id="jump-title">Every leg off the ground.</h2><span class="tag">Real time + 4× slow replay</span></div>
+      <div class="player">
+        <video controls playsinline preload="metadata" poster="assets/arachne-jump.jpg" aria-label="A learned jump followed by a labelled slow-motion replay">
+          <source src="assets/arachne-jump.mp4" type="video/mp4">
+          <a href="assets/arachne-jump.mp4">Download the jump film</a>.
+        </video>
+        <div class="caption"><p>A separate policy maximizes clearance under the whole robot, with no reward for staying upright. At the recorded apex, every CAD part is at least 2.40 cm above the ground; collision-model clearance is 2.51 cm. The robot is fully airborne for about 0.13 seconds. Watch the jump at real speed, then the same motion four times slower.</p><a href="assets/arachne-jump.mp4" download>Download video ↓</a></div>
+      </div>
+      <details><summary>Maximum height and simulation sensitivity</summary><p>The highest standard-model jump reaches 2.51 cm collision clearance with a 1 ms physics step, versus 1.94 and 1.84 cm with finer steps. A separate robust policy reaches 2.08, 2.04 and 2.01 cm across those same settings. Both retain the original joint and servo limits. The objective rewards the lowest point of the entire collision model, so lifting the body while leaving a foot grounded earns no jump reward. These are the best policies found in this search; landing recovery and hardware jumping have not been validated.</p></details>
+      <p><a href="https://github.com/Tom-Michiels/arachne-18/blob/main/training/JUMP.md">Download the policies and read the objective and measurements ↗</a></p>
+    </section>
+    <section id="solo" aria-labelledby="solo-title">
+      <div class="section-top"><h2 id="solo-title">One robot. Every direction.</h2><span class="tag">Original demo · 40 seconds</span></div>
+      <div class="player">
+        <video controls playsinline preload="metadata" poster="assets/arachne-learned-omni.jpg" aria-label="Video of one robot walking forward, sideways, backward and diagonally, turning and stopping">
+          <source src="assets/arachne-learned-omni.mp4" type="video/mp4">
+          Your browser does not support this video. <a href="assets/arachne-learned-omni.mp4">Download the walking demo</a>.
+        </video>
+        <div class="caption"><p>One robot moves continuously between walking, turning and standing. Its body stays steady: at most 0.30° tilt, no falls and no body contact with the ground.</p><a href="assets/arachne-learned-omni.mp4" download>Download video ↓</a></div>
+      </div>
+      <ol class="steps" aria-label="Movement sequence"><li>01 Forward</li><li>02 Sideways</li><li>03 Backward</li><li>04 Diagonal</li><li>05 Turning</li><li>06 Walking + turning</li><li>07 Stopping</li></ol>
+    </section>
+    <span id="leger"></span>
+    <section id="army" class="army" aria-labelledby="army-title">
+      <div class="section-top"><h2 id="army-title">An army learning together.</h2><span class="tag">128 robots · 3 generations · real training data</span></div>
+      <div class="player">
+        <video controls playsinline preload="metadata" poster="assets/arachne-training-army.jpg" aria-label="Video of 128 individual robots during three generations of locomotion training">
+          <source src="assets/arachne-training-army.mp4" type="video/mp4">
+          Your browser does not support this video. <a href="assets/arachne-training-army.mp4">Download the training army</a>.
+        </video>
+        <div class="caption"><p>Each robot has its own candidate controller and physics simulation. You see generations 1, 6 and 16; golden bodies identify the selected best candidates.</p><a href="assets/arachne-training-army.mp4" download>Download video ↓</a></div>
+      </div>
+      <details><summary>How was this training video made?</summary><p>Actual robot states were recorded during parallel MuJoCo/Metal training, then rendered in MuJoCo with the CAD geometry. The grid displays independent environments; robots do not collide with one another. These are distinct training attempts, not copies of one walking animation. Playback follows simulation time. Source recordings and checks are in the repository.</p></details>
+    </section>
+    <section id="terrain" aria-labelledby="terrain-title">
+      <div class="section-top"><h2 id="terrain-title">Steady steps. Uneven ground.</h2><span class="tag">5 terrain films · Real time</span></div>
+      <p class="lead">Watch the gentle controller cross rolling ground, a shallow slope, low plateaus, individual stones and bending grass tufts. Each film uses the original MuJoCo model with full BAM servo dynamics. Heights are true to scale; each run starts in the flat spawn area and walks onto the uneven surface.</p>
+      <div class="terrain-clips">
+        <article id="terrain-pebbles">
+          <h3>Individual stones · 4–8 mm</h3>
+          <div class="player">
+            <video controls playsinline preload="metadata" poster="assets/arachne-terrain-pebbles.jpg" aria-label="ARACHNE walking across individual collision stones">
+              <source src="assets/arachne-terrain-pebbles.mp4" type="video/mp4">
+              <a href="assets/arachne-terrain-pebbles.mp4">Download the pebbles film</a>.
+            </video>
+            <div class="caption"><p>Partly buried stones are real collision objects. This forward run reaches 8.7 cm/s with 0.43° body-tilt RMS and repeated foot–stone contact.</p><a href="assets/arachne-terrain-pebbles.mp4" download>Download video ↓</a></div>
+          </div>
+        </article>
+        <article id="terrain-grass">
+          <h3>Dense bending grass · 18–30 mm</h3>
+          <div class="player">
+            <video controls playsinline preload="metadata" poster="assets/arachne-terrain-dense-grass.jpg" aria-label="ARACHNE walking through a dense field of short grass that bends on contact">
+              <source src="assets/arachne-terrain-dense-grass.mp4" type="video/mp4">
+              <a href="assets/arachne-terrain-dense-grass.mp4">Download the grass film</a>.
+            </video>
+            <div class="caption"><p>A dense patch with 987 bending tufts and 6,909 collision blades: about 66 times the previous blade density. Tufts are spaced about 3 cm apart. This forward run reaches 7.5 cm/s with 0.15° body-tilt RMS. The grass resists the legs through simulated contact; it remains a simplified mechanical model.</p><a href="assets/arachne-terrain-dense-grass.mp4" download>Download video ↓</a></div>
+          </div>
+        </article>
+        <article id="terrain-rolling">
+          <h3>Rolling ground · up to 4 mm</h3>
+          <div class="player">
+            <video controls playsinline preload="metadata" poster="assets/arachne-terrain-rolling.jpg" aria-label="ARACHNE walking over rolling ground with bumps up to four millimetres">
+              <source src="assets/arachne-terrain-rolling.mp4" type="video/mp4">
+              <a href="assets/arachne-terrain-rolling.mp4">Download the rolling-ground film</a>.
+            </video>
+            <div class="caption"><p>Smooth undulations, a 10 cm/s walking command and 0.23° body-tilt RMS. This recorded run passed the existing terrain gates.</p><a href="assets/arachne-terrain-rolling.mp4" download>Download video ↓</a></div>
+          </div>
+        </article>
+        <article id="terrain-slope">
+          <h3>A gentle slope · up to 2°</h3>
+          <div class="player">
+            <video controls playsinline preload="metadata" poster="assets/arachne-terrain-slope.jpg" aria-label="ARACHNE walking on a smooth slope bounded to two degrees">
+              <source src="assets/arachne-terrain-slope.mp4" type="video/mp4">
+              <a href="assets/arachne-terrain-slope.mp4">Download the slope film</a>.
+            </video>
+            <div class="caption"><p>The IMU-aware gait follows a shallow hill at a 10 cm/s command. Body-tilt RMS is 0.47°; this run passed the existing terrain gates.</p><a href="assets/arachne-terrain-slope.mp4" download>Download video ↓</a></div>
+          </div>
+        </article>
+        <article id="terrain-steps">
+          <h3>Low plateaus · 4 mm</h3>
+          <div class="player">
+            <video controls playsinline preload="metadata" poster="assets/arachne-terrain-steps.jpg" aria-label="ARACHNE stepping across four-millimetre raised plateaus">
+              <source src="assets/arachne-terrain-steps.mp4" type="video/mp4">
+              <a href="assets/arachne-terrain-steps.mp4">Download the plateau film</a>.
+            </video>
+            <div class="caption"><p>Raised patches with one-grid-cell transitions, not vertical stair risers. Body-tilt RMS is 0.48°; this recorded run passed the existing terrain gates.</p><a href="assets/arachne-terrain-steps.mp4" download>Download video ↓</a></div>
+          </div>
+        </article>
+      </div>
+      <details><summary>What do these films demonstrate?</summary><p>Each film is a continuous 12-second reference MuJoCo/BAM simulation at real-time playback, using the general policy and seed 701. All five recorded runs pass their respective gates. Stone contacts affect support and collision checks; flexible grass contacts are measured separately. Three forward layouts each pass for small stones and the new dense short grass, but the full small-stone admission test reaches 29/30 and 28/30 passes, below the required threshold in its second batch. Larger stones and mixed obstacles still need training. These examples do not establish performance in every direction or in real grass. The previous heightfield admission result remains unchanged; its 8 mm plateau stage is still unmastered.</p></details>
+      <p><a href="https://github.com/Tom-Michiels/arachne-18/blob/main/training/OBSTACLES.md">Explore the stone and grass curriculum ↗</a> · <a href="https://github.com/Tom-Michiels/arachne-18/blob/main/training/TERRAIN.md">Heightfield curriculum ↗</a></p>
+    </section>
+    <section class="about" aria-label="Training and verification">
+      <div><h3>Smoothness is part of the reward.</h3><p>Training rewards tracking the requested velocity and turn rate. Tilt, bouncing, slipping and abrupt motor accelerations cost points. Learned gait parameters build on a rhythmic pattern with alternating support legs.</p><p>CEM searches directly for better controller parameters. The IMU supplies tilt and angular velocity; the controller does not use perfect position or linear velocity measurements from the simulator.</p></div>
+      <div><h3>Fast training. Independent checks.</h3><p>The general controller was trained first on forward motion, then on multiple directions and turning. Checks use the original MuJoCo model and full BAM servo model, including intermediate directions, added weight and IMU noise.</p><p>This is a digital prototype. The 12 V servo parameters are approximations; performance on real hardware has not been validated.</p><a href="https://github.com/Tom-Michiels/arachne-18/blob/main/training/README.md">Read the method and measurements ↗</a></div>
+    </section>
+  </main>
+  <footer><span>ARACHNE / 18 · MuJoCo + BAM · 2026</span><a href="https://github.com/Tom-Michiels/arachne-18">Model, controller, training and source data on GitHub ↗</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,394 @@
+{
+  "seed": 123,
+  "objective": "Highest sustained minimum clearance under the complete collision model; no upright or landing reward",
+  "original_model": "simulation/arachne.xml with full BAM M6 at 12 V",
+  "symmetric_cem": {
+    "generations": 20,
+    "population": 128,
+    "initial_std_fraction": 0.28,
+    "std_floor_fraction": 0.025,
+    "history": [
+      {
+        "generation": 0,
+        "best_m": 0.0019028291297066222,
+        "population_best_m": 0.0019028291297066222
+      },
+      {
+        "generation": 1,
+        "best_m": 0.0019028291297066222,
+        "population_best_m": 0.0019028291297066222
+      },
+      {
+        "generation": 2,
+        "best_m": 0.0019028291297066222,
+        "population_best_m": 0.0019028291297066222
+      },
+      {
+        "generation": 3,
+        "best_m": 0.001992605626449047,
+        "population_best_m": 0.001992605626449047
+      },
+      {
+        "generation": 4,
+        "best_m": 0.008421506015088294,
+        "population_best_m": 0.008421506015088294
+      },
+      {
+        "generation": 5,
+        "best_m": 0.008421506015088294,
+        "population_best_m": 0.008421506015088294
+      },
+      {
+        "generation": 6,
+        "best_m": 0.008421506015088294,
+        "population_best_m": 0.008421506015088294
+      },
+      {
+        "generation": 7,
+        "best_m": 0.008421506015088294,
+        "population_best_m": 0.008421506015088294
+      },
+      {
+        "generation": 8,
+        "best_m": 0.009137135242872053,
+        "population_best_m": 0.009137135242872053
+      },
+      {
+        "generation": 9,
+        "best_m": 0.010004074873423814,
+        "population_best_m": 0.010004074873423814
+      },
+      {
+        "generation": 10,
+        "best_m": 0.011751951819702379,
+        "population_best_m": 0.011751951819702379
+      },
+      {
+        "generation": 11,
+        "best_m": 0.017163854654970355,
+        "population_best_m": 0.017163854654970355
+      },
+      {
+        "generation": 12,
+        "best_m": 0.017163854654970355,
+        "population_best_m": 0.017163854654970355
+      },
+      {
+        "generation": 13,
+        "best_m": 0.018101506065353136,
+        "population_best_m": 0.018101506065353136
+      },
+      {
+        "generation": 14,
+        "best_m": 0.01860854580290513,
+        "population_best_m": 0.01860854580290513
+      },
+      {
+        "generation": 15,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 16,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 17,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 18,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 19,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      }
+    ]
+  },
+  "asymmetric_cem": {
+    "generations": 18,
+    "population": 128,
+    "history": [
+      {
+        "generation": 0,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 1,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 2,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 3,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 4,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 5,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 6,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 7,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 8,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 9,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 10,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 11,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 12,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 13,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 14,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 15,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 16,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 17,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      }
+    ]
+  },
+  "symmetric_refinement": {
+    "generations": 18,
+    "population": 128,
+    "history": [
+      {
+        "generation": 0,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 1,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 2,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 3,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 4,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 5,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 6,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 7,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 8,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 9,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 10,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 11,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 12,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 13,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 14,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 15,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 16,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      },
+      {
+        "generation": 17,
+        "best_m": 0.02310258903298055,
+        "population_best_m": 0.02310258903298055
+      }
+    ]
+  },
+  "nominal_coordinate_refinement": [
+    {
+      "fraction": 0.025,
+      "sweep": 0,
+      "score_m": 0.023716541169111545
+    },
+    {
+      "fraction": 0.025,
+      "sweep": 1,
+      "score_m": 0.023716541169111545
+    },
+    {
+      "fraction": 0.012,
+      "sweep": 0,
+      "score_m": 0.02372120358838977
+    },
+    {
+      "fraction": 0.012,
+      "sweep": 1,
+      "score_m": 0.02372120358838977
+    },
+    {
+      "fraction": 0.006,
+      "sweep": 0,
+      "score_m": 0.023770271913930892
+    },
+    {
+      "fraction": 0.006,
+      "sweep": 1,
+      "score_m": 0.02396547568712159
+    },
+    {
+      "fraction": 0.003,
+      "sweep": 0,
+      "score_m": 0.02405937637132214
+    },
+    {
+      "fraction": 0.003,
+      "sweep": 1,
+      "score_m": 0.024080418865251287
+    }
+  ],
+  "robust_coordinate_refinement": [
+    {
+      "fraction": 0.025,
+      "sweep": 0,
+      "score_m": 0.018236874740707947
+    },
+    {
+      "fraction": 0.025,
+      "sweep": 1,
+      "score_m": 0.01906217796917032
+    },
+    {
+      "fraction": 0.012,
+      "sweep": 0,
+      "score_m": 0.01906217796917032
+    },
+    {
+      "fraction": 0.012,
+      "sweep": 1,
+      "score_m": 0.01906217796917032
+    },
+    {
+      "fraction": 0.006,
+      "sweep": 0,
+      "score_m": 0.01906217796917032
+    },
+    {
+      "fraction": 0.006,
+      "sweep": 1,
+      "score_m": 0.01906217796917032
+    },
+    {
+      "fraction": 0.003,
+      "sweep": 0,
+      "score_m": 0.019095024416228533
+    },
+    {
+      "fraction": 0.003,
+      "sweep": 1,
+      "score_m": 0.019095024416228533
+    }
+  ],
+  "robust_timestep_seconds": [
+    0.001,
+    0.0005,
+    0.00025
+  ]
+}

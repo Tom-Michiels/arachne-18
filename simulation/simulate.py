@@ -15,8 +15,10 @@ from bam.mujoco import MujocoController
 HERE=Path(__file__).resolve().parent
 
 class Robot:
-    def __init__(self,fixed=False,voltage=12.,parameter_file=None):
-        self.model=mujoco.MjModel.from_xml_path(str(HERE/('arachne_fixed.xml' if fixed else 'arachne.xml')))
+    def __init__(self,fixed=False,voltage=12.,parameter_file=None,model=None):
+        # Optional independently constructed scene, e.g. curriculum terrain.
+        # Ownership transfers to this robot: BAM mutates per-joint coefficients.
+        self.model=model if model is not None else mujoco.MjModel.from_xml_path(str(HERE/('arachne_fixed.xml' if fixed else 'arachne.xml')))
         self.data=mujoco.MjData(self.model)
         self.joint_map=json.loads((HERE/'joint_map.json').read_text())['joints']
         self.names=[j['name'] for j in self.joint_map]

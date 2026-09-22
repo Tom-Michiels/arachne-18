@@ -1,0 +1,150 @@
+{
+  "version": 3,
+  "starting_policy": "training/policies/omni.json",
+  "backend": "Reference MuJoCo/BAM; discrete obstacles are not supported by the Metal heightfield backend",
+  "observation_contract": "IMU gravity and gyro, command and oscillator state; no terrain map",
+  "episode_seconds": 10,
+  "promotion": {
+    "consecutive_batches": 2,
+    "seeds_per_batch": 3,
+    "minimum_pass_fraction": 0.95
+  },
+  "flat_replay_fraction": 0.25,
+  "gates": {
+    "tilt_max_deg": 12,
+    "clearance_min_m": 0.06,
+    "speed_ratio_min": 0.7,
+    "speed_ratio_max": 1.25,
+    "velocity_rmse_max": 0.045,
+    "yaw_rmse_max": 0.12,
+    "slip_rms_max": 0.05,
+    "target_rate_rms_max": 1.8,
+    "target_acceleration_rms_max": 55,
+    "clearance_rate_rms_max": 0.035,
+    "joint_speed_max": 4.8,
+    "target_jerk_rms_max": 1600,
+    "terrain_exposure_fraction_min": 0.25
+  },
+  "stages": [
+    {
+      "name": "flat",
+      "terrain": {
+        "kind": "flat"
+      },
+      "speed_m_s": 0.14,
+      "tilt_rms_max_deg": 0.5,
+      "clearance_std_max_mm": 1.5
+    },
+    {
+      "name": "small_pebbles",
+      "terrain": {
+        "kind": "rocks",
+        "rock_height_m": [
+          0.004,
+          0.008
+        ]
+      },
+      "speed_m_s": 0.1,
+      "tilt_rms_max_deg": 3.0,
+      "clearance_std_max_mm": 6.0,
+      "minimum_encounters": {
+        "rock_foot_contact_steps": 5
+      }
+    },
+    {
+      "name": "short_grass",
+      "terrain": {
+        "kind": "grass",
+        "grass_height_m": [
+          0.018,
+          0.03
+        ],
+        "grass_spacing_m": 0.03,
+        "grass_blades_per_tuft": 7,
+        "grass_spread_m": 0.014
+      },
+      "speed_m_s": 0.1,
+      "tilt_rms_max_deg": 3.0,
+      "clearance_std_max_mm": 6.0,
+      "minimum_encounters": {
+        "vegetation_contact_steps": 5
+      }
+    },
+    {
+      "name": "larger_stones",
+      "terrain": {
+        "kind": "rocks",
+        "rock_height_m": [
+          0.008,
+          0.018
+        ]
+      },
+      "speed_m_s": 0.1,
+      "tilt_rms_max_deg": 3.0,
+      "clearance_std_max_mm": 6.0,
+      "minimum_encounters": {
+        "rock_foot_contact_steps": 5
+      }
+    },
+    {
+      "name": "stones_and_grass",
+      "terrain": {
+        "kind": "rocks_and_grass",
+        "rock_height_m": [
+          0.008,
+          0.018
+        ],
+        "grass_height_m": [
+          0.02,
+          0.04
+        ],
+        "grass_spacing_m": 0.03,
+        "grass_blades_per_tuft": 7,
+        "grass_spread_m": 0.014
+      },
+      "speed_m_s": 0.1,
+      "tilt_rms_max_deg": 3.0,
+      "clearance_std_max_mm": 6.0,
+      "minimum_encounters": {
+        "rock_foot_contact_steps": 5,
+        "vegetation_contact_steps": 5
+      }
+    },
+    {
+      "name": "tall_grass",
+      "terrain": {
+        "kind": "grass",
+        "grass_height_m": [
+          0.03,
+          0.06
+        ],
+        "grass_spacing_m": 0.03,
+        "grass_blades_per_tuft": 7,
+        "grass_spread_m": 0.014
+      },
+      "speed_m_s": 0.1,
+      "tilt_rms_max_deg": 3.0,
+      "clearance_std_max_mm": 6.0,
+      "minimum_encounters": {
+        "vegetation_contact_steps": 5
+      }
+    },
+    {
+      "name": "large_rocks",
+      "terrain": {
+        "kind": "rocks",
+        "rock_height_m": [
+          0.025,
+          0.05
+        ],
+        "rock_spacing_m": 0.18
+      },
+      "speed_m_s": 0.1,
+      "tilt_rms_max_deg": 3.0,
+      "clearance_std_max_mm": 6.0,
+      "minimum_encounters": {
+        "rock_foot_contact_steps": 5
+      }
+    }
+  ]
+}

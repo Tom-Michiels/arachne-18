@@ -1,0 +1,68 @@
+{
+  "backend": "bam",
+  "command": [
+    0.1,
+    0,
+    0
+  ],
+  "seconds": 12.0,
+  "measured_velocity": [
+    0.0902659136071396,
+    -0.00011107754045909659,
+    -0.0020221407314256995
+  ],
+  "velocity_rmse": 0.0228729750763395,
+  "yaw_rmse": 0.037814523501562766,
+  "tilt_rms_deg": 0.2297604836543309,
+  "tilt_max_deg": 0.6447176530242992,
+  "height_mean_m": 0.0985535474573829,
+  "height_std_mm": 0.44465818298317583,
+  "vertical_velocity_rms": 0.012234249034159142,
+  "body_rp_rate_rms": 0.083752258794354,
+  "slip_rms_m_s": 0.019507625385233707,
+  "feet_contacts_mean": 2.954,
+  "nonfoot_contacts": 0,
+  "target_rate_rms": 0.9067561546724101,
+  "target_acceleration_rms": 21.843826022065564,
+  "joint_speed_max": 3.0755583415690024,
+  "motor_torque_max": 1.5812794746211263,
+  "cadence_hz": 1.8938166956071638,
+  "body_distance_per_cycle_m": 0.04766349025041205,
+  "foot_excursion_mean_m": 0.028253955670187007,
+  "target_jerk_rms": 748.486881322666,
+  "clearance_min_m": 0.0946056044065932,
+  "clearance_std_mm": 1.1548833479598668,
+  "clearance_rate_rms": 0.012034147788605485,
+  "terrain_exposure_fraction": 0.523,
+  "terrain": {
+    "spec": {
+      "kind": "bumps",
+      "amplitude_m": 0.004,
+      "wavelength_m": [
+        0.1,
+        0.2
+      ]
+    },
+    "seed": 701,
+    "extent_m": 2.0,
+    "cell_size_m": 0.01,
+    "height_min_m": -0.003955954695425876,
+    "height_max_m": 0.0039494536318712015
+  },
+  "displacement_m": [
+    1.006409809891548,
+    -0.009689331294580371
+  ],
+  "warnings": 0,
+  "passed": true,
+  "friction": null,
+  "payload_kg": 0.0,
+  "imu_orientation_noise_deg": 0.0,
+  "schedule": null,
+  "policy": "training/policies/omni.json",
+  "policy_sha256": "89ad0e0d166ecbef2474659b11ab13c58df92fb6c84afd0213468c851813d554",
+  "playback": "Real time: one video second per simulated second",
+  "geometry": "Original collision model; terrain height is not exaggerated",
+  "gate_failures": [],
+  "seed": 701
+}

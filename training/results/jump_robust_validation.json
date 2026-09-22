@@ -1,0 +1,139 @@
+{
+  "policy": "training/policies/jump_robust.json",
+  "policy_sha256": "7c20c5db16b9ce10d70ac981faf2f70f15621dd6ccabd29ad06c174da3a9fb01",
+  "scope": "Timestep conditions were used in selection; friction and payload are additional checks. No landing or upright requirement.",
+  "cases": [
+    {
+      "name": "nominal",
+      "metrics": {
+        "score_m": 0.019410474082168998,
+        "search_score": 0.019410474082168998,
+        "peak_vertical_speed_m_s": 0.6137747845546215,
+        "peak_whole_robot_clearance_m": 0.020767976922565358,
+        "apex_time_s": 1.3299999999999643,
+        "body_height_at_clearance_apex_m": 0.0832775181058251,
+        "tilt_at_apex_deg": 1.169398373978408,
+        "airborne_time_s": 0.13,
+        "peak_body_height_m": 0.10113386544716979,
+        "joint_speed_max": 3.801600077175781,
+        "motor_torque_max": 3.7085495010788145,
+        "warnings": 0,
+        "friction": null,
+        "payload_kg": 0.0,
+        "physics_timestep_s": 0.001,
+        "objective": "Maximum minimum clearance of all collision geometry, sustained across three 10 ms samples; no upright reward"
+      },
+      "whole_robot_airborne": true
+    },
+    {
+      "name": "half_timestep",
+      "metrics": {
+        "score_m": 0.019354322001266085,
+        "search_score": 0.019354322001266085,
+        "peak_vertical_speed_m_s": 0.6047247307946146,
+        "peak_whole_robot_clearance_m": 0.02041024882550623,
+        "apex_time_s": 1.329999999999909,
+        "body_height_at_clearance_apex_m": 0.08031979416661489,
+        "tilt_at_apex_deg": 0.22654267480603807,
+        "airborne_time_s": 0.13,
+        "peak_body_height_m": 0.0997724706021678,
+        "joint_speed_max": 3.817018126991081,
+        "motor_torque_max": 3.669071803184763,
+        "warnings": 0,
+        "friction": null,
+        "payload_kg": 0.0,
+        "physics_timestep_s": 0.0005,
+        "objective": "Maximum minimum clearance of all collision geometry, sustained across three 10 ms samples; no upright reward"
+      },
+      "whole_robot_airborne": true
+    },
+    {
+      "name": "quarter_timestep",
+      "metrics": {
+        "score_m": 0.019095024416228533,
+        "search_score": 0.019095024416228533,
+        "peak_vertical_speed_m_s": 0.5972449801630253,
+        "peak_whole_robot_clearance_m": 0.02011122576438979,
+        "apex_time_s": 1.3300000000000278,
+        "body_height_at_clearance_apex_m": 0.07946755224927206,
+        "tilt_at_apex_deg": 0.11965395212866106,
+        "airborne_time_s": 0.13,
+        "peak_body_height_m": 0.0991444526118418,
+        "joint_speed_max": 3.8054820997545598,
+        "motor_torque_max": 3.687737845800814,
+        "warnings": 0,
+        "friction": null,
+        "payload_kg": 0.0,
+        "physics_timestep_s": 0.00025,
+        "objective": "Maximum minimum clearance of all collision geometry, sustained across three 10 ms samples; no upright reward"
+      },
+      "whole_robot_airborne": true
+    },
+    {
+      "name": "friction_0_5",
+      "metrics": {
+        "score_m": 0.017818051044876777,
+        "search_score": 0.017818051044876777,
+        "peak_vertical_speed_m_s": 0.6311539921378436,
+        "peak_whole_robot_clearance_m": 0.01924046115397391,
+        "apex_time_s": 1.3299999999999643,
+        "body_height_at_clearance_apex_m": 0.08143784520880527,
+        "tilt_at_apex_deg": 0.874555277825811,
+        "airborne_time_s": 0.12,
+        "peak_body_height_m": 0.10158217310565289,
+        "joint_speed_max": 3.892642374814176,
+        "motor_torque_max": 3.5329390379261234,
+        "warnings": 0,
+        "friction": 0.5,
+        "payload_kg": 0.0,
+        "physics_timestep_s": 0.001,
+        "objective": "Maximum minimum clearance of all collision geometry, sustained across three 10 ms samples; no upright reward"
+      },
+      "whole_robot_airborne": true
+    },
+    {
+      "name": "friction_1_1",
+      "metrics": {
+        "score_m": 0.017198883563151683,
+        "search_score": 0.017198883563151683,
+        "peak_vertical_speed_m_s": 0.5927545699513495,
+        "peak_whole_robot_clearance_m": 0.01856727232883177,
+        "apex_time_s": 1.3299999999999643,
+        "body_height_at_clearance_apex_m": 0.07936824320091426,
+        "tilt_at_apex_deg": 0.5339956819115944,
+        "airborne_time_s": 0.12,
+        "peak_body_height_m": 0.09863014703198437,
+        "joint_speed_max": 3.80595061364168,
+        "motor_torque_max": 3.904995470593274,
+        "warnings": 0,
+        "friction": 1.1,
+        "payload_kg": 0.0,
+        "physics_timestep_s": 0.001,
+        "objective": "Maximum minimum clearance of all collision geometry, sustained across three 10 ms samples; no upright reward"
+      },
+      "whole_robot_airborne": true
+    },
+    {
+      "name": "payload_200g",
+      "metrics": {
+        "score_m": 0.020261596045156212,
+        "search_score": 0.020261596045156212,
+        "peak_vertical_speed_m_s": 0.5920041744988932,
+        "peak_whole_robot_clearance_m": 0.02140766931330445,
+        "apex_time_s": 1.3299999999999643,
+        "body_height_at_clearance_apex_m": 0.08079314897563653,
+        "tilt_at_apex_deg": 0.29621868371517845,
+        "airborne_time_s": 0.13,
+        "peak_body_height_m": 0.09895049213262877,
+        "joint_speed_max": 3.753725771705628,
+        "motor_torque_max": 3.6998625276575443,
+        "warnings": 0,
+        "friction": null,
+        "payload_kg": 0.2,
+        "physics_timestep_s": 0.001,
+        "objective": "Maximum minimum clearance of all collision geometry, sustained across three 10 ms samples; no upright reward"
+      },
+      "whole_robot_airborne": true
+    }
+  ]
+}

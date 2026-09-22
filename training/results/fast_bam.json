@@ -1,0 +1,39 @@
+{
+  "backend": "bam",
+  "command": [
+    0.2,
+    0,
+    0
+  ],
+  "seconds": 12.0,
+  "measured_velocity": [
+    0.18984872915107304,
+    0.0003788934628232994,
+    -0.002787142992082881
+  ],
+  "velocity_rmse": 0.03265065854715161,
+  "yaw_rmse": 0.024399230401355314,
+  "tilt_rms_deg": 0.06847508861447005,
+  "tilt_max_deg": 0.10462369493061294,
+  "height_mean_m": 0.09638042739494497,
+  "height_std_mm": 0.4312200682642231,
+  "vertical_velocity_rms": 0.019134651848333253,
+  "body_rp_rate_rms": 0.038281163325995585,
+  "slip_rms_m_s": 0.0236364191209141,
+  "feet_contacts_mean": 2.626,
+  "nonfoot_contacts": 0,
+  "target_rate_rms": 1.5306477767991655,
+  "target_acceleration_rms": 43.08999856669632,
+  "joint_speed_max": 4.307554295136793,
+  "motor_torque_max": 2.408910397835948,
+  "displacement_m": [
+    2.1223788903017944,
+    -0.03118516436581559
+  ],
+  "warnings": 0,
+  "passed": true,
+  "friction": null,
+  "payload_kg": 0.0,
+  "imu_orientation_noise_deg": 0.0,
+  "schedule": null
+}

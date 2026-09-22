@@ -1,0 +1,42 @@
+name: Publish locomotion videos
+
+on:
+  push:
+    branches: [main]
+    paths: ["site/**", "assets/arachne-*.mp4", "assets/arachne-*.jpg", ".github/workflows/pages.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/configure-pages@v5
+      - name: Assemble the static video page
+        run: |
+          mkdir -p _site/assets
+          cp -R site/. _site/
+          cp assets/arachne-learned-omni.mp4 assets/arachne-learned-omni.jpg _site/assets/
+          cp assets/arachne-training-army.mp4 assets/arachne-training-army.jpg _site/assets/
+          cp assets/arachne-jump.mp4 assets/arachne-jump.jpg _site/assets/
+          cp assets/arachne-faster-stride.mp4 assets/arachne-faster-stride.jpg _site/assets/
+          cp assets/arachne-long-stride.mp4 assets/arachne-long-stride.jpg _site/assets/
+          cp assets/arachne-terrain-*.mp4 assets/arachne-terrain-*.jpg _site/assets/
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

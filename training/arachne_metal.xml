@@ -1,0 +1,135 @@
+<mujoco model="ARACHNE_18_STS3215_12V_approx">
+  <compiler angle="radian" autolimits="true" inertiafromgeom="false" meshdir="../simulation/meshes" />
+  <option timestep=".002" integrator="Euler" solver="Newton" iterations="12" cone="pyramidal" />
+  <visual>
+    <global offwidth="1400" offheight="1000" azimuth="135" elevation="-25" />
+  </visual>
+  <asset>
+    <texture name="floor_texture" type="2d" builtin="checker" rgb1="0.24 0.28 0.27" rgb2="0.32 0.36 0.34" width="512" height="512" />
+    <material name="floor_mat" texture="floor_texture" texrepeat="8 8" reflectance="0.15" />
+    <mesh name="foot_hull" vertex="-0.00433012702 -0.00433012702 -0.00433012702 -0.00530330086 -0.00530330086 0 -0.00433012702 -0.00433012702 0.00433012702 -0.00530330086 0 -0.00530330086 -0.0075 0 0 -0.00530330086 0 0.00530330086 -0.00433012702 0.00433012702 -0.00433012702 -0.00530330086 0.00530330086 0 -0.00433012702 0.00433012702 0.00433012702 0 -0.00530330086 -0.00530330086 0 -0.0075 0 0 -0.00530330086 0.00530330086 0 0 -0.0075 0 0 0.0075 0 0.00530330086 -0.00530330086 0 0.0075 0 0 0.00530330086 0.00530330086 0.00433012702 -0.00433012702 -0.00433012702 0.00530330086 -0.00530330086 0 0.00433012702 -0.00433012702 0.00433012702 0.00530330086 0 -0.00530330086 0.0075 0 0 0.00530330086 0 0.00530330086 0.00433012702 0.00433012702 -0.00433012702 0.00530330086 0.00530330086 0 0.00433012702 0.00433012702 0.00433012702" />
+    <mesh name="torso_hull" vertex="-0.045033321 -0.0282901632 -0.038682468 -0.0551543289 -0.0346482323 0 -0.045033321 -0.0282901632 0.038682468 -0.0551543289 0 -0.0473761543 -0.078 0 0 -0.0551543289 0 0.0473761543 -0.045033321 0.0282901632 -0.038682468 -0.0551543289 0.0346482323 0 -0.045033321 0.0282901632 0.038682468 0 -0.0346482323 -0.0473761543 0 -0.049 0 0 -0.0346482323 0.0473761543 0 0 -0.067 0 0 0.067 0 0.0346482323 -0.0473761543 0 0.049 0 0 0.0346482323 0.0473761543 0.045033321 -0.0282901632 -0.038682468 0.0551543289 -0.0346482323 0 0.045033321 -0.0282901632 0.038682468 0.0551543289 0 -0.0473761543 0.078 0 0 0.0551543289 0 0.0473761543 0.045033321 0.0282901632 -0.038682468 0.0551543289 0.0346482323 0 0.045033321 0.0282901632 0.038682468" />
+  </asset>
+  <default>
+    <joint limited="true" damping="0.9103227196323667" armature="0.021564290129722483" frictionloss="0.0533134815909817" />
+    <geom friction="0.8 0.005 0.0002" solref="0.006 1" solimp="0.95 0.99 0.001" condim="3" />
+  </default>
+  <worldbody>
+    <light pos="0.2 -0.4 1.5" dir="-0.2 0.4 -1" diffuse="0.9 0.9 0.9" castshadow="true" />
+    <geom name="ground" type="plane" size="2 2 0.1" material="floor_mat" contype="1" conaffinity="2" />
+    <body name="BODY" pos="0 0 0.09715873972">
+      <freejoint name="floating_base" />
+      <site name="imu" size="0.004" pos="0 0 0.078" />
+      <camera name="follow" mode="trackcom" pos="0.65 -0.85 0.5" xyaxes="0.794 0.607 0 -0.24 0.32 0.916" />
+      <inertial pos="5.880321486e-05 9.320330567e-11 0.02292342569" mass="0.930571464634609" fullinertia="0.002719821496 0.002460368825 0.003144360719 -8.308283684e-13 -9.137707922e-07 -8.371164719e-13" />
+      <geom name="body_collision" type="mesh" pos="0 0 0.036" rgba="0.8 0.4 0.1 0.3" group="3" mesh="torso_hull" contype="2" conaffinity="1" />
+      <body name="L1_COXA" pos="0.06081118318 0.06081118318 0">
+        <joint name="L1_yaw" type="hinge" axis="0 0 1" range="-0.3490658504 0.3490658504" />
+        <inertial pos="0.03022795092 0.03005701527 -0.0115998342" mass="0.10334802255798715" fullinertia="4.280456813e-05 4.29608301e-05 3.606163057e-05 -9.67244736e-06 6.056988419e-06 5.668050118e-06" />
+        <body name="L1_FEMUR" pos="0.03535533906 0.03535533906 0">
+          <joint name="L1_hip" type="hinge" axis="0.7071067812 -0.7071067812 0" range="-0.2617993878 0.2617993878" />
+          <inertial pos="0.0365740358 0.03597026422 0.01378791209" mass="0.10874649752944587" fullinertia="4.077460764e-05 4.003294204e-05 6.12791472e-05 -1.375500979e-05 -6.727279137e-06 -6.852290899e-06" />
+          <body name="L1_TIBIA" pos="0.05327499075 0.05327499075 0.02018788552">
+            <joint name="L1_knee" type="hinge" axis="0.7071067812 -0.7071067812 0" range="-0.2617993878 0.2617993878" />
+            <inertial pos="0.01258375384 0.01258674841 -0.0434179088" mass="0.04106974662537008" fullinertia="4.899454962e-05 4.899316298e-05 1.333472293e-05 7.829381064e-07 9.68078351e-06 9.683477982e-06" />
+            <geom name="L1_foot_contact" type="mesh" pos="0.02394328259 0.02394310446 -0.1078466252" rgba="0.8 0.4 0.1 0.35" group="3" mesh="foot_hull" contype="2" conaffinity="1" />
+            <site name="L1_foot" pos="0.02394328259 0.02394310446 -0.1078466252" size="0.008" rgba="0 1 0 0.3" />
+          </body>
+        </body>
+      </body>
+      <body name="L2_COXA" pos="5.265981236e-18 0.086 0">
+        <joint name="L2_yaw" type="hinge" axis="0 0 1" range="-0.3490658504 0.3490658504" />
+        <inertial pos="0.0001208697598 0.0426279084 -0.0115998342" mass="0.10334802255798717" fullinertia="5.255514648e-05 3.321025176e-05 3.606163057e-05 -7.813098545e-08 2.750209103e-07 8.290854259e-06" />
+        <body name="L2_FEMUR" pos="3.061616998e-18 0.05 0">
+          <joint name="L2_hip" type="hinge" axis="1 -6.123233996e-17 0" range="-0.2617993878 0.2617993878" />
+          <inertial pos="0.0004269309738 0.05129656648 0.01378791209" mass="0.1087464975294459" fullinertia="5.415878463e-05 2.664876505e-05 6.12791472e-05 3.70832804e-07 8.839666463e-08 -9.602206058e-06" />
+          <body name="L2_TIBIA" pos="4.613380088e-18 0.07534221445 0.02018788552">
+            <joint name="L2_knee" type="hinge" axis="1 -6.123233996e-17 0" range="-0.2617993878 0.2617993878" />
+            <inertial pos="-2.117482195e-06 0.01779823283 -0.0434179088" mass="0.041069746625370065" fullinertia="4.821091819e-05 4.977679441e-05 1.333472293e-05 6.933233222e-10 -1.905279683e-09 1.369260061e-05" />
+            <geom name="L2_foot_contact" type="mesh" pos="7.63562135e-08 0.03386069468 -0.1078466252" rgba="0.8 0.4 0.1 0.35" group="3" mesh="foot_hull" contype="2" conaffinity="1" />
+            <site name="L2_foot" pos="7.63562135e-08 0.03386069468 -0.1078466252" size="0.008" rgba="0 1 0 0.3" />
+          </body>
+        </body>
+      </body>
+      <body name="L3_COXA" pos="-0.06081118318 0.06081118318 0">
+        <joint name="L3_yaw" type="hinge" axis="0 0 1" range="-0.3490658504 0.3490658504" />
+        <inertial pos="-0.03005701527 0.03022795092 -0.0115998342" mass="0.10334802255798717" fullinertia="4.29608301e-05 4.280456813e-05 3.606163057e-05 9.67244736e-06 -5.668050118e-06 6.056988419e-06" />
+        <body name="L3_FEMUR" pos="-0.03535533906 0.03535533906 0">
+          <joint name="L3_hip" type="hinge" axis="0.7071067812 0.7071067812 0" range="-0.2617993878 0.2617993878" />
+          <inertial pos="-0.03597026422 0.0365740358 0.01378791209" mass="0.10874649752944589" fullinertia="4.003294204e-05 4.077460764e-05 6.12791472e-05 1.375500979e-05 6.852290899e-06 -6.727279137e-06" />
+          <body name="L3_TIBIA" pos="-0.05327499075 0.05327499075 0.02018788552">
+            <joint name="L3_knee" type="hinge" axis="0.7071067812 0.7071067812 0" range="-0.2617993878 0.2617993878" />
+            <inertial pos="-0.01258674841 0.01258375384 -0.0434179088" mass="0.04106974662537008" fullinertia="4.899316298e-05 4.899454962e-05 1.333472293e-05 -7.829381064e-07 -9.683477982e-06 9.68078351e-06" />
+            <geom name="L3_foot_contact" type="mesh" pos="-0.02394310446 0.02394328259 -0.1078466252" rgba="0.8 0.4 0.1 0.35" group="3" mesh="foot_hull" contype="2" conaffinity="1" />
+            <site name="L3_foot" pos="-0.02394310446 0.02394328259 -0.1078466252" size="0.008" rgba="0 1 0 0.3" />
+          </body>
+        </body>
+      </body>
+      <body name="L4_COXA" pos="-0.06081118318 -0.06081118318 0">
+        <joint name="L4_yaw" type="hinge" axis="0 0 1" range="-0.3490658504 0.3490658504" />
+        <inertial pos="-0.03022795092 -0.03005701527 -0.0115998342" mass="0.10334802255798715" fullinertia="4.280456813e-05 4.29608301e-05 3.606163057e-05 -9.67244736e-06 -6.056988419e-06 -5.668050118e-06" />
+        <body name="L4_FEMUR" pos="-0.03535533906 -0.03535533906 0">
+          <joint name="L4_hip" type="hinge" axis="-0.7071067812 0.7071067812 0" range="-0.2617993878 0.2617993878" />
+          <inertial pos="-0.0365740358 -0.03597026422 0.01378791209" mass="0.10874649752944589" fullinertia="4.077460764e-05 4.003294204e-05 6.12791472e-05 -1.375500979e-05 6.727279137e-06 6.852290899e-06" />
+          <body name="L4_TIBIA" pos="-0.05327499075 -0.05327499075 0.02018788552">
+            <joint name="L4_knee" type="hinge" axis="-0.7071067812 0.7071067812 0" range="-0.2617993878 0.2617993878" />
+            <inertial pos="-0.01258375384 -0.01258674841 -0.0434179088" mass="0.04106974662537008" fullinertia="4.899454962e-05 4.899316298e-05 1.333472293e-05 7.829381064e-07 -9.68078351e-06 -9.683477982e-06" />
+            <geom name="L4_foot_contact" type="mesh" pos="-0.02394328259 -0.02394310446 -0.1078466252" rgba="0.8 0.4 0.1 0.35" group="3" mesh="foot_hull" contype="2" conaffinity="1" />
+            <site name="L4_foot" pos="-0.02394328259 -0.02394310446 -0.1078466252" size="0.008" rgba="0 1 0 0.3" />
+          </body>
+        </body>
+      </body>
+      <body name="L5_COXA" pos="-1.579794371e-17 -0.086 0">
+        <joint name="L5_yaw" type="hinge" axis="0 0 1" range="-0.3490658504 0.3490658504" />
+        <inertial pos="-0.0001208697598 -0.0426279084 -0.0115998342" mass="0.10334802255798715" fullinertia="5.255514648e-05 3.321025176e-05 3.606163057e-05 -7.813098545e-08 -2.750209103e-07 -8.290854259e-06" />
+        <body name="L5_FEMUR" pos="-9.184850994e-18 -0.05 0">
+          <joint name="L5_hip" type="hinge" axis="-1 1.836970199e-16 0" range="-0.2617993878 0.2617993878" />
+          <inertial pos="-0.0004269309738 -0.05129656648 0.01378791209" mass="0.10874649752944589" fullinertia="5.415878463e-05 2.664876505e-05 6.12791472e-05 3.70832804e-07 -8.839666463e-08 9.602206058e-06" />
+          <body name="L5_TIBIA" pos="-1.384014027e-17 -0.07534221445 0.02018788552">
+            <joint name="L5_knee" type="hinge" axis="-1 1.836970199e-16 0" range="-0.2617993878 0.2617993878" />
+            <inertial pos="2.117482195e-06 -0.01779823283 -0.0434179088" mass="0.041069746625370065" fullinertia="4.821091819e-05 4.977679441e-05 1.333472293e-05 6.933233222e-10 1.905279683e-09 -1.369260061e-05" />
+            <geom name="L5_foot_contact" type="mesh" pos="-7.63562135e-08 -0.03386069468 -0.1078466252" rgba="0.8 0.4 0.1 0.35" group="3" mesh="foot_hull" contype="2" conaffinity="1" />
+            <site name="L5_foot" pos="-7.63562135e-08 -0.03386069468 -0.1078466252" size="0.008" rgba="0 1 0 0.3" />
+          </body>
+        </body>
+      </body>
+      <body name="L6_COXA" pos="0.06081118318 -0.06081118318 0">
+        <joint name="L6_yaw" type="hinge" axis="0 0 1" range="-0.3490658504 0.3490658504" />
+        <inertial pos="0.03005701527 -0.03022795092 -0.0115998342" mass="0.10334802255798714" fullinertia="4.29608301e-05 4.280456813e-05 3.606163057e-05 9.67244736e-06 5.668050118e-06 -6.056988419e-06" />
+        <body name="L6_FEMUR" pos="0.03535533906 -0.03535533906 0">
+          <joint name="L6_hip" type="hinge" axis="-0.7071067812 -0.7071067812 0" range="-0.2617993878 0.2617993878" />
+          <inertial pos="0.03597026422 -0.0365740358 0.01378791209" mass="0.10874649752944589" fullinertia="4.003294204e-05 4.077460764e-05 6.12791472e-05 1.375500979e-05 -6.852290899e-06 6.727279137e-06" />
+          <body name="L6_TIBIA" pos="0.05327499075 -0.05327499075 0.02018788552">
+            <joint name="L6_knee" type="hinge" axis="-0.7071067812 -0.7071067812 0" range="-0.2617993878 0.2617993878" />
+            <inertial pos="0.01258674841 -0.01258375384 -0.0434179088" mass="0.041069746625370065" fullinertia="4.899316298e-05 4.899454962e-05 1.333472293e-05 -7.829381064e-07 9.683477982e-06 -9.68078351e-06" />
+            <geom name="L6_foot_contact" type="mesh" pos="0.02394310446 -0.02394328259 -0.1078466252" rgba="0.8 0.4 0.1 0.35" group="3" mesh="foot_hull" contype="2" conaffinity="1" />
+            <site name="L6_foot" pos="0.02394310446 -0.02394328259 -0.1078466252" size="0.008" rgba="0 1 0 0.3" />
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <position name="L1_yaw" joint="L1_yaw" gear="1" kp="27.712963967705033" ctrllimited="true" ctrlrange="-.3490658504 .3490658504" forcelimited="true" forcerange="-4.356155818742208 4.356155818742208" />
+    <position name="L1_hip" joint="L1_hip" gear="1" kp="27.712963967705033" ctrllimited="true" ctrlrange="-.3490658504 .3490658504" forcelimited="true" forcerange="-4.356155818742208 4.356155818742208" />
+    <position name="L1_knee" joint="L1_knee" gear="1" kp="27.712963967705033" ctrllimited="true" ctrlrange="-.3490658504 .3490658504" forcelimited="true" forcerange="-4.356155818742208 4.356155818742208" />
+    <position name="L2_yaw" joint="L2_yaw" gear="1" kp="27.712963967705033" ctrllimited="true" ctrlrange="-.3490658504 .3490658504" forcelimited="true" forcerange="-4.356155818742208 4.356155818742208" />
+    <position name="L2_hip" joint="L2_hip" gear="1" kp="27.712963967705033" ctrllimited="true" ctrlrange="-.3490658504 .3490658504" forcelimited="true" forcerange="-4.356155818742208 4.356155818742208" />
+    <position name="L2_knee" joint="L2_knee" gear="1" kp="27.712963967705033" ctrllimited="true" ctrlrange="-.3490658504 .3490658504" forcelimited="true" forcerange="-4.356155818742208 4.356155818742208" />
+    <position name="L3_yaw" joint="L3_yaw" gear="1" kp="27.712963967705033" ctrllimited="true" ctrlrange="-.3490658504 .3490658504" forcelimited="true" forcerange="-4.356155818742208 4.356155818742208" />
+    <position name="L3_hip" joint="L3_hip" gear="1" kp="27.712963967705033" ctrllimited="true" ctrlrange="-.3490658504 .3490658504" forcelimited="true" forcerange="-4.356155818742208 4.356155818742208" />
+    <position name="L3_knee" joint="L3_knee" gear="1" kp="27.712963967705033" ctrllimited="true" ctrlrange="-.3490658504 .3490658504" forcelimited="true" forcerange="-4.356155818742208 4.356155818742208" />
+    <position name="L4_yaw" joint="L4_yaw" gear="1" kp="27.712963967705033" ctrllimited="true" ctrlrange="-.3490658504 .3490658504" forcelimited="true" forcerange="-4.356155818742208 4.356155818742208" />
+    <position name="L4_hip" joint="L4_hip" gear="1" kp="27.712963967705033" ctrllimited="true" ctrlrange="-.3490658504 .3490658504" forcelimited="true" forcerange="-4.356155818742208 4.356155818742208" />
+    <position name="L4_knee" joint="L4_knee" gear="1" kp="27.712963967705033" ctrllimited="true" ctrlrange="-.3490658504 .3490658504" forcelimited="true" forcerange="-4.356155818742208 4.356155818742208" />
+    <position name="L5_yaw" joint="L5_yaw" gear="1" kp="27.712963967705033" ctrllimited="true" ctrlrange="-.3490658504 .3490658504" forcelimited="true" forcerange="-4.356155818742208 4.356155818742208" />
+    <position name="L5_hip" joint="L5_hip" gear="1" kp="27.712963967705033" ctrllimited="true" ctrlrange="-.3490658504 .3490658504" forcelimited="true" forcerange="-4.356155818742208 4.356155818742208" />
+    <position name="L5_knee" joint="L5_knee" gear="1" kp="27.712963967705033" ctrllimited="true" ctrlrange="-.3490658504 .3490658504" forcelimited="true" forcerange="-4.356155818742208 4.356155818742208" />
+    <position name="L6_yaw" joint="L6_yaw" gear="1" kp="27.712963967705033" ctrllimited="true" ctrlrange="-.3490658504 .3490658504" forcelimited="true" forcerange="-4.356155818742208 4.356155818742208" />
+    <position name="L6_hip" joint="L6_hip" gear="1" kp="27.712963967705033" ctrllimited="true" ctrlrange="-.3490658504 .3490658504" forcelimited="true" forcerange="-4.356155818742208 4.356155818742208" />
+    <position name="L6_knee" joint="L6_knee" gear="1" kp="27.712963967705033" ctrllimited="true" ctrlrange="-.3490658504 .3490658504" forcelimited="true" forcerange="-4.356155818742208 4.356155818742208" />
+  </actuator>
+  <keyframe>
+    <key name="neutral" qpos="0 0 0.09715873972 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" />
+  </keyframe>
+</mujoco>

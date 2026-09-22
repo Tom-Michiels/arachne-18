@@ -1,0 +1,22 @@
+{
+  "score_m": 0.024080418865251287,
+  "search_score": 0.024080418865251287,
+  "peak_vertical_speed_m_s": 0.6114535623021902,
+  "peak_whole_robot_clearance_m": 0.02513600236989532,
+  "apex_time_s": 1.3299999999999643,
+  "body_height_at_clearance_apex_m": 0.08412457252872696,
+  "tilt_at_apex_deg": 0.19504949810947658,
+  "airborne_time_s": 0.13,
+  "peak_body_height_m": 0.10157572090714426,
+  "joint_speed_max": 3.8193982021629123,
+  "motor_torque_max": 3.7645350813880416,
+  "warnings": 0,
+  "friction": null,
+  "payload_kg": 0.0,
+  "physics_timestep_s": 0.001,
+  "objective": "Maximum minimum clearance of all collision geometry, sustained across three 10 ms samples; no upright reward",
+  "cad_mesh_clearance_at_apex_m": 0.02402657327811092,
+  "policy": "training/policies/jump.json",
+  "policy_sha256": "63ab7a9ab57b8331ab66b29b27a25d7d71afd29dbf64962691ca14258fc641d1",
+  "playback": "3.5 seconds real time, followed by a clearly labelled 4x slow replay of the same 3.5 seconds; 50 fps"
+}

@@ -89,6 +89,52 @@ On Linux and Windows, use `python` for the viewer. On Windows, activate the envi
 
 *Actual floating-base MuJoCo simulation: the body rises and lowers while all six feet keep contact with the ground.*
 
+### Learned walking and a training army
+
+A separate [jump policy and video](https://tom-michiels.github.io/arachne-18/#jump)
+maximize clearance beneath every leg and the body, with no upright reward.
+The highest recorded jump clears all CAD parts by **2.40 cm**; a second policy
+prioritizes consistency across physics timesteps. [Policies and measurements](training/JUMP.md).
+
+
+The [obstacle videos](https://tom-michiels.github.io/arachne-18/#terrain-pebbles)
+now include individual collision stones and passive grass tufts that bend on
+contact. Small-stone and short-grass forward examples pass; larger rocks remain
+curriculum targets. [Models, curriculum and measured limits](training/OBSTACLES.md).
+
+
+**[Open the video page — faster walking, all directions and the training army](https://tom-michiels.github.io/arachne-18/)**
+
+The first [walking video](https://tom-michiels.github.io/arachne-18/#fast)
+now reaches **29.9 cm/s**, up from 22.4 cm/s: **34% faster**, with **32% greater
+foot travel** (6.45 cm versus 4.90 cm) and slightly lower cadence. A broader
+smooth foot arc makes the larger steps possible within the original joint limits.
+The checkpoint passes **26/26 reference checks**: directions and perturbations
+at a 0.24 m/s command, plus fast forward motion at 0.34 m/s. The 20-second
+recording includes acceleration and a gentle stop at real simulation time.
+[Measurements, operating limits and reproduction](training/SPRINT.md).
+
+A new IMU-aware CEM policy walks in every horizontal direction, turns, follows
+curves and stops smoothly. It was trained with the fast local MuJoCo/Metal
+simulator and independently checked in the original MuJoCo + BAM model:
+**26/26 validation cases pass**, with about **13.3 cm/s** at the normal command
+and **19.3 cm/s** at a faster command. The 40-second direction-change demo has
+0.084° RMS body tilt and no falls or non-foot ground contacts.
+
+[![128 independent spiders during actual training](assets/arachne-training-army.jpg)](assets/arachne-training-army.mp4)
+
+**[Watch the 128-spider training army](assets/arachne-training-army.mp4)** ·
+**[Watch walking, direction changes and turning](assets/arachne-learned-omni.mp4)** ·
+[Controller, objective, measured results and reproduction](training/README.md)
+
+The army uses real recorded states from distinct training candidates, arranged
+for display in independent cells. The solo demonstration uses full BAM physics.
+These are simulated gaits; hardware walking has not been validated.
+
+The [uneven-ground curriculum](training/TERRAIN.md) has passed 318 admission
+episodes through 4 mm obstacles. It keeps strict body-stability and smoothness
+gates, retains flat-ground walking, and stops before unmastered 8 mm obstacles.
+
 **BAM is activated by `simulate.py`. Loading the XML alone does not activate the servo model.** The supplied 12 V M6 parameter set is an approximation fitted to manufacturer torque and speed points, with friction and controller behavior inherited from BAM's identified 7.4 V STS3215 model. It is clearly versioned separately from the original. Read the [model assumptions](docs/bam-model.md) before using it for actuator studies.
 
 ## Build it

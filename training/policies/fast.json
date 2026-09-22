@@ -1,0 +1,43 @@
+{
+  "algorithm": "CEM episodic policy search",
+  "parameter_names": [
+    "frequency_hz",
+    "stance_fraction",
+    "lift_m",
+    "stride_gain",
+    "yaw_gain",
+    "height_offset_m",
+    "radial_offset_m",
+    "tilt_feedback",
+    "phase_front",
+    "phase_middle",
+    "phase_rear",
+    "lateral_gain"
+  ],
+  "parameters": [
+    1.995991687409148,
+    0.5241284452003167,
+    0.01540349199822313,
+    0.9123624638228152,
+    0.6,
+    0.0017945197133431509,
+    -0.008,
+    0.0851339854198191,
+    -0.010355688550283525,
+    0.0006501138332418048,
+    0.005727989534949036,
+    0.9716789418110482
+  ],
+  "stage": "forward",
+  "score": 5.063980579376221,
+  "generation": 15,
+  "seed": 17,
+  "commands": [
+    [
+      0.2,
+      0.0,
+      0.0
+    ]
+  ],
+  "simulator": "MuJoCo-MLX fused approximate model"
+}

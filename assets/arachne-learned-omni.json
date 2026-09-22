@@ -1,0 +1,122 @@
+{
+  "backend": "bam",
+  "command": [
+    0,
+    0,
+    0
+  ],
+  "seconds": 40.0,
+  "measured_velocity": [
+    0.03182890319374754,
+    0.0036976643431687562,
+    0.015308710101883906
+  ],
+  "velocity_rmse": 0.020658400674009966,
+  "yaw_rmse": 0.053905600994197854,
+  "tilt_rms_deg": 0.08412255505755896,
+  "tilt_max_deg": 0.2969238093307251,
+  "height_mean_m": 0.09844652149069082,
+  "height_std_mm": 0.37621835171645496,
+  "vertical_velocity_rms": 0.013365916819655222,
+  "body_rp_rate_rms": 0.051262122259193646,
+  "slip_rms_m_s": 0.018386926198842184,
+  "feet_contacts_mean": 3.225,
+  "nonfoot_contacts": 0,
+  "target_rate_rms": 0.9947493847050422,
+  "target_acceleration_rms": 25.416848574798674,
+  "joint_speed_max": 4.330223205782665,
+  "motor_torque_max": 2.131970987635564,
+  "displacement_m": [
+    0.6577332667793936,
+    0.6718131581893119
+  ],
+  "warnings": 0,
+  "passed": true,
+  "friction": null,
+  "payload_kg": 0.0,
+  "imu_orientation_noise_deg": 0.0,
+  "schedule": [
+    [
+      0,
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      1,
+      [
+        0.14,
+        0,
+        0
+      ]
+    ],
+    [
+      7,
+      [
+        0,
+        0.12,
+        0
+      ]
+    ],
+    [
+      12,
+      [
+        -0.12,
+        0,
+        0
+      ]
+    ],
+    [
+      17,
+      [
+        0.09,
+        -0.09,
+        0
+      ]
+    ],
+    [
+      22,
+      [
+        0,
+        0,
+        0.4
+      ]
+    ],
+    [
+      29,
+      [
+        0.1,
+        0,
+        -0.3
+      ]
+    ],
+    [
+      36,
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  ],
+  "video": {
+    "file": "arachne-learned-omni.mp4",
+    "sha256": "344622c201ffa5605e125a4fb983bcb8145d07621f3a0a2e0fc7a7fc8760e0a7",
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 800,
+        "nb_frames": "2000"
+      }
+    ],
+    "format": {
+      "duration": "40.000000",
+      "size": "4573606"
+    }
+  }
+}
