@@ -1,0 +1,35 @@
+{
+  "algorithm": "CEM episodic policy search",
+  "parameter_names": [
+    "frequency_hz",
+    "stance_fraction",
+    "lift_m",
+    "stride_gain",
+    "yaw_gain",
+    "height_offset_m",
+    "radial_offset_m",
+    "tilt_feedback",
+    "phase_front",
+    "phase_middle",
+    "phase_rear",
+    "lateral_gain",
+    "broad_lift_blend"
+  ],
+  "parameters": [
+    1.8571226620994137,
+    0.52,
+    0.020705872091641667,
+    0.8423618548742857,
+    0.9472092349348241,
+    0.004085038602625479,
+    -0.007301535924713476,
+    0.028460841129030613,
+    -0.009346566728302343,
+    0.02044889127744314,
+    0.03581116121574788,
+    0.9146239161309234,
+    0.9895226913655976
+  ],
+  "source": "CEM forward search with optional C2 broad lift; selected using 12-second reference BAM checks",
+  "command_m_s": 0.34
+}

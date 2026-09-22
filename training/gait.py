@@ -68,7 +68,13 @@ def target(params, phase, command, qpos, elapsed, xp=np, gyro=None):
     ratio = (1-duty)/duty
     travel = xp.where(ph < duty, .5-ph/duty, -.5-ratio*u+(1+ratio)*smooth5(u))
     speed = xp.sqrt(command[:,0:1]**2+command[:,1:2]**2+(.22*command[:,2:3])**2)
-    lift = p[:,2:3]*(.35+.65*xp.clip(speed/.14,0,1))*xp.sin(np.pi*u)**4
+    lift_shape = xp.sin(np.pi*u)**4
+    if p.shape[1] > 12:
+        # Wider C2 swing clearance reduces late lift-off and early touchdown.
+        # The optional blend preserves every existing 12-parameter policy.
+        broad = 64*u**3*(1-u)**3
+        lift_shape = (1-p[:,12:13])*lift_shape + p[:,12:13]*broad
+    lift = p[:,2:3]*(.35+.65*xp.clip(speed/.14,0,1))*lift_shape
     ramp = smooth5(xp.clip(elapsed/1.2,0,1))
     radius = R0 + p[:,6:7]
     neutral = xp.array(COXA)[None,:,:]+radius[:,:,None]*xp.array(RADIAL)[None,:,:]
@@ -102,7 +108,7 @@ def save(path, params, **metadata):
     path = Path(path); path.parent.mkdir(parents=True, exist_ok=True)
     temp=path.with_suffix('.tmp')
     temp.write_text(json.dumps(dict(algorithm='CEM episodic policy search',
-        parameter_names=NAMES, parameters=np.asarray(params).tolist(), **metadata), indent=2)+'\n')
+        parameter_names=NAMES+(['broad_lift_blend'] if len(params)>12 else []), parameters=np.asarray(params).tolist(), **metadata), indent=2)+'\n')
     temp.replace(path)
 
 

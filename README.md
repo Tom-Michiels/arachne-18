@@ -80,11 +80,14 @@ On Linux and Windows, use `python` for the viewer. On Windows, activate the envi
 
 **[Open the video page — faster walking, all directions and the training army](https://tom-michiels.github.io/arachne-18/)**
 
-The latest [longer-stride video](https://tom-michiels.github.io/arachne-18/#fast)
-shows a **22.4 cm/s** forward gait: **68% faster** than the original 13.3 cm/s
-solo reference, with **43% greater foot travel** and only **11% more cadence**.
-The new checkpoint passes **26/26 reference checks**, including directions,
-turns and perturbations. [Measured comparison and reproduction](training/LONG_STRIDE.md).
+The first [walking video](https://tom-michiels.github.io/arachne-18/#fast)
+now reaches **29.9 cm/s**, up from 22.4 cm/s: **34% faster**, with **32% greater
+foot travel** (6.45 cm versus 4.90 cm) and slightly lower cadence. A broader
+smooth foot arc makes the larger steps possible within the original joint limits.
+The checkpoint passes **26/26 reference checks**: directions and perturbations
+at a 0.24 m/s command, plus fast forward motion at 0.34 m/s. The 20-second
+recording includes acceleration and a gentle stop at real simulation time.
+[Measurements, operating limits and reproduction](training/SPRINT.md).
 
 A new IMU-aware CEM policy walks in every horizontal direction, turns, follows
 curves and stops smoothly. It was trained with the fast local MuJoCo/Metal

@@ -26,20 +26,20 @@
       <p class="lead">Forward, sideways, backward and around corners. A learned controller combines smooth foot trajectories with IMU feedback. These are real MuJoCo simulations.</p>
     </div>
     <div class="stats" aria-label="Measured simulation results">
-      <div class="stat"><strong>22.4 <small>cm/s</small></strong><span>Measured forward speed · up from 13.3 cm/s</span></div>
-      <div class="stat"><strong>+43<small>%</small></strong><span>Longer foot travel · 4.90 cm versus 3.42 cm</span></div>
+      <div class="stat"><strong>29.9 <small>cm/s</small></strong><span>Measured forward speed · up from 22.4 cm/s</span></div>
+      <div class="stat"><strong>+32<small>%</small></strong><span>Longer foot travel · 6.45 cm versus 4.90 cm</span></div>
       <div class="stat"><strong>26 <small>/ 26</small></strong><span>Faster-gait checks passed in MuJoCo + BAM</span></div>
     </div>
     <section id="fast" aria-labelledby="fast-title">
-      <div class="section-top"><h2 id="fast-title">Longer strides. A faster walk.</h2><span class="tag">44 seconds · real-time playback</span></div>
+      <div class="section-top"><h2 id="fast-title">Longer strides. A faster walk.</h2><span class="tag">20 seconds · real-time playback</span></div>
       <div class="player">
-        <video controls playsinline preload="metadata" poster="assets/arachne-long-stride.jpg" aria-label="Faster walking with longer strides, direction changes, turns and a smooth stop">
-          <source src="assets/arachne-long-stride.mp4" type="video/mp4">
-          Your browser does not support this video. <a href="assets/arachne-long-stride.mp4">Download the faster walking demo</a>.
+        <video controls playsinline preload="metadata" poster="assets/arachne-faster-stride.jpg" aria-label="Faster forward walking with larger steps, smooth acceleration and a gentle stop">
+          <source src="assets/arachne-faster-stride.mp4" type="video/mp4">
+          Your browser does not support this video. <a href="assets/arachne-faster-stride.mp4">Download the faster walking demo</a>.
         </video>
-        <div class="caption"><p>Measured forward speed rises from 13.3 to 22.4 cm/s, with 43% more foot travel and only 11% more cadence. The robot then moves sideways, backward and diagonally, turns and stops. This is real-time playback with the original joint limits and full BAM servo dynamics.</p><a href="assets/arachne-long-stride.mp4" download>Download video ↓</a></div>
+        <div class="caption"><p>Measured forward speed rises from 22.4 to 29.9 cm/s: 34% faster, with 32% more foot travel and slightly lower cadence. A wider, smooth foot arc supports longer steps while the body stays steady. Watch the robot accelerate, walk and stop in real time, with the original joint limits and full BAM servo dynamics.</p><a href="assets/arachne-faster-stride.mp4" download>Download video ↓</a></div>
       </div>
-      <details><summary>How do we measure longer strides?</summary><p>Reference tests measure both body travel per gait cycle and the actual body-relative foot excursion, averaged over all six feet and complete cycles. Cadence, slipping, body tilt and motor-target smoothness are checked separately. All recordings play at simulation time. The complete comparison and validation bounds are in the training report.</p></details>
+      <details><summary>How do we measure longer strides?</summary><p>Reference tests measure both body travel per gait cycle and the actual body-relative foot excursion, averaged over all six feet and complete cycles. Cadence, slipping, body tilt and motor-target smoothness are checked separately. All recordings play at simulation time. The 26 checks cover directions and perturbations at a 0.24 m/s command, plus forward walking at 0.34 m/s. The maximum-speed gait needs the tested flat surface: separate friction changes at that speed exceed the existing limits. <a href="https://github.com/Tom-Michiels/arachne-18/blob/main/training/SPRINT.md">Read the measured comparison and validation bounds</a>.</p></details>
     </section>
     <section id="solo" aria-labelledby="solo-title">
       <div class="section-top"><h2 id="solo-title">One robot. Every direction.</h2><span class="tag">Original demo · 40 seconds</span></div>

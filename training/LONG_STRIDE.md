@@ -1,11 +1,14 @@
 # Faster walking with longer strides
 
-The new `policies/long_stride.json` reaches **22.4 cm/s** in the original MuJoCo
+This report records the previous first film. The [latest forward gait](SPRINT.md)
+reaches 29.9 cm/s with larger steps.
+
+The `policies/long_stride.json` reaches **22.4 cm/s** in the original MuJoCo
 model with full BAM M6 servo dynamics. Compared with the original 13.3 cm/s
 solo gait, speed increases **68%**, actual foot excursion increases **43%**,
 and cadence increases only **11%**. Original joint limits remain unchanged.
 
-[Watch the video page](https://tom-michiels.github.io/arachne-18/#fast).
+[Watch this earlier recording](../assets/arachne-long-stride.mp4).
 
 ## Measured comparison
 

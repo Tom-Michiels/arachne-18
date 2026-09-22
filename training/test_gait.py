@@ -29,6 +29,18 @@ class GaitTests(unittest.TestCase):
         self.assertTrue(np.isfinite(q).all())
         self.assertTrue((np.abs(q)<=LIMITS-.0039).all())
 
+    def test_broad_lift_preserves_legacy_and_joint_limits(self):
+        rng=np.random.default_rng(72);n=500
+        p=rng.uniform(LOW,HIGH,(n,len(INITIAL)))
+        qp=np.tile(self.d.qpos,(n,1));cmd=rng.uniform(-.4,.4,(n,3))
+        phase=rng.uniform(0,1,n)
+        legacy=target(p,phase,cmd,qp,2.)
+        np.testing.assert_array_equal(
+            target(np.column_stack([p,np.zeros(n)]),phase,cmd,qp,2.),legacy)
+        broad=target(np.column_stack([p,rng.uniform(0,1,n)]),phase,cmd,qp,2.)
+        self.assertTrue(np.isfinite(broad).all())
+        self.assertTrue((np.abs(broad)<=LIMITS-.0039).all())
+
     def test_zero_command_is_stationary(self):
         p=INITIAL[None,:]; qp=self.d.qpos[None,:]
         q=target(p,np.array([.23]),np.zeros((1,3)),qp,2.)

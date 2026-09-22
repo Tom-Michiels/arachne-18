@@ -30,6 +30,7 @@ jobs:
           cp -R site/. _site/
           cp assets/arachne-learned-omni.mp4 assets/arachne-learned-omni.jpg _site/assets/
           cp assets/arachne-training-army.mp4 assets/arachne-training-army.jpg _site/assets/
+          cp assets/arachne-faster-stride.mp4 assets/arachne-faster-stride.jpg _site/assets/
           cp assets/arachne-long-stride.mp4 assets/arachne-long-stride.jpg _site/assets/
           cp assets/arachne-terrain-*.mp4 assets/arachne-terrain-*.jpg _site/assets/
       - uses: actions/upload-pages-artifact@v4
