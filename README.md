@@ -78,7 +78,7 @@ On Linux and Windows, use `python` for the viewer. On Windows, activate the envi
 
 ### Learned walking and a training army
 
-**[Open the English video page — faster walking, all directions and the training army](https://tom-michiels.github.io/arachne-18/)**
+**[Open the video page — faster walking, all directions and the training army](https://tom-michiels.github.io/arachne-18/)**
 
 The latest [longer-stride video](https://tom-michiels.github.io/arachne-18/#fast)
 shows a **22.4 cm/s** forward gait: **68% faster** than the original 13.3 cm/s

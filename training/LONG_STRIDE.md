@@ -5,7 +5,7 @@ model with full BAM M6 servo dynamics. Compared with the original 13.3 cm/s
 solo gait, speed increases **68%**, actual foot excursion increases **43%**,
 and cadence increases only **11%**. Original joint limits remain unchanged.
 
-[Watch the English video page](https://tom-michiels.github.io/arachne-18/#fast).
+[Watch the video page](https://tom-michiels.github.io/arachne-18/#fast).
 
 ## Measured comparison
 
