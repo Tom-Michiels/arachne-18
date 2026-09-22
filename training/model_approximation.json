@@ -1,0 +1,14 @@
+{
+  "kp_Nm_per_rad": 27.712963967705033,
+  "damping": 0.9103227196323667,
+  "armature": 0.021564290129722483,
+  "frictionloss": 0.0533134815909817,
+  "max_motor_torque_Nm": 4.356155818742208,
+  "omissions": [
+    "load-dependent and Stribeck friction",
+    "self collision",
+    "command delay and firmware slew (applied by controller)"
+  ],
+  "timestep": 0.002,
+  "contact": "26-vertex inscribed foot hull, pyramidal condim 3"
+}

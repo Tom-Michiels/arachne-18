@@ -1,0 +1,56 @@
+{
+  "source": "Actual MuJoCo-MLX fused physics training state recordings",
+  "render": "MuJoCo C kinematic replay with grid display offsets; original structural CAD meshes",
+  "independent_environments": true,
+  "shared_world_collisions": false,
+  "frames": 600,
+  "fps": 25,
+  "candidates": 128,
+  "sources": [
+    {
+      "file": "generation_000.npz",
+      "sha256": "31980b0791fc9c3600df0caea8c10e6e12672ddef7155d4179712a56c3bd152a",
+      "generation": 0,
+      "candidates": 128,
+      "mean_return": 2.4845614433288574,
+      "best_return": 5.2712721824646,
+      "physics_seconds": 8.0
+    },
+    {
+      "file": "generation_005.npz",
+      "sha256": "4e67859b3d714ece4756a658dc464f0d3fb6e179a71b68953be274bfbe80160c",
+      "generation": 5,
+      "candidates": 128,
+      "mean_return": 5.379651069641113,
+      "best_return": 5.498861789703369,
+      "physics_seconds": 8.0
+    },
+    {
+      "file": "generation_015.npz",
+      "sha256": "dae356579a5cc804ed4bfabfeb9dd99107ae743ed9bc60c48196aad2e7568675",
+      "generation": 15,
+      "candidates": 128,
+      "mean_return": 5.515483379364014,
+      "best_return": 5.585468769073486,
+      "physics_seconds": 8.0
+    }
+  ],
+  "video": {
+    "file": "arachne-training-army.mp4",
+    "sha256": "bff5103d085a86da72586d51f17623dbbd6b168e498d23ac6794632f769eaf00",
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1440,
+        "height": 900,
+        "nb_frames": "600"
+      }
+    ],
+    "format": {
+      "duration": "24.000000",
+      "size": "16234985"
+    }
+  }
+}

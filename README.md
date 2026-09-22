@@ -76,6 +76,27 @@ On Linux and Windows, use `python` for the viewer. On Windows, activate the envi
 
 *Actual floating-base MuJoCo simulation: the body rises and lowers while all six feet keep contact with the ground.*
 
+### Learned walking and a training army
+
+**[Open the video page — solo walking and the training army](https://tom-michiels.github.io/arachne-18/)**
+
+A new IMU-aware CEM policy walks in every horizontal direction, turns, follows
+curves and stops smoothly. It was trained with the fast local MuJoCo/Metal
+simulator and independently checked in the original MuJoCo + BAM model:
+**26/26 validation cases pass**, with about **13.3 cm/s** at the normal command
+and **19.3 cm/s** at a faster command. The 40-second direction-change demo has
+0.084° RMS body tilt and no falls or non-foot ground contacts.
+
+[![128 independent spiders during actual training](assets/arachne-training-army.jpg)](assets/arachne-training-army.mp4)
+
+**[Watch the 128-spider training army](assets/arachne-training-army.mp4)** ·
+**[Watch walking, direction changes and turning](assets/arachne-learned-omni.mp4)** ·
+[Controller, objective, measured results and reproduction](training/README.md)
+
+The army uses real recorded states from distinct training candidates, arranged
+for display in independent cells. The solo demonstration uses full BAM physics.
+These are simulated gaits; hardware walking has not been validated.
+
 **BAM is activated by `simulate.py`. Loading the XML alone does not activate the servo model.** The supplied 12 V M6 parameter set is an approximation fitted to manufacturer torque and speed points, with friction and controller behavior inherited from BAM's identified 7.4 V STS3215 model. It is clearly versioned separately from the original. Read the [model assumptions](docs/bam-model.md) before using it for actuator studies.
 
 ## Build it
@@ -105,7 +126,7 @@ Start with the [build guide](docs/build-guide.md), [print BOM](print/print_bom.c
 
 The supplied geometry has **17/17 valid single-solid print parts**, **17/17 watertight single-component STLs**, and no detected neutral-pose CAD overlap above 0.05 mm³. Fifty-four sampled configurations of representative legs were checked for interference. MuJoCo tests cover topology, all 18 joint axes, inertia, reset reproducibility, standing at three voltages, and a raised-base joint sweep. See [validation details](docs/validation.md) and the machine-readable reports.
 
-This is a **digitally checked prototype**. Physical fit, fatigue, loads, cable clearance through a full gait, and payload have not been validated. The runtime includes standing, a grounded body-height exercise and a bench joint sweep; a walking controller is a next development step. The Onshape mating state is recorded separately in [the Onshape guide](docs/onshape.md).
+This is a **digitally checked prototype**. Physical fit, fatigue, loads, cable clearance through a full gait, and physical payload capacity have not been validated. The runtime includes standing, a grounded body-height exercise, a bench joint sweep, and a learned walking controller with independent BAM simulation checks. The Onshape mating state is recorded separately in [the Onshape guide](docs/onshape.md).
 
 ## Sources and attribution
 

@@ -10,3 +10,11 @@ build/
 *credential*
 .onshape*key*
 simulation/*_run.json
+/training/runs/
+/training/results/initial*
+/training/results/early_scan.json
+/training/results/*.mp4
+/training/results/*.npz
+/assets/*.npz
+/training/results/*_frame.png
+/training/results/army_preview*

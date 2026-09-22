@@ -1,0 +1,968 @@
+{
+  "forward": {
+    "seed": 17,
+    "population": 256,
+    "commands_per_candidate": 1,
+    "generations": 30,
+    "episode_seconds": 6.0,
+    "command_speed": 0.14,
+    "control_steps": 4608000,
+    "physics_steps": 23040000,
+    "elapsed_seconds": 91.55,
+    "average_control_steps_per_second": 50333,
+    "curve": [
+      {
+        "generation": 0,
+        "mean": 2.807427406311035,
+        "best": 5.609934329986572,
+        "seconds": 3.18,
+        "elapsed": 3.18
+      },
+      {
+        "generation": 1,
+        "mean": 4.602307319641113,
+        "best": 5.609934329986572,
+        "seconds": 3.13,
+        "elapsed": 6.31
+      },
+      {
+        "generation": 2,
+        "mean": 5.172054767608643,
+        "best": 5.632604598999023,
+        "seconds": 3.13,
+        "elapsed": 9.44
+      },
+      {
+        "generation": 3,
+        "mean": 5.392271518707275,
+        "best": 5.6823954582214355,
+        "seconds": 3.13,
+        "elapsed": 12.57
+      },
+      {
+        "generation": 4,
+        "mean": 5.521237850189209,
+        "best": 5.725366115570068,
+        "seconds": 3.09,
+        "elapsed": 15.66
+      },
+      {
+        "generation": 5,
+        "mean": 5.574515342712402,
+        "best": 5.757846355438232,
+        "seconds": 3.08,
+        "elapsed": 18.74
+      },
+      {
+        "generation": 6,
+        "mean": 5.640010356903076,
+        "best": 5.757846355438232,
+        "seconds": 3.07,
+        "elapsed": 21.81
+      },
+      {
+        "generation": 7,
+        "mean": 5.675589084625244,
+        "best": 5.7763237953186035,
+        "seconds": 3.05,
+        "elapsed": 24.86
+      },
+      {
+        "generation": 8,
+        "mean": 5.690979957580566,
+        "best": 5.7763237953186035,
+        "seconds": 3.06,
+        "elapsed": 27.92
+      },
+      {
+        "generation": 9,
+        "mean": 5.70692253112793,
+        "best": 5.787310600280762,
+        "seconds": 3.06,
+        "elapsed": 30.98
+      },
+      {
+        "generation": 10,
+        "mean": 5.70855712890625,
+        "best": 5.787415027618408,
+        "seconds": 3.05,
+        "elapsed": 34.04
+      },
+      {
+        "generation": 11,
+        "mean": 5.717728614807129,
+        "best": 5.787415027618408,
+        "seconds": 3.05,
+        "elapsed": 37.09
+      },
+      {
+        "generation": 12,
+        "mean": 5.728930473327637,
+        "best": 5.815910339355469,
+        "seconds": 3.06,
+        "elapsed": 40.14
+      },
+      {
+        "generation": 13,
+        "mean": 5.73520040512085,
+        "best": 5.825644493103027,
+        "seconds": 3.04,
+        "elapsed": 43.18
+      },
+      {
+        "generation": 14,
+        "mean": 5.7383222579956055,
+        "best": 5.825644493103027,
+        "seconds": 3.03,
+        "elapsed": 46.21
+      },
+      {
+        "generation": 15,
+        "mean": 5.7433319091796875,
+        "best": 5.826122283935547,
+        "seconds": 3.03,
+        "elapsed": 49.25
+      },
+      {
+        "generation": 16,
+        "mean": 5.747574806213379,
+        "best": 5.826122283935547,
+        "seconds": 3.03,
+        "elapsed": 52.28
+      },
+      {
+        "generation": 17,
+        "mean": 5.748078346252441,
+        "best": 5.826122283935547,
+        "seconds": 3.02,
+        "elapsed": 55.3
+      },
+      {
+        "generation": 18,
+        "mean": 5.752121448516846,
+        "best": 5.826122283935547,
+        "seconds": 3.09,
+        "elapsed": 58.39
+      },
+      {
+        "generation": 19,
+        "mean": 5.752142906188965,
+        "best": 5.831031322479248,
+        "seconds": 3.03,
+        "elapsed": 61.42
+      },
+      {
+        "generation": 20,
+        "mean": 5.754985332489014,
+        "best": 5.831031322479248,
+        "seconds": 2.93,
+        "elapsed": 64.36
+      },
+      {
+        "generation": 21,
+        "mean": 5.756627559661865,
+        "best": 5.831031322479248,
+        "seconds": 2.91,
+        "elapsed": 67.27
+      },
+      {
+        "generation": 22,
+        "mean": 5.759437561035156,
+        "best": 5.831031322479248,
+        "seconds": 3.03,
+        "elapsed": 70.29
+      },
+      {
+        "generation": 23,
+        "mean": 5.762768745422363,
+        "best": 5.831031322479248,
+        "seconds": 3.03,
+        "elapsed": 73.32
+      },
+      {
+        "generation": 24,
+        "mean": 5.761221408843994,
+        "best": 5.831031322479248,
+        "seconds": 3.02,
+        "elapsed": 76.34
+      },
+      {
+        "generation": 25,
+        "mean": 5.76080322265625,
+        "best": 5.8367533683776855,
+        "seconds": 3.03,
+        "elapsed": 79.37
+      },
+      {
+        "generation": 26,
+        "mean": 5.762972831726074,
+        "best": 5.842966556549072,
+        "seconds": 3.05,
+        "elapsed": 82.42
+      },
+      {
+        "generation": 27,
+        "mean": 5.7630295753479,
+        "best": 5.842966556549072,
+        "seconds": 3.09,
+        "elapsed": 85.5
+      },
+      {
+        "generation": 28,
+        "mean": 5.764470100402832,
+        "best": 5.842966556549072,
+        "seconds": 3.03,
+        "elapsed": 88.53
+      },
+      {
+        "generation": 29,
+        "mean": 5.764462947845459,
+        "best": 5.842966556549072,
+        "seconds": 3.03,
+        "elapsed": 91.55
+      }
+    ]
+  },
+  "forward_smooth": {
+    "seed": 17,
+    "population": 256,
+    "commands_per_candidate": 1,
+    "generations": 25,
+    "episode_seconds": 6.0,
+    "command_speed": 0.14,
+    "control_steps": 3840000,
+    "physics_steps": 19200000,
+    "elapsed_seconds": 76.08,
+    "average_control_steps_per_second": 50473,
+    "curve": [
+      {
+        "generation": 0,
+        "mean": 4.5341339111328125,
+        "best": 5.419295310974121,
+        "seconds": 4.09,
+        "elapsed": 4.09
+      },
+      {
+        "generation": 1,
+        "mean": 5.118796348571777,
+        "best": 5.419295310974121,
+        "seconds": 3.05,
+        "elapsed": 7.14
+      },
+      {
+        "generation": 2,
+        "mean": 5.272066116333008,
+        "best": 5.436489582061768,
+        "seconds": 3.05,
+        "elapsed": 10.19
+      },
+      {
+        "generation": 3,
+        "mean": 5.337418079376221,
+        "best": 5.463398456573486,
+        "seconds": 3.04,
+        "elapsed": 13.23
+      },
+      {
+        "generation": 4,
+        "mean": 5.372023582458496,
+        "best": 5.5199174880981445,
+        "seconds": 3.04,
+        "elapsed": 16.27
+      },
+      {
+        "generation": 5,
+        "mean": 5.396463394165039,
+        "best": 5.5199174880981445,
+        "seconds": 3.01,
+        "elapsed": 19.28
+      },
+      {
+        "generation": 6,
+        "mean": 5.411738872528076,
+        "best": 5.5199174880981445,
+        "seconds": 3.01,
+        "elapsed": 22.29
+      },
+      {
+        "generation": 7,
+        "mean": 5.425115585327148,
+        "best": 5.54501485824585,
+        "seconds": 3.01,
+        "elapsed": 25.3
+      },
+      {
+        "generation": 8,
+        "mean": 5.434438705444336,
+        "best": 5.54501485824585,
+        "seconds": 3.0,
+        "elapsed": 28.3
+      },
+      {
+        "generation": 9,
+        "mean": 5.447175025939941,
+        "best": 5.54501485824585,
+        "seconds": 2.96,
+        "elapsed": 31.26
+      },
+      {
+        "generation": 10,
+        "mean": 5.45012092590332,
+        "best": 5.586795806884766,
+        "seconds": 2.99,
+        "elapsed": 34.25
+      },
+      {
+        "generation": 11,
+        "mean": 5.455242156982422,
+        "best": 5.586795806884766,
+        "seconds": 2.99,
+        "elapsed": 37.25
+      },
+      {
+        "generation": 12,
+        "mean": 5.458136081695557,
+        "best": 5.586795806884766,
+        "seconds": 2.99,
+        "elapsed": 40.23
+      },
+      {
+        "generation": 13,
+        "mean": 5.461822509765625,
+        "best": 5.586795806884766,
+        "seconds": 3.0,
+        "elapsed": 43.23
+      },
+      {
+        "generation": 14,
+        "mean": 5.467703342437744,
+        "best": 5.586795806884766,
+        "seconds": 2.97,
+        "elapsed": 46.2
+      },
+      {
+        "generation": 15,
+        "mean": 5.467904567718506,
+        "best": 5.586795806884766,
+        "seconds": 2.98,
+        "elapsed": 49.18
+      },
+      {
+        "generation": 16,
+        "mean": 5.469080924987793,
+        "best": 5.596673488616943,
+        "seconds": 2.96,
+        "elapsed": 52.14
+      },
+      {
+        "generation": 17,
+        "mean": 5.472260475158691,
+        "best": 5.596673488616943,
+        "seconds": 2.99,
+        "elapsed": 55.13
+      },
+      {
+        "generation": 18,
+        "mean": 5.471568584442139,
+        "best": 5.596673488616943,
+        "seconds": 3.0,
+        "elapsed": 58.13
+      },
+      {
+        "generation": 19,
+        "mean": 5.474247455596924,
+        "best": 5.596673488616943,
+        "seconds": 2.97,
+        "elapsed": 61.11
+      },
+      {
+        "generation": 20,
+        "mean": 5.476503372192383,
+        "best": 5.596673488616943,
+        "seconds": 3.04,
+        "elapsed": 64.15
+      },
+      {
+        "generation": 21,
+        "mean": 5.479111671447754,
+        "best": 5.5975470542907715,
+        "seconds": 2.99,
+        "elapsed": 67.14
+      },
+      {
+        "generation": 22,
+        "mean": 5.481046676635742,
+        "best": 5.5975470542907715,
+        "seconds": 2.98,
+        "elapsed": 70.11
+      },
+      {
+        "generation": 23,
+        "mean": 5.487432479858398,
+        "best": 5.5975470542907715,
+        "seconds": 2.98,
+        "elapsed": 73.1
+      },
+      {
+        "generation": 24,
+        "mean": 5.489900588989258,
+        "best": 5.6040754318237305,
+        "seconds": 2.98,
+        "elapsed": 76.08
+      }
+    ]
+  },
+  "omni": {
+    "seed": 17,
+    "population": 128,
+    "commands_per_candidate": 12,
+    "generations": 30,
+    "episode_seconds": 6.0,
+    "command_speed": 0.14,
+    "control_steps": 27648000,
+    "physics_steps": 138240000,
+    "elapsed_seconds": 132.34,
+    "average_control_steps_per_second": 208916,
+    "curve": [
+      {
+        "generation": 0,
+        "mean": 4.605175971984863,
+        "best": 5.381137371063232,
+        "seconds": 4.46,
+        "elapsed": 4.46
+      },
+      {
+        "generation": 1,
+        "mean": 5.07734489440918,
+        "best": 5.451924800872803,
+        "seconds": 4.43,
+        "elapsed": 8.9
+      },
+      {
+        "generation": 2,
+        "mean": 5.274692535400391,
+        "best": 5.489540100097656,
+        "seconds": 4.44,
+        "elapsed": 13.33
+      },
+      {
+        "generation": 3,
+        "mean": 5.373064041137695,
+        "best": 5.497972011566162,
+        "seconds": 4.43,
+        "elapsed": 17.76
+      },
+      {
+        "generation": 4,
+        "mean": 5.422956943511963,
+        "best": 5.518340587615967,
+        "seconds": 4.43,
+        "elapsed": 22.19
+      },
+      {
+        "generation": 5,
+        "mean": 5.467235565185547,
+        "best": 5.567010402679443,
+        "seconds": 4.43,
+        "elapsed": 26.62
+      },
+      {
+        "generation": 6,
+        "mean": 5.493313789367676,
+        "best": 5.567010402679443,
+        "seconds": 4.42,
+        "elapsed": 31.05
+      },
+      {
+        "generation": 7,
+        "mean": 5.511721611022949,
+        "best": 5.567010402679443,
+        "seconds": 4.41,
+        "elapsed": 35.46
+      },
+      {
+        "generation": 8,
+        "mean": 5.526395797729492,
+        "best": 5.567010402679443,
+        "seconds": 4.41,
+        "elapsed": 39.87
+      },
+      {
+        "generation": 9,
+        "mean": 5.537945747375488,
+        "best": 5.575471878051758,
+        "seconds": 4.4,
+        "elapsed": 44.27
+      },
+      {
+        "generation": 10,
+        "mean": 5.544483184814453,
+        "best": 5.585585117340088,
+        "seconds": 4.41,
+        "elapsed": 48.68
+      },
+      {
+        "generation": 11,
+        "mean": 5.552098274230957,
+        "best": 5.5872087478637695,
+        "seconds": 4.4,
+        "elapsed": 53.08
+      },
+      {
+        "generation": 12,
+        "mean": 5.5571794509887695,
+        "best": 5.593472957611084,
+        "seconds": 4.4,
+        "elapsed": 57.48
+      },
+      {
+        "generation": 13,
+        "mean": 5.563241958618164,
+        "best": 5.599090099334717,
+        "seconds": 4.41,
+        "elapsed": 61.89
+      },
+      {
+        "generation": 14,
+        "mean": 5.567037105560303,
+        "best": 5.599090099334717,
+        "seconds": 4.42,
+        "elapsed": 66.31
+      },
+      {
+        "generation": 15,
+        "mean": 5.567710876464844,
+        "best": 5.603170394897461,
+        "seconds": 4.39,
+        "elapsed": 70.7
+      },
+      {
+        "generation": 16,
+        "mean": 5.568633079528809,
+        "best": 5.603170394897461,
+        "seconds": 4.4,
+        "elapsed": 75.1
+      },
+      {
+        "generation": 17,
+        "mean": 5.5670671463012695,
+        "best": 5.603170394897461,
+        "seconds": 4.39,
+        "elapsed": 79.49
+      },
+      {
+        "generation": 18,
+        "mean": 5.57061243057251,
+        "best": 5.6051106452941895,
+        "seconds": 4.4,
+        "elapsed": 83.89
+      },
+      {
+        "generation": 19,
+        "mean": 5.571099281311035,
+        "best": 5.6051106452941895,
+        "seconds": 4.47,
+        "elapsed": 88.37
+      },
+      {
+        "generation": 20,
+        "mean": 5.571100234985352,
+        "best": 5.6051106452941895,
+        "seconds": 4.38,
+        "elapsed": 92.75
+      },
+      {
+        "generation": 21,
+        "mean": 5.571054458618164,
+        "best": 5.6051106452941895,
+        "seconds": 4.39,
+        "elapsed": 97.15
+      },
+      {
+        "generation": 22,
+        "mean": 5.570978164672852,
+        "best": 5.6051106452941895,
+        "seconds": 4.39,
+        "elapsed": 101.53
+      },
+      {
+        "generation": 23,
+        "mean": 5.569932460784912,
+        "best": 5.6051106452941895,
+        "seconds": 4.39,
+        "elapsed": 105.92
+      },
+      {
+        "generation": 24,
+        "mean": 5.573184967041016,
+        "best": 5.6051106452941895,
+        "seconds": 4.39,
+        "elapsed": 110.31
+      },
+      {
+        "generation": 25,
+        "mean": 5.573996067047119,
+        "best": 5.6051106452941895,
+        "seconds": 4.39,
+        "elapsed": 114.7
+      },
+      {
+        "generation": 26,
+        "mean": 5.572576522827148,
+        "best": 5.6051106452941895,
+        "seconds": 4.39,
+        "elapsed": 119.09
+      },
+      {
+        "generation": 27,
+        "mean": 5.570529937744141,
+        "best": 5.6051106452941895,
+        "seconds": 4.41,
+        "elapsed": 123.5
+      },
+      {
+        "generation": 28,
+        "mean": 5.574676513671875,
+        "best": 5.6051106452941895,
+        "seconds": 4.46,
+        "elapsed": 127.96
+      },
+      {
+        "generation": 29,
+        "mean": 5.573591232299805,
+        "best": 5.6051106452941895,
+        "seconds": 4.38,
+        "elapsed": 132.34
+      }
+    ]
+  },
+  "fast": {
+    "seed": 17,
+    "population": 256,
+    "commands_per_candidate": 1,
+    "generations": 25,
+    "episode_seconds": 6.0,
+    "command_speed": 0.2,
+    "control_steps": 3840000,
+    "physics_steps": 19200000,
+    "elapsed_seconds": 68.98,
+    "average_control_steps_per_second": 55668,
+    "curve": [
+      {
+        "generation": 0,
+        "mean": 3.4854471683502197,
+        "best": 4.842994213104248,
+        "seconds": 2.87,
+        "elapsed": 2.87
+      },
+      {
+        "generation": 1,
+        "mean": 4.329639434814453,
+        "best": 4.866203784942627,
+        "seconds": 2.75,
+        "elapsed": 5.63
+      },
+      {
+        "generation": 2,
+        "mean": 4.620223045349121,
+        "best": 4.871235370635986,
+        "seconds": 2.76,
+        "elapsed": 8.39
+      },
+      {
+        "generation": 3,
+        "mean": 4.726589679718018,
+        "best": 4.927395820617676,
+        "seconds": 2.77,
+        "elapsed": 11.16
+      },
+      {
+        "generation": 4,
+        "mean": 4.799924850463867,
+        "best": 4.972220420837402,
+        "seconds": 2.78,
+        "elapsed": 13.94
+      },
+      {
+        "generation": 5,
+        "mean": 4.825149059295654,
+        "best": 4.985825538635254,
+        "seconds": 2.77,
+        "elapsed": 16.71
+      },
+      {
+        "generation": 6,
+        "mean": 4.8505539894104,
+        "best": 4.985825538635254,
+        "seconds": 2.78,
+        "elapsed": 19.48
+      },
+      {
+        "generation": 7,
+        "mean": 4.8561601638793945,
+        "best": 4.991410255432129,
+        "seconds": 2.75,
+        "elapsed": 22.23
+      },
+      {
+        "generation": 8,
+        "mean": 4.861828804016113,
+        "best": 4.991410255432129,
+        "seconds": 2.74,
+        "elapsed": 24.97
+      },
+      {
+        "generation": 9,
+        "mean": 4.875175952911377,
+        "best": 4.994035720825195,
+        "seconds": 2.74,
+        "elapsed": 27.71
+      },
+      {
+        "generation": 10,
+        "mean": 4.87211799621582,
+        "best": 4.994035720825195,
+        "seconds": 2.73,
+        "elapsed": 30.44
+      },
+      {
+        "generation": 11,
+        "mean": 4.871700286865234,
+        "best": 4.994035720825195,
+        "seconds": 2.75,
+        "elapsed": 33.19
+      },
+      {
+        "generation": 12,
+        "mean": 4.875826358795166,
+        "best": 5.015871524810791,
+        "seconds": 2.77,
+        "elapsed": 35.96
+      },
+      {
+        "generation": 13,
+        "mean": 4.876945495605469,
+        "best": 5.015871524810791,
+        "seconds": 2.74,
+        "elapsed": 38.7
+      },
+      {
+        "generation": 14,
+        "mean": 4.879449844360352,
+        "best": 5.0346903800964355,
+        "seconds": 2.74,
+        "elapsed": 41.44
+      },
+      {
+        "generation": 15,
+        "mean": 4.879965782165527,
+        "best": 5.063980579376221,
+        "seconds": 2.77,
+        "elapsed": 44.2
+      },
+      {
+        "generation": 16,
+        "mean": 4.886898994445801,
+        "best": 5.063980579376221,
+        "seconds": 2.73,
+        "elapsed": 46.93
+      },
+      {
+        "generation": 17,
+        "mean": 4.883940696716309,
+        "best": 5.063980579376221,
+        "seconds": 2.73,
+        "elapsed": 49.67
+      },
+      {
+        "generation": 18,
+        "mean": 4.888324737548828,
+        "best": 5.063980579376221,
+        "seconds": 2.72,
+        "elapsed": 52.39
+      },
+      {
+        "generation": 19,
+        "mean": 4.888910293579102,
+        "best": 5.063980579376221,
+        "seconds": 2.79,
+        "elapsed": 55.18
+      },
+      {
+        "generation": 20,
+        "mean": 4.884072303771973,
+        "best": 5.063980579376221,
+        "seconds": 2.72,
+        "elapsed": 57.9
+      },
+      {
+        "generation": 21,
+        "mean": 4.888434410095215,
+        "best": 5.063980579376221,
+        "seconds": 2.76,
+        "elapsed": 60.66
+      },
+      {
+        "generation": 22,
+        "mean": 4.887590408325195,
+        "best": 5.063980579376221,
+        "seconds": 2.72,
+        "elapsed": 63.38
+      },
+      {
+        "generation": 23,
+        "mean": 4.893338203430176,
+        "best": 5.063980579376221,
+        "seconds": 2.75,
+        "elapsed": 66.14
+      },
+      {
+        "generation": 24,
+        "mean": 4.889486312866211,
+        "best": 5.063980579376221,
+        "seconds": 2.84,
+        "elapsed": 68.98
+      }
+    ]
+  },
+  "army": {
+    "seed": 17,
+    "population": 128,
+    "commands_per_candidate": 1,
+    "generations": 16,
+    "episode_seconds": 8.0,
+    "command_speed": 0.14,
+    "control_steps": 1638400,
+    "physics_steps": 8192000,
+    "elapsed_seconds": 58.58,
+    "average_control_steps_per_second": 27969,
+    "curve": [
+      {
+        "generation": 0,
+        "mean": 2.4845614433288574,
+        "best": 5.2712721824646,
+        "seconds": 4.0,
+        "elapsed": 4.0
+      },
+      {
+        "generation": 1,
+        "mean": 4.361782550811768,
+        "best": 5.4133477210998535,
+        "seconds": 3.72,
+        "elapsed": 7.72
+      },
+      {
+        "generation": 2,
+        "mean": 4.941703796386719,
+        "best": 5.4133477210998535,
+        "seconds": 3.7,
+        "elapsed": 11.41
+      },
+      {
+        "generation": 3,
+        "mean": 5.1846089363098145,
+        "best": 5.4281110763549805,
+        "seconds": 3.65,
+        "elapsed": 15.07
+      },
+      {
+        "generation": 4,
+        "mean": 5.30268669128418,
+        "best": 5.458744049072266,
+        "seconds": 3.64,
+        "elapsed": 18.7
+      },
+      {
+        "generation": 5,
+        "mean": 5.379651069641113,
+        "best": 5.498861789703369,
+        "seconds": 3.8,
+        "elapsed": 22.5
+      },
+      {
+        "generation": 6,
+        "mean": 5.397706508636475,
+        "best": 5.5070085525512695,
+        "seconds": 3.59,
+        "elapsed": 26.09
+      },
+      {
+        "generation": 7,
+        "mean": 5.42979621887207,
+        "best": 5.522211074829102,
+        "seconds": 3.58,
+        "elapsed": 29.68
+      },
+      {
+        "generation": 8,
+        "mean": 5.454032897949219,
+        "best": 5.522211074829102,
+        "seconds": 3.57,
+        "elapsed": 33.25
+      },
+      {
+        "generation": 9,
+        "mean": 5.4692559242248535,
+        "best": 5.565858364105225,
+        "seconds": 3.6,
+        "elapsed": 36.85
+      },
+      {
+        "generation": 10,
+        "mean": 5.4767279624938965,
+        "best": 5.565858364105225,
+        "seconds": 3.56,
+        "elapsed": 40.41
+      },
+      {
+        "generation": 11,
+        "mean": 5.4886474609375,
+        "best": 5.565858364105225,
+        "seconds": 3.65,
+        "elapsed": 44.06
+      },
+      {
+        "generation": 12,
+        "mean": 5.499135971069336,
+        "best": 5.565858364105225,
+        "seconds": 3.58,
+        "elapsed": 47.63
+      },
+      {
+        "generation": 13,
+        "mean": 5.506068229675293,
+        "best": 5.585468769073486,
+        "seconds": 3.56,
+        "elapsed": 51.2
+      },
+      {
+        "generation": 14,
+        "mean": 5.513460159301758,
+        "best": 5.585468769073486,
+        "seconds": 3.56,
+        "elapsed": 54.76
+      },
+      {
+        "generation": 15,
+        "mean": 5.515483379364014,
+        "best": 5.585468769073486,
+        "seconds": 3.82,
+        "elapsed": 58.58
+      }
+    ]
+  },
+  "versions": {
+    "MuJoCo-MLX-Cpp": "4d84f84871f59378fa9f5636cf40efe16ed3f321 (local metal-opt branch; fused implementation not on public main)",
+    "mujoco": "3.12.0",
+    "mlx": "0.32.2",
+    "numpy": "2.5.2",
+    "better-actuator-models": "1.0.2",
+    "machine": "Apple M4 Max",
+    "gait_sha256": "641719048646a01d87cdf7039bbc12e9b68977b44442fac797883cb904f787c1"
+  },
+  "notes": [
+    "forward used an earlier acceleration penalty of 0.000015 and fixed cadence; forward_smooth and subsequent runs use 0.00015 and speed-conditioned cadence.",
+    "Wall timings include setup warmup, logging and other active local work; they are run timings, not controlled benchmarks.",
+    "Only the army run records training qpos; its population was trained independently for the requested training video."
+  ]
+}
