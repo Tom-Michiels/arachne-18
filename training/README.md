@@ -1,5 +1,11 @@
 # Smooth, IMU-aware locomotion
 
+**Latest:** [faster walking with longer strides](LONG_STRIDE.md), including
+a 44-second video and 26/26 reference checks. The new forward gait reaches
+22.4 cm/s with 43% greater foot excursion than the original solo gait.
+The [uneven-ground curriculum](TERRAIN.md) has passed admission through
+4 mm obstacles and stops before the unmastered 8 mm stage.
+
 ARACHNE now has a learned command-conditioned walking policy, independent BAM
 validation, and real physics recordings. Start with
 [`policies/omni.json`](policies/omni.json): it walks forward, backward, sideways,
@@ -40,7 +46,8 @@ Reports: [`results/validation.json`](results/validation.json),
 [`results/fast_bam.json`](results/fast_bam.json),
 [`../assets/arachne-learned-omni.json`](../assets/arachne-learned-omni.json).
 These are simulation results, with the repository's provisional 12 V BAM
-approximation. Hardware, terrain, impacts, thermal limits and measured actuator
+approximation. A separate [uneven-ground curriculum](TERRAIN.md) now has bounded
+simulation checks. Hardware, impacts, thermal limits and measured actuator
 parameters have not been validated by this work.
 
 ## Why the movement is smooth
@@ -57,7 +64,7 @@ parameters have not been validated by this work.
   heading or simulator ground-truth linear velocity. Ground-truth velocity is
   used only by the training reward and evaluation metrics.
 
-The running reward is:
+The original policy uses this running reward:
 
 ```text
 + 5.0 exp(-||v_xy - command_xy||² / 0.0016)
@@ -78,6 +85,11 @@ selection uses 70% mean command return plus 30% worst command return. The top
 eighth of the population updates the sampling distribution, with variance
 floors and a retained incumbent. There is no bonus for arbitrary speed, so
 overshooting or standing still cannot replace command tracking.
+
+The newer longer-stride experiment adds measured progress per cycle (capped
+at 0.12 m), stronger slip penalties, and a target-jerk penalty. Its exact
+weights and run configuration are stored alongside the results. The original
+policy and its validation report remain available for comparison.
 
 ## Run the trained controller or render the videos
 

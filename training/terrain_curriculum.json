@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "starting_policy": "training/policies/omni.json",
+  "backend": "reference MuJoCo C + full BAM M6, parallel CPU workers",
+  "observation_contract": "IMU gravity and gyro, command and oscillator state; no terrain map",
+  "episode_seconds": 10,
+  "promotion": {"consecutive_batches": 2, "seeds_per_batch": 3, "minimum_pass_fraction": 0.95},
+  "flat_replay_fraction": 0.25,
+  "gates": {"tilt_max_deg": 12, "clearance_min_m": 0.060, "speed_ratio_min": 0.70, "speed_ratio_max": 1.25,
+    "velocity_rmse_max": 0.045, "yaw_rmse_max": 0.12, "slip_rms_max": 0.050,
+    "target_rate_rms_max": 1.8, "target_acceleration_rms_max": 55,
+    "clearance_rate_rms_max": 0.035, "joint_speed_max": 4.8, "target_jerk_rms_max": 1600,
+    "terrain_exposure_fraction_min": 0.25},
+  "stages": [
+    {"name":"flat", "terrain":{"kind":"flat"}, "speed_m_s":0.14, "tilt_rms_max_deg":0.5, "clearance_std_max_mm":1.5},
+    {"name":"gentle_bumps", "terrain":{"kind":"bumps","amplitude_m":0.002,"wavelength_m":[0.14,0.24]}, "speed_m_s":0.10, "tilt_rms_max_deg":1.0, "clearance_std_max_mm":2.5},
+    {"name":"rolling_ground", "terrain":{"kind":"bumps","amplitude_m":0.004,"wavelength_m":[0.10,0.20]}, "speed_m_s":0.10, "tilt_rms_max_deg":1.5, "clearance_std_max_mm":3.5},
+    {"name":"gentle_slopes", "terrain":{"kind":"slope","slope_deg":2.0}, "speed_m_s":0.10, "tilt_rms_max_deg":2.5, "clearance_std_max_mm":5.0},
+    {"name":"low_obstacles", "terrain":{"kind":"terraces","amplitude_m":0.004}, "speed_m_s":0.10, "tilt_rms_max_deg":2.0, "clearance_std_max_mm":4.0},
+    {"name":"higher_obstacles", "terrain":{"kind":"terraces","amplitude_m":0.008}, "speed_m_s":0.10, "tilt_rms_max_deg":3.0, "clearance_std_max_mm":5.0},
+    {"name":"mixed_terrain", "terrain":{"kind":"mixed","amplitude_m":0.006,"slope_deg":2.0,"wavelength_m":[0.10,0.22]}, "speed_m_s":0.10, "tilt_rms_max_deg":3.0, "clearance_std_max_mm":6.0}
+  ]
+}

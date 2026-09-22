@@ -1,0 +1,124 @@
+{
+  "backend": "bam",
+  "command": [
+    0,
+    0,
+    0
+  ],
+  "seconds": 44.0,
+  "measured_velocity": [
+    0.06152091181438486,
+    0.00812018993065404,
+    -0.014251313742208465
+  ],
+  "velocity_rmse": 0.04606575963207658,
+  "yaw_rmse": 0.04404667368766104,
+  "tilt_rms_deg": 0.11932418326947791,
+  "tilt_max_deg": 0.4048304298080378,
+  "height_mean_m": 0.09763190525663179,
+  "height_std_mm": 0.5225326515980904,
+  "vertical_velocity_rms": 0.020031772965887984,
+  "body_rp_rate_rms": 0.07780977537759277,
+  "slip_rms_m_s": 0.03496420602384562,
+  "feet_contacts_mean": 2.927857142857143,
+  "nonfoot_contacts": 0,
+  "target_rate_rms": 1.580160045793845,
+  "target_acceleration_rms": 45.934200641830806,
+  "joint_speed_max": 4.500508777624522,
+  "motor_torque_max": 2.7831407896440514,
+  "cadence_hz": 2.1295612614706987,
+  "body_distance_per_cycle_m": null,
+  "foot_excursion_mean_m": null,
+  "target_jerk_rms": 2328.329700852909,
+  "clearance_min_m": 0.09467444743719787,
+  "clearance_std_mm": 0.5225326515980904,
+  "clearance_rate_rms": 0.018817321262381136,
+  "terrain_exposure_fraction": 0.9121428571428571,
+  "terrain": null,
+  "displacement_m": [
+    2.494308371858472,
+    0.6146762152625858
+  ],
+  "warnings": 0,
+  "passed": true,
+  "friction": null,
+  "payload_kg": 0.0,
+  "imu_orientation_noise_deg": 0.0,
+  "schedule": [
+    [
+      0,
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      1,
+      [
+        0.14,
+        0,
+        0
+      ]
+    ],
+    [
+      5,
+      [
+        0.26,
+        0,
+        0
+      ]
+    ],
+    [
+      12,
+      [
+        0,
+        0.24,
+        0
+      ]
+    ],
+    [
+      18,
+      [
+        -0.24,
+        0,
+        0
+      ]
+    ],
+    [
+      24,
+      [
+        0.17,
+        -0.17,
+        0
+      ]
+    ],
+    [
+      30,
+      [
+        0,
+        0,
+        0.35
+      ]
+    ],
+    [
+      34,
+      [
+        0.2,
+        0,
+        -0.3
+      ]
+    ],
+    [
+      40,
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  ],
+  "policy": "training/policies/long_stride.json",
+  "policy_sha256": "5a73c06a9a92d26553d25c9215bde0d1e091479a84911141c799e0c2329596e2",
+  "playback": "1 second of video per 1 second of simulated physics"
+}

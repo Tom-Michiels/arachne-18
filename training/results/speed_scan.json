@@ -1,0 +1,162 @@
+[
+  {
+    "backend": "bam",
+    "command": [
+      0.2,
+      0,
+      0
+    ],
+    "seconds": 10,
+    "measured_velocity": [
+      0.18962551429933172,
+      0.0003679080300010886,
+      -0.002597423770207098
+    ],
+    "velocity_rmse": 0.03279425123231872,
+    "yaw_rmse": 0.02432115970315897,
+    "tilt_rms_deg": 0.06822265687214059,
+    "tilt_max_deg": 0.10462369493061294,
+    "height_mean_m": 0.09638333204207047,
+    "height_std_mm": 0.43259170049002993,
+    "vertical_velocity_rms": 0.019201550121077306,
+    "body_rp_rate_rms": 0.038323303002481914,
+    "slip_rms_m_s": 0.02382452113326512,
+    "feet_contacts_mean": 2.63625,
+    "nonfoot_contacts": 0,
+    "target_rate_rms": 1.5308051078564962,
+    "target_acceleration_rms": 43.069226649990355,
+    "joint_speed_max": 4.307554295136793,
+    "motor_torque_max": 2.408910397835948,
+    "displacement_m": [
+      1.742115529917928,
+      -0.02193152482668143
+    ],
+    "warnings": 0,
+    "passed": true,
+    "friction": null,
+    "payload_kg": 0.0,
+    "imu_orientation_noise_deg": 0.0,
+    "schedule": null,
+    "cycle_distance_m": 0.079643366262586
+  },
+  {
+    "backend": "bam",
+    "command": [
+      0.26,
+      0,
+      0
+    ],
+    "seconds": 10,
+    "measured_velocity": [
+      0.24670968051916425,
+      0.0006221876625267999,
+      -0.0036774974977646373
+    ],
+    "velocity_rmse": 0.03920215834695655,
+    "yaw_rmse": 0.04356186781723337,
+    "tilt_rms_deg": 0.1248134957428816,
+    "tilt_max_deg": 0.2475937279688116,
+    "height_mean_m": 0.0964653552839811,
+    "height_std_mm": 0.40338058101387897,
+    "vertical_velocity_rms": 0.01819401718643763,
+    "body_rp_rate_rms": 0.1031982198384528,
+    "slip_rms_m_s": 0.06085415956102107,
+    "feet_contacts_mean": 2.36125,
+    "nonfoot_contacts": 0,
+    "target_rate_rms": 1.7867127982354254,
+    "target_acceleration_rms": 51.50614984245042,
+    "joint_speed_max": 4.41960172216335,
+    "motor_torque_max": 2.6881005652071703,
+    "displacement_m": [
+      2.2759417717526227,
+      -0.042826342135473004
+    ],
+    "warnings": 0,
+    "passed": true,
+    "friction": null,
+    "payload_kg": 0.0,
+    "imu_orientation_noise_deg": 0.0,
+    "schedule": null,
+    "cycle_distance_m": 0.09732484969019392
+  },
+  {
+    "backend": "bam",
+    "command": [
+      0.32,
+      0,
+      0
+    ],
+    "seconds": 10,
+    "measured_velocity": [
+      0.29872420329949007,
+      0.000647267962589336,
+      -0.005792077541374326
+    ],
+    "velocity_rmse": 0.05063370247973311,
+    "yaw_rmse": 0.09405929660977183,
+    "tilt_rms_deg": 0.27635554850448574,
+    "tilt_max_deg": 0.6091599173529687,
+    "height_mean_m": 0.09649566972622103,
+    "height_std_mm": 0.5026596207253177,
+    "vertical_velocity_rms": 0.028939690281403977,
+    "body_rp_rate_rms": 0.2440748488607068,
+    "slip_rms_m_s": 0.09279432612440994,
+    "feet_contacts_mean": 2.05625,
+    "nonfoot_contacts": 0,
+    "target_rate_rms": 2.0350567722101878,
+    "target_acceleration_rms": 57.49814019031169,
+    "joint_speed_max": 4.510725051952541,
+    "motor_torque_max": 2.9406933891452605,
+    "displacement_m": [
+      2.761440844432455,
+      -0.08120341181444024
+    ],
+    "warnings": 0,
+    "passed": true,
+    "friction": null,
+    "payload_kg": 0.0,
+    "imu_orientation_noise_deg": 0.0,
+    "schedule": null,
+    "cycle_distance_m": 0.117844132114173
+  },
+  {
+    "backend": "bam",
+    "command": [
+      0.38,
+      0,
+      0
+    ],
+    "seconds": 10,
+    "measured_velocity": [
+      0.33808205296094235,
+      0.00031887083576477153,
+      -0.004898263793748524
+    ],
+    "velocity_rmse": 0.08075166956620611,
+    "yaw_rmse": 0.14375698034098167,
+    "tilt_rms_deg": 0.42114504692693844,
+    "tilt_max_deg": 0.9726045709152045,
+    "height_mean_m": 0.0967953671533087,
+    "height_std_mm": 0.8392359061770145,
+    "vertical_velocity_rms": 0.04452835251578609,
+    "body_rp_rate_rms": 0.3228830557511828,
+    "slip_rms_m_s": 0.11344319876182739,
+    "feet_contacts_mean": 1.8,
+    "nonfoot_contacts": 0,
+    "target_rate_rms": 2.243945116695615,
+    "target_acceleration_rms": 63.188069045102004,
+    "joint_speed_max": 4.547936943442911,
+    "motor_torque_max": 3.1587648410997393,
+    "displacement_m": [
+      3.1252456149988896,
+      -0.14721398486656478
+    ],
+    "warnings": 0,
+    "passed": true,
+    "friction": null,
+    "payload_kg": 0.0,
+    "imu_orientation_noise_deg": 0.0,
+    "schedule": null,
+    "cycle_distance_m": 0.13337046571555164
+  }
+]

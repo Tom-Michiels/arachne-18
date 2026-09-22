@@ -70,3 +70,18 @@ adjacent JSON records provenance and SHA-256 hashes of the included raw NPZs.
 These two videos are simulator renders, not generated imagery. Training uses
 an explicitly approximate model; the solo verification uses full BAM. See the
 [training report](../training/README.md) for the exact distinction and limits.
+
+
+`assets/arachne-long-stride.mp4` is a new continuous 44-second original MuJoCo
++ full BAM capture with `training/policies/long_stride.json`. It starts at a
+14 cm/s command, increases to 26 cm/s forward, then demonstrates faster
+sideways, backward and diagonal motion, turns and a stop. Playback is at real
+simulation time. Directional lighting and a larger visual ground patch keep
+the robot visible along the longer path; they do not animate or retime it.
+The adjacent JSON contains the actual schedule, stability metrics and policy
+provenance. Reproduce it with:
+
+```sh
+python training/render_demo.py --policy training/policies/long_stride.json \
+  --fast --out assets/arachne-long-stride.mp4
+```

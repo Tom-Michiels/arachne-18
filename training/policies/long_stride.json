@@ -1,0 +1,42 @@
+{
+  "algorithm": "CEM episodic policy search",
+  "parameter_names": [
+    "frequency_hz",
+    "stance_fraction",
+    "lift_m",
+    "stride_gain",
+    "yaw_gain",
+    "height_offset_m",
+    "radial_offset_m",
+    "tilt_feedback",
+    "phase_front",
+    "phase_middle",
+    "phase_rear",
+    "lateral_gain"
+  ],
+  "parameters": [
+    1.8922448797188463,
+    0.52,
+    0.021,
+    0.8187547973351106,
+    0.9653283216068301,
+    0.0029645227979233865,
+    -0.006995695544525909,
+    0.04664762481940175,
+    0.006872734141796002,
+    0.009621876002254776,
+    0.005598641484492881,
+    0.9350450068685048
+  ],
+  "stage": "long-stride reference gate selection",
+  "simulator": "Original MuJoCo C with full BAM M6",
+  "source_run": "training/runs/bam-refinement",
+  "generation": 2,
+  "selection_cases": 5,
+  "local_grid_scales": [
+    1.01,
+    1.0,
+    0.96
+  ],
+  "selection": "Fastest forward checkpoint passing every reference gate"
+}

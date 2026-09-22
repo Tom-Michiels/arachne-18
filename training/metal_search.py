@@ -16,9 +16,11 @@ from gait import ROOT, INITIAL, LOW, HIGH, target, feet, rotate, save, load, fre
 
 
 class Evaluator:
-    def __init__(self, n, seconds=6., smoothness=1.):
+    def __init__(self, n, seconds=6., smoothness=1., slip_weight=15., stride_weight=0., jerk_weight=0.):
         self.n, self.dt, self.steps = n, .01, int(seconds/.01)
         self.smoothness = smoothness
+        self.slip_weight, self.stride_weight = slip_weight, stride_weight
+        self.jerk_weight = jerk_weight
         self.model = mj.load_model(str(ROOT/'training/arachne_metal.xml'))
         ok, reason = mj.fused_supported(self.model)
         if not ok:
@@ -50,14 +52,22 @@ class Evaluator:
         yaw = mx.exp(-(nv[:,5]-cmd[:,2])**2/.09)
         rate = mx.mean(((filtered-smoothed)/self.dt)**2,-1)
         accel = mx.mean(((filtered-2*smoothed+prev)/self.dt**2)**2,-1)
+        jerk = mx.mean(((filtered-3*smoothed+3*prev-prev2)/self.dt**3)**2,-1)
         torque2 = mx.mean(self.sim.qfrc_actuator[:,6:]**2,-1)
+        # Reward measured progress per cycle, not commanded foot excursion.
+        # Tracking and slip costs prevent a slow cadence or skating from winning.
+        speed = mx.sqrt(mx.sum(cmd[:,:2]**2,-1))
+        progress = mx.sum(lin[:,:2]*cmd[:,:2],-1)/mx.maximum(speed,.001)
+        stride = mx.clip(progress/frequency(p,cmd,mx)/.12,0,1)
         bad = mx.logical_or(nq[:,2]<.065, nq[:,2]>.15)
         bad = mx.logical_or(bad, tilt2>.20)
         bad = mx.logical_or(bad, mx.logical_not(mx.all(mx.isfinite(nq),-1)))
         # Time-normalized terms, absolute speed tracking: standing is poor.
         reward = (5*track+1.5*yaw - 90*tilt2 - 20*mx.sum(nv[:,3:5]**2,-1)
                   - 80*nv[:,2]**2 - 400*(nq[:,2]-.095)**2
-                  - 15*slip2 - self.smoothness*(.025*rate + .00015*accel) - .025*torque2
+                  - self.slip_weight*slip2 + self.stride_weight*stride
+                  - self.smoothness*(.025*rate + .00015*accel) - .025*torque2
+                  - self.jerk_weight*jerk
                   - 30*bad.astype(mx.float32))
         metrics = mx.stack([lin[:,0],lin[:,1],nv[:,5],tilt2,nv[:,2]**2,
                             mx.sum(nv[:,3:5]**2,-1),slip2,rate,accel,bad.astype(mx.float32),
@@ -94,6 +104,9 @@ def main():
     ap.add_argument('--seconds',type=float,default=6.)
     ap.add_argument('--speed',type=float,default=.08)
     ap.add_argument('--smoothness',type=float,default=1.)
+    ap.add_argument('--slip-weight',type=float,default=15.)
+    ap.add_argument('--stride-weight',type=float,default=0.)
+    ap.add_argument('--jerk-weight',type=float,default=0.)
     ap.add_argument('--seed',type=int,default=17)
     ap.add_argument('--resume',type=Path)
     ap.add_argument('--capture-generations',nargs='*',type=int,default=[])
@@ -105,7 +118,8 @@ def main():
     commands=np.array([[args.speed,0,0.]]) if args.stage=='forward' else np.array(
         [[args.speed*np.cos(a),args.speed*np.sin(a),0.] for a in np.arange(8)*np.pi/4]
         +[[0.,0.,.35],[0.,0.,-.35],[args.speed*.7,0.,.25],[0.,0.,0.]])
-    k=len(commands); ev=Evaluator(args.population*k,args.seconds,args.smoothness)
+    k=len(commands); ev=Evaluator(args.population*k,args.seconds,args.smoothness,
+                                args.slip_weight,args.stride_weight,args.jerk_weight)
     mean=load(args.resume) if args.resume else INITIAL.copy()
     std=(HIGH-LOW)*(.12 if args.resume else .20)
     best_score=-np.inf; best=mean.copy(); start=time.time()

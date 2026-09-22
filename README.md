@@ -78,7 +78,13 @@ On Linux and Windows, use `python` for the viewer. On Windows, activate the envi
 
 ### Learned walking and a training army
 
-**[Open the video page — solo walking and the training army](https://tom-michiels.github.io/arachne-18/)**
+**[Open the English video page — faster walking, all directions and the training army](https://tom-michiels.github.io/arachne-18/)**
+
+The latest [longer-stride video](https://tom-michiels.github.io/arachne-18/#fast)
+shows a **22.4 cm/s** forward gait: **68% faster** than the original 13.3 cm/s
+solo reference, with **43% greater foot travel** and only **11% more cadence**.
+The new checkpoint passes **26/26 reference checks**, including directions,
+turns and perturbations. [Measured comparison and reproduction](training/LONG_STRIDE.md).
 
 A new IMU-aware CEM policy walks in every horizontal direction, turns, follows
 curves and stops smoothly. It was trained with the fast local MuJoCo/Metal
@@ -96,6 +102,10 @@ and **19.3 cm/s** at a faster command. The 40-second direction-change demo has
 The army uses real recorded states from distinct training candidates, arranged
 for display in independent cells. The solo demonstration uses full BAM physics.
 These are simulated gaits; hardware walking has not been validated.
+
+The [uneven-ground curriculum](training/TERRAIN.md) has passed 318 admission
+episodes through 4 mm obstacles. It keeps strict body-stability and smoothness
+gates, retains flat-ground walking, and stops before unmastered 8 mm obstacles.
 
 **BAM is activated by `simulate.py`. Loading the XML alone does not activate the servo model.** The supplied 12 V M6 parameter set is an approximation fitted to manufacturer torque and speed points, with friction and controller behavior inherited from BAM's identified 7.4 V STS3215 model. It is clearly versioned separately from the original. Read the [model assumptions](docs/bam-model.md) before using it for actuator studies.
 

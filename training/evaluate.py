@@ -9,11 +9,18 @@ from gait import ROOT, INITIAL, target, rotate, feet, load, frequency
 
 
 def evaluate(params, command, seconds=10., backend='bam', video=None, width=960, height=640,
-             schedule=None, friction=None, payload=0., imu_noise=0., seed=23):
+             schedule=None, friction=None, payload=0., imu_noise=0., seed=23, terrain=None):
+    terrain_info=None
+    if terrain is not None and backend!='bam':
+        raise ValueError('Terrain requires the original MuJoCo/BAM backend')
     if backend=='bam':
         sys.path.insert(0,str(ROOT/'simulation'))
         from simulate import Robot
-        robot=Robot(); m,d=robot.model,robot.data
+        scene=None
+        if terrain is not None:
+            from terrain import make_model, height_below
+            scene,terrain_info=make_model(terrain,seed)
+        robot=Robot(model=scene); m,d=robot.model,robot.data
     else:
         m=mujoco.MjModel.from_xml_path(str(ROOT/'training/arachne_metal.xml'))
         d=mujoco.MjData(m); mujoco.mj_resetDataKeyframe(m,d,0)
@@ -29,6 +36,10 @@ def evaluate(params, command, seconds=10., backend='bam', video=None, width=960,
     p=np.asarray(params,dtype=float)[None,:]; cmd=np.asarray(command,dtype=float)[None,:]
     phase=np.zeros(1); sm=np.zeros((1,18)); prev=sm.copy(); prev2=sm.copy()
     samples=[]; all_q=[]; all_t=[]; all_ctrl=[]; all_commands=[]; last_feet=None
+    clearances=[]; exposure=[]; local_feet=[]; cycles=[]; cycle=0.
+    ground_id=m.geom('ground').id
+    foot_ids=[m.geom(f'L{j}_foot_contact').id for j in range(1,7)]
+    foot_geoms=set(foot_ids)
     cmd_filtered=cmd.copy()
     render=None; writer=None
     if video:
@@ -38,8 +49,20 @@ def evaluate(params, command, seconds=10., backend='bam', video=None, width=960,
         Path(video).parent.mkdir(parents=True,exist_ok=True)
         m.vis.global_.offwidth=width; m.vis.global_.offheight=height
         m.mat_reflectance[:]=0
-        m.light_ambient[:]=[.35,.35,.35]
-        m.light_diffuse[:]=[.85,.85,.85]
+        # A directional key light keeps the robot visible after it has walked
+        # several metres beyond the original scene's fixed spotlight cone.
+        m.light_type[:]=mujoco.mjtLightType.mjLIGHT_DIRECTIONAL
+        m.light_ambient[:]=[.15,.15,.15]
+        m.light_diffuse[:]=[.7,.7,.7]
+        m.vis.headlight.ambient[:]=[.3,.3,.3]
+        m.vis.headlight.diffuse[:]=[.55,.55,.55]
+        if m.geom_type[ground_id]==mujoco.mjtGeom.mjGEOM_PLANE:
+            # Extend only the plane's finite visual patch, keeping tile scale.
+            material=m.geom_matid[ground_id]
+            scale=20/m.geom_size[ground_id,0]
+            m.geom_size[ground_id,:2]*=scale
+            if material>=0 and not m.mat_texuniform[material]:
+                m.mat_texrepeat[material]*=scale
         render=mujoco.Renderer(m,height,width)
         writer=imageio.get_writer(str(video),fps=50,codec='libx264',quality=None,
                                   macro_block_size=1,ffmpeg_params=['-crf','23','-movflags','+faststart'])
@@ -67,20 +90,26 @@ def evaluate(params, command, seconds=10., backend='bam', video=None, width=960,
                 else:d.ctrl[:]=sm[0];mujoco.mj_step(m,d)
             prev2,prev,sm=prev,sm,filtered
             phase=(phase+frequency(p,cmd)*dt)%1
+            cycle+=float(frequency(p,cmd)[0])*dt
             q=d.qpos[None,:];v=d.qvel[None,:]
             gravity=rotate(q[:,3:7],np.array([[0.,0.,-1.]]),inverse=True)[0]
             lin=rotate(q[:,3:7],v[:,:3],inverse=True)[0]
             foot=np.array([d.site(f'L{j}_foot').xpos.copy() for j in range(1,7)])
-            foot_geoms={m.geom(f'L{j}_foot_contact').id for j in range(1,7)}
+            local_feet.append(np.array([rotate(q[:,3:7],(f-d.qpos[:3])[None,:],inverse=True)[0]
+                                       for f in foot]))
+            cycles.append(cycle)
+            ground_z=height_below(m,d,*d.qpos[:2]) if terrain is not None else 0.
+            clearances.append(d.qpos[2]-ground_z)
+            exposure.append(np.linalg.norm(d.qpos[:2])>.54)
             contacts=set();nonfoot=0
             for c in d.contact:
-                if c.geom1==0 or c.geom2==0:
-                    geom=c.geom2 if c.geom1==0 else c.geom1
+                if c.geom1==ground_id or c.geom2==ground_id:
+                    geom=c.geom2 if c.geom1==ground_id else c.geom1
                     if geom in foot_geoms:contacts.add(geom)
                     else:nonfoot+=1
             vel=np.zeros_like(foot) if last_feet is None else (foot-last_feet)/dt
             last_feet=foot
-            mask=np.array([m.geom(f'L{j}_foot_contact').id in contacts for j in range(1,7)])
+            mask=np.array([geom in contacts for geom in foot_ids])
             slip=np.mean(np.sum(vel[mask,:2]**2,-1)) if mask.any() else 0.
             samples.append([*lin[:2],d.qvel[5],np.arccos(np.clip(-gravity[2],-1,1)),
                             d.qpos[2],d.qvel[2],np.linalg.norm(d.qvel[3:5]),slip,
@@ -96,6 +125,17 @@ def evaluate(params, command, seconds=10., backend='bam', video=None, width=960,
                 writer.append_data(frame)
         data=np.asarray(samples); skip=min(200,len(data)//2);steady=data[skip:]
         requested=np.asarray(all_commands)[skip:]
+        clearance=np.asarray(clearances);ctrl=np.asarray(all_ctrl)
+        jerk=np.diff(ctrl,n=3,axis=0)/dt**3
+        # Actual body-relative foot travel, averaged over complete gait cycles.
+        excursions=[]; cycle_ids=np.floor(cycles).astype(int)
+        direction=np.asarray(command[:2],dtype=float).copy()
+        translating=bool(np.linalg.norm(direction)>.001)
+        direction/=max(np.linalg.norm(direction),1e-9)
+        for c in np.unique(cycle_ids[skip:])[1:-1]:
+            mask=(cycle_ids==c)&(np.arange(len(cycle_ids))>=skip)
+            trace=np.asarray(local_feet)[mask,:,:2]@direction
+            excursions.append(float(np.ptp(trace,axis=0).mean()))
         result=dict(backend=backend,command=list(command),seconds=seconds,
             measured_velocity=steady[:,:3].mean(0).tolist(),
             velocity_rmse=float(np.sqrt(np.mean(np.sum((steady[:,:2]-requested[:,:2])**2,-1)))),
@@ -110,8 +150,16 @@ def evaluate(params, command, seconds=10., backend='bam', video=None, width=960,
             target_rate_rms=float(np.sqrt(np.mean(steady[:,10]**2))),
             target_acceleration_rms=float(np.sqrt(np.mean(steady[:,11]**2))),
             joint_speed_max=float(data[:,12].max()),motor_torque_max=float(data[:,13].max()),
+            cadence_hz=float(np.mean(frequency(np.repeat(p,len(requested),axis=0),requested))),
+            body_distance_per_cycle_m=(float(steady[:,:2].mean(0)@direction/frequency(p,np.asarray(command)[None,:])[0])
+                                       if not schedule and translating else None),
+            foot_excursion_mean_m=float(np.mean(excursions)) if excursions and not schedule and translating else None,
+            target_jerk_rms=float(np.sqrt(np.mean(jerk[max(skip-3,0):]**2))),
+            clearance_min_m=float(clearance.min()),clearance_std_mm=float(clearance[skip:].std()*1000),
+            clearance_rate_rms=float(np.sqrt(np.mean((np.diff(clearance)[skip-1:]/dt)**2))),
+            terrain_exposure_fraction=float(np.mean(exposure[skip:])),terrain=terrain_info,
             displacement_m=d.qpos[:2].tolist(),warnings=int(sum(w.number for w in d.warning)),
-            passed=bool(np.all(data[:,4]>.065) and np.max(data[:,3])<np.deg2rad(15)
+            passed=bool(np.all(clearance>.060) and np.max(data[:,3])<np.deg2rad(15)
                         and not data[:,9].any() and np.isfinite(data).all()),
             friction=friction,payload_kg=payload,imu_orientation_noise_deg=imu_noise,
             schedule=schedule)
