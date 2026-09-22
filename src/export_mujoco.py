@@ -20,18 +20,26 @@ OUT = args.output.resolve()
 CACHE = args.cad_cache.resolve()
 OUT.mkdir(parents=True, exist_ok=True)
 (OUT/'meshes').mkdir(exist_ok=True)
+for obsolete_mesh in (OUT/'meshes').glob('*.stl'):obsolete_mesh.unlink()
 meta = json.loads((CACHE/'placed.json').read_text())
+P=json.loads((CACHE.parent/'parameters.json').read_text())
 groups = {'BODY': {'origin': np.zeros(3), 'parent': None, 'anchor': '01_CHASSIS'}}
 joints = []
+yaw_ranges=[[-P['yaw_inward_limit_deg'],P['yaw_outward_limit_deg']],
+            [-P['yaw_middle_limit_deg'],P['yaw_middle_limit_deg']],
+            [-P['yaw_outward_limit_deg'],P['yaw_inward_limit_deg']],
+            [-P['yaw_inward_limit_deg'],P['yaw_outward_limit_deg']],
+            [-P['yaw_middle_limit_deg'],P['yaw_middle_limit_deg']],
+            [-P['yaw_outward_limit_deg'],P['yaw_inward_limit_deg']]]
 for i, degrees in enumerate([45,90,135,225,270,315],1):
     a=math.radians(degrees); r=np.array([math.cos(a),math.sin(a),0.])
-    root=.086*r; hip=root+.050*r
-    knee=hip+.078*math.cos(math.radians(15))*r+np.array([0,0,.078*math.sin(math.radians(15))])
+    root=.001*np.array([P['anchor_rx']*math.cos(a),P['anchor_ry']*math.sin(a),0.]); hip=root+.001*P['coxa']*r
+    knee=hip+.001*P['femur']*math.cos(math.radians(P['femur_up_deg']))*r+np.array([0,0,.001*P['femur']*math.sin(math.radians(P['femur_up_deg']))])
     axis=np.array([math.sin(a),-math.cos(a),0.])
     for suffix,parent,origin,anchor,joint,ax,lim,reference in [
-        ('COXA','BODY',root,f'L{i}_coxa','yaw',np.array([0.,0.,1.]),[-20,20],0),
-        ('FEMUR',f'L{i}_COXA',hip,f'L{i}_femur','hip',axis,[-15,15],15),
-        ('TIBIA',f'L{i}_FEMUR',knee,f'L{i}_tibia','knee',axis,[-15,15],-80)]:
+        ('COXA','BODY',root,f'L{i}_coxa','yaw',np.array([0.,0.,1.]),yaw_ranges[i-1],0),
+        ('FEMUR',f'L{i}_COXA',hip,f'L{i}_femur','hip',axis,[-35,15],15),
+        ('TIBIA',f'L{i}_FEMUR',knee,f'L{i}_tibia','knee',axis,[-15,80],-80)]:
         name=f'L{i}_{suffix}'; jname=f'L{i}_{joint}'
         groups[name]={'origin':origin,'parent':parent,'anchor':anchor,'joint':jname,'axis':ax,'range':lim}
         joints.append(dict(name=jname,servo_id=len(joints)+1,parent=parent,child=name,
@@ -39,9 +47,9 @@ for i, degrees in enumerate([45,90,135,225,270,315],1):
 
 # Effective printed density is an estimate, to be replaced with slicer/measured masses.
 MASS_SETTINGS=dict(printed_effective_density_kg_m3=700.,tpu_effective_density_kg_m3=1000.,
-    servo_kg=.055,disc_kg=.002,battery_kg=.190,controller_kg=.045,
-    body_wiring_fasteners_kg=.070,per_coxa_fasteners_kg=.016,
-    per_femur_fasteners_kg=.020,per_tibia_fasteners_kg=.012)
+    steel_kg_m3=7800.,brass_kg_m3=8500.,servo_kg=.055,disc_kg=.002,
+    battery_kg=.190,controller_kg=.045,body_wiring_fasteners_kg=.050,
+    per_coxa_fasteners_kg=0.,per_femur_fasteners_kg=0.,per_tibia_fasteners_kg=0.)
 body_items={g:[] for g in groups}
 assets=[]; collision=[]
 for o in meta:
@@ -51,6 +59,8 @@ for o in meta:
     mass=vol*density
     if o['kind']=='servo':mass=MASS_SETTINGS['servo_kg']
     elif o['kind']=='hardware':mass=MASS_SETTINGS['disc_kg']
+    elif o['kind'] in ('fastener','nut'):mass=vol*MASS_SETTINGS['steel_kg_m3']
+    elif o['kind']=='insert':mass=vol*MASS_SETTINGS['brass_kg_m3']
     elif name.startswith('REF_3S'):mass=MASS_SETTINGS['battery_kg']
     elif name.startswith('REF_CONTROLLER'):mass=MASS_SETTINGS['controller_kg']
     inertia=np.array(cq.Shape.matrixOfInertia(s))*(mass/s.Volume())*1e-6

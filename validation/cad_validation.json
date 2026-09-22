@@ -9,17 +9,32 @@
     "tibia": 110,
     "horn_pcd": 14,
     "horn_d": 19.95,
-    "cheek_gap": 45,
-    "cheek_t": 4.5,
+    "horn_thickness_driven": 2.5,
+    "horn_thickness_dummy": 2.0,
+    "horn_outer_span": 36.5,
+    "cheek_gap": 36.9,
+    "assembly_clearance_per_side": 0.2,
+    "cheek_t": 5.25,
     "servo_L": 45.23,
     "servo_W": 24.73,
+    "shaft_clearance_d": 7.2,
     "servo_H": 35,
     "servo_axis_offset": 12.5,
     "battery_L": 115,
     "battery_W": 40,
     "battery_H": 35,
     "femur_up_deg": 15,
-    "tibia_down_deg": 65
+    "tibia_down_deg": 65,
+    "yaw_inward_limit_deg": 64,
+    "yaw_outward_limit_deg": 35,
+    "yaw_middle_limit_deg": 35,
+    "insert_hole_d": 4.0,
+    "insert_length": 5.7,
+    "button_head_d": 5.7,
+    "button_head_h": 1.65,
+    "horn_recess_d": 6.2,
+    "horn_recess_depth": 1.5,
+    "dummy_recess_depth": 1.45
   },
   "parts": {
     "01_chassis": {
@@ -29,10 +44,10 @@
       "material": "PETG/PA12",
       "size_mm": [
         188.0,
-        180.6,
+        150.0,
         50.5
       ],
-      "solid_volume_cm3": 207.43
+      "solid_volume_cm3": 187.1
     },
     "02_dorsal_deck": {
       "valid": true,
@@ -42,9 +57,9 @@
       "size_mm": [
         166.0,
         102.0,
-        47.0
+        50.0
       ],
-      "solid_volume_cm3": 57.43
+      "solid_volume_cm3": 56.93
     },
     "03_battery_tray": {
       "valid": true,
@@ -53,10 +68,10 @@
       "material": "PETG",
       "size_mm": [
         122.0,
-        47.0,
+        70.0,
         15.5
       ],
-      "solid_volume_cm3": 26.29
+      "solid_volume_cm3": 27.77
     },
     "04_controller_plate": {
       "valid": true,
@@ -76,11 +91,11 @@
       "quantity": 1,
       "material": "PETG",
       "size_mm": [
-        176.49,
+        176.52,
         112.72,
         90.48
       ],
-      "solid_volume_cm3": 96.44
+      "solid_volume_cm3": 95.1
     },
     "06_coxa_bracket": {
       "valid": true,
@@ -88,11 +103,11 @@
       "quantity": 6,
       "material": "PETG/PA12",
       "size_mm": [
-        86.0,
+        86.5,
         38.6,
-        66.0
+        62.7
       ],
-      "solid_volume_cm3": 32.79
+      "solid_volume_cm3": 30.92
     },
     "07_coxa_bottom_plate": {
       "valid": true,
@@ -100,11 +115,11 @@
       "quantity": 6,
       "material": "PETG/PA12",
       "size_mm": [
-        44.0,
-        28.0,
-        4.5
+        44.3,
+        26.83,
+        5.25
       ],
-      "solid_volume_cm3": 4.28
+      "solid_volume_cm3": 4.55
     },
     "08_servo_clamp_cap": {
       "valid": true,
@@ -113,10 +128,10 @@
       "material": "PETG/PA12",
       "size_mm": [
         21.0,
-        42.0,
+        42.5,
         3.5
       ],
-      "solid_volume_cm3": 2.2
+      "solid_volume_cm3": 1.97
     },
     "09_femur_bracket": {
       "valid": true,
@@ -124,11 +139,11 @@
       "quantity": 6,
       "material": "PETG/PA12",
       "size_mm": [
-        81.0,
-        49.0,
-        44.0
+        80.88,
+        45.3,
+        45.0
       ],
-      "solid_volume_cm3": 31.61
+      "solid_volume_cm3": 31.0
     },
     "10_femur_side_plate": {
       "valid": true,
@@ -137,10 +152,10 @@
       "material": "PETG/PA12",
       "size_mm": [
         72.0,
-        4.5,
+        8.4,
         37.0
       ],
-      "solid_volume_cm3": 7.46
+      "solid_volume_cm3": 9.14
     },
     "11_tibia_fork": {
       "valid": true,
@@ -149,10 +164,10 @@
       "material": "PETG/PA12",
       "size_mm": [
         128.0,
-        54.0,
+        47.4,
         32.0
       ],
-      "solid_volume_cm3": 29.28
+      "solid_volume_cm3": 29.81
     },
     "12_foot": {
       "valid": true,
@@ -166,19 +181,7 @@
       ],
       "solid_volume_cm3": 3.71
     },
-    "13_horn_shim_2p5": {
-      "valid": true,
-      "solids": 1,
-      "quantity": 36,
-      "material": "PETG",
-      "size_mm": [
-        20.0,
-        20.0,
-        2.5
-      ],
-      "solid_volume_cm3": 0.61
-    },
-    "14_controller_spacer": {
+    "13_controller_spacer": {
       "valid": true,
       "solids": 1,
       "quantity": 4,
@@ -190,48 +193,24 @@
       ],
       "solid_volume_cm3": 0.18
     },
-    "15_fit_gauge": {
+    "14_direct_horn_fit_gauge": {
       "valid": true,
       "solids": 1,
       "quantity": 1,
       "material": "PETG",
       "size_mm": [
-        46.0,
-        28.0,
-        4.5
+        66.0,
+        43.0,
+        5.25
       ],
-      "solid_volume_cm3": 3.32
-    },
-    "16_optional_shim_0p5": {
-      "valid": true,
-      "solids": 1,
-      "quantity": 0,
-      "material": "PETG",
-      "size_mm": [
-        20.0,
-        20.0,
-        0.5
-      ],
-      "solid_volume_cm3": 0.12
-    },
-    "17_optional_shim_1p0": {
-      "valid": true,
-      "solids": 1,
-      "quantity": 0,
-      "material": "PETG",
-      "size_mm": [
-        20.0,
-        20.0,
-        1.0
-      ],
-      "solid_volume_cm3": 0.25
+      "solid_volume_cm3": 6.95
     }
   },
   "intersections": [],
-  "assembly_instances": 155,
+  "assembly_instances": 499,
   "servo_count": 18,
   "assembly_bounds_mm": [
-    373.78,
+    374.66,
     514.33,
     214.13
   ]

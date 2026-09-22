@@ -1,252 +1,315 @@
 [
   {
     "leg": 1,
-    "yaw": -20,
+    "yaw": -64,
     "hip": 0,
     "knee_relative": -95,
     "collisions": []
   },
   {
     "leg": 1,
-    "yaw": -20,
+    "yaw": -64,
     "hip": 0,
     "knee_relative": -80,
     "collisions": []
   },
   {
     "leg": 1,
-    "yaw": -20,
-    "hip": 0,
-    "knee_relative": -65,
-    "collisions": []
-  },
-  {
-    "leg": 1,
-    "yaw": -20,
-    "hip": 15,
-    "knee_relative": -95,
-    "collisions": []
-  },
-  {
-    "leg": 1,
-    "yaw": -20,
-    "hip": 15,
-    "knee_relative": -80,
-    "collisions": []
-  },
-  {
-    "leg": 1,
-    "yaw": -20,
-    "hip": 15,
-    "knee_relative": -65,
-    "collisions": []
-  },
-  {
-    "leg": 1,
-    "yaw": -20,
-    "hip": 30,
-    "knee_relative": -95,
-    "collisions": []
-  },
-  {
-    "leg": 1,
-    "yaw": -20,
-    "hip": 30,
-    "knee_relative": -80,
-    "collisions": []
-  },
-  {
-    "leg": 1,
-    "yaw": -20,
-    "hip": 30,
-    "knee_relative": -65,
-    "collisions": []
-  },
-  {
-    "leg": 1,
-    "yaw": 0,
-    "hip": 0,
-    "knee_relative": -95,
-    "collisions": []
-  },
-  {
-    "leg": 1,
-    "yaw": 0,
-    "hip": 0,
-    "knee_relative": -80,
-    "collisions": []
-  },
-  {
-    "leg": 1,
-    "yaw": 0,
+    "yaw": -64,
     "hip": 0,
     "knee_relative": -65,
     "collisions": []
   },
   {
     "leg": 1,
-    "yaw": 0,
+    "yaw": -64,
     "hip": 15,
     "knee_relative": -95,
     "collisions": []
   },
   {
     "leg": 1,
-    "yaw": 0,
+    "yaw": -64,
     "hip": 15,
     "knee_relative": -80,
     "collisions": []
   },
   {
     "leg": 1,
-    "yaw": 0,
+    "yaw": -64,
     "hip": 15,
     "knee_relative": -65,
     "collisions": []
   },
   {
     "leg": 1,
-    "yaw": 0,
+    "yaw": -64,
     "hip": 30,
     "knee_relative": -95,
     "collisions": []
   },
   {
     "leg": 1,
-    "yaw": 0,
+    "yaw": -64,
     "hip": 30,
     "knee_relative": -80,
     "collisions": []
   },
   {
     "leg": 1,
-    "yaw": 0,
+    "yaw": -64,
     "hip": 30,
     "knee_relative": -65,
     "collisions": []
   },
   {
     "leg": 1,
-    "yaw": 20,
+    "yaw": -35,
     "hip": 0,
     "knee_relative": -95,
     "collisions": []
   },
   {
     "leg": 1,
-    "yaw": 20,
+    "yaw": -35,
     "hip": 0,
     "knee_relative": -80,
     "collisions": []
   },
   {
     "leg": 1,
-    "yaw": 20,
+    "yaw": -35,
     "hip": 0,
     "knee_relative": -65,
     "collisions": []
   },
   {
     "leg": 1,
-    "yaw": 20,
+    "yaw": -35,
     "hip": 15,
     "knee_relative": -95,
     "collisions": []
   },
   {
     "leg": 1,
-    "yaw": 20,
+    "yaw": -35,
     "hip": 15,
     "knee_relative": -80,
     "collisions": []
   },
   {
     "leg": 1,
-    "yaw": 20,
+    "yaw": -35,
     "hip": 15,
     "knee_relative": -65,
     "collisions": []
   },
   {
     "leg": 1,
-    "yaw": 20,
+    "yaw": -35,
     "hip": 30,
     "knee_relative": -95,
     "collisions": []
   },
   {
     "leg": 1,
-    "yaw": 20,
+    "yaw": -35,
     "hip": 30,
     "knee_relative": -80,
     "collisions": []
   },
   {
     "leg": 1,
-    "yaw": 20,
+    "yaw": -35,
+    "hip": 30,
+    "knee_relative": -65,
+    "collisions": []
+  },
+  {
+    "leg": 1,
+    "yaw": 0,
+    "hip": 0,
+    "knee_relative": -95,
+    "collisions": []
+  },
+  {
+    "leg": 1,
+    "yaw": 0,
+    "hip": 0,
+    "knee_relative": -80,
+    "collisions": []
+  },
+  {
+    "leg": 1,
+    "yaw": 0,
+    "hip": 0,
+    "knee_relative": -65,
+    "collisions": []
+  },
+  {
+    "leg": 1,
+    "yaw": 0,
+    "hip": 15,
+    "knee_relative": -95,
+    "collisions": []
+  },
+  {
+    "leg": 1,
+    "yaw": 0,
+    "hip": 15,
+    "knee_relative": -80,
+    "collisions": []
+  },
+  {
+    "leg": 1,
+    "yaw": 0,
+    "hip": 15,
+    "knee_relative": -65,
+    "collisions": []
+  },
+  {
+    "leg": 1,
+    "yaw": 0,
+    "hip": 30,
+    "knee_relative": -95,
+    "collisions": []
+  },
+  {
+    "leg": 1,
+    "yaw": 0,
+    "hip": 30,
+    "knee_relative": -80,
+    "collisions": []
+  },
+  {
+    "leg": 1,
+    "yaw": 0,
+    "hip": 30,
+    "knee_relative": -65,
+    "collisions": []
+  },
+  {
+    "leg": 1,
+    "yaw": 35,
+    "hip": 0,
+    "knee_relative": -95,
+    "collisions": []
+  },
+  {
+    "leg": 1,
+    "yaw": 35,
+    "hip": 0,
+    "knee_relative": -80,
+    "collisions": []
+  },
+  {
+    "leg": 1,
+    "yaw": 35,
+    "hip": 0,
+    "knee_relative": -65,
+    "collisions": []
+  },
+  {
+    "leg": 1,
+    "yaw": 35,
+    "hip": 15,
+    "knee_relative": -95,
+    "collisions": []
+  },
+  {
+    "leg": 1,
+    "yaw": 35,
+    "hip": 15,
+    "knee_relative": -80,
+    "collisions": []
+  },
+  {
+    "leg": 1,
+    "yaw": 35,
+    "hip": 15,
+    "knee_relative": -65,
+    "collisions": []
+  },
+  {
+    "leg": 1,
+    "yaw": 35,
+    "hip": 30,
+    "knee_relative": -95,
+    "collisions": []
+  },
+  {
+    "leg": 1,
+    "yaw": 35,
+    "hip": 30,
+    "knee_relative": -80,
+    "collisions": []
+  },
+  {
+    "leg": 1,
+    "yaw": 35,
     "hip": 30,
     "knee_relative": -65,
     "collisions": []
   },
   {
     "leg": 2,
-    "yaw": -20,
+    "yaw": -35,
     "hip": 0,
     "knee_relative": -95,
     "collisions": []
   },
   {
     "leg": 2,
-    "yaw": -20,
+    "yaw": -35,
     "hip": 0,
     "knee_relative": -80,
     "collisions": []
   },
   {
     "leg": 2,
-    "yaw": -20,
+    "yaw": -35,
     "hip": 0,
     "knee_relative": -65,
     "collisions": []
   },
   {
     "leg": 2,
-    "yaw": -20,
+    "yaw": -35,
     "hip": 15,
     "knee_relative": -95,
     "collisions": []
   },
   {
     "leg": 2,
-    "yaw": -20,
+    "yaw": -35,
     "hip": 15,
     "knee_relative": -80,
     "collisions": []
   },
   {
     "leg": 2,
-    "yaw": -20,
+    "yaw": -35,
     "hip": 15,
     "knee_relative": -65,
     "collisions": []
   },
   {
     "leg": 2,
-    "yaw": -20,
+    "yaw": -35,
     "hip": 30,
     "knee_relative": -95,
     "collisions": []
   },
   {
     "leg": 2,
-    "yaw": -20,
+    "yaw": -35,
     "hip": 30,
     "knee_relative": -80,
     "collisions": []
   },
   {
     "leg": 2,
-    "yaw": -20,
+    "yaw": -35,
     "hip": 30,
     "knee_relative": -65,
     "collisions": []
@@ -316,63 +379,315 @@
   },
   {
     "leg": 2,
-    "yaw": 20,
+    "yaw": 35,
     "hip": 0,
     "knee_relative": -95,
     "collisions": []
   },
   {
     "leg": 2,
-    "yaw": 20,
+    "yaw": 35,
     "hip": 0,
     "knee_relative": -80,
     "collisions": []
   },
   {
     "leg": 2,
-    "yaw": 20,
+    "yaw": 35,
     "hip": 0,
     "knee_relative": -65,
     "collisions": []
   },
   {
     "leg": 2,
-    "yaw": 20,
+    "yaw": 35,
     "hip": 15,
     "knee_relative": -95,
     "collisions": []
   },
   {
     "leg": 2,
-    "yaw": 20,
+    "yaw": 35,
     "hip": 15,
     "knee_relative": -80,
     "collisions": []
   },
   {
     "leg": 2,
-    "yaw": 20,
+    "yaw": 35,
     "hip": 15,
     "knee_relative": -65,
     "collisions": []
   },
   {
     "leg": 2,
-    "yaw": 20,
+    "yaw": 35,
     "hip": 30,
     "knee_relative": -95,
     "collisions": []
   },
   {
     "leg": 2,
-    "yaw": 20,
+    "yaw": 35,
     "hip": 30,
     "knee_relative": -80,
     "collisions": []
   },
   {
     "leg": 2,
-    "yaw": 20,
+    "yaw": 35,
+    "hip": 30,
+    "knee_relative": -65,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": -35,
+    "hip": 0,
+    "knee_relative": -95,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": -35,
+    "hip": 0,
+    "knee_relative": -80,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": -35,
+    "hip": 0,
+    "knee_relative": -65,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": -35,
+    "hip": 15,
+    "knee_relative": -95,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": -35,
+    "hip": 15,
+    "knee_relative": -80,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": -35,
+    "hip": 15,
+    "knee_relative": -65,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": -35,
+    "hip": 30,
+    "knee_relative": -95,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": -35,
+    "hip": 30,
+    "knee_relative": -80,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": -35,
+    "hip": 30,
+    "knee_relative": -65,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 0,
+    "hip": 0,
+    "knee_relative": -95,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 0,
+    "hip": 0,
+    "knee_relative": -80,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 0,
+    "hip": 0,
+    "knee_relative": -65,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 0,
+    "hip": 15,
+    "knee_relative": -95,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 0,
+    "hip": 15,
+    "knee_relative": -80,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 0,
+    "hip": 15,
+    "knee_relative": -65,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 0,
+    "hip": 30,
+    "knee_relative": -95,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 0,
+    "hip": 30,
+    "knee_relative": -80,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 0,
+    "hip": 30,
+    "knee_relative": -65,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 35,
+    "hip": 0,
+    "knee_relative": -95,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 35,
+    "hip": 0,
+    "knee_relative": -80,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 35,
+    "hip": 0,
+    "knee_relative": -65,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 35,
+    "hip": 15,
+    "knee_relative": -95,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 35,
+    "hip": 15,
+    "knee_relative": -80,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 35,
+    "hip": 15,
+    "knee_relative": -65,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 35,
+    "hip": 30,
+    "knee_relative": -95,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 35,
+    "hip": 30,
+    "knee_relative": -80,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 35,
+    "hip": 30,
+    "knee_relative": -65,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 64,
+    "hip": 0,
+    "knee_relative": -95,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 64,
+    "hip": 0,
+    "knee_relative": -80,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 64,
+    "hip": 0,
+    "knee_relative": -65,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 64,
+    "hip": 15,
+    "knee_relative": -95,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 64,
+    "hip": 15,
+    "knee_relative": -80,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 64,
+    "hip": 15,
+    "knee_relative": -65,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 64,
+    "hip": 30,
+    "knee_relative": -95,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 64,
+    "hip": 30,
+    "knee_relative": -80,
+    "collisions": []
+  },
+  {
+    "leg": 3,
+    "yaw": 64,
     "hip": 30,
     "knee_relative": -65,
     "collisions": []

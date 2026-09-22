@@ -18,8 +18,8 @@
         1.0
       ],
       "range_delta_deg": [
-        -20,
-        20
+        -64,
+        35
       ],
       "neutral_absolute_deg": 0
     },
@@ -39,7 +39,7 @@
         0.0
       ],
       "range_delta_deg": [
-        -15,
+        -35,
         15
       ],
       "neutral_absolute_deg": 15
@@ -61,7 +61,7 @@
       ],
       "range_delta_deg": [
         -15,
-        15
+        80
       ],
       "neutral_absolute_deg": -80
     },
@@ -72,7 +72,7 @@
       "child": "L2_COXA",
       "origin_m": [
         5.265981236333619e-18,
-        0.086,
+        0.08600000000000001,
         0.0
       ],
       "axis": [
@@ -81,8 +81,8 @@
         1.0
       ],
       "range_delta_deg": [
-        -20,
-        20
+        -35,
+        35
       ],
       "neutral_absolute_deg": 0
     },
@@ -102,7 +102,7 @@
         0.0
       ],
       "range_delta_deg": [
-        -15,
+        -35,
         15
       ],
       "neutral_absolute_deg": 15
@@ -124,7 +124,7 @@
       ],
       "range_delta_deg": [
         -15,
-        15
+        80
       ],
       "neutral_absolute_deg": -80
     },
@@ -144,8 +144,8 @@
         1.0
       ],
       "range_delta_deg": [
-        -20,
-        20
+        -35,
+        64
       ],
       "neutral_absolute_deg": 0
     },
@@ -165,7 +165,7 @@
         0.0
       ],
       "range_delta_deg": [
-        -15,
+        -35,
         15
       ],
       "neutral_absolute_deg": 15
@@ -187,7 +187,7 @@
       ],
       "range_delta_deg": [
         -15,
-        15
+        80
       ],
       "neutral_absolute_deg": -80
     },
@@ -197,7 +197,7 @@
       "parent": "BODY",
       "child": "L4_COXA",
       "origin_m": [
-        -0.060811183182043094,
+        -0.0608111831820431,
         -0.06081118318204308,
         0.0
       ],
@@ -207,8 +207,8 @@
         1.0
       ],
       "range_delta_deg": [
-        -20,
-        20
+        -64,
+        35
       ],
       "neutral_absolute_deg": 0
     },
@@ -228,7 +228,7 @@
         0.0
       ],
       "range_delta_deg": [
-        -15,
+        -35,
         15
       ],
       "neutral_absolute_deg": 15
@@ -250,7 +250,7 @@
       ],
       "range_delta_deg": [
         -15,
-        15
+        80
       ],
       "neutral_absolute_deg": -80
     },
@@ -261,7 +261,7 @@
       "child": "L5_COXA",
       "origin_m": [
         -1.5797943709000855e-17,
-        -0.086,
+        -0.08600000000000001,
         0.0
       ],
       "axis": [
@@ -270,8 +270,8 @@
         1.0
       ],
       "range_delta_deg": [
-        -20,
-        20
+        -35,
+        35
       ],
       "neutral_absolute_deg": 0
     },
@@ -291,7 +291,7 @@
         0.0
       ],
       "range_delta_deg": [
-        -15,
+        -35,
         15
       ],
       "neutral_absolute_deg": 15
@@ -313,7 +313,7 @@
       ],
       "range_delta_deg": [
         -15,
-        15
+        80
       ],
       "neutral_absolute_deg": -80
     },
@@ -323,8 +323,8 @@
       "parent": "BODY",
       "child": "L6_COXA",
       "origin_m": [
-        0.060811183182043066,
-        -0.060811183182043094,
+        0.06081118318204307,
+        -0.0608111831820431,
         0.0
       ],
       "axis": [
@@ -333,8 +333,8 @@
         1.0
       ],
       "range_delta_deg": [
-        -20,
-        20
+        -35,
+        64
       ],
       "neutral_absolute_deg": 0
     },
@@ -344,7 +344,7 @@
       "parent": "L6_COXA",
       "child": "L6_FEMUR",
       "origin_m": [
-        0.09616652224137043,
+        0.09616652224137044,
         -0.09616652224137048,
         0.0
       ],
@@ -354,7 +354,7 @@
         0.0
       ],
       "range_delta_deg": [
-        -15,
+        -35,
         15
       ],
       "neutral_absolute_deg": 15
@@ -376,7 +376,7 @@
       ],
       "range_delta_deg": [
         -15,
-        15
+        80
       ],
       "neutral_absolute_deg": -80
     }

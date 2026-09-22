@@ -3,9 +3,9 @@
     "rigid_links": 19,
     "hinges": 18,
     "floating_base_dofs": 6,
-    "mesh_assets": 155,
+    "mesh_assets": 499,
     "initial_contacts": 0,
-    "mass_kg": 2.449557064911428
+    "mass_kg": 2.3463978276796578
   },
   "kinematics": {
     "passed": 18,
@@ -66,13 +66,13 @@
       "mode": "stand",
       "voltage": 12.0,
       "duration_s": 10,
-      "max_tracking_error_after_2s_deg": 0.6974693907636982,
-      "peak_motor_torque_before_friction_Nm": 0.3374722148009406,
-      "max_joint_speed_rad_s": 0.0988178675629062,
+      "max_tracking_error_after_2s_deg": 0.6877242788351211,
+      "peak_motor_torque_before_friction_Nm": 0.33274706349684474,
+      "max_joint_speed_rad_s": 0.0994043441396166,
       "final_base_xyz_m": [
-        -6.75684810972691e-08,
-        -5.472410571222618e-09,
-        0.09366135290060042
+        1.3179559925278004e-07,
+        5.355139727641461e-08,
+        0.09368296411813798
       ],
       "final_contacts": 6
     },
@@ -81,13 +81,13 @@
       "mode": "stand",
       "voltage": 11.1,
       "duration_s": 10,
-      "max_tracking_error_after_2s_deg": 0.7478452238984469,
-      "peak_motor_torque_before_friction_Nm": 0.33473624656463374,
-      "max_joint_speed_rad_s": 0.09893760430968082,
+      "max_tracking_error_after_2s_deg": 0.737932441581615,
+      "peak_motor_torque_before_friction_Nm": 0.33028813673246915,
+      "max_joint_speed_rad_s": 0.09952419338419104,
       "final_base_xyz_m": [
-        -7.778697529489524e-08,
-        -4.364113419837797e-09,
-        0.09355701980665015
+        1.4455231207940733e-07,
+        5.9364039813657146e-08,
+        0.09357870306561611
       ],
       "final_contacts": 6
     },
@@ -96,13 +96,13 @@
       "mode": "stand",
       "voltage": 12.6,
       "duration_s": 10,
-      "max_tracking_error_after_2s_deg": 0.6672852396958956,
-      "peak_motor_torque_before_friction_Nm": 0.3389951958753921,
-      "max_joint_speed_rad_s": 0.09873807740739188,
+      "max_tracking_error_after_2s_deg": 0.657673886922837,
+      "peak_motor_torque_before_friction_Nm": 0.3341032238899252,
+      "max_joint_speed_rad_s": 0.09932447889107691,
       "final_base_xyz_m": [
-        -6.213381835842622e-08,
-        -5.7108846658487444e-09,
-        0.0937242300553184
+        1.2408236452709562e-07,
+        5.029648448584208e-08,
+        0.09374570131631754
       ],
       "final_contacts": 6
     },
@@ -111,13 +111,13 @@
       "mode": "sweep",
       "voltage": 12.0,
       "duration_s": 12,
-      "max_tracking_error_after_2s_deg": 0.7448543599429112,
-      "peak_motor_torque_before_friction_Nm": 0.21504483024037543,
-      "max_joint_speed_rad_s": 0.16547923325556374,
+      "max_tracking_error_after_2s_deg": 0.7078115276395511,
+      "peak_motor_torque_before_friction_Nm": 0.1970402682775517,
+      "max_joint_speed_rad_s": 0.16545614885103457,
       "final_base_xyz_m": [
         0.0,
         0.0,
-        0.27715873972
+        0.2771587397
       ],
       "final_contacts": 0
     }

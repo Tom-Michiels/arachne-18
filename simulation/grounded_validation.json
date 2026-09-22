@@ -6,8 +6,8 @@
   "min_contacts_after_2s": 6,
   "max_contacts_after_2s": 6,
   "body_height_range_m": [
-    0.08584484890810881,
-    0.10105856154927755
+    0.08585441898979082,
+    0.1010581340021555
   ],
   "solver_warnings": [
     0,

@@ -1,0 +1,32 @@
+[
+  {
+    "interface": "coxa driven",
+    "samples": 192,
+    "missing": []
+  },
+  {
+    "interface": "coxa dummy",
+    "samples": 192,
+    "missing": []
+  },
+  {
+    "interface": "hip dummy",
+    "samples": 192,
+    "missing": []
+  },
+  {
+    "interface": "hip driven",
+    "samples": 192,
+    "missing": []
+  },
+  {
+    "interface": "knee dummy",
+    "samples": 192,
+    "missing": []
+  },
+  {
+    "interface": "knee driven",
+    "samples": 192,
+    "missing": []
+  }
+]

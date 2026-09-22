@@ -1,0 +1,13 @@
+{
+  "assumptions_mm": {
+    "plug_x": [
+      -21,
+      -10.5
+    ],
+    "plug_width_total": 20.5,
+    "plug_exterior_projection": 12.5,
+    "dummy_horn_outer_span": 36.5
+  },
+  "positions": 594,
+  "collisions": []
+}

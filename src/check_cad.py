@@ -14,8 +14,9 @@ for o in meta:
 def bbox_overlap(a,b):
     return all(getattr(a,k+'max')>getattr(b,k+'min')+.01 and getattr(b,k+'max')>getattr(a,k+'min')+.01 for k in 'xyz')
 inter=[]
-for i,a in enumerate(meta):
-    for b in meta[i+1:]:
+structural=[o for o in meta if o['kind'] not in ('fastener','insert','nut')]
+for i,a in enumerate(structural):
+    for b in structural[i+1:]:
         if not bbox_overlap(a['bb'],b['bb']):continue
         vol=a['shape'].intersect(b['shape']).Volume()
         if vol>.05:

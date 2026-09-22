@@ -58,7 +58,7 @@ See [grounded validation](../simulation/grounded_validation.json) and [animation
 |---|---|
 | `arachne.xml` | Floating base, ground plane, foot contacts |
 | `arachne_fixed.xml` | Raised static base for joint tests |
-| `meshes/` | 155 visual CAD meshes, in metres and in each link's local frame |
+| `meshes/` | 499 visual CAD meshes, including positioned hardware, in metres and link-local frames |
 | `joint_map.json` | Servo IDs, names, parent/child links, axes and limits |
 | `mass_properties.json` | Link mass, centre of mass, inertia and assumptions |
 | `simulate.py` | BAM initialization, target delay, integration, reset and viewer |
@@ -72,17 +72,21 @@ These meshes are **not the print STLs**. Print meshes were rotated onto the bed 
 
 ## Coordinates and joint targets
 
-The MJCF uses **m, kg, s, rad, N and Nm**. Nineteen rigid links collect the 155 solids into one body and three moving links per leg. Fastened parts have no separate dynamic degree of freedom.
+The MJCF uses **m, kg, s, rad, N and Nm**. Nineteen rigid links collect the 499 positioned solids into one body and three moving links per leg. Screws, inserts and horns are assigned to their rigid link; they add no degrees of freedom.
 
 `q = 0` is the CAD neutral pose: the hip geometry is already inclined +15° and the knee is −80° relative to the femur. Joint values are offsets from that pose.
 
 | Joint | Servo IDs | Range relative to neutral | Neutral geometry |
 |---|---|---|---|
-| `L1_yaw` … `L6_yaw` | 1, 4, 7, 10, 13, 16 | −20° to +20° | Radial coxa |
-| `L1_hip` … `L6_hip` | 2, 5, 8, 11, 14, 17 | −15° to +15° | +15° above horizontal |
-| `L1_knee` … `L6_knee` | 3, 6, 9, 12, 15, 18 | −15° to +15° | −80° relative to femur |
+| `L1_yaw`, `L4_yaw` | 1, 10 | −64° to +35° | Radial coxa |
+| `L2_yaw`, `L5_yaw` | 4, 13 | −35° to +35° | Radial coxa |
+| `L3_yaw`, `L6_yaw` | 7, 16 | −35° to +64° | Radial coxa |
+| `L1_hip` … `L6_hip` | 2, 5, 8, 11, 14, 17 | −35° to +15° | +15° above horizontal; absolute range −20° to +30° |
+| `L1_knee` … `L6_knee` | 3, 6, 9, 12, 15, 18 | −15° to +80° | −80° relative to femur; absolute range −95° to 0° |
 
 Leg azimuths are 45°, 90°, 135°, 225°, 270° and 315°. Yaw axes are +Z. Hip and knee axes are `[sin(azimuth), -cos(azimuth), 0]` in the neutral world frame; positive hip motion lifts the leg. See the JSON map for exact origins. Real servo encoder centres and directions still require hardware calibration.
+
+The wider numeric joint ranges allow a *coordinated* front/rear reach. From the neutral pose, smoothly interpolate L1/L6 yaw to −58.3°/+58.3°, both hip offsets to −35°, and both knee offsets to +80°. L3/L4 mirror the yaw signs. In the CAD, the TPU toes touch at the end of a nine-pose interpolated path while the hard parts stay separate. This is a reach test, not a walking gait or a proof that arbitrary target combinations inside the numeric limits are safe. At neutral hip/knee angles, turning both front legs inward to 64° causes knee-fork collisions.
 
 ## Write a controller
 
@@ -107,11 +111,11 @@ Each `step()` checks the target shape, clamps joint limits, applies the inherite
 
 **Do not write target angles into `data.ctrl`.** The XML actuators are torque motors. BAM fills `data.ctrl` with motor torques; it is not a MuJoCo position-actuator interface. Opening the XML in a generic viewer gives the mechanism and geometry but does not load the BAM controller.
 
-A gait controller can generate the 18 target angles passed to `Robot.step()`. Use the joint map for inverse kinematics and respect the current limits. Full multi-leg collision and stability studies remain future work.
+A gait controller can generate the 18 target angles passed to `Robot.step()`. Use the joint map for inverse kinematics and a coordinated self-collision constraint in addition to the per-axis limits. Full multi-leg collision and stability studies remain future work.
 
 ## Mass and contact assumptions
 
-The estimated total mass is **2.4496 kg**. Servo mass is 55 g each. Printed parts use an effective density of 700 kg/m³ and TPU 1000 kg/m³; the battery is assumed to weigh 190 g and the controller 45 g. Wiring and hardware are added as lumped mass. Replace those values with slicer estimates and measurements for load studies.
+The estimated total mass is **2.3934 kg**. Servo mass is 55 g each. Printed parts use an effective density of 700 kg/m³ and TPU 1000 kg/m³; the battery is assumed to weigh 190 g and the controller 45 g. Modeled steel screws and brass inserts use 7800 and 8500 kg/m³; 50 g of body wiring remains lumped. Replace those values with slicer estimates and measurements for load studies.
 
 CAD volume integrals supply centres of mass and inertia, scaled to these masses and combined with the parallel-axis theorem. Servo, battery and controller mass distributions are approximate.
 

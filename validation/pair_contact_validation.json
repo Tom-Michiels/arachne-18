@@ -1,0 +1,230 @@
+[
+  {
+    "pair": [
+      1,
+      6
+    ],
+    "fraction": 0.0,
+    "yaw_deg": 0.0,
+    "hip_deg": 15.0,
+    "knee_relative_deg": -80.0,
+    "foot_contact": [],
+    "hard_intersections": []
+  },
+  {
+    "pair": [
+      1,
+      6
+    ],
+    "fraction": 0.125,
+    "yaw_deg": 7.287,
+    "hip_deg": 10.625,
+    "knee_relative_deg": -70.0,
+    "foot_contact": [],
+    "hard_intersections": []
+  },
+  {
+    "pair": [
+      1,
+      6
+    ],
+    "fraction": 0.25,
+    "yaw_deg": 14.575,
+    "hip_deg": 6.25,
+    "knee_relative_deg": -60.0,
+    "foot_contact": [],
+    "hard_intersections": []
+  },
+  {
+    "pair": [
+      1,
+      6
+    ],
+    "fraction": 0.375,
+    "yaw_deg": 21.862,
+    "hip_deg": 1.875,
+    "knee_relative_deg": -50.0,
+    "foot_contact": [],
+    "hard_intersections": []
+  },
+  {
+    "pair": [
+      1,
+      6
+    ],
+    "fraction": 0.5,
+    "yaw_deg": 29.15,
+    "hip_deg": -2.5,
+    "knee_relative_deg": -40.0,
+    "foot_contact": [],
+    "hard_intersections": []
+  },
+  {
+    "pair": [
+      1,
+      6
+    ],
+    "fraction": 0.625,
+    "yaw_deg": 36.438,
+    "hip_deg": -6.875,
+    "knee_relative_deg": -30.0,
+    "foot_contact": [],
+    "hard_intersections": []
+  },
+  {
+    "pair": [
+      1,
+      6
+    ],
+    "fraction": 0.75,
+    "yaw_deg": 43.725,
+    "hip_deg": -11.25,
+    "knee_relative_deg": -20.0,
+    "foot_contact": [],
+    "hard_intersections": []
+  },
+  {
+    "pair": [
+      1,
+      6
+    ],
+    "fraction": 0.875,
+    "yaw_deg": 51.012,
+    "hip_deg": -15.625,
+    "knee_relative_deg": -10.0,
+    "foot_contact": [],
+    "hard_intersections": []
+  },
+  {
+    "pair": [
+      1,
+      6
+    ],
+    "fraction": 1.0,
+    "yaw_deg": 58.3,
+    "hip_deg": -20.0,
+    "knee_relative_deg": 0.0,
+    "foot_contact": [
+      [
+        "L1_foot",
+        "L6_foot",
+        6.15
+      ]
+    ],
+    "hard_intersections": []
+  },
+  {
+    "pair": [
+      3,
+      4
+    ],
+    "fraction": 0.0,
+    "yaw_deg": 0.0,
+    "hip_deg": 15.0,
+    "knee_relative_deg": -80.0,
+    "foot_contact": [],
+    "hard_intersections": []
+  },
+  {
+    "pair": [
+      3,
+      4
+    ],
+    "fraction": 0.125,
+    "yaw_deg": 7.287,
+    "hip_deg": 10.625,
+    "knee_relative_deg": -70.0,
+    "foot_contact": [],
+    "hard_intersections": []
+  },
+  {
+    "pair": [
+      3,
+      4
+    ],
+    "fraction": 0.25,
+    "yaw_deg": 14.575,
+    "hip_deg": 6.25,
+    "knee_relative_deg": -60.0,
+    "foot_contact": [],
+    "hard_intersections": []
+  },
+  {
+    "pair": [
+      3,
+      4
+    ],
+    "fraction": 0.375,
+    "yaw_deg": 21.862,
+    "hip_deg": 1.875,
+    "knee_relative_deg": -50.0,
+    "foot_contact": [],
+    "hard_intersections": []
+  },
+  {
+    "pair": [
+      3,
+      4
+    ],
+    "fraction": 0.5,
+    "yaw_deg": 29.15,
+    "hip_deg": -2.5,
+    "knee_relative_deg": -40.0,
+    "foot_contact": [],
+    "hard_intersections": []
+  },
+  {
+    "pair": [
+      3,
+      4
+    ],
+    "fraction": 0.625,
+    "yaw_deg": 36.438,
+    "hip_deg": -6.875,
+    "knee_relative_deg": -30.0,
+    "foot_contact": [],
+    "hard_intersections": []
+  },
+  {
+    "pair": [
+      3,
+      4
+    ],
+    "fraction": 0.75,
+    "yaw_deg": 43.725,
+    "hip_deg": -11.25,
+    "knee_relative_deg": -20.0,
+    "foot_contact": [],
+    "hard_intersections": []
+  },
+  {
+    "pair": [
+      3,
+      4
+    ],
+    "fraction": 0.875,
+    "yaw_deg": 51.012,
+    "hip_deg": -15.625,
+    "knee_relative_deg": -10.0,
+    "foot_contact": [],
+    "hard_intersections": []
+  },
+  {
+    "pair": [
+      3,
+      4
+    ],
+    "fraction": 1.0,
+    "yaw_deg": 58.3,
+    "hip_deg": -20.0,
+    "knee_relative_deg": 0.0,
+    "foot_contact": [
+      [
+        "L3_foot",
+        "L4_foot",
+        6.15
+      ]
+    ],
+    "hard_intersections": []
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "screw_count": 262,
+  "insert_count": 112,
+  "nut_count": 6,
+  "insert_hole_d_mm": 4.0,
+  "insert_length_mm": 5.7,
+  "screwdriver_radius_mm": 2.0,
+  "screwdriver_service_condition": "Remove dorsal shell except when fitting its four screws",
+  "screw_print_intersections": [],
+  "blocked_straight_driver_paths": []
+}

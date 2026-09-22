@@ -12,6 +12,6 @@ for path in sorted(a.stl_dir.glob('*.stl')):
  components=len(mesh.split(only_watertight=False))
  report[path.name]=dict(watertight=bool(mesh.is_watertight),components=components,extents_mm=mesh.extents.tolist(),min_z_mm=float(mesh.bounds[0,2]))
  assert mesh.is_watertight and components==1 and abs(mesh.bounds[0,2])<.001,path.name
-assert len(report)==17,'Expected 17 print meshes'
+assert len(report)==14,'Expected 14 print meshes'
 a.output.write_text(json.dumps(report,indent=2))
-print('PASS: 17 watertight single-component print STLs, each on Z=0')
+print('PASS: 14 watertight single-component print STLs, each on Z=0')

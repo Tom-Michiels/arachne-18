@@ -5,6 +5,7 @@ OUT=BASE.parent/'build'
 OUT.mkdir(exist_ok=True)
 CACHE=OUT/'.cad_cache'
 meta=json.loads((CACHE/'placed.json').read_text())
+params=json.loads((OUT/'parameters.json').read_text())
 items=[]
 for o in meta:
     if o['kind'] not in ('printed','servo'):continue
@@ -13,13 +14,17 @@ for o in meta:
 def overlaps(a,b):
     return all(getattr(a,k+'max')>getattr(b,k+'min')+.01 and getattr(b,k+'max')>getattr(a,k+'min')+.01 for k in 'xyz')
 rows=[]
-for leg,angle in [(1,45),(2,90)]:
-    t=math.radians(angle); root=(86*math.cos(t),86*math.sin(t),0)
-    hip=(root[0]+50*math.cos(t),root[1]+50*math.sin(t),0)
-    knee=(hip[0]+78*math.cos(math.radians(15))*math.cos(t),hip[1]+78*math.cos(math.radians(15))*math.sin(t),78*math.sin(math.radians(15)))
+for leg,angle,yaws in [(1,45,[-64,-35,0,35]),
+                       (2,90,[-35,0,35]),
+                       (3,135,[-35,0,35,64])]:
+    t=math.radians(angle); root=(params['anchor_rx']*math.cos(t),params['anchor_ry']*math.sin(t),0)
+    hip=(root[0]+params['coxa']*math.cos(t),root[1]+params['coxa']*math.sin(t),0)
+    knee=(hip[0]+params['femur']*math.cos(math.radians(params['femur_up_deg']))*math.cos(t),
+          hip[1]+params['femur']*math.cos(math.radians(params['femur_up_deg']))*math.sin(t),
+          params['femur']*math.sin(math.radians(params['femur_up_deg'])))
     axis=(-math.sin(t),math.cos(t),0)
     def turn(s,p,a): return s.rotate(p,tuple(p[i]+axis[i] for i in range(3)),a)
-    for yaw,pitch,flex in itertools.product([-20,0,20],[0,15,30],[-95,-80,-65]):
+    for yaw,pitch,flex in itertools.product(yaws,[0,15,30],[-95,-80,-65]):
         parts=[]
         for o in items:
             s=o['shape']; g=o['group']; moving=g and g.startswith(f'L{leg}_')

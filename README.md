@@ -24,15 +24,16 @@ The repository contains editable solid geometry, print-ready meshes, the CadQuer
 |---|---|
 | Actuators | 18 × Feetech STS3215 **12 V**, three per leg |
 | Mechanism | Six yaw–hip–knee chains; 18 revolute joints |
-| Chassis footprint | Approximately 188 × 181 mm |
+| Chassis footprint | Approximately 188 × 150 mm, with swept leg-root reliefs |
 | Neutral overall envelope | Approximately 374 × 514 × 214 mm |
 | Link dimensions | Coxa 50 mm; femur 78 mm; tibia approximately 110 mm |
 | Battery space | **115 × 40 × 35 mm**, excluding protruding plugs |
 | Power | 3S pack: 11.1 V nominal, 12.6 V fully charged |
 | Controller space | **90 × 60 × 18 mm**, on a slotted 108 × 75 mm plate |
-| Printed components | 17 unique files; 99 robot pieces, plus a fit gauge |
-| Simulation | 19 rigid links, 18 motors, 155 visual meshes |
-| Estimated model mass | 2.450 kg, including assumed battery and hardware |
+| Printed components | 14 unique files; 63 robot pieces, plus a direct-horn fit gauge |
+| Hardware in CAD | 262 DIN 7380 M3 screws, 112 ruthex-style inserts, 6 foot locknuts |
+| Simulation | 19 rigid links, 18 motors, 499 visual meshes |
+| Estimated model mass | 2.346 kg, including assumed battery and hardware |
 
 ## Studio portrait
 
@@ -44,9 +45,21 @@ The repository contains editable solid geometry, print-ready meshes, the CadQuer
 |---|---|
 | ![CAD view with the removable shell hidden](assets/cad-internals.png) | ![Top view of the actual CAD geometry](assets/cad-top.png) |
 
-The battery is restrained with two straps. The controller has its own removable deck above it. The shell lifts off after removing four accessible screws. Flat cheek plates, removable servo clamps, and separate horn shims make individual legs serviceable.
+The battery is restrained with two straps. The controller has its own removable deck above it. The shell lifts off after removing four accessible screws. The horns seat directly against equally spaced 5.25 mm printed cheeks; no loose shims or one-sided spacer webs are used. Swept local openings on the dummy side clear the two servo plugs without shifting the leg off the servo centerline.
+
+The mechanical revision uses the owner's **36.5 mm measured outside-to-outside horn span**, with a 36.9 mm inside cheek span, a 7.2 mm shaft-access opening, and 4.0 mm insert bores for ruthex RX-M3x5.7. The outside horn screws are recessed DIN 7380 **M3 × 6**; the other assembly screws and inserts are individual CAD parts. Print the [fit gauge](print/stl/14_direct_horn_fit_gauge.stl) and trial-fit one real servo and both plugs before producing all six legs.
+
+![Orthographic top view of one leg from the actual CAD, showing equally spaced coxa, femur and tibia cheeks](assets/cad-leg-top.png)
+
+*One-leg orthographic CAD view. The joint cheeks share the same ±23.7 mm outside planes; only the cable relief on the dummy side differs. The paired femur cheeks flare equally at the knee.*
 
 **Horn placement:** the metal horn sits on the **inside** of the printed cheek, against the servo. The outside has four screw heads and a central access hole. Do not mount a metal disc on the outside of the bracket.
+
+![Knee detail from CAD showing all four horn screws supported by the printed tibia eye](assets/cad-horn-detail.png)
+
+The knee detail is generated from the corrected CAD. A bearing-support check samples material beneath all four horn screw heads on each side of the coxa, femur and tibia.
+
+The front and rear pairs can bring their TPU toes together with a **coordinated** yaw, hip and knee motion. Turning two bent legs inward independently can make their knee forks collide; the [joint guide](docs/simulation.md) gives the checked reach pose and its limits.
 
 ## Simulate it
 
@@ -81,7 +94,7 @@ On Linux and Windows, use `python` for the viewer. On Windows, activate the envi
 ## Build it
 
 1. Print the **fit gauge** and one servo clamp. Check a real servo and both supplied horns.
-2. Measure the installed horn-to-horn width and choose the shims.
+2. Check the measured 36.5 mm horn span, the 2.5/2.0 mm horn thicknesses, the dummy-side plugs, and the shaft clearance against the gauge.
 3. Print the structural parts, fit inserts, and build one complete leg.
 4. Assemble the six legs, dorsal compartment, electronics, and cable loops.
 5. Calibrate servo IDs, encoder offsets, and directions before applying motion.
@@ -93,7 +106,7 @@ Start with the [build guide](docs/build-guide.md), [print BOM](print/print_bom.c
 | Path | Contents |
 |---|---|
 | [`cad/`](cad) | Complete assembly STEP, unique-part STEP layout, individual STEP parts, dimensions and native-name mapping |
-| [`print/stl/`](print/stl) | 17 printable parts in bed-oriented poses |
+| [`print/stl/`](print/stl) | 14 printable parts in bed-oriented poses |
 | [`simulation/`](simulation) | MJCF, BAM parameters, runtime, tests, joint map and local-frame meshes |
 | [`src/`](src) | CadQuery builder, CAD checks, MuJoCo exporter and rendering source |
 | [`docs/`](docs) | Build, simulation, actuator model, Onshape and development guides |
@@ -103,9 +116,9 @@ Start with the [build guide](docs/build-guide.md), [print BOM](print/print_bom.c
 
 ## Validation and project status
 
-The supplied geometry has **17/17 valid single-solid print parts**, **17/17 watertight single-component STLs**, and no detected neutral-pose CAD overlap above 0.05 mm³. Fifty-four sampled configurations of representative legs were checked for interference. MuJoCo tests cover topology, all 18 joint axes, inertia, reset reproducibility, standing at three voltages, and a raised-base joint sweep. See [validation details](docs/validation.md) and the machine-readable reports.
+The supplied geometry has **14/14 valid single-solid print parts**, **14/14 watertight single-component STLs**, a 1,152-point horn-bearing support check and a CAD check of 262 screw placements and screwdriver routes. Ninety-nine representative leg poses, an 18-pose paired-toe reach path, and 594 nominal connector/straight-exit positions were checked for hard-part interference. MuJoCo tests cover topology, all 18 joint axes, inertia, reset reproducibility, standing at three voltages, and a raised-base joint sweep. See [validation details](docs/validation.md) and the machine-readable reports.
 
-This is a **digitally checked prototype**. Physical fit, fatigue, loads, cable clearance through a full gait, and payload have not been validated. The runtime includes standing, a grounded body-height exercise and a bench joint sweep; a walking controller is a next development step. The Onshape mating state is recorded separately in [the Onshape guide](docs/onshape.md).
+This is a **digitally checked prototype**. The cable sweep uses an estimated plug envelope based on the owner's servo photograph; physical plug fit, flexible cable routing, fatigue, loads and payload still require a one-leg prototype. The runtime includes standing, a grounded body-height exercise and a bench joint sweep; a walking controller is a next development step. The Onshape mating state is recorded separately in [the Onshape guide](docs/onshape.md).
 
 ## Sources and attribution
 

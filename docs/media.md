@@ -9,11 +9,13 @@
 | `assets/cad-overview.png` | Direct VTK render of the exported CAD meshes |
 | `assets/cad-internals.png` | Same geometry, with the shell hidden; blue and amber blocks are reserved controller/battery envelopes |
 | `assets/cad-top.png` | Direct CAD top view |
+| `assets/cad-leg-top.png` | Orthographic top review of one leg from the CAD BREP solids |
+| `assets/cad-horn-detail.png` | CAD detail showing a complete, four-screw-supported knee eye |
 | `assets/cad-service.png` | Direct CAD render with the shell translated upward to show access |
 | `assets/mujoco-preview.png` | Actual MuJoCo grounded body-height exercise after settling |
 | `assets/mujoco-grounded.gif` | Actual BAM-driven floating-base body-height exercise; all six feet stay in contact with the floor |
 
-The presentation artwork is illustrative. Hardware detail, lighting, material texture and room arrangement may differ from the CAD or eventual build. The technical renders, model files and build guide define the mechanical design. The purchased fasteners are specified in the BOM and omitted from the main 155-solid CAD export. Metal horns are inside the cheeks; outside faces show individual DIN 7380 / ISO 7380-1 screw heads.
+The presentation artwork is illustrative. Hardware detail, lighting, material texture and room arrangement may differ from the CAD or eventual build. The technical renders, model files and build guide define the mechanical design. The revised 499-solid CAD export contains positioned screws, inserts and foot locknuts. Metal horns are inside the cheeks; outside faces show individual recessed DIN 7380 / ISO 7380-1 screw heads. The final CAD has no loose horn shims and reserves clearance for two dummy-side plugs per servo.
 
 The workbench photograph was provided by the project owner for this composite. The original photo is not redistributed here. All generated artwork was produced with the **built-in image-generation tool** using reference-image editing; no external image API or local generation CLI was used.
 
@@ -42,6 +44,8 @@ The cinematic workbench result was replaced after owner feedback. Use the origin
 ```sh
 # In the CadQuery/VTK environment
 python src/render_gallery.py
+python src/render_leg_top.py
+python src/render_horn_detail.py
 
 # In the simulation environment, with Pillow installed
 python -m pip install Pillow==12.3.0

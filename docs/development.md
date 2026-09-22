@@ -13,11 +13,13 @@ python -m pip install -r src/requirements-cad.txt
 python src/build_cad.py
 python src/check_cad.py
 python src/check_motion.py
+python src/check_pair_contact.py
+python src/check_cables.py
 ```
 
-The builder writes into ignored `build/`, including STEP files, bed-oriented STLs, a print BOM and `.cad_cache/` BREP solids. The checks use that cache. `check_cad.py` checks neutral solid interference and creates technical renders. `check_motion.py` checks the 54 sampled representative-leg configurations. Run `python src/check_print_meshes.py --stl-dir build/STL --output build/stl_validation.json` to verify regenerated STLs before replacing release assets. Release results are in `validation/stl_validation.json`.
+The builder writes into ignored `build/`, including STEP files, bed-oriented STLs, a print BOM and `.cad_cache/` BREP solids. It also checks 262 screw placements, 112 insert placements, local driver passages and 1,152 horn-bearing samples. `check_cad.py` checks neutral structural interference and creates technical renders. `check_motion.py` checks 99 sampled representative-leg configurations; `check_pair_contact.py` checks the coordinated front/rear toe-reach path. `check_cables.py` sweeps a nominal two-plug envelope over the moving dummy-side cheeks. Run `python src/check_print_meshes.py --stl-dir build/STL --output build/stl_validation.json` before replacing release assets. Release reports are in `validation/`.
 
-`src/render_gallery.py` regenerates the four README CAD images directly from the simulation meshes. It needs VTK, supplied by the CAD environment, and writes into `assets/`.
+`src/render_gallery.py` regenerates the four full-robot CAD images directly from the simulation meshes. `src/render_leg_top.py` renders a close orthographic view of a single leg, and `src/render_horn_detail.py` shows the supported knee horn screws, both from the BREP cache. These renderers need VTK from the CAD environment and write into `assets/`.
 
 ## MuJoCo export
 
@@ -25,7 +27,7 @@ The builder writes into ignored `build/`, including STEP files, bed-oriented STL
 python src/export_mujoco.py --cad-cache build/.cad_cache --output simulation
 ```
 
-The exporter writes 155 link-local mesh assets, two MJCF files, the joint map, CAD instance metadata and mass properties. It preserves the runtime scripts and actuator parameter files. CAD inputs use mm; MJCF and mesh outputs use metres.
+The exporter writes 499 link-local mesh assets, two MJCF files, the joint map, CAD instance metadata and mass properties. It preserves the runtime scripts and actuator parameter files. CAD inputs use mm; MJCF and mesh outputs use metres.
 
 Joint origins, collision proxy dimensions and mass assumptions in the exporter are specific to this design. Keep them synchronized with CAD changes. The motion checker also contains fixed reference dimensions and must be updated when the mechanism changes.
 
@@ -41,7 +43,7 @@ Review generated changes before copying `build/` STEP/STL outputs into `cad/` an
 
 ## Names and Onshape identity
 
-Repository part names, filenames and documentation are English. The original native Onshape import used earlier internal part labels. `cad/onshape_name_map.json` maps English instance labels back to those native identifiers; Onshape instance IDs in the mate plan remain stable. These identifiers are retained for traceability, not as user-facing instructions.
+Repository part names, filenames and documentation are English. The original native Onshape import used earlier internal part labels. `cad/onshape_name_map.json` maps the original English instance labels back to those native connector identifiers; the revised imported part names are English. These identifiers are retained for native-mate traceability, not as user-facing instructions.
 
 The Git repository deliberately excludes virtual environments, BREP caches, temporary downloads, session logs and credentials. No API key is needed to run the local simulation or rebuild the CAD.
 

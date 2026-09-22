@@ -121,6 +121,358 @@
     "file": "10.brep"
   },
   {
+    "name": "BODY_deck_M3x8_-68_-18",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "11.brep"
+  },
+  {
+    "name": "BODY_deck_RXM3x5p7_-68_-18",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "12.brep"
+  },
+  {
+    "name": "BODY_deck_M3x8_-68_18",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "13.brep"
+  },
+  {
+    "name": "BODY_deck_RXM3x5p7_-68_18",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "14.brep"
+  },
+  {
+    "name": "BODY_deck_M3x8_68_-18",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "15.brep"
+  },
+  {
+    "name": "BODY_deck_RXM3x5p7_68_-18",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "16.brep"
+  },
+  {
+    "name": "BODY_deck_M3x8_68_18",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "17.brep"
+  },
+  {
+    "name": "BODY_deck_RXM3x5p7_68_18",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "18.brep"
+  },
+  {
+    "name": "BODY_tray_M3x8_-32_-30",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "19.brep"
+  },
+  {
+    "name": "BODY_tray_RXM3x5p7_-32_-30",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "20.brep"
+  },
+  {
+    "name": "BODY_tray_M3x8_-32_30",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "21.brep"
+  },
+  {
+    "name": "BODY_tray_RXM3x5p7_-32_30",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "22.brep"
+  },
+  {
+    "name": "BODY_tray_M3x8_32_-30",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "23.brep"
+  },
+  {
+    "name": "BODY_tray_RXM3x5p7_32_-30",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "24.brep"
+  },
+  {
+    "name": "BODY_tray_M3x8_32_30",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "25.brep"
+  },
+  {
+    "name": "BODY_tray_RXM3x5p7_32_30",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "26.brep"
+  },
+  {
+    "name": "BODY_controller_M3x8_-48_-31",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "27.brep"
+  },
+  {
+    "name": "BODY_controller_RXM3x5p7_-48_-31",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "28.brep"
+  },
+  {
+    "name": "BODY_controller_M3x8_-48_31",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "29.brep"
+  },
+  {
+    "name": "BODY_controller_RXM3x5p7_-48_31",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "30.brep"
+  },
+  {
+    "name": "BODY_controller_M3x8_48_-31",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "31.brep"
+  },
+  {
+    "name": "BODY_controller_RXM3x5p7_48_-31",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "32.brep"
+  },
+  {
+    "name": "BODY_controller_M3x8_48_31",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "33.brep"
+  },
+  {
+    "name": "BODY_controller_RXM3x5p7_48_31",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "34.brep"
+  },
+  {
+    "name": "BODY_shell_M3x8_-40_-42",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "35.brep"
+  },
+  {
+    "name": "BODY_shell_RXM3x5p7_-40_-42",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "36.brep"
+  },
+  {
+    "name": "BODY_shell_M3x8_-40_42",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "37.brep"
+  },
+  {
+    "name": "BODY_shell_RXM3x5p7_-40_42",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "38.brep"
+  },
+  {
+    "name": "BODY_shell_M3x8_40_-42",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "39.brep"
+  },
+  {
+    "name": "BODY_shell_RXM3x5p7_40_-42",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "40.brep"
+  },
+  {
+    "name": "BODY_shell_M3x8_40_42",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "41.brep"
+  },
+  {
+    "name": "BODY_shell_RXM3x5p7_40_42",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "42.brep"
+  },
+  {
     "name": "L1_S01_YAW_STS3215",
     "kind": "servo",
     "group": "BODY",
@@ -129,7 +481,7 @@
       0.2,
       0.22
     ],
-    "file": "11.brep"
+    "file": "43.brep"
   },
   {
     "name": "L1_yaw_clamp",
@@ -140,7 +492,7 @@
       0.43,
       0.42
     ],
-    "file": "12.brep"
+    "file": "44.brep"
   },
   {
     "name": "L1_coxa",
@@ -151,7 +503,7 @@
       0.43,
       0.42
     ],
-    "file": "13.brep"
+    "file": "45.brep"
   },
   {
     "name": "L1_coxa_bottom",
@@ -162,7 +514,7 @@
       0.43,
       0.42
     ],
-    "file": "14.brep"
+    "file": "46.brep"
   },
   {
     "name": "L1_S02_HIP_STS3215",
@@ -173,7 +525,7 @@
       0.2,
       0.22
     ],
-    "file": "15.brep"
+    "file": "47.brep"
   },
   {
     "name": "L1_hip_clamp",
@@ -184,7 +536,7 @@
       0.43,
       0.42
     ],
-    "file": "16.brep"
+    "file": "48.brep"
   },
   {
     "name": "L1_femur",
@@ -195,7 +547,7 @@
       0.43,
       0.42
     ],
-    "file": "17.brep"
+    "file": "49.brep"
   },
   {
     "name": "L1_femur_side_plate",
@@ -206,7 +558,7 @@
       0.43,
       0.42
     ],
-    "file": "18.brep"
+    "file": "50.brep"
   },
   {
     "name": "L1_S03_KNEE_STS3215",
@@ -217,7 +569,7 @@
       0.2,
       0.22
     ],
-    "file": "19.brep"
+    "file": "51.brep"
   },
   {
     "name": "L1_knee_clamp",
@@ -228,7 +580,7 @@
       0.43,
       0.42
     ],
-    "file": "20.brep"
+    "file": "52.brep"
   },
   {
     "name": "L1_tibia",
@@ -239,7 +591,7 @@
       0.43,
       0.42
     ],
-    "file": "21.brep"
+    "file": "53.brep"
   },
   {
     "name": "L1_foot",
@@ -250,7 +602,7 @@
       0.12,
       0.13
     ],
-    "file": "22.brep"
+    "file": "54.brep"
   },
   {
     "name": "L1_yaw_disc_plus",
@@ -261,7 +613,7 @@
       0.7,
       0.73
     ],
-    "file": "23.brep"
+    "file": "55.brep"
   },
   {
     "name": "L1_yaw_disc_min",
@@ -272,29 +624,95 @@
       0.7,
       0.73
     ],
-    "file": "24.brep"
+    "file": "56.brep"
   },
   {
-    "name": "L1_yaw_shim_plus",
-    "kind": "printed",
+    "name": "L1_yaw_plus_horn_M3x6_1",
+    "kind": "fastener",
     "group": "L1_COXA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "25.brep"
+    "file": "57.brep"
   },
   {
-    "name": "L1_yaw_shim_min",
-    "kind": "printed",
+    "name": "L1_yaw_plus_horn_M3x6_2",
+    "kind": "fastener",
     "group": "L1_COXA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "26.brep"
+    "file": "58.brep"
+  },
+  {
+    "name": "L1_yaw_plus_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L1_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "59.brep"
+  },
+  {
+    "name": "L1_yaw_plus_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L1_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "60.brep"
+  },
+  {
+    "name": "L1_yaw_min_horn_M3x6_1",
+    "kind": "fastener",
+    "group": "L1_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "61.brep"
+  },
+  {
+    "name": "L1_yaw_min_horn_M3x6_2",
+    "kind": "fastener",
+    "group": "L1_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "62.brep"
+  },
+  {
+    "name": "L1_yaw_min_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L1_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "63.brep"
+  },
+  {
+    "name": "L1_yaw_min_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L1_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "64.brep"
   },
   {
     "name": "L1_hip_disc_plus",
@@ -305,7 +723,7 @@
       0.7,
       0.73
     ],
-    "file": "27.brep"
+    "file": "65.brep"
   },
   {
     "name": "L1_hip_disc_min",
@@ -316,29 +734,95 @@
       0.7,
       0.73
     ],
-    "file": "28.brep"
+    "file": "66.brep"
   },
   {
-    "name": "L1_hip_shim_plus",
-    "kind": "printed",
+    "name": "L1_hip_plus_horn_M3x6_1",
+    "kind": "fastener",
     "group": "L1_FEMUR",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "29.brep"
+    "file": "67.brep"
   },
   {
-    "name": "L1_hip_shim_min",
-    "kind": "printed",
+    "name": "L1_hip_plus_horn_M3x6_2",
+    "kind": "fastener",
     "group": "L1_FEMUR",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "30.brep"
+    "file": "68.brep"
+  },
+  {
+    "name": "L1_hip_plus_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L1_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "69.brep"
+  },
+  {
+    "name": "L1_hip_plus_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L1_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "70.brep"
+  },
+  {
+    "name": "L1_hip_min_horn_M3x6_1",
+    "kind": "fastener",
+    "group": "L1_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "71.brep"
+  },
+  {
+    "name": "L1_hip_min_horn_M3x6_2",
+    "kind": "fastener",
+    "group": "L1_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "72.brep"
+  },
+  {
+    "name": "L1_hip_min_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L1_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "73.brep"
+  },
+  {
+    "name": "L1_hip_min_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L1_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "74.brep"
   },
   {
     "name": "L1_knee_disc_plus",
@@ -349,7 +833,7 @@
       0.7,
       0.73
     ],
-    "file": "31.brep"
+    "file": "75.brep"
   },
   {
     "name": "L1_knee_disc_min",
@@ -360,29 +844,469 @@
       0.7,
       0.73
     ],
-    "file": "32.brep"
+    "file": "76.brep"
   },
   {
-    "name": "L1_knee_shim_plus",
-    "kind": "printed",
+    "name": "L1_knee_plus_horn_M3x6_1",
+    "kind": "fastener",
     "group": "L1_TIBIA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "33.brep"
+    "file": "77.brep"
   },
   {
-    "name": "L1_knee_shim_min",
-    "kind": "printed",
+    "name": "L1_knee_plus_horn_M3x6_2",
+    "kind": "fastener",
     "group": "L1_TIBIA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "34.brep"
+    "file": "78.brep"
+  },
+  {
+    "name": "L1_knee_plus_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L1_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "79.brep"
+  },
+  {
+    "name": "L1_knee_plus_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L1_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "80.brep"
+  },
+  {
+    "name": "L1_knee_min_horn_M3x6_1",
+    "kind": "fastener",
+    "group": "L1_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "81.brep"
+  },
+  {
+    "name": "L1_knee_min_horn_M3x6_2",
+    "kind": "fastener",
+    "group": "L1_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "82.brep"
+  },
+  {
+    "name": "L1_knee_min_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L1_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "83.brep"
+  },
+  {
+    "name": "L1_knee_min_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L1_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "84.brep"
+  },
+  {
+    "name": "L1_yaw_clamp_M3x8_-31_-18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "85.brep"
+  },
+  {
+    "name": "L1_yaw_clamp_RXM3x5p7_-31_-18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "86.brep"
+  },
+  {
+    "name": "L1_yaw_clamp_M3x8_-31_18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "87.brep"
+  },
+  {
+    "name": "L1_yaw_clamp_RXM3x5p7_-31_18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "88.brep"
+  },
+  {
+    "name": "L1_yaw_clamp_M3x8_-20_-18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "89.brep"
+  },
+  {
+    "name": "L1_yaw_clamp_RXM3x5p7_-20_-18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "90.brep"
+  },
+  {
+    "name": "L1_yaw_clamp_M3x8_-20_18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "91.brep"
+  },
+  {
+    "name": "L1_yaw_clamp_RXM3x5p7_-20_18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "92.brep"
+  },
+  {
+    "name": "L1_hip_clamp_M3x8_-31_-18.3",
+    "kind": "fastener",
+    "group": "L1_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "93.brep"
+  },
+  {
+    "name": "L1_hip_clamp_RXM3x5p7_-31_-18.3",
+    "kind": "insert",
+    "group": "L1_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "94.brep"
+  },
+  {
+    "name": "L1_hip_clamp_M3x8_-31_18.3",
+    "kind": "fastener",
+    "group": "L1_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "95.brep"
+  },
+  {
+    "name": "L1_hip_clamp_RXM3x5p7_-31_18.3",
+    "kind": "insert",
+    "group": "L1_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "96.brep"
+  },
+  {
+    "name": "L1_hip_clamp_M3x8_-20_-18.3",
+    "kind": "fastener",
+    "group": "L1_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "97.brep"
+  },
+  {
+    "name": "L1_hip_clamp_RXM3x5p7_-20_-18.3",
+    "kind": "insert",
+    "group": "L1_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "98.brep"
+  },
+  {
+    "name": "L1_hip_clamp_M3x8_-20_18.3",
+    "kind": "fastener",
+    "group": "L1_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "99.brep"
+  },
+  {
+    "name": "L1_hip_clamp_RXM3x5p7_-20_18.3",
+    "kind": "insert",
+    "group": "L1_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "100.brep"
+  },
+  {
+    "name": "L1_knee_clamp_M3x8_-31_-18.3",
+    "kind": "fastener",
+    "group": "L1_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "101.brep"
+  },
+  {
+    "name": "L1_knee_clamp_RXM3x5p7_-31_-18.3",
+    "kind": "insert",
+    "group": "L1_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "102.brep"
+  },
+  {
+    "name": "L1_knee_clamp_M3x8_-31_18.3",
+    "kind": "fastener",
+    "group": "L1_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "103.brep"
+  },
+  {
+    "name": "L1_knee_clamp_RXM3x5p7_-31_18.3",
+    "kind": "insert",
+    "group": "L1_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "104.brep"
+  },
+  {
+    "name": "L1_knee_clamp_M3x8_-20_-18.3",
+    "kind": "fastener",
+    "group": "L1_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "105.brep"
+  },
+  {
+    "name": "L1_knee_clamp_RXM3x5p7_-20_-18.3",
+    "kind": "insert",
+    "group": "L1_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "106.brep"
+  },
+  {
+    "name": "L1_knee_clamp_M3x8_-20_18.3",
+    "kind": "fastener",
+    "group": "L1_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "107.brep"
+  },
+  {
+    "name": "L1_knee_clamp_RXM3x5p7_-20_18.3",
+    "kind": "insert",
+    "group": "L1_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "108.brep"
+  },
+  {
+    "name": "L1_coxa_join_M3x10_-7",
+    "kind": "fastener",
+    "group": "L1_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "109.brep"
+  },
+  {
+    "name": "L1_coxa_join_RXM3x5p7_-7",
+    "kind": "insert",
+    "group": "L1_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "110.brep"
+  },
+  {
+    "name": "L1_coxa_join_M3x10_7",
+    "kind": "fastener",
+    "group": "L1_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "111.brep"
+  },
+  {
+    "name": "L1_coxa_join_RXM3x5p7_7",
+    "kind": "insert",
+    "group": "L1_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "112.brep"
+  },
+  {
+    "name": "L1_femur_join_M3x10_10",
+    "kind": "fastener",
+    "group": "L1_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "113.brep"
+  },
+  {
+    "name": "L1_femur_join_RXM3x5p7_10",
+    "kind": "insert",
+    "group": "L1_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "114.brep"
+  },
+  {
+    "name": "L1_femur_join_M3x10_-8",
+    "kind": "fastener",
+    "group": "L1_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "115.brep"
+  },
+  {
+    "name": "L1_femur_join_RXM3x5p7_-8",
+    "kind": "insert",
+    "group": "L1_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "116.brep"
+  },
+  {
+    "name": "L1_foot_M3x25",
+    "kind": "fastener",
+    "group": "L1_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "117.brep"
+  },
+  {
+    "name": "L1_foot_M3_locknut",
+    "kind": "nut",
+    "group": "L1_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "118.brep"
   },
   {
     "name": "L2_S04_YAW_STS3215",
@@ -393,7 +1317,7 @@
       0.2,
       0.22
     ],
-    "file": "35.brep"
+    "file": "119.brep"
   },
   {
     "name": "L2_yaw_clamp",
@@ -404,7 +1328,7 @@
       0.43,
       0.42
     ],
-    "file": "36.brep"
+    "file": "120.brep"
   },
   {
     "name": "L2_coxa",
@@ -415,7 +1339,7 @@
       0.43,
       0.42
     ],
-    "file": "37.brep"
+    "file": "121.brep"
   },
   {
     "name": "L2_coxa_bottom",
@@ -426,7 +1350,7 @@
       0.43,
       0.42
     ],
-    "file": "38.brep"
+    "file": "122.brep"
   },
   {
     "name": "L2_S05_HIP_STS3215",
@@ -437,7 +1361,7 @@
       0.2,
       0.22
     ],
-    "file": "39.brep"
+    "file": "123.brep"
   },
   {
     "name": "L2_hip_clamp",
@@ -448,7 +1372,7 @@
       0.43,
       0.42
     ],
-    "file": "40.brep"
+    "file": "124.brep"
   },
   {
     "name": "L2_femur",
@@ -459,7 +1383,7 @@
       0.43,
       0.42
     ],
-    "file": "41.brep"
+    "file": "125.brep"
   },
   {
     "name": "L2_femur_side_plate",
@@ -470,7 +1394,7 @@
       0.43,
       0.42
     ],
-    "file": "42.brep"
+    "file": "126.brep"
   },
   {
     "name": "L2_S06_KNEE_STS3215",
@@ -481,7 +1405,7 @@
       0.2,
       0.22
     ],
-    "file": "43.brep"
+    "file": "127.brep"
   },
   {
     "name": "L2_knee_clamp",
@@ -492,7 +1416,7 @@
       0.43,
       0.42
     ],
-    "file": "44.brep"
+    "file": "128.brep"
   },
   {
     "name": "L2_tibia",
@@ -503,7 +1427,7 @@
       0.43,
       0.42
     ],
-    "file": "45.brep"
+    "file": "129.brep"
   },
   {
     "name": "L2_foot",
@@ -514,7 +1438,7 @@
       0.12,
       0.13
     ],
-    "file": "46.brep"
+    "file": "130.brep"
   },
   {
     "name": "L2_yaw_disc_plus",
@@ -525,7 +1449,7 @@
       0.7,
       0.73
     ],
-    "file": "47.brep"
+    "file": "131.brep"
   },
   {
     "name": "L2_yaw_disc_min",
@@ -536,29 +1460,95 @@
       0.7,
       0.73
     ],
-    "file": "48.brep"
+    "file": "132.brep"
   },
   {
-    "name": "L2_yaw_shim_plus",
-    "kind": "printed",
+    "name": "L2_yaw_plus_horn_M3x6_1",
+    "kind": "fastener",
     "group": "L2_COXA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "49.brep"
+    "file": "133.brep"
   },
   {
-    "name": "L2_yaw_shim_min",
-    "kind": "printed",
+    "name": "L2_yaw_plus_horn_M3x6_2",
+    "kind": "fastener",
     "group": "L2_COXA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "50.brep"
+    "file": "134.brep"
+  },
+  {
+    "name": "L2_yaw_plus_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L2_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "135.brep"
+  },
+  {
+    "name": "L2_yaw_plus_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L2_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "136.brep"
+  },
+  {
+    "name": "L2_yaw_min_horn_M3x6_1",
+    "kind": "fastener",
+    "group": "L2_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "137.brep"
+  },
+  {
+    "name": "L2_yaw_min_horn_M3x6_2",
+    "kind": "fastener",
+    "group": "L2_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "138.brep"
+  },
+  {
+    "name": "L2_yaw_min_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L2_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "139.brep"
+  },
+  {
+    "name": "L2_yaw_min_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L2_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "140.brep"
   },
   {
     "name": "L2_hip_disc_plus",
@@ -569,7 +1559,7 @@
       0.7,
       0.73
     ],
-    "file": "51.brep"
+    "file": "141.brep"
   },
   {
     "name": "L2_hip_disc_min",
@@ -580,29 +1570,95 @@
       0.7,
       0.73
     ],
-    "file": "52.brep"
+    "file": "142.brep"
   },
   {
-    "name": "L2_hip_shim_plus",
-    "kind": "printed",
+    "name": "L2_hip_plus_horn_M3x6_1",
+    "kind": "fastener",
     "group": "L2_FEMUR",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "53.brep"
+    "file": "143.brep"
   },
   {
-    "name": "L2_hip_shim_min",
-    "kind": "printed",
+    "name": "L2_hip_plus_horn_M3x6_2",
+    "kind": "fastener",
     "group": "L2_FEMUR",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "54.brep"
+    "file": "144.brep"
+  },
+  {
+    "name": "L2_hip_plus_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L2_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "145.brep"
+  },
+  {
+    "name": "L2_hip_plus_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L2_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "146.brep"
+  },
+  {
+    "name": "L2_hip_min_horn_M3x6_1",
+    "kind": "fastener",
+    "group": "L2_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "147.brep"
+  },
+  {
+    "name": "L2_hip_min_horn_M3x6_2",
+    "kind": "fastener",
+    "group": "L2_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "148.brep"
+  },
+  {
+    "name": "L2_hip_min_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L2_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "149.brep"
+  },
+  {
+    "name": "L2_hip_min_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L2_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "150.brep"
   },
   {
     "name": "L2_knee_disc_plus",
@@ -613,7 +1669,7 @@
       0.7,
       0.73
     ],
-    "file": "55.brep"
+    "file": "151.brep"
   },
   {
     "name": "L2_knee_disc_min",
@@ -624,29 +1680,469 @@
       0.7,
       0.73
     ],
-    "file": "56.brep"
+    "file": "152.brep"
   },
   {
-    "name": "L2_knee_shim_plus",
-    "kind": "printed",
+    "name": "L2_knee_plus_horn_M3x6_1",
+    "kind": "fastener",
     "group": "L2_TIBIA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "57.brep"
+    "file": "153.brep"
   },
   {
-    "name": "L2_knee_shim_min",
-    "kind": "printed",
+    "name": "L2_knee_plus_horn_M3x6_2",
+    "kind": "fastener",
     "group": "L2_TIBIA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "58.brep"
+    "file": "154.brep"
+  },
+  {
+    "name": "L2_knee_plus_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L2_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "155.brep"
+  },
+  {
+    "name": "L2_knee_plus_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L2_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "156.brep"
+  },
+  {
+    "name": "L2_knee_min_horn_M3x6_1",
+    "kind": "fastener",
+    "group": "L2_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "157.brep"
+  },
+  {
+    "name": "L2_knee_min_horn_M3x6_2",
+    "kind": "fastener",
+    "group": "L2_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "158.brep"
+  },
+  {
+    "name": "L2_knee_min_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L2_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "159.brep"
+  },
+  {
+    "name": "L2_knee_min_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L2_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "160.brep"
+  },
+  {
+    "name": "L2_yaw_clamp_M3x8_-31_-18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "161.brep"
+  },
+  {
+    "name": "L2_yaw_clamp_RXM3x5p7_-31_-18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "162.brep"
+  },
+  {
+    "name": "L2_yaw_clamp_M3x8_-31_18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "163.brep"
+  },
+  {
+    "name": "L2_yaw_clamp_RXM3x5p7_-31_18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "164.brep"
+  },
+  {
+    "name": "L2_yaw_clamp_M3x8_-20_-18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "165.brep"
+  },
+  {
+    "name": "L2_yaw_clamp_RXM3x5p7_-20_-18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "166.brep"
+  },
+  {
+    "name": "L2_yaw_clamp_M3x8_-20_18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "167.brep"
+  },
+  {
+    "name": "L2_yaw_clamp_RXM3x5p7_-20_18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "168.brep"
+  },
+  {
+    "name": "L2_hip_clamp_M3x8_-31_-18.3",
+    "kind": "fastener",
+    "group": "L2_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "169.brep"
+  },
+  {
+    "name": "L2_hip_clamp_RXM3x5p7_-31_-18.3",
+    "kind": "insert",
+    "group": "L2_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "170.brep"
+  },
+  {
+    "name": "L2_hip_clamp_M3x8_-31_18.3",
+    "kind": "fastener",
+    "group": "L2_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "171.brep"
+  },
+  {
+    "name": "L2_hip_clamp_RXM3x5p7_-31_18.3",
+    "kind": "insert",
+    "group": "L2_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "172.brep"
+  },
+  {
+    "name": "L2_hip_clamp_M3x8_-20_-18.3",
+    "kind": "fastener",
+    "group": "L2_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "173.brep"
+  },
+  {
+    "name": "L2_hip_clamp_RXM3x5p7_-20_-18.3",
+    "kind": "insert",
+    "group": "L2_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "174.brep"
+  },
+  {
+    "name": "L2_hip_clamp_M3x8_-20_18.3",
+    "kind": "fastener",
+    "group": "L2_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "175.brep"
+  },
+  {
+    "name": "L2_hip_clamp_RXM3x5p7_-20_18.3",
+    "kind": "insert",
+    "group": "L2_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "176.brep"
+  },
+  {
+    "name": "L2_knee_clamp_M3x8_-31_-18.3",
+    "kind": "fastener",
+    "group": "L2_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "177.brep"
+  },
+  {
+    "name": "L2_knee_clamp_RXM3x5p7_-31_-18.3",
+    "kind": "insert",
+    "group": "L2_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "178.brep"
+  },
+  {
+    "name": "L2_knee_clamp_M3x8_-31_18.3",
+    "kind": "fastener",
+    "group": "L2_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "179.brep"
+  },
+  {
+    "name": "L2_knee_clamp_RXM3x5p7_-31_18.3",
+    "kind": "insert",
+    "group": "L2_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "180.brep"
+  },
+  {
+    "name": "L2_knee_clamp_M3x8_-20_-18.3",
+    "kind": "fastener",
+    "group": "L2_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "181.brep"
+  },
+  {
+    "name": "L2_knee_clamp_RXM3x5p7_-20_-18.3",
+    "kind": "insert",
+    "group": "L2_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "182.brep"
+  },
+  {
+    "name": "L2_knee_clamp_M3x8_-20_18.3",
+    "kind": "fastener",
+    "group": "L2_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "183.brep"
+  },
+  {
+    "name": "L2_knee_clamp_RXM3x5p7_-20_18.3",
+    "kind": "insert",
+    "group": "L2_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "184.brep"
+  },
+  {
+    "name": "L2_coxa_join_M3x10_-7",
+    "kind": "fastener",
+    "group": "L2_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "185.brep"
+  },
+  {
+    "name": "L2_coxa_join_RXM3x5p7_-7",
+    "kind": "insert",
+    "group": "L2_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "186.brep"
+  },
+  {
+    "name": "L2_coxa_join_M3x10_7",
+    "kind": "fastener",
+    "group": "L2_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "187.brep"
+  },
+  {
+    "name": "L2_coxa_join_RXM3x5p7_7",
+    "kind": "insert",
+    "group": "L2_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "188.brep"
+  },
+  {
+    "name": "L2_femur_join_M3x10_10",
+    "kind": "fastener",
+    "group": "L2_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "189.brep"
+  },
+  {
+    "name": "L2_femur_join_RXM3x5p7_10",
+    "kind": "insert",
+    "group": "L2_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "190.brep"
+  },
+  {
+    "name": "L2_femur_join_M3x10_-8",
+    "kind": "fastener",
+    "group": "L2_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "191.brep"
+  },
+  {
+    "name": "L2_femur_join_RXM3x5p7_-8",
+    "kind": "insert",
+    "group": "L2_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "192.brep"
+  },
+  {
+    "name": "L2_foot_M3x25",
+    "kind": "fastener",
+    "group": "L2_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "193.brep"
+  },
+  {
+    "name": "L2_foot_M3_locknut",
+    "kind": "nut",
+    "group": "L2_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "194.brep"
   },
   {
     "name": "L3_S07_YAW_STS3215",
@@ -657,7 +2153,7 @@
       0.2,
       0.22
     ],
-    "file": "59.brep"
+    "file": "195.brep"
   },
   {
     "name": "L3_yaw_clamp",
@@ -668,7 +2164,7 @@
       0.43,
       0.42
     ],
-    "file": "60.brep"
+    "file": "196.brep"
   },
   {
     "name": "L3_coxa",
@@ -679,7 +2175,7 @@
       0.43,
       0.42
     ],
-    "file": "61.brep"
+    "file": "197.brep"
   },
   {
     "name": "L3_coxa_bottom",
@@ -690,7 +2186,7 @@
       0.43,
       0.42
     ],
-    "file": "62.brep"
+    "file": "198.brep"
   },
   {
     "name": "L3_S08_HIP_STS3215",
@@ -701,7 +2197,7 @@
       0.2,
       0.22
     ],
-    "file": "63.brep"
+    "file": "199.brep"
   },
   {
     "name": "L3_hip_clamp",
@@ -712,7 +2208,7 @@
       0.43,
       0.42
     ],
-    "file": "64.brep"
+    "file": "200.brep"
   },
   {
     "name": "L3_femur",
@@ -723,7 +2219,7 @@
       0.43,
       0.42
     ],
-    "file": "65.brep"
+    "file": "201.brep"
   },
   {
     "name": "L3_femur_side_plate",
@@ -734,7 +2230,7 @@
       0.43,
       0.42
     ],
-    "file": "66.brep"
+    "file": "202.brep"
   },
   {
     "name": "L3_S09_KNEE_STS3215",
@@ -745,7 +2241,7 @@
       0.2,
       0.22
     ],
-    "file": "67.brep"
+    "file": "203.brep"
   },
   {
     "name": "L3_knee_clamp",
@@ -756,7 +2252,7 @@
       0.43,
       0.42
     ],
-    "file": "68.brep"
+    "file": "204.brep"
   },
   {
     "name": "L3_tibia",
@@ -767,7 +2263,7 @@
       0.43,
       0.42
     ],
-    "file": "69.brep"
+    "file": "205.brep"
   },
   {
     "name": "L3_foot",
@@ -778,7 +2274,7 @@
       0.12,
       0.13
     ],
-    "file": "70.brep"
+    "file": "206.brep"
   },
   {
     "name": "L3_yaw_disc_plus",
@@ -789,7 +2285,7 @@
       0.7,
       0.73
     ],
-    "file": "71.brep"
+    "file": "207.brep"
   },
   {
     "name": "L3_yaw_disc_min",
@@ -800,29 +2296,95 @@
       0.7,
       0.73
     ],
-    "file": "72.brep"
+    "file": "208.brep"
   },
   {
-    "name": "L3_yaw_shim_plus",
-    "kind": "printed",
+    "name": "L3_yaw_plus_horn_M3x6_1",
+    "kind": "fastener",
     "group": "L3_COXA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "73.brep"
+    "file": "209.brep"
   },
   {
-    "name": "L3_yaw_shim_min",
-    "kind": "printed",
+    "name": "L3_yaw_plus_horn_M3x6_2",
+    "kind": "fastener",
     "group": "L3_COXA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "74.brep"
+    "file": "210.brep"
+  },
+  {
+    "name": "L3_yaw_plus_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L3_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "211.brep"
+  },
+  {
+    "name": "L3_yaw_plus_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L3_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "212.brep"
+  },
+  {
+    "name": "L3_yaw_min_horn_M3x6_1",
+    "kind": "fastener",
+    "group": "L3_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "213.brep"
+  },
+  {
+    "name": "L3_yaw_min_horn_M3x6_2",
+    "kind": "fastener",
+    "group": "L3_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "214.brep"
+  },
+  {
+    "name": "L3_yaw_min_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L3_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "215.brep"
+  },
+  {
+    "name": "L3_yaw_min_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L3_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "216.brep"
   },
   {
     "name": "L3_hip_disc_plus",
@@ -833,7 +2395,7 @@
       0.7,
       0.73
     ],
-    "file": "75.brep"
+    "file": "217.brep"
   },
   {
     "name": "L3_hip_disc_min",
@@ -844,29 +2406,95 @@
       0.7,
       0.73
     ],
-    "file": "76.brep"
+    "file": "218.brep"
   },
   {
-    "name": "L3_hip_shim_plus",
-    "kind": "printed",
+    "name": "L3_hip_plus_horn_M3x6_1",
+    "kind": "fastener",
     "group": "L3_FEMUR",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "77.brep"
+    "file": "219.brep"
   },
   {
-    "name": "L3_hip_shim_min",
-    "kind": "printed",
+    "name": "L3_hip_plus_horn_M3x6_2",
+    "kind": "fastener",
     "group": "L3_FEMUR",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "78.brep"
+    "file": "220.brep"
+  },
+  {
+    "name": "L3_hip_plus_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L3_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "221.brep"
+  },
+  {
+    "name": "L3_hip_plus_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L3_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "222.brep"
+  },
+  {
+    "name": "L3_hip_min_horn_M3x6_1",
+    "kind": "fastener",
+    "group": "L3_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "223.brep"
+  },
+  {
+    "name": "L3_hip_min_horn_M3x6_2",
+    "kind": "fastener",
+    "group": "L3_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "224.brep"
+  },
+  {
+    "name": "L3_hip_min_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L3_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "225.brep"
+  },
+  {
+    "name": "L3_hip_min_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L3_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "226.brep"
   },
   {
     "name": "L3_knee_disc_plus",
@@ -877,7 +2505,7 @@
       0.7,
       0.73
     ],
-    "file": "79.brep"
+    "file": "227.brep"
   },
   {
     "name": "L3_knee_disc_min",
@@ -888,29 +2516,469 @@
       0.7,
       0.73
     ],
-    "file": "80.brep"
+    "file": "228.brep"
   },
   {
-    "name": "L3_knee_shim_plus",
-    "kind": "printed",
+    "name": "L3_knee_plus_horn_M3x6_1",
+    "kind": "fastener",
     "group": "L3_TIBIA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "81.brep"
+    "file": "229.brep"
   },
   {
-    "name": "L3_knee_shim_min",
-    "kind": "printed",
+    "name": "L3_knee_plus_horn_M3x6_2",
+    "kind": "fastener",
     "group": "L3_TIBIA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "82.brep"
+    "file": "230.brep"
+  },
+  {
+    "name": "L3_knee_plus_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L3_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "231.brep"
+  },
+  {
+    "name": "L3_knee_plus_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L3_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "232.brep"
+  },
+  {
+    "name": "L3_knee_min_horn_M3x6_1",
+    "kind": "fastener",
+    "group": "L3_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "233.brep"
+  },
+  {
+    "name": "L3_knee_min_horn_M3x6_2",
+    "kind": "fastener",
+    "group": "L3_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "234.brep"
+  },
+  {
+    "name": "L3_knee_min_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L3_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "235.brep"
+  },
+  {
+    "name": "L3_knee_min_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L3_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "236.brep"
+  },
+  {
+    "name": "L3_yaw_clamp_M3x8_-31_-18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "237.brep"
+  },
+  {
+    "name": "L3_yaw_clamp_RXM3x5p7_-31_-18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "238.brep"
+  },
+  {
+    "name": "L3_yaw_clamp_M3x8_-31_18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "239.brep"
+  },
+  {
+    "name": "L3_yaw_clamp_RXM3x5p7_-31_18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "240.brep"
+  },
+  {
+    "name": "L3_yaw_clamp_M3x8_-20_-18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "241.brep"
+  },
+  {
+    "name": "L3_yaw_clamp_RXM3x5p7_-20_-18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "242.brep"
+  },
+  {
+    "name": "L3_yaw_clamp_M3x8_-20_18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "243.brep"
+  },
+  {
+    "name": "L3_yaw_clamp_RXM3x5p7_-20_18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "244.brep"
+  },
+  {
+    "name": "L3_hip_clamp_M3x8_-31_-18.3",
+    "kind": "fastener",
+    "group": "L3_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "245.brep"
+  },
+  {
+    "name": "L3_hip_clamp_RXM3x5p7_-31_-18.3",
+    "kind": "insert",
+    "group": "L3_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "246.brep"
+  },
+  {
+    "name": "L3_hip_clamp_M3x8_-31_18.3",
+    "kind": "fastener",
+    "group": "L3_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "247.brep"
+  },
+  {
+    "name": "L3_hip_clamp_RXM3x5p7_-31_18.3",
+    "kind": "insert",
+    "group": "L3_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "248.brep"
+  },
+  {
+    "name": "L3_hip_clamp_M3x8_-20_-18.3",
+    "kind": "fastener",
+    "group": "L3_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "249.brep"
+  },
+  {
+    "name": "L3_hip_clamp_RXM3x5p7_-20_-18.3",
+    "kind": "insert",
+    "group": "L3_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "250.brep"
+  },
+  {
+    "name": "L3_hip_clamp_M3x8_-20_18.3",
+    "kind": "fastener",
+    "group": "L3_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "251.brep"
+  },
+  {
+    "name": "L3_hip_clamp_RXM3x5p7_-20_18.3",
+    "kind": "insert",
+    "group": "L3_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "252.brep"
+  },
+  {
+    "name": "L3_knee_clamp_M3x8_-31_-18.3",
+    "kind": "fastener",
+    "group": "L3_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "253.brep"
+  },
+  {
+    "name": "L3_knee_clamp_RXM3x5p7_-31_-18.3",
+    "kind": "insert",
+    "group": "L3_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "254.brep"
+  },
+  {
+    "name": "L3_knee_clamp_M3x8_-31_18.3",
+    "kind": "fastener",
+    "group": "L3_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "255.brep"
+  },
+  {
+    "name": "L3_knee_clamp_RXM3x5p7_-31_18.3",
+    "kind": "insert",
+    "group": "L3_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "256.brep"
+  },
+  {
+    "name": "L3_knee_clamp_M3x8_-20_-18.3",
+    "kind": "fastener",
+    "group": "L3_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "257.brep"
+  },
+  {
+    "name": "L3_knee_clamp_RXM3x5p7_-20_-18.3",
+    "kind": "insert",
+    "group": "L3_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "258.brep"
+  },
+  {
+    "name": "L3_knee_clamp_M3x8_-20_18.3",
+    "kind": "fastener",
+    "group": "L3_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "259.brep"
+  },
+  {
+    "name": "L3_knee_clamp_RXM3x5p7_-20_18.3",
+    "kind": "insert",
+    "group": "L3_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "260.brep"
+  },
+  {
+    "name": "L3_coxa_join_M3x10_-7",
+    "kind": "fastener",
+    "group": "L3_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "261.brep"
+  },
+  {
+    "name": "L3_coxa_join_RXM3x5p7_-7",
+    "kind": "insert",
+    "group": "L3_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "262.brep"
+  },
+  {
+    "name": "L3_coxa_join_M3x10_7",
+    "kind": "fastener",
+    "group": "L3_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "263.brep"
+  },
+  {
+    "name": "L3_coxa_join_RXM3x5p7_7",
+    "kind": "insert",
+    "group": "L3_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "264.brep"
+  },
+  {
+    "name": "L3_femur_join_M3x10_10",
+    "kind": "fastener",
+    "group": "L3_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "265.brep"
+  },
+  {
+    "name": "L3_femur_join_RXM3x5p7_10",
+    "kind": "insert",
+    "group": "L3_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "266.brep"
+  },
+  {
+    "name": "L3_femur_join_M3x10_-8",
+    "kind": "fastener",
+    "group": "L3_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "267.brep"
+  },
+  {
+    "name": "L3_femur_join_RXM3x5p7_-8",
+    "kind": "insert",
+    "group": "L3_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "268.brep"
+  },
+  {
+    "name": "L3_foot_M3x25",
+    "kind": "fastener",
+    "group": "L3_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "269.brep"
+  },
+  {
+    "name": "L3_foot_M3_locknut",
+    "kind": "nut",
+    "group": "L3_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "270.brep"
   },
   {
     "name": "L4_S10_YAW_STS3215",
@@ -921,7 +2989,7 @@
       0.2,
       0.22
     ],
-    "file": "83.brep"
+    "file": "271.brep"
   },
   {
     "name": "L4_yaw_clamp",
@@ -932,7 +3000,7 @@
       0.43,
       0.42
     ],
-    "file": "84.brep"
+    "file": "272.brep"
   },
   {
     "name": "L4_coxa",
@@ -943,7 +3011,7 @@
       0.43,
       0.42
     ],
-    "file": "85.brep"
+    "file": "273.brep"
   },
   {
     "name": "L4_coxa_bottom",
@@ -954,7 +3022,7 @@
       0.43,
       0.42
     ],
-    "file": "86.brep"
+    "file": "274.brep"
   },
   {
     "name": "L4_S11_HIP_STS3215",
@@ -965,7 +3033,7 @@
       0.2,
       0.22
     ],
-    "file": "87.brep"
+    "file": "275.brep"
   },
   {
     "name": "L4_hip_clamp",
@@ -976,7 +3044,7 @@
       0.43,
       0.42
     ],
-    "file": "88.brep"
+    "file": "276.brep"
   },
   {
     "name": "L4_femur",
@@ -987,7 +3055,7 @@
       0.43,
       0.42
     ],
-    "file": "89.brep"
+    "file": "277.brep"
   },
   {
     "name": "L4_femur_side_plate",
@@ -998,7 +3066,7 @@
       0.43,
       0.42
     ],
-    "file": "90.brep"
+    "file": "278.brep"
   },
   {
     "name": "L4_S12_KNEE_STS3215",
@@ -1009,7 +3077,7 @@
       0.2,
       0.22
     ],
-    "file": "91.brep"
+    "file": "279.brep"
   },
   {
     "name": "L4_knee_clamp",
@@ -1020,7 +3088,7 @@
       0.43,
       0.42
     ],
-    "file": "92.brep"
+    "file": "280.brep"
   },
   {
     "name": "L4_tibia",
@@ -1031,7 +3099,7 @@
       0.43,
       0.42
     ],
-    "file": "93.brep"
+    "file": "281.brep"
   },
   {
     "name": "L4_foot",
@@ -1042,7 +3110,7 @@
       0.12,
       0.13
     ],
-    "file": "94.brep"
+    "file": "282.brep"
   },
   {
     "name": "L4_yaw_disc_plus",
@@ -1053,7 +3121,7 @@
       0.7,
       0.73
     ],
-    "file": "95.brep"
+    "file": "283.brep"
   },
   {
     "name": "L4_yaw_disc_min",
@@ -1064,29 +3132,95 @@
       0.7,
       0.73
     ],
-    "file": "96.brep"
+    "file": "284.brep"
   },
   {
-    "name": "L4_yaw_shim_plus",
-    "kind": "printed",
+    "name": "L4_yaw_plus_horn_M3x6_1",
+    "kind": "fastener",
     "group": "L4_COXA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "97.brep"
+    "file": "285.brep"
   },
   {
-    "name": "L4_yaw_shim_min",
-    "kind": "printed",
+    "name": "L4_yaw_plus_horn_M3x6_2",
+    "kind": "fastener",
     "group": "L4_COXA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "98.brep"
+    "file": "286.brep"
+  },
+  {
+    "name": "L4_yaw_plus_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L4_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "287.brep"
+  },
+  {
+    "name": "L4_yaw_plus_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L4_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "288.brep"
+  },
+  {
+    "name": "L4_yaw_min_horn_M3x6_1",
+    "kind": "fastener",
+    "group": "L4_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "289.brep"
+  },
+  {
+    "name": "L4_yaw_min_horn_M3x6_2",
+    "kind": "fastener",
+    "group": "L4_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "290.brep"
+  },
+  {
+    "name": "L4_yaw_min_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L4_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "291.brep"
+  },
+  {
+    "name": "L4_yaw_min_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L4_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "292.brep"
   },
   {
     "name": "L4_hip_disc_plus",
@@ -1097,7 +3231,7 @@
       0.7,
       0.73
     ],
-    "file": "99.brep"
+    "file": "293.brep"
   },
   {
     "name": "L4_hip_disc_min",
@@ -1108,29 +3242,95 @@
       0.7,
       0.73
     ],
-    "file": "100.brep"
+    "file": "294.brep"
   },
   {
-    "name": "L4_hip_shim_plus",
-    "kind": "printed",
+    "name": "L4_hip_plus_horn_M3x6_1",
+    "kind": "fastener",
     "group": "L4_FEMUR",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "101.brep"
+    "file": "295.brep"
   },
   {
-    "name": "L4_hip_shim_min",
-    "kind": "printed",
+    "name": "L4_hip_plus_horn_M3x6_2",
+    "kind": "fastener",
     "group": "L4_FEMUR",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "102.brep"
+    "file": "296.brep"
+  },
+  {
+    "name": "L4_hip_plus_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L4_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "297.brep"
+  },
+  {
+    "name": "L4_hip_plus_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L4_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "298.brep"
+  },
+  {
+    "name": "L4_hip_min_horn_M3x6_1",
+    "kind": "fastener",
+    "group": "L4_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "299.brep"
+  },
+  {
+    "name": "L4_hip_min_horn_M3x6_2",
+    "kind": "fastener",
+    "group": "L4_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "300.brep"
+  },
+  {
+    "name": "L4_hip_min_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L4_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "301.brep"
+  },
+  {
+    "name": "L4_hip_min_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L4_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "302.brep"
   },
   {
     "name": "L4_knee_disc_plus",
@@ -1141,7 +3341,7 @@
       0.7,
       0.73
     ],
-    "file": "103.brep"
+    "file": "303.brep"
   },
   {
     "name": "L4_knee_disc_min",
@@ -1152,29 +3352,469 @@
       0.7,
       0.73
     ],
-    "file": "104.brep"
+    "file": "304.brep"
   },
   {
-    "name": "L4_knee_shim_plus",
-    "kind": "printed",
+    "name": "L4_knee_plus_horn_M3x6_1",
+    "kind": "fastener",
     "group": "L4_TIBIA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "105.brep"
+    "file": "305.brep"
   },
   {
-    "name": "L4_knee_shim_min",
-    "kind": "printed",
+    "name": "L4_knee_plus_horn_M3x6_2",
+    "kind": "fastener",
     "group": "L4_TIBIA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "106.brep"
+    "file": "306.brep"
+  },
+  {
+    "name": "L4_knee_plus_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L4_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "307.brep"
+  },
+  {
+    "name": "L4_knee_plus_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L4_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "308.brep"
+  },
+  {
+    "name": "L4_knee_min_horn_M3x6_1",
+    "kind": "fastener",
+    "group": "L4_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "309.brep"
+  },
+  {
+    "name": "L4_knee_min_horn_M3x6_2",
+    "kind": "fastener",
+    "group": "L4_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "310.brep"
+  },
+  {
+    "name": "L4_knee_min_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L4_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "311.brep"
+  },
+  {
+    "name": "L4_knee_min_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L4_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "312.brep"
+  },
+  {
+    "name": "L4_yaw_clamp_M3x8_-31_-18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "313.brep"
+  },
+  {
+    "name": "L4_yaw_clamp_RXM3x5p7_-31_-18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "314.brep"
+  },
+  {
+    "name": "L4_yaw_clamp_M3x8_-31_18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "315.brep"
+  },
+  {
+    "name": "L4_yaw_clamp_RXM3x5p7_-31_18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "316.brep"
+  },
+  {
+    "name": "L4_yaw_clamp_M3x8_-20_-18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "317.brep"
+  },
+  {
+    "name": "L4_yaw_clamp_RXM3x5p7_-20_-18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "318.brep"
+  },
+  {
+    "name": "L4_yaw_clamp_M3x8_-20_18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "319.brep"
+  },
+  {
+    "name": "L4_yaw_clamp_RXM3x5p7_-20_18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "320.brep"
+  },
+  {
+    "name": "L4_hip_clamp_M3x8_-31_-18.3",
+    "kind": "fastener",
+    "group": "L4_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "321.brep"
+  },
+  {
+    "name": "L4_hip_clamp_RXM3x5p7_-31_-18.3",
+    "kind": "insert",
+    "group": "L4_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "322.brep"
+  },
+  {
+    "name": "L4_hip_clamp_M3x8_-31_18.3",
+    "kind": "fastener",
+    "group": "L4_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "323.brep"
+  },
+  {
+    "name": "L4_hip_clamp_RXM3x5p7_-31_18.3",
+    "kind": "insert",
+    "group": "L4_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "324.brep"
+  },
+  {
+    "name": "L4_hip_clamp_M3x8_-20_-18.3",
+    "kind": "fastener",
+    "group": "L4_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "325.brep"
+  },
+  {
+    "name": "L4_hip_clamp_RXM3x5p7_-20_-18.3",
+    "kind": "insert",
+    "group": "L4_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "326.brep"
+  },
+  {
+    "name": "L4_hip_clamp_M3x8_-20_18.3",
+    "kind": "fastener",
+    "group": "L4_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "327.brep"
+  },
+  {
+    "name": "L4_hip_clamp_RXM3x5p7_-20_18.3",
+    "kind": "insert",
+    "group": "L4_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "328.brep"
+  },
+  {
+    "name": "L4_knee_clamp_M3x8_-31_-18.3",
+    "kind": "fastener",
+    "group": "L4_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "329.brep"
+  },
+  {
+    "name": "L4_knee_clamp_RXM3x5p7_-31_-18.3",
+    "kind": "insert",
+    "group": "L4_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "330.brep"
+  },
+  {
+    "name": "L4_knee_clamp_M3x8_-31_18.3",
+    "kind": "fastener",
+    "group": "L4_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "331.brep"
+  },
+  {
+    "name": "L4_knee_clamp_RXM3x5p7_-31_18.3",
+    "kind": "insert",
+    "group": "L4_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "332.brep"
+  },
+  {
+    "name": "L4_knee_clamp_M3x8_-20_-18.3",
+    "kind": "fastener",
+    "group": "L4_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "333.brep"
+  },
+  {
+    "name": "L4_knee_clamp_RXM3x5p7_-20_-18.3",
+    "kind": "insert",
+    "group": "L4_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "334.brep"
+  },
+  {
+    "name": "L4_knee_clamp_M3x8_-20_18.3",
+    "kind": "fastener",
+    "group": "L4_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "335.brep"
+  },
+  {
+    "name": "L4_knee_clamp_RXM3x5p7_-20_18.3",
+    "kind": "insert",
+    "group": "L4_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "336.brep"
+  },
+  {
+    "name": "L4_coxa_join_M3x10_-7",
+    "kind": "fastener",
+    "group": "L4_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "337.brep"
+  },
+  {
+    "name": "L4_coxa_join_RXM3x5p7_-7",
+    "kind": "insert",
+    "group": "L4_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "338.brep"
+  },
+  {
+    "name": "L4_coxa_join_M3x10_7",
+    "kind": "fastener",
+    "group": "L4_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "339.brep"
+  },
+  {
+    "name": "L4_coxa_join_RXM3x5p7_7",
+    "kind": "insert",
+    "group": "L4_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "340.brep"
+  },
+  {
+    "name": "L4_femur_join_M3x10_10",
+    "kind": "fastener",
+    "group": "L4_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "341.brep"
+  },
+  {
+    "name": "L4_femur_join_RXM3x5p7_10",
+    "kind": "insert",
+    "group": "L4_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "342.brep"
+  },
+  {
+    "name": "L4_femur_join_M3x10_-8",
+    "kind": "fastener",
+    "group": "L4_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "343.brep"
+  },
+  {
+    "name": "L4_femur_join_RXM3x5p7_-8",
+    "kind": "insert",
+    "group": "L4_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "344.brep"
+  },
+  {
+    "name": "L4_foot_M3x25",
+    "kind": "fastener",
+    "group": "L4_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "345.brep"
+  },
+  {
+    "name": "L4_foot_M3_locknut",
+    "kind": "nut",
+    "group": "L4_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "346.brep"
   },
   {
     "name": "L5_S13_YAW_STS3215",
@@ -1185,7 +3825,7 @@
       0.2,
       0.22
     ],
-    "file": "107.brep"
+    "file": "347.brep"
   },
   {
     "name": "L5_yaw_clamp",
@@ -1196,7 +3836,7 @@
       0.43,
       0.42
     ],
-    "file": "108.brep"
+    "file": "348.brep"
   },
   {
     "name": "L5_coxa",
@@ -1207,7 +3847,7 @@
       0.43,
       0.42
     ],
-    "file": "109.brep"
+    "file": "349.brep"
   },
   {
     "name": "L5_coxa_bottom",
@@ -1218,7 +3858,7 @@
       0.43,
       0.42
     ],
-    "file": "110.brep"
+    "file": "350.brep"
   },
   {
     "name": "L5_S14_HIP_STS3215",
@@ -1229,7 +3869,7 @@
       0.2,
       0.22
     ],
-    "file": "111.brep"
+    "file": "351.brep"
   },
   {
     "name": "L5_hip_clamp",
@@ -1240,7 +3880,7 @@
       0.43,
       0.42
     ],
-    "file": "112.brep"
+    "file": "352.brep"
   },
   {
     "name": "L5_femur",
@@ -1251,7 +3891,7 @@
       0.43,
       0.42
     ],
-    "file": "113.brep"
+    "file": "353.brep"
   },
   {
     "name": "L5_femur_side_plate",
@@ -1262,7 +3902,7 @@
       0.43,
       0.42
     ],
-    "file": "114.brep"
+    "file": "354.brep"
   },
   {
     "name": "L5_S15_KNEE_STS3215",
@@ -1273,7 +3913,7 @@
       0.2,
       0.22
     ],
-    "file": "115.brep"
+    "file": "355.brep"
   },
   {
     "name": "L5_knee_clamp",
@@ -1284,7 +3924,7 @@
       0.43,
       0.42
     ],
-    "file": "116.brep"
+    "file": "356.brep"
   },
   {
     "name": "L5_tibia",
@@ -1295,7 +3935,7 @@
       0.43,
       0.42
     ],
-    "file": "117.brep"
+    "file": "357.brep"
   },
   {
     "name": "L5_foot",
@@ -1306,7 +3946,7 @@
       0.12,
       0.13
     ],
-    "file": "118.brep"
+    "file": "358.brep"
   },
   {
     "name": "L5_yaw_disc_plus",
@@ -1317,7 +3957,7 @@
       0.7,
       0.73
     ],
-    "file": "119.brep"
+    "file": "359.brep"
   },
   {
     "name": "L5_yaw_disc_min",
@@ -1328,29 +3968,95 @@
       0.7,
       0.73
     ],
-    "file": "120.brep"
+    "file": "360.brep"
   },
   {
-    "name": "L5_yaw_shim_plus",
-    "kind": "printed",
+    "name": "L5_yaw_plus_horn_M3x6_1",
+    "kind": "fastener",
     "group": "L5_COXA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "121.brep"
+    "file": "361.brep"
   },
   {
-    "name": "L5_yaw_shim_min",
-    "kind": "printed",
+    "name": "L5_yaw_plus_horn_M3x6_2",
+    "kind": "fastener",
     "group": "L5_COXA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "122.brep"
+    "file": "362.brep"
+  },
+  {
+    "name": "L5_yaw_plus_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L5_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "363.brep"
+  },
+  {
+    "name": "L5_yaw_plus_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L5_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "364.brep"
+  },
+  {
+    "name": "L5_yaw_min_horn_M3x6_1",
+    "kind": "fastener",
+    "group": "L5_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "365.brep"
+  },
+  {
+    "name": "L5_yaw_min_horn_M3x6_2",
+    "kind": "fastener",
+    "group": "L5_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "366.brep"
+  },
+  {
+    "name": "L5_yaw_min_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L5_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "367.brep"
+  },
+  {
+    "name": "L5_yaw_min_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L5_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "368.brep"
   },
   {
     "name": "L5_hip_disc_plus",
@@ -1361,7 +4067,7 @@
       0.7,
       0.73
     ],
-    "file": "123.brep"
+    "file": "369.brep"
   },
   {
     "name": "L5_hip_disc_min",
@@ -1372,29 +4078,95 @@
       0.7,
       0.73
     ],
-    "file": "124.brep"
+    "file": "370.brep"
   },
   {
-    "name": "L5_hip_shim_plus",
-    "kind": "printed",
+    "name": "L5_hip_plus_horn_M3x6_1",
+    "kind": "fastener",
     "group": "L5_FEMUR",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "125.brep"
+    "file": "371.brep"
   },
   {
-    "name": "L5_hip_shim_min",
-    "kind": "printed",
+    "name": "L5_hip_plus_horn_M3x6_2",
+    "kind": "fastener",
     "group": "L5_FEMUR",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "126.brep"
+    "file": "372.brep"
+  },
+  {
+    "name": "L5_hip_plus_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L5_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "373.brep"
+  },
+  {
+    "name": "L5_hip_plus_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L5_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "374.brep"
+  },
+  {
+    "name": "L5_hip_min_horn_M3x6_1",
+    "kind": "fastener",
+    "group": "L5_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "375.brep"
+  },
+  {
+    "name": "L5_hip_min_horn_M3x6_2",
+    "kind": "fastener",
+    "group": "L5_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "376.brep"
+  },
+  {
+    "name": "L5_hip_min_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L5_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "377.brep"
+  },
+  {
+    "name": "L5_hip_min_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L5_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "378.brep"
   },
   {
     "name": "L5_knee_disc_plus",
@@ -1405,7 +4177,7 @@
       0.7,
       0.73
     ],
-    "file": "127.brep"
+    "file": "379.brep"
   },
   {
     "name": "L5_knee_disc_min",
@@ -1416,29 +4188,469 @@
       0.7,
       0.73
     ],
-    "file": "128.brep"
+    "file": "380.brep"
   },
   {
-    "name": "L5_knee_shim_plus",
-    "kind": "printed",
+    "name": "L5_knee_plus_horn_M3x6_1",
+    "kind": "fastener",
     "group": "L5_TIBIA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "129.brep"
+    "file": "381.brep"
   },
   {
-    "name": "L5_knee_shim_min",
-    "kind": "printed",
+    "name": "L5_knee_plus_horn_M3x6_2",
+    "kind": "fastener",
     "group": "L5_TIBIA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "130.brep"
+    "file": "382.brep"
+  },
+  {
+    "name": "L5_knee_plus_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L5_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "383.brep"
+  },
+  {
+    "name": "L5_knee_plus_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L5_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "384.brep"
+  },
+  {
+    "name": "L5_knee_min_horn_M3x6_1",
+    "kind": "fastener",
+    "group": "L5_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "385.brep"
+  },
+  {
+    "name": "L5_knee_min_horn_M3x6_2",
+    "kind": "fastener",
+    "group": "L5_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "386.brep"
+  },
+  {
+    "name": "L5_knee_min_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L5_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "387.brep"
+  },
+  {
+    "name": "L5_knee_min_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L5_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "388.brep"
+  },
+  {
+    "name": "L5_yaw_clamp_M3x8_-31_-18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "389.brep"
+  },
+  {
+    "name": "L5_yaw_clamp_RXM3x5p7_-31_-18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "390.brep"
+  },
+  {
+    "name": "L5_yaw_clamp_M3x8_-31_18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "391.brep"
+  },
+  {
+    "name": "L5_yaw_clamp_RXM3x5p7_-31_18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "392.brep"
+  },
+  {
+    "name": "L5_yaw_clamp_M3x8_-20_-18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "393.brep"
+  },
+  {
+    "name": "L5_yaw_clamp_RXM3x5p7_-20_-18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "394.brep"
+  },
+  {
+    "name": "L5_yaw_clamp_M3x8_-20_18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "395.brep"
+  },
+  {
+    "name": "L5_yaw_clamp_RXM3x5p7_-20_18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "396.brep"
+  },
+  {
+    "name": "L5_hip_clamp_M3x8_-31_-18.3",
+    "kind": "fastener",
+    "group": "L5_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "397.brep"
+  },
+  {
+    "name": "L5_hip_clamp_RXM3x5p7_-31_-18.3",
+    "kind": "insert",
+    "group": "L5_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "398.brep"
+  },
+  {
+    "name": "L5_hip_clamp_M3x8_-31_18.3",
+    "kind": "fastener",
+    "group": "L5_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "399.brep"
+  },
+  {
+    "name": "L5_hip_clamp_RXM3x5p7_-31_18.3",
+    "kind": "insert",
+    "group": "L5_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "400.brep"
+  },
+  {
+    "name": "L5_hip_clamp_M3x8_-20_-18.3",
+    "kind": "fastener",
+    "group": "L5_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "401.brep"
+  },
+  {
+    "name": "L5_hip_clamp_RXM3x5p7_-20_-18.3",
+    "kind": "insert",
+    "group": "L5_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "402.brep"
+  },
+  {
+    "name": "L5_hip_clamp_M3x8_-20_18.3",
+    "kind": "fastener",
+    "group": "L5_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "403.brep"
+  },
+  {
+    "name": "L5_hip_clamp_RXM3x5p7_-20_18.3",
+    "kind": "insert",
+    "group": "L5_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "404.brep"
+  },
+  {
+    "name": "L5_knee_clamp_M3x8_-31_-18.3",
+    "kind": "fastener",
+    "group": "L5_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "405.brep"
+  },
+  {
+    "name": "L5_knee_clamp_RXM3x5p7_-31_-18.3",
+    "kind": "insert",
+    "group": "L5_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "406.brep"
+  },
+  {
+    "name": "L5_knee_clamp_M3x8_-31_18.3",
+    "kind": "fastener",
+    "group": "L5_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "407.brep"
+  },
+  {
+    "name": "L5_knee_clamp_RXM3x5p7_-31_18.3",
+    "kind": "insert",
+    "group": "L5_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "408.brep"
+  },
+  {
+    "name": "L5_knee_clamp_M3x8_-20_-18.3",
+    "kind": "fastener",
+    "group": "L5_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "409.brep"
+  },
+  {
+    "name": "L5_knee_clamp_RXM3x5p7_-20_-18.3",
+    "kind": "insert",
+    "group": "L5_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "410.brep"
+  },
+  {
+    "name": "L5_knee_clamp_M3x8_-20_18.3",
+    "kind": "fastener",
+    "group": "L5_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "411.brep"
+  },
+  {
+    "name": "L5_knee_clamp_RXM3x5p7_-20_18.3",
+    "kind": "insert",
+    "group": "L5_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "412.brep"
+  },
+  {
+    "name": "L5_coxa_join_M3x10_-7",
+    "kind": "fastener",
+    "group": "L5_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "413.brep"
+  },
+  {
+    "name": "L5_coxa_join_RXM3x5p7_-7",
+    "kind": "insert",
+    "group": "L5_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "414.brep"
+  },
+  {
+    "name": "L5_coxa_join_M3x10_7",
+    "kind": "fastener",
+    "group": "L5_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "415.brep"
+  },
+  {
+    "name": "L5_coxa_join_RXM3x5p7_7",
+    "kind": "insert",
+    "group": "L5_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "416.brep"
+  },
+  {
+    "name": "L5_femur_join_M3x10_10",
+    "kind": "fastener",
+    "group": "L5_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "417.brep"
+  },
+  {
+    "name": "L5_femur_join_RXM3x5p7_10",
+    "kind": "insert",
+    "group": "L5_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "418.brep"
+  },
+  {
+    "name": "L5_femur_join_M3x10_-8",
+    "kind": "fastener",
+    "group": "L5_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "419.brep"
+  },
+  {
+    "name": "L5_femur_join_RXM3x5p7_-8",
+    "kind": "insert",
+    "group": "L5_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "420.brep"
+  },
+  {
+    "name": "L5_foot_M3x25",
+    "kind": "fastener",
+    "group": "L5_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "421.brep"
+  },
+  {
+    "name": "L5_foot_M3_locknut",
+    "kind": "nut",
+    "group": "L5_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "422.brep"
   },
   {
     "name": "L6_S16_YAW_STS3215",
@@ -1449,7 +4661,7 @@
       0.2,
       0.22
     ],
-    "file": "131.brep"
+    "file": "423.brep"
   },
   {
     "name": "L6_yaw_clamp",
@@ -1460,7 +4672,7 @@
       0.43,
       0.42
     ],
-    "file": "132.brep"
+    "file": "424.brep"
   },
   {
     "name": "L6_coxa",
@@ -1471,7 +4683,7 @@
       0.43,
       0.42
     ],
-    "file": "133.brep"
+    "file": "425.brep"
   },
   {
     "name": "L6_coxa_bottom",
@@ -1482,7 +4694,7 @@
       0.43,
       0.42
     ],
-    "file": "134.brep"
+    "file": "426.brep"
   },
   {
     "name": "L6_S17_HIP_STS3215",
@@ -1493,7 +4705,7 @@
       0.2,
       0.22
     ],
-    "file": "135.brep"
+    "file": "427.brep"
   },
   {
     "name": "L6_hip_clamp",
@@ -1504,7 +4716,7 @@
       0.43,
       0.42
     ],
-    "file": "136.brep"
+    "file": "428.brep"
   },
   {
     "name": "L6_femur",
@@ -1515,7 +4727,7 @@
       0.43,
       0.42
     ],
-    "file": "137.brep"
+    "file": "429.brep"
   },
   {
     "name": "L6_femur_side_plate",
@@ -1526,7 +4738,7 @@
       0.43,
       0.42
     ],
-    "file": "138.brep"
+    "file": "430.brep"
   },
   {
     "name": "L6_S18_KNEE_STS3215",
@@ -1537,7 +4749,7 @@
       0.2,
       0.22
     ],
-    "file": "139.brep"
+    "file": "431.brep"
   },
   {
     "name": "L6_knee_clamp",
@@ -1548,7 +4760,7 @@
       0.43,
       0.42
     ],
-    "file": "140.brep"
+    "file": "432.brep"
   },
   {
     "name": "L6_tibia",
@@ -1559,7 +4771,7 @@
       0.43,
       0.42
     ],
-    "file": "141.brep"
+    "file": "433.brep"
   },
   {
     "name": "L6_foot",
@@ -1570,7 +4782,7 @@
       0.12,
       0.13
     ],
-    "file": "142.brep"
+    "file": "434.brep"
   },
   {
     "name": "L6_yaw_disc_plus",
@@ -1581,7 +4793,7 @@
       0.7,
       0.73
     ],
-    "file": "143.brep"
+    "file": "435.brep"
   },
   {
     "name": "L6_yaw_disc_min",
@@ -1592,29 +4804,95 @@
       0.7,
       0.73
     ],
-    "file": "144.brep"
+    "file": "436.brep"
   },
   {
-    "name": "L6_yaw_shim_plus",
-    "kind": "printed",
+    "name": "L6_yaw_plus_horn_M3x6_1",
+    "kind": "fastener",
     "group": "L6_COXA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "145.brep"
+    "file": "437.brep"
   },
   {
-    "name": "L6_yaw_shim_min",
-    "kind": "printed",
+    "name": "L6_yaw_plus_horn_M3x6_2",
+    "kind": "fastener",
     "group": "L6_COXA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "146.brep"
+    "file": "438.brep"
+  },
+  {
+    "name": "L6_yaw_plus_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L6_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "439.brep"
+  },
+  {
+    "name": "L6_yaw_plus_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L6_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "440.brep"
+  },
+  {
+    "name": "L6_yaw_min_horn_M3x6_1",
+    "kind": "fastener",
+    "group": "L6_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "441.brep"
+  },
+  {
+    "name": "L6_yaw_min_horn_M3x6_2",
+    "kind": "fastener",
+    "group": "L6_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "442.brep"
+  },
+  {
+    "name": "L6_yaw_min_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L6_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "443.brep"
+  },
+  {
+    "name": "L6_yaw_min_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L6_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "444.brep"
   },
   {
     "name": "L6_hip_disc_plus",
@@ -1625,7 +4903,7 @@
       0.7,
       0.73
     ],
-    "file": "147.brep"
+    "file": "445.brep"
   },
   {
     "name": "L6_hip_disc_min",
@@ -1636,29 +4914,95 @@
       0.7,
       0.73
     ],
-    "file": "148.brep"
+    "file": "446.brep"
   },
   {
-    "name": "L6_hip_shim_plus",
-    "kind": "printed",
+    "name": "L6_hip_plus_horn_M3x6_1",
+    "kind": "fastener",
     "group": "L6_FEMUR",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "149.brep"
+    "file": "447.brep"
   },
   {
-    "name": "L6_hip_shim_min",
-    "kind": "printed",
+    "name": "L6_hip_plus_horn_M3x6_2",
+    "kind": "fastener",
     "group": "L6_FEMUR",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "150.brep"
+    "file": "448.brep"
+  },
+  {
+    "name": "L6_hip_plus_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L6_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "449.brep"
+  },
+  {
+    "name": "L6_hip_plus_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L6_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "450.brep"
+  },
+  {
+    "name": "L6_hip_min_horn_M3x6_1",
+    "kind": "fastener",
+    "group": "L6_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "451.brep"
+  },
+  {
+    "name": "L6_hip_min_horn_M3x6_2",
+    "kind": "fastener",
+    "group": "L6_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "452.brep"
+  },
+  {
+    "name": "L6_hip_min_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L6_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "453.brep"
+  },
+  {
+    "name": "L6_hip_min_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L6_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "454.brep"
   },
   {
     "name": "L6_knee_disc_plus",
@@ -1669,7 +5013,7 @@
       0.7,
       0.73
     ],
-    "file": "151.brep"
+    "file": "455.brep"
   },
   {
     "name": "L6_knee_disc_min",
@@ -1680,28 +5024,468 @@
       0.7,
       0.73
     ],
-    "file": "152.brep"
+    "file": "456.brep"
   },
   {
-    "name": "L6_knee_shim_plus",
-    "kind": "printed",
+    "name": "L6_knee_plus_horn_M3x6_1",
+    "kind": "fastener",
     "group": "L6_TIBIA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "153.brep"
+    "file": "457.brep"
   },
   {
-    "name": "L6_knee_shim_min",
-    "kind": "printed",
+    "name": "L6_knee_plus_horn_M3x6_2",
+    "kind": "fastener",
     "group": "L6_TIBIA",
     "color": [
-      0.23,
-      0.43,
-      0.42
+      0.7,
+      0.72,
+      0.74
     ],
-    "file": "154.brep"
+    "file": "458.brep"
+  },
+  {
+    "name": "L6_knee_plus_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L6_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "459.brep"
+  },
+  {
+    "name": "L6_knee_plus_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L6_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "460.brep"
+  },
+  {
+    "name": "L6_knee_min_horn_M3x6_1",
+    "kind": "fastener",
+    "group": "L6_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "461.brep"
+  },
+  {
+    "name": "L6_knee_min_horn_M3x6_2",
+    "kind": "fastener",
+    "group": "L6_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "462.brep"
+  },
+  {
+    "name": "L6_knee_min_horn_M3x6_3",
+    "kind": "fastener",
+    "group": "L6_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "463.brep"
+  },
+  {
+    "name": "L6_knee_min_horn_M3x6_4",
+    "kind": "fastener",
+    "group": "L6_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "464.brep"
+  },
+  {
+    "name": "L6_yaw_clamp_M3x8_-31_-18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "465.brep"
+  },
+  {
+    "name": "L6_yaw_clamp_RXM3x5p7_-31_-18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "466.brep"
+  },
+  {
+    "name": "L6_yaw_clamp_M3x8_-31_18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "467.brep"
+  },
+  {
+    "name": "L6_yaw_clamp_RXM3x5p7_-31_18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "468.brep"
+  },
+  {
+    "name": "L6_yaw_clamp_M3x8_-20_-18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "469.brep"
+  },
+  {
+    "name": "L6_yaw_clamp_RXM3x5p7_-20_-18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "470.brep"
+  },
+  {
+    "name": "L6_yaw_clamp_M3x8_-20_18.3",
+    "kind": "fastener",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "471.brep"
+  },
+  {
+    "name": "L6_yaw_clamp_RXM3x5p7_-20_18.3",
+    "kind": "insert",
+    "group": "BODY",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "472.brep"
+  },
+  {
+    "name": "L6_hip_clamp_M3x8_-31_-18.3",
+    "kind": "fastener",
+    "group": "L6_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "473.brep"
+  },
+  {
+    "name": "L6_hip_clamp_RXM3x5p7_-31_-18.3",
+    "kind": "insert",
+    "group": "L6_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "474.brep"
+  },
+  {
+    "name": "L6_hip_clamp_M3x8_-31_18.3",
+    "kind": "fastener",
+    "group": "L6_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "475.brep"
+  },
+  {
+    "name": "L6_hip_clamp_RXM3x5p7_-31_18.3",
+    "kind": "insert",
+    "group": "L6_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "476.brep"
+  },
+  {
+    "name": "L6_hip_clamp_M3x8_-20_-18.3",
+    "kind": "fastener",
+    "group": "L6_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "477.brep"
+  },
+  {
+    "name": "L6_hip_clamp_RXM3x5p7_-20_-18.3",
+    "kind": "insert",
+    "group": "L6_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "478.brep"
+  },
+  {
+    "name": "L6_hip_clamp_M3x8_-20_18.3",
+    "kind": "fastener",
+    "group": "L6_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "479.brep"
+  },
+  {
+    "name": "L6_hip_clamp_RXM3x5p7_-20_18.3",
+    "kind": "insert",
+    "group": "L6_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "480.brep"
+  },
+  {
+    "name": "L6_knee_clamp_M3x8_-31_-18.3",
+    "kind": "fastener",
+    "group": "L6_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "481.brep"
+  },
+  {
+    "name": "L6_knee_clamp_RXM3x5p7_-31_-18.3",
+    "kind": "insert",
+    "group": "L6_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "482.brep"
+  },
+  {
+    "name": "L6_knee_clamp_M3x8_-31_18.3",
+    "kind": "fastener",
+    "group": "L6_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "483.brep"
+  },
+  {
+    "name": "L6_knee_clamp_RXM3x5p7_-31_18.3",
+    "kind": "insert",
+    "group": "L6_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "484.brep"
+  },
+  {
+    "name": "L6_knee_clamp_M3x8_-20_-18.3",
+    "kind": "fastener",
+    "group": "L6_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "485.brep"
+  },
+  {
+    "name": "L6_knee_clamp_RXM3x5p7_-20_-18.3",
+    "kind": "insert",
+    "group": "L6_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "486.brep"
+  },
+  {
+    "name": "L6_knee_clamp_M3x8_-20_18.3",
+    "kind": "fastener",
+    "group": "L6_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "487.brep"
+  },
+  {
+    "name": "L6_knee_clamp_RXM3x5p7_-20_18.3",
+    "kind": "insert",
+    "group": "L6_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "488.brep"
+  },
+  {
+    "name": "L6_coxa_join_M3x10_-7",
+    "kind": "fastener",
+    "group": "L6_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "489.brep"
+  },
+  {
+    "name": "L6_coxa_join_RXM3x5p7_-7",
+    "kind": "insert",
+    "group": "L6_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "490.brep"
+  },
+  {
+    "name": "L6_coxa_join_M3x10_7",
+    "kind": "fastener",
+    "group": "L6_COXA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "491.brep"
+  },
+  {
+    "name": "L6_coxa_join_RXM3x5p7_7",
+    "kind": "insert",
+    "group": "L6_COXA",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "492.brep"
+  },
+  {
+    "name": "L6_femur_join_M3x10_10",
+    "kind": "fastener",
+    "group": "L6_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "493.brep"
+  },
+  {
+    "name": "L6_femur_join_RXM3x5p7_10",
+    "kind": "insert",
+    "group": "L6_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "494.brep"
+  },
+  {
+    "name": "L6_femur_join_M3x10_-8",
+    "kind": "fastener",
+    "group": "L6_FEMUR",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "495.brep"
+  },
+  {
+    "name": "L6_femur_join_RXM3x5p7_-8",
+    "kind": "insert",
+    "group": "L6_FEMUR",
+    "color": [
+      0.7,
+      0.5,
+      0.19
+    ],
+    "file": "496.brep"
+  },
+  {
+    "name": "L6_foot_M3x25",
+    "kind": "fastener",
+    "group": "L6_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "497.brep"
+  },
+  {
+    "name": "L6_foot_M3_locknut",
+    "kind": "nut",
+    "group": "L6_TIBIA",
+    "color": [
+      0.7,
+      0.72,
+      0.74
+    ],
+    "file": "498.brep"
   }
 ]
